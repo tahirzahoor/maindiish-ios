@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "b2fa556e4e48cbf06cf8c63def138c98f4b811fa",
+        "version" : "5.8.0"
+      }
+    },
+    {
+      "identity" : "swift-api-manager",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:FaizanTan/Swift-API-Manager.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2d2c86c5838d2880feae1dc593a473cfccbde9e3"
+      }
+    },
+    {
+      "identity" : "swiftdi",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:FaizanTan/SwiftDI.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e5e13eed67db8abd5771ff8863a4d608df40a5b1"
+      }
+    }
+  ],
+  "version" : 2
+}
