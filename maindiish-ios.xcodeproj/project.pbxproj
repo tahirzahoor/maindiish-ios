@@ -87,7 +87,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18209E7B2A7146690024F47B /* BaseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18209E7B2A7146690024F47B /* maindiish-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "maindiish-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18209E7E2A7146690024F47B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18209E802A7146690024F47B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18209E852A7146690024F47B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 		18209E722A7146690024F47B = {
 			isa = PBXGroup;
 			children = (
-				18209E7D2A7146690024F47B /* BaseCode */,
+				18209E7D2A7146690024F47B /* maindiish-ios */,
 				18209E7C2A7146690024F47B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -190,19 +190,19 @@
 		18209E7C2A7146690024F47B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18209E7B2A7146690024F47B /* BaseCode.app */,
+				18209E7B2A7146690024F47B /* maindiish-ios.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		18209E7D2A7146690024F47B /* BaseCode */ = {
+		18209E7D2A7146690024F47B /* maindiish-ios */ = {
 			isa = PBXGroup;
 			children = (
 				18209E9A2A7149A60024F47B /* App */,
 				18209E992A7149A00024F47B /* Resources */,
 				18209E8C2A71466A0024F47B /* Info.plist */,
 			);
-			path = BaseCode;
+			path = "maindiish-ios";
 			sourceTree = "<group>";
 		};
 		18209E992A7149A00024F47B /* Resources */ = {
@@ -528,9 +528,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18209E7A2A7146690024F47B /* BaseCode */ = {
+		18209E7A2A7146690024F47B /* maindiish-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18209E8F2A71466A0024F47B /* Build configuration list for PBXNativeTarget "BaseCode" */;
+			buildConfigurationList = 18209E8F2A71466A0024F47B /* Build configuration list for PBXNativeTarget "maindiish-ios" */;
 			buildPhases = (
 				18209E922A71486B0024F47B /* ShellScript */,
 				18209E772A7146690024F47B /* Sources */,
@@ -541,14 +541,14 @@
 			);
 			dependencies = (
 			);
-			name = BaseCode;
+			name = "maindiish-ios";
 			packageProductDependencies = (
 				7908560F2ADE24300021C8E5 /* APIManager */,
 				790856122ADE24960021C8E5 /* APIManager */,
 				790856152ADE24E90021C8E5 /* SwiftDI */,
 			);
 			productName = BaseCode;
-			productReference = 18209E7B2A7146690024F47B /* BaseCode.app */;
+			productReference = 18209E7B2A7146690024F47B /* maindiish-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -566,7 +566,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 18209E762A7146690024F47B /* Build configuration list for PBXProject "BaseCode" */;
+			buildConfigurationList = 18209E762A7146690024F47B /* Build configuration list for PBXProject "maindiish-ios" */;
 			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -583,7 +583,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18209E7A2A7146690024F47B /* BaseCode */,
+				18209E7A2A7146690024F47B /* maindiish-ios */,
 			);
 		};
 /* End PBXProject section */
@@ -857,7 +857,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3AQNBD76FX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BaseCode/Info.plist;
+				INFOPLIST_FILE = "maindiish-ios/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -891,7 +891,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3AQNBD76FX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BaseCode/Info.plist;
+				INFOPLIST_FILE = "maindiish-ios/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -919,7 +919,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18209E762A7146690024F47B /* Build configuration list for PBXProject "BaseCode" */ = {
+		18209E762A7146690024F47B /* Build configuration list for PBXProject "maindiish-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18209E8D2A71466A0024F47B /* Debug */,
@@ -928,7 +928,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18209E8F2A71466A0024F47B /* Build configuration list for PBXNativeTarget "BaseCode" */ = {
+		18209E8F2A71466A0024F47B /* Build configuration list for PBXNativeTarget "maindiish-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18209E902A71466A0024F47B /* Debug */,
