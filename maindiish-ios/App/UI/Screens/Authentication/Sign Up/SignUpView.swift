@@ -28,7 +28,7 @@ class SignUpView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        setupView()
+        //setupView()
     }
     
     func setupView() {

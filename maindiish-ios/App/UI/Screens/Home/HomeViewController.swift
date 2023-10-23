@@ -20,7 +20,8 @@ class HomeViewController: ViewController<HomeViewModel> {
         viewModel.router.append(.login, animated: true)
     }
     
-    @IBAction func onSignUpButtonTap(_ sender: RoundedButton) {
+    @IBAction
+    func onSignUpButtonTap(_ sender: RoundedButton) {
         viewModel.router.append(.signup, animated: true)
     }
     

@@ -14,8 +14,8 @@
         <!--Splash View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SplashViewController" customModule="BaseCode" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="SplashView" customModule="BaseCode" customModuleProvider="target">
+                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SplashViewController" customModule="maindiish_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="SplashView" customModule="maindiish_ios" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -44,8 +44,8 @@
         <!--Onboarding View Controller-->
         <scene sceneID="SO4-GV-NyH">
             <objects>
-                <viewController storyboardIdentifier="OnboardingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hkw-d9-DEK" customClass="OnboardingViewController" customModule="BaseCode" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="center" id="XGg-QV-cht" customClass="OnboardingView" customModule="BaseCode" customModuleProvider="target">
+                <viewController storyboardIdentifier="OnboardingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hkw-d9-DEK" customClass="OnboardingViewController" customModule="maindiish_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="center" id="XGg-QV-cht" customClass="OnboardingView" customModule="maindiish_ios" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -86,7 +86,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" translatesAutoresizingMaskIntoConstraints="NO" id="BKU-5x-jKF" customClass="OnboardingCollectionViewCell" customModule="BaseCode" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" translatesAutoresizingMaskIntoConstraints="NO" id="BKU-5x-jKF" customClass="OnboardingCollectionViewCell" customModule="maindiish_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="379.66666666666674"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="v5R-gJ-A1L">
@@ -115,7 +115,7 @@
                                     <outlet property="delegate" destination="Hkw-d9-DEK" id="BD7-nG-jAw"/>
                                 </connections>
                             </collectionView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yja-kC-9p6" customClass="RoundedButton" customModule="BaseCode" customModuleProvider="target">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yja-kC-9p6" customClass="RoundedButton" customModule="maindiish_ios" customModuleProvider="target">
                                 <rect key="frame" x="30" y="703" width="333" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -207,15 +207,15 @@
         <!--HomeViewController-->
         <scene sceneID="2gL-1E-daf">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" title="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="61N-Hk-IEB" customClass="HomeViewController" customModule="BaseCode" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TCz-p5-2VR" customClass="HomeView" customModule="BaseCode" customModuleProvider="target">
+                <viewController storyboardIdentifier="HomeViewController" title="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="61N-Hk-IEB" customClass="HomeViewController" customModule="maindiish_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TCz-p5-2VR" customClass="HomeView" customModule="maindiish_ios" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="1kZ-BQ-k6e">
                                 <rect key="frame" x="0.0" y="-5" width="393" height="857"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39b-Ab-J4j" customClass="RoundedButton" customModule="BaseCode" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39b-Ab-J4j" customClass="RoundedButton" customModule="maindiish_ios" customModuleProvider="target">
                                 <rect key="frame" x="20" y="527.33333333333337" width="353" height="60.666666666666629"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="signup button"/>
@@ -289,7 +289,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODM-p8-Xev" customClass="RoundedButton" customModule="BaseCode" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODM-p8-Xev" customClass="RoundedButton" customModule="maindiish_ios" customModuleProvider="target">
                                 <rect key="frame" x="20" y="446.66666666666669" width="353" height="60.666666666666686"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="login button"/>
@@ -302,7 +302,7 @@
                                     <action selector="onLoginButtonTap:" destination="61N-Hk-IEB" eventType="touchUpInside" id="LnZ-LZ-npO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYW-zz-2LG" customClass="RoundedButton" customModule="BaseCode" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYW-zz-2LG" customClass="RoundedButton" customModule="maindiish_ios" customModuleProvider="target">
                                 <rect key="frame" x="20" y="702.33333333333337" width="353" height="60.666666666666629"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="google_integration_icon"/>
@@ -388,7 +388,7 @@
         <image name="onboarding_next" width="70" height="70"/>
         <image name="splash" width="290" height="664"/>
         <namedColor name="MainTheme">
-            <color red="0.90980392156862744" green="0.25882352941176467" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.9100000262260437" green="0.25900000333786011" blue="0.14499999582767487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="onboarding_description_label_color">
             <color red="0.016000000759959221" green="0.016000000759959221" blue="0.024000000208616257" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>

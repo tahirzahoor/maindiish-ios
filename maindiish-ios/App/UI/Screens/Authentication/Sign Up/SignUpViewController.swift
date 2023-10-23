@@ -16,48 +16,17 @@ class SignUpViewController: ViewController<SignUpViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        includeHeader("Sign Up", delegate: self, fixIn: signUpView.headerView)
+        
+        includeHeader(
+            GlobalStrings.Title.signUp,
+            delegate: self,
+            fixIn: signUpView.headerView
+        )
     }
     
     @IBAction
     func nextButtonTapped(_ sender: RoundedButton) {
         viewModel.router.append(.createUsername, animated: true)
-    }
-}
-
-extension SignUpViewController: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.formData.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let data = viewModel.formData[indexPath.row]
-        
-        switch data.cellType {
-            case .singleTextFieldCell:
-                let cell: SingleTextFieldTableViewCell = tableView.dequeueCell(for: indexPath)
-                cell.fieldNameLabel.text = data.field.fieldName
-                cell.inputField.placeholder = data.field.placeHolder
-                
-                return cell
-            
-            case .dropDownFieldCell:
-                let cell: DropDownSelectionTableViewCell = tableView.dequeueCell(for: indexPath)
-                cell.fieldNameLabel.text = data.field.fieldName
-                cell.inputField.placeholder = data.field.placeHolder
-                cell.inputField.keyboardType = .phonePad
-                cell.dropDownSelectedLabel.text = "USA"
-                
-                return cell
-            
-            case .secureFieldCell:
-                let cell: SecureTextFieldTableViewCell = tableView.dequeueCell(for: indexPath)
-                cell.fieldNameLabel.text = data.field.fieldName
-                cell.inputField.placeholder = data.field.placeHolder
-                
-                return cell
-        }
     }
 }
 

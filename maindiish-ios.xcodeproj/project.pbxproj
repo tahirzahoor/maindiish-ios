@@ -48,9 +48,6 @@
 		7991E5612ADF671F00C8F348 /* OnboardingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991E5602ADF671F00C8F348 /* OnboardingDetail.swift */; };
 		799E07362AE50EC500D853B5 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E07352AE50EC500D853B5 /* UIButton.swift */; };
 		799E07382AE533C100D853B5 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E07372AE533C100D853B5 /* PaddedTextField.swift */; };
-		799E073D2AE5535400D853B5 /* SingleTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E073C2AE5535400D853B5 /* SingleTextFieldTableViewCell.swift */; };
-		799E07412AE553A700D853B5 /* SecureTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E07402AE553A700D853B5 /* SecureTextFieldTableViewCell.swift */; };
-		799E07432AE554A300D853B5 /* DropDownSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E07422AE554A300D853B5 /* DropDownSelectionTableViewCell.swift */; };
 		799E07462AE556B200D853B5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E07452AE556B200D853B5 /* SignUpViewController.swift */; };
 		799E07482AE556D100D853B5 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E07472AE556D100D853B5 /* SignUpViewModel.swift */; };
 		799E074C2AE5571700D853B5 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E074B2AE5571700D853B5 /* SignUpView.swift */; };
@@ -126,9 +123,6 @@
 		7991E5602ADF671F00C8F348 /* OnboardingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDetail.swift; sourceTree = "<group>"; };
 		799E07352AE50EC500D853B5 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		799E07372AE533C100D853B5 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
-		799E073C2AE5535400D853B5 /* SingleTextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTextFieldTableViewCell.swift; sourceTree = "<group>"; };
-		799E07402AE553A700D853B5 /* SecureTextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextFieldTableViewCell.swift; sourceTree = "<group>"; };
-		799E07422AE554A300D853B5 /* DropDownSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownSelectionTableViewCell.swift; sourceTree = "<group>"; };
 		799E07452AE556B200D853B5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		799E07472AE556D100D853B5 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		799E074B2AE5571700D853B5 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -308,11 +302,10 @@
 		18209EA92A714C790024F47B /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				79E444622AE5C0FE003CB9C8 /* RoundedButton.swift */,
-				793E65D52AE4517700381F32 /* NibWrapper */,
-				79B5CC5C2AE2240A005E19AD /* PaddedTextField */,
 				79B5CC592AE22199005E19AD /* HeaderView */,
+				793E65D52AE4517700381F32 /* NibWrapper */,
 				799E07372AE533C100D853B5 /* PaddedTextField.swift */,
+				79E444622AE5C0FE003CB9C8 /* RoundedButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -437,7 +430,6 @@
 		799E073B2AE5531400D853B5 /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
-				799E07442AE5560800D853B5 /* Cells */,
 				799E07452AE556B200D853B5 /* SignUpViewController.swift */,
 				799E07472AE556D100D853B5 /* SignUpViewModel.swift */,
 				799E074B2AE5571700D853B5 /* SignUpView.swift */,
@@ -447,16 +439,6 @@
 			path = "Sign Up";
 			sourceTree = "<group>";
 		};
-		799E07442AE5560800D853B5 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				799E073C2AE5535400D853B5 /* SingleTextFieldTableViewCell.swift */,
-				799E07402AE553A700D853B5 /* SecureTextFieldTableViewCell.swift */,
-				799E07422AE554A300D853B5 /* DropDownSelectionTableViewCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		79B5CC592AE22199005E19AD /* HeaderView */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,13 +446,6 @@
 				7901B4EA2AE441F000D24064 /* AuthenticationScreenHeaderView.swift */,
 			);
 			path = HeaderView;
-			sourceTree = "<group>";
-		};
-		79B5CC5C2AE2240A005E19AD /* PaddedTextField */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PaddedTextField;
 			sourceTree = "<group>";
 		};
 		79B5CC612AE2485E005E19AD /* Login */ = {
@@ -632,10 +607,8 @@
 				18209EA62A714A390024F47B /* ViewModel.swift in Sources */,
 				18209ED12A725B6F0024F47B /* Environment.swift in Sources */,
 				18209ECB2A7257940024F47B /* SplashViewController.swift in Sources */,
-				799E07432AE554A300D853B5 /* DropDownSelectionTableViewCell.swift in Sources */,
 				79BA2A1C2AE1C22A0019E880 /* Color.swift in Sources */,
 				18209EE72A7261C30024F47B /* Storage.swift in Sources */,
-				799E07412AE553A700D853B5 /* SecureTextFieldTableViewCell.swift in Sources */,
 				79BA2A2B2AE1EA520019E880 /* HomeView.swift in Sources */,
 				7901B4EB2AE441F000D24064 /* AuthenticationScreenHeaderView.swift in Sources */,
 				7901B4ED2AE4434200D24064 /* NibWrapperView.swift in Sources */,
@@ -674,7 +647,6 @@
 				18209EA82A714AB30024F47B /* UIViewController.swift in Sources */,
 				799E07462AE556B200D853B5 /* SignUpViewController.swift in Sources */,
 				79BA2A2F2AE1F6E10019E880 /* UserDefaultsManager.swift in Sources */,
-				799E073D2AE5535400D853B5 /* SingleTextFieldTableViewCell.swift in Sources */,
 				18209EBC2A7249140024F47B /* Strings.swift in Sources */,
 				18209ED82A725FD90024F47B /* UITableViewCell.swift in Sources */,
 			);

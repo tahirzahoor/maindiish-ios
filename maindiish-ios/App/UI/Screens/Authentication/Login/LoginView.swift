@@ -36,10 +36,10 @@ class LoginView: UIView {
         emailLabel.font = fieldsLabelFont
         passwordLabel.font = fieldsLabelFont
         
-        setForgotPasswordButtonTitle()
+        setForgotPasswordButtonTitleView()
     }
     
-    func setForgotPasswordButtonTitle() {
+    func setForgotPasswordButtonTitleView() {
         forgotPasswordButton.titleLabel?.font = Fonts.robotoRegular.font(12)
         forgotPasswordButton.underlineText()
     }

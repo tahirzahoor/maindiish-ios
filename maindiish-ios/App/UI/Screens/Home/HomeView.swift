@@ -26,7 +26,7 @@ class HomeView: UIView {
         let cornerRadius = loginButton.frame.height / 4
         
         loginButton.setView(title: GlobalStrings.Title.login, titleFont: .interSemibold, cornerRadius: cornerRadius )
-        signupButton.setView(title: GlobalStrings.Title.signup, titleFont: .interSemibold, cornerRadius: cornerRadius)
+        signupButton.setView(title: GlobalStrings.Title.welcomeSignupButton, titleFont: .interSemibold, cornerRadius: cornerRadius)
         googleIntegrationButton.setView(backgroundColor: .white, title: "", cornerRadius: cornerRadius)
     }
 }

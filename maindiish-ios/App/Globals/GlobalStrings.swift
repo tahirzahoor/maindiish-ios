@@ -15,7 +15,8 @@ struct GlobalStrings {
         static let onboarding3 = "Find and Save Inspiring Recipes"
         static let onboardingLetsGo = "Let's go!"
         static let login = "Log in"
-        static let signup = "Sign up by email or phone number"
+        static let welcomeSignupButton = "Sign up by email or phone number"
+        static let signUp = "Sign Up"
     }
     
     struct Message {
