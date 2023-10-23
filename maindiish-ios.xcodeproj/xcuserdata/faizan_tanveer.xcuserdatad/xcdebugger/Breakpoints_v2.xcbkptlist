@@ -52,5 +52,83 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DFE00FA5-19D9-4B92-B359-DDEF23662221"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "maindiish-ios/App/UI/Screens/Authentication/Sign Up/SignUpViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "passwordVisibilityButtonTapped(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DFE00FA5-19D9-4B92-B359-DDEF23662221 - cc7cb2b5cf0377cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "maindiish_ios.SignUpViewController.passwordVisibilityButtonTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "maindiish-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Screens/Authentication/Sign%20Up/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "DFE00FA5-19D9-4B92-B359-DDEF23662221 - b7695b436b555cc6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "maindiish_ios.SignUpViewController.agreementConfirmationButtonTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "maindiish-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Screens/Authentication/Sign%20Up/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "DFE00FA5-19D9-4B92-B359-DDEF23662221 - cc7cb2b5cf0377cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "maindiish_ios.SignUpViewController.passwordVisibilityButtonTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "maindiish-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Screens/Authentication/Sign%20Up/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "DFE00FA5-19D9-4B92-B359-DDEF23662221 - cc7cb2b5cf0377e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "maindiish_ios.SignUpViewController.passwordVisibilityButtonTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "maindiish-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Screens/Authentication/Sign%20Up/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

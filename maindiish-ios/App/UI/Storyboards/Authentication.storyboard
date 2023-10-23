@@ -40,7 +40,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upg-rK-Tkz" userLabel="Email Input View">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upg-rK-Tkz" userLabel="Email Input View" customClass="BorderedView" customModule="maindiish_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="76" width="353" height="64"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="mail@example.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h36-oQ-dsr">
@@ -86,7 +86,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mjd-PJ-Nui" userLabel="Password Input View">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mjd-PJ-Nui" userLabel="Password Input View" customClass="BorderedView" customModule="maindiish_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="190" width="353" height="64"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="*****" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQ2-JU-jto">
@@ -215,7 +215,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogz-ba-hY5">
+                            <view tag="-1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogz-ba-hY5">
                                 <rect key="frame" x="0.0" y="59" width="393" height="36"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -250,7 +250,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5O-UP-GXx">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5O-UP-GXx" customClass="BorderedView" customModule="maindiish_ios" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="44" width="353" height="60"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5LV-bf-VML">
@@ -267,17 +267,6 @@
                                                             <constraint firstAttribute="trailing" secondItem="5LV-bf-VML" secondAttribute="trailing" constant="20" id="cPu-e4-GXU"/>
                                                             <constraint firstAttribute="bottom" secondItem="5LV-bf-VML" secondAttribute="bottom" constant="20" id="nCO-eu-Xrh"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                <real key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" name="onboarding_title_label_color"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -300,10 +289,10 @@
                                                         <color key="textColor" name="onboarding_title_label_color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2G-D1-VV2">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2G-D1-VV2" customClass="BorderedView" customModule="maindiish_ios" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="44" width="353" height="60"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xnG-Mc-QXW">
+                                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xnG-Mc-QXW">
                                                                 <rect key="frame" x="20" y="20" width="313" height="20"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -317,17 +306,6 @@
                                                             <constraint firstAttribute="trailing" secondItem="xnG-Mc-QXW" secondAttribute="trailing" constant="20" id="YCh-RW-zQD"/>
                                                             <constraint firstItem="xnG-Mc-QXW" firstAttribute="leading" secondItem="i2G-D1-VV2" secondAttribute="leading" constant="20" id="bmn-qL-kS8"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                <real key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" name="onboarding_title_label_color"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -350,10 +328,10 @@
                                                         <color key="textColor" name="onboarding_title_label_color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vkf-g3-0Nh">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vkf-g3-0Nh" customClass="BorderedView" customModule="maindiish_ios" customModuleProvider="target">
                                                         <rect key="frame" x="103" y="44" width="250" height="60"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+1 123 456789" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="txy-b3-rKa">
+                                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="+1 123 456789" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="txy-b3-rKa">
                                                                 <rect key="frame" x="20" y="20" width="210" height="20"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -367,25 +345,17 @@
                                                             <constraint firstItem="txy-b3-rKa" firstAttribute="top" secondItem="Vkf-g3-0Nh" secondAttribute="top" constant="20" id="cU6-QQ-dZY"/>
                                                             <constraint firstAttribute="trailing" secondItem="txy-b3-rKa" secondAttribute="trailing" constant="20" id="xJQ-YV-vln"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                <real key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" name="onboarding_title_label_color"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54N-Oz-xxZ" userLabel="Country Selector">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54N-Oz-xxZ" userLabel="Country Selector" customClass="BorderedView" customModule="maindiish_ios" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="44" width="95" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sE-to-66R">
                                                                 <rect key="frame" x="65" y="19" width="10" height="22"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="drop_down"/>
+                                                                <connections>
+                                                                    <action selector="numberCountrySelectorDropDownButtonTapped:" destination="DBh-6w-hNZ" eventType="touchUpInside" id="Kw5-af-PsP"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mao-uk-zr2">
                                                                 <rect key="frame" x="20" y="21" width="30.333333333333329" height="18"/>
@@ -432,21 +402,21 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6D-lR-qxv" userLabel="Password">
                                                 <rect key="frame" x="20" y="383" width="353" height="104"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xox-lr-etf">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xox-lr-etf">
                                                         <rect key="frame" x="0.0" y="20" width="73.333333333333329" height="14"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" name="onboarding_title_label_color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCr-VO-jBj">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCr-VO-jBj" customClass="BorderedView" customModule="maindiish_ios" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="44" width="353" height="60"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hra-NY-Rwn">
+                                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hra-NY-Rwn">
                                                                 <rect key="frame" x="20" y="20" width="279" height="20"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ei-R1-g0q">
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ei-R1-g0q">
                                                                 <rect key="frame" x="309" y="18" width="24" height="24"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="24" id="FbX-rQ-Y0O"/>
@@ -454,6 +424,9 @@
                                                                 </constraints>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="eye-off"/>
+                                                                <connections>
+                                                                    <action selector="passwordVisibilityButtonTapped:" destination="DBh-6w-hNZ" eventType="touchUpInside" id="4qY-0L-gAe"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -466,17 +439,6 @@
                                                             <constraint firstItem="Hra-NY-Rwn" firstAttribute="top" secondItem="iCr-VO-jBj" secondAttribute="top" constant="20" id="i7L-vS-uE4"/>
                                                             <constraint firstItem="Hra-NY-Rwn" firstAttribute="leading" secondItem="iCr-VO-jBj" secondAttribute="leading" constant="20" id="yaE-vu-ek2"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                <real key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" name="onboarding_title_label_color"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -499,15 +461,15 @@
                                                         <color key="textColor" name="onboarding_title_label_color"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGc-7K-OnK">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGc-7K-OnK" customClass="BorderedView" customModule="maindiish_ios" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="44" width="353" height="60"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Wz-xi-8lW">
+                                                            <textField opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Wz-xi-8lW">
                                                                 <rect key="frame" x="20" y="20" width="279" height="20"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRK-Rz-fj3">
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRK-Rz-fj3">
                                                                 <rect key="frame" x="309" y="18" width="24" height="24"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="24" id="EbN-g5-nQu"/>
@@ -515,6 +477,9 @@
                                                                 </constraints>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="eye-off"/>
+                                                                <connections>
+                                                                    <action selector="passwordVisibilityButtonTapped:" destination="DBh-6w-hNZ" eventType="touchUpInside" id="Yd6-OJ-BnG"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -527,17 +492,6 @@
                                                             <constraint firstAttribute="trailing" secondItem="jRK-Rz-fj3" secondAttribute="trailing" constant="20" id="i8S-Vs-RUq"/>
                                                             <constraint firstItem="9Wz-xi-8lW" firstAttribute="leading" secondItem="fGc-7K-OnK" secondAttribute="leading" constant="20" id="mxq-Zl-xGg"/>
                                                         </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                <real key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" name="onboarding_title_label_color"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -561,6 +515,9 @@
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="unchecked_icon"/>
+                                                        <connections>
+                                                            <action selector="agreementConfirmationButtonTapped:" destination="DBh-6w-hNZ" eventType="touchUpInside" id="RMK-SJ-Nmb"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I agree with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vr-t1-WDO">
                                                         <rect key="frame" x="30" y="13" width="66" height="14.333333333333336"/>
@@ -573,6 +530,9 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title=" Privacy policy "/>
+                                                        <connections>
+                                                            <action selector="policiesAndTermsButtonTapped:" destination="DBh-6w-hNZ" eventType="touchUpInside" id="I2B-cA-j5H"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWs-T4-GiC">
                                                         <rect key="frame" x="182" y="13" width="21" height="14.333333333333336"/>
@@ -585,6 +545,9 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="  Terms and conditions"/>
+                                                        <connections>
+                                                            <action selector="policiesAndTermsButtonTapped:" destination="DBh-6w-hNZ" eventType="touchUpInside" id="WBP-U7-sdD"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -613,17 +576,23 @@
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="nextButtonTapped:" destination="DBh-6w-hNZ" eventType="touchUpInside" id="nex-of-xsC"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="scK-93-vSN">
                                                 <rect key="frame" x="20" y="752" width="353" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FT6-nn-EHS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="83" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="  Need help" image="themed-need-help-icon">
+                                                        <state key="normal" title=" Need help" image="themed-need-help-icon">
                                                             <color key="titleColor" name="onboarding_title_label_color"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="needHelpButtonTapped:" destination="DBh-6w-hNZ" eventType="touchUpInside" id="hOA-z4-Iea"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have an account. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNK-AF-uEn">
                                                         <rect key="frame" x="216" y="13" width="106" height="14.333333333333336"/>
@@ -636,6 +605,9 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Login"/>
+                                                        <connections>
+                                                            <action selector="loginButtonTapped:" destination="DBh-6w-hNZ" eventType="touchUpInside" id="Sct-id-lYC"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -710,7 +682,7 @@
                         <connections>
                             <outlet property="agreementConfirmationButton" destination="Xh7-5g-BSg" id="rsh-gO-Dck"/>
                             <outlet property="andLabel" destination="OWs-T4-GiC" id="Wpf-Nc-DY0"/>
-                            <outlet property="headerView" destination="ogz-ba-hY5" id="Xch-MV-mhN"/>
+                            <outlet property="headerView" destination="ogz-ba-hY5" id="tuE-WM-bvI"/>
                             <outlet property="iAgreeWithLabel" destination="3Vr-t1-WDO" id="Rti-PU-Tdy"/>
                             <outlet property="iHaveAnAccountLabel" destination="MNK-AF-uEn" id="NQ9-4e-mvW"/>
                             <outlet property="loginButton" destination="55c-be-AcL" id="4ho-t5-mQu"/>
@@ -719,16 +691,22 @@
                             <outlet property="privacyPolicyButton" destination="qqs-Wg-3SA" id="v4Y-hn-OTJ"/>
                             <outlet property="registerationLabel" destination="CLx-X5-RrK" id="MBk-Aa-TIk"/>
                             <outlet property="termsAndConditionsButton" destination="AnL-aO-hNs" id="iD1-JM-YXi"/>
+                            <outletCollection property="fieldsLabel" destination="Xwf-ri-RAs" collectionClass="NSMutableArray" id="hxd-7g-vxq"/>
+                            <outletCollection property="fieldsLabel" destination="hG1-rb-FI9" collectionClass="NSMutableArray" id="RAq-jk-iTM"/>
+                            <outletCollection property="fieldsLabel" destination="FjS-UB-2la" collectionClass="NSMutableArray" id="tnM-JT-xcA"/>
+                            <outletCollection property="fieldsLabel" destination="xox-lr-etf" collectionClass="NSMutableArray" id="aRc-pH-Lu3"/>
+                            <outletCollection property="fieldsLabel" destination="T4j-xr-A3Q" collectionClass="NSMutableArray" id="Fa4-vo-t6O"/>
+                            <outletCollection property="passwordFields" destination="Hra-NY-Rwn" collectionClass="NSMutableArray" id="TpL-kA-zvh"/>
+                            <outletCollection property="passwordFields" destination="9Wz-xi-8lW" collectionClass="NSMutableArray" id="0Qs-Sh-DM1"/>
                         </connections>
                     </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="signUpView" destination="mj3-QN-SXJ" id="gd2-aX-dxo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vld-le-Dz7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1032.824427480916" y="350.7042253521127"/>
+            <point key="canvasLocation" x="231.29770992366412" y="-28.169014084507044"/>
         </scene>
         <!--Create User Name View Controller-->
         <scene sceneID="59n-FQ-pQu">
@@ -764,7 +742,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3l-Eb-t2O">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3l-Eb-t2O" customClass="BorderedView" customModule="maindiish_ios" customModuleProvider="target">
                                 <rect key="frame" x="20" y="227" width="353" height="60"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jaw-cW-x0y">
@@ -847,6 +825,9 @@
     <designables>
         <designable name="1Vh-M8-fmC">
             <size key="intrinsicContentSize" width="49" height="34"/>
+        </designable>
+        <designable name="G3N-i0-hQ5">
+            <size key="intrinsicContentSize" width="32" height="30"/>
         </designable>
         <designable name="zn0-2Y-Gq1">
             <size key="intrinsicContentSize" width="54" height="30"/>

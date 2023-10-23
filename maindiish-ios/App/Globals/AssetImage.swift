@@ -19,6 +19,10 @@ enum AssetsImage: String {
     case onboardSecondPage = "onboarding#2"
     case onboardThirdPage = "onboarding#3"
     case googleIntegration = "google_integration_icon"
+    case eyesOff = "eye-off"
+    case unchecked = "unchecked_icon"
+    case checked = "checked"
+    case eyesOn = "eye-on"
     
     var image: UIImage {
         UIImage(named: rawValue) ?? UIImage()
