@@ -30,7 +30,6 @@
 		18209EDA2A725FEB0024F47B /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209ED92A725FEB0024F47B /* UITableView.swift */; };
 		18209EDC2A7260210024F47B /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EDB2A7260210024F47B /* UICollectionViewCell.swift */; };
 		18209EDE2A7260320024F47B /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EDD2A7260320024F47B /* UICollectionView.swift */; };
-		18209EE02A72605B0024F47B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EDF2A72605B0024F47B /* String.swift */; };
 		18209EE22A7260B70024F47B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE12A7260B70024F47B /* UIView.swift */; };
 		18209EE42A7260D30024F47B /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE32A7260D30024F47B /* XibView.swift */; };
 		18209EE72A7261C30024F47B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE62A7261C30024F47B /* Storage.swift */; };
@@ -38,11 +37,7 @@
 		7901B4EB2AE441F000D24064 /* AuthenticationScreenHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7901B4EA2AE441F000D24064 /* AuthenticationScreenHeaderView.swift */; };
 		7901B4ED2AE4434200D24064 /* NibWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7901B4EC2AE4434200D24064 /* NibWrapperView.swift */; };
 		790856102ADE24300021C8E5 /* APIManager in Frameworks */ = {isa = PBXBuildFile; productRef = 7908560F2ADE24300021C8E5 /* APIManager */; };
-		790856132ADE24960021C8E5 /* APIManager in Frameworks */ = {isa = PBXBuildFile; productRef = 790856122ADE24960021C8E5 /* APIManager */; };
-		790856162ADE24E90021C8E5 /* SwiftDI in Frameworks */ = {isa = PBXBuildFile; productRef = 790856152ADE24E90021C8E5 /* SwiftDI */; };
 		793E65D72AE451A200381F32 /* NibWrapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E65D62AE451A200381F32 /* NibWrapped.swift */; };
-		7974B36B2AE3102100F76D91 /* BaseAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7974B36A2AE3102100F76D91 /* BaseAuthenticationViewController.swift */; };
-		7974B36E2AE310EA00F76D91 /* BaseAuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7974B36D2AE310EA00F76D91 /* BaseAuthenticationView.swift */; };
 		7991E54E2ADF341900C8F348 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991E54D2ADF341900C8F348 /* SplashView.swift */; };
 		7991E5512ADF382700C8F348 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991E5502ADF382700C8F348 /* OnboardingViewModel.swift */; };
 		7991E5532ADF391E00C8F348 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991E5522ADF391E00C8F348 /* UIStoryboard.swift */; };
@@ -68,7 +63,6 @@
 		79B5CC632AE24874005E19AD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B5CC622AE24874005E19AD /* LoginViewModel.swift */; };
 		79B5CC652AE2488B005E19AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B5CC642AE2488B005E19AD /* LoginViewController.swift */; };
 		79B5CC672AE248BC005E19AD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B5CC662AE248BC005E19AD /* LoginView.swift */; };
-		79BA2A172AE1B4E80019E880 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA2A162AE1B4E80019E880 /* RoundedButton.swift */; };
 		79BA2A1C2AE1C22A0019E880 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA2A1B2AE1C22A0019E880 /* Color.swift */; };
 		79BA2A1E2AE1C2D80019E880 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA2A1D2AE1C2D80019E880 /* UIColor.swift */; };
 		79BA2A222AE1DF4E0019E880 /* RobotoCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79BA2A212AE1DF4E0019E880 /* RobotoCondensed-SemiBold.ttf */; };
@@ -84,6 +78,9 @@
 		79BF3C732ADFF3B5009CE04B /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 79BF3C722ADFF3B5009CE04B /* Inter-Medium.otf */; };
 		79BF3C762ADFF655009CE04B /* poppins-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79BF3C742ADFF655009CE04B /* poppins-semibold.ttf */; };
 		79BF3C7B2ADFF85D009CE04B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF3C7A2ADFF85D009CE04B /* Fonts.swift */; };
+		79E4445E2AE5C04C003CB9C8 /* SwiftDI in Frameworks */ = {isa = PBXBuildFile; productRef = 79E4445D2AE5C04C003CB9C8 /* SwiftDI */; };
+		79E444612AE5C075003CB9C8 /* APIManager in Frameworks */ = {isa = PBXBuildFile; productRef = 79E444602AE5C075003CB9C8 /* APIManager */; };
+		79E444632AE5C0FE003CB9C8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E444622AE5C0FE003CB9C8 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,7 +109,6 @@
 		18209ED92A725FEB0024F47B /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		18209EDB2A7260210024F47B /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
 		18209EDD2A7260320024F47B /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
-		18209EDF2A72605B0024F47B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		18209EE12A7260B70024F47B /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		18209EE32A7260D30024F47B /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		18209EE62A7261C30024F47B /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
@@ -120,8 +116,6 @@
 		7901B4EA2AE441F000D24064 /* AuthenticationScreenHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationScreenHeaderView.swift; sourceTree = "<group>"; };
 		7901B4EC2AE4434200D24064 /* NibWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibWrapperView.swift; sourceTree = "<group>"; };
 		793E65D62AE451A200381F32 /* NibWrapped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibWrapped.swift; sourceTree = "<group>"; };
-		7974B36A2AE3102100F76D91 /* BaseAuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAuthenticationViewController.swift; sourceTree = "<group>"; };
-		7974B36D2AE310EA00F76D91 /* BaseAuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAuthenticationView.swift; sourceTree = "<group>"; };
 		7991E54D2ADF341900C8F348 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		7991E5502ADF382700C8F348 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		7991E5522ADF391E00C8F348 /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
@@ -147,7 +141,6 @@
 		79B5CC622AE24874005E19AD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		79B5CC642AE2488B005E19AD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		79B5CC662AE248BC005E19AD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		79BA2A162AE1B4E80019E880 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = BaseCode/App/UI/Components/RoundedButton.swift; sourceTree = SOURCE_ROOT; };
 		79BA2A1B2AE1C22A0019E880 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		79BA2A1D2AE1C2D80019E880 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		79BA2A212AE1DF4E0019E880 /* RobotoCondensed-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -163,6 +156,7 @@
 		79BF3C722ADFF3B5009CE04B /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.otf"; sourceTree = "<group>"; };
 		79BF3C742ADFF655009CE04B /* poppins-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "poppins-semibold.ttf"; sourceTree = "<group>"; };
 		79BF3C7A2ADFF85D009CE04B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		79E444622AE5C0FE003CB9C8 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = "../../../../../food-social-ios/BaseCode/App/UI/Components/RoundedButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,9 +164,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				790856162ADE24E90021C8E5 /* SwiftDI in Frameworks */,
+				79E4445E2AE5C04C003CB9C8 /* SwiftDI in Frameworks */,
 				790856102ADE24300021C8E5 /* APIManager in Frameworks */,
-				790856132ADE24960021C8E5 /* APIManager in Frameworks */,
+				79E444612AE5C075003CB9C8 /* APIManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +257,6 @@
 		18209E9F2A7149CE0024F47B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				18209EDF2A72605B0024F47B /* String.swift */,
 				18209EDD2A7260320024F47B /* UICollectionView.swift */,
 				18209EDB2A7260210024F47B /* UICollectionViewCell.swift */,
 				18209ED32A725C770024F47B /* UIFont.swift */,
@@ -315,10 +308,10 @@
 		18209EA92A714C790024F47B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				79E444622AE5C0FE003CB9C8 /* RoundedButton.swift */,
 				793E65D52AE4517700381F32 /* NibWrapper */,
 				79B5CC5C2AE2240A005E19AD /* PaddedTextField */,
 				79B5CC592AE22199005E19AD /* HeaderView */,
-				79BA2A162AE1B4E80019E880 /* RoundedButton.swift */,
 				799E07372AE533C100D853B5 /* PaddedTextField.swift */,
 			);
 			path = Components;
@@ -423,19 +416,9 @@
 			isa = PBXGroup;
 			children = (
 				799E073B2AE5531400D853B5 /* Sign Up */,
-				7974B36C2AE310AF00F76D91 /* BaseAuthentication */,
 				79B5CC612AE2485E005E19AD /* Login */,
 			);
 			path = Authentication;
-			sourceTree = "<group>";
-		};
-		7974B36C2AE310AF00F76D91 /* BaseAuthentication */ = {
-			isa = PBXGroup;
-			children = (
-				7974B36A2AE3102100F76D91 /* BaseAuthenticationViewController.swift */,
-				7974B36D2AE310EA00F76D91 /* BaseAuthenticationView.swift */,
-			);
-			path = BaseAuthentication;
 			sourceTree = "<group>";
 		};
 		7991E54F2ADF37EA00C8F348 /* Onboarding */ = {
@@ -544,8 +527,8 @@
 			name = "maindiish-ios";
 			packageProductDependencies = (
 				7908560F2ADE24300021C8E5 /* APIManager */,
-				790856122ADE24960021C8E5 /* APIManager */,
-				790856152ADE24E90021C8E5 /* SwiftDI */,
+				79E4445D2AE5C04C003CB9C8 /* SwiftDI */,
+				79E444602AE5C075003CB9C8 /* APIManager */,
 			);
 			productName = BaseCode;
 			productReference = 18209E7B2A7146690024F47B /* maindiish-ios.app */;
@@ -576,8 +559,8 @@
 			);
 			mainGroup = 18209E722A7146690024F47B;
 			packageReferences = (
-				790856112ADE24960021C8E5 /* XCRemoteSwiftPackageReference "Swift-API-Manager" */,
-				790856142ADE24E90021C8E5 /* XCRemoteSwiftPackageReference "SwiftDI" */,
+				79E4445C2AE5C04C003CB9C8 /* XCRemoteSwiftPackageReference "SwiftDI" */,
+				79E4445F2AE5C075003CB9C8 /* XCRemoteSwiftPackageReference "Swift-API-Manager" */,
 			);
 			productRefGroup = 18209E7C2A7146690024F47B /* Products */;
 			projectDirPath = "";
@@ -648,14 +631,12 @@
 				79B5CC632AE24874005E19AD /* LoginViewModel.swift in Sources */,
 				18209EA62A714A390024F47B /* ViewModel.swift in Sources */,
 				18209ED12A725B6F0024F47B /* Environment.swift in Sources */,
-				7974B36B2AE3102100F76D91 /* BaseAuthenticationViewController.swift in Sources */,
 				18209ECB2A7257940024F47B /* SplashViewController.swift in Sources */,
 				799E07432AE554A300D853B5 /* DropDownSelectionTableViewCell.swift in Sources */,
 				79BA2A1C2AE1C22A0019E880 /* Color.swift in Sources */,
 				18209EE72A7261C30024F47B /* Storage.swift in Sources */,
 				799E07412AE553A700D853B5 /* SecureTextFieldTableViewCell.swift in Sources */,
 				79BA2A2B2AE1EA520019E880 /* HomeView.swift in Sources */,
-				7974B36E2AE310EA00F76D91 /* BaseAuthenticationView.swift in Sources */,
 				7901B4EB2AE441F000D24064 /* AuthenticationScreenHeaderView.swift in Sources */,
 				7901B4ED2AE4434200D24064 /* NibWrapperView.swift in Sources */,
 				18209EDA2A725FEB0024F47B /* UITableView.swift in Sources */,
@@ -668,6 +649,7 @@
 				79BF3C6F2ADFC4A7009CE04B /* GlobalStrings.swift in Sources */,
 				79BF3C6D2ADFC053009CE04B /* AssetImage.swift in Sources */,
 				799E07362AE50EC500D853B5 /* UIButton.swift in Sources */,
+				79E444632AE5C0FE003CB9C8 /* RoundedButton.swift in Sources */,
 				18209EBB2A7249140024F47B /* Assets.swift in Sources */,
 				7991E5612ADF671F00C8F348 /* OnboardingDetail.swift in Sources */,
 				7991E55E2ADF635800C8F348 /* OnboardingCollectionViewCell.swift in Sources */,
@@ -686,7 +668,6 @@
 				18209E812A7146690024F47B /* SceneDelegate.swift in Sources */,
 				18209ED62A725CD40024F47B /* Config.swift in Sources */,
 				799E07382AE533C100D853B5 /* PaddedTextField.swift in Sources */,
-				79BA2A172AE1B4E80019E880 /* RoundedButton.swift in Sources */,
 				799E07502AE58A3400D853B5 /* CreateUserNameView.swift in Sources */,
 				79BA2A272AE1E9CA0019E880 /* HomeViewModel.swift in Sources */,
 				79BA2A292AE1E9DC0019E880 /* HomeViewController.swift in Sources */,
@@ -694,7 +675,6 @@
 				799E07462AE556B200D853B5 /* SignUpViewController.swift in Sources */,
 				79BA2A2F2AE1F6E10019E880 /* UserDefaultsManager.swift in Sources */,
 				799E073D2AE5535400D853B5 /* SingleTextFieldTableViewCell.swift in Sources */,
-				18209EE02A72605B0024F47B /* String.swift in Sources */,
 				18209EBC2A7249140024F47B /* Strings.swift in Sources */,
 				18209ED82A725FD90024F47B /* UITableViewCell.swift in Sources */,
 			);
@@ -940,17 +920,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		790856112ADE24960021C8E5 /* XCRemoteSwiftPackageReference "Swift-API-Manager" */ = {
+		79E4445C2AE5C04C003CB9C8 /* XCRemoteSwiftPackageReference "SwiftDI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:FaizanTan/Swift-API-Manager.git";
+			repositoryURL = "git@github.com:FaizanTan/SwiftDI.git";
 			requirement = {
 				branch = main;
 				kind = branch;
 			};
 		};
-		790856142ADE24E90021C8E5 /* XCRemoteSwiftPackageReference "SwiftDI" */ = {
+		79E4445F2AE5C075003CB9C8 /* XCRemoteSwiftPackageReference "Swift-API-Manager" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:FaizanTan/SwiftDI.git";
+			repositoryURL = "git@github.com:FaizanTan/Swift-API-Manager.git";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -963,15 +943,15 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = APIManager;
 		};
-		790856122ADE24960021C8E5 /* APIManager */ = {
+		79E4445D2AE5C04C003CB9C8 /* SwiftDI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 790856112ADE24960021C8E5 /* XCRemoteSwiftPackageReference "Swift-API-Manager" */;
-			productName = APIManager;
-		};
-		790856152ADE24E90021C8E5 /* SwiftDI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 790856142ADE24E90021C8E5 /* XCRemoteSwiftPackageReference "SwiftDI" */;
+			package = 79E4445C2AE5C04C003CB9C8 /* XCRemoteSwiftPackageReference "SwiftDI" */;
 			productName = SwiftDI;
+		};
+		79E444602AE5C075003CB9C8 /* APIManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79E4445F2AE5C075003CB9C8 /* XCRemoteSwiftPackageReference "Swift-API-Manager" */;
+			productName = APIManager;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

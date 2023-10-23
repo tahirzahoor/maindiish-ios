@@ -24,6 +24,7 @@ class SignUpView: UIView {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var needHelpLabel: UILabel!
     
+    // MARK: - Lifecycle Methods
     
     override func awakeFromNib() {
         super.awakeFromNib()

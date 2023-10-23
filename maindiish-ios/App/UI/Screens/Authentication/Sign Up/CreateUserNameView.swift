@@ -29,7 +29,7 @@ class CreateUserNameView: UIView {
         let font = Fonts.interSemibold.font(15)
         signUpButton.titleLabel?.font = font
         
-        tellMeMoreAboutYourselfLabel.text = "Tell Us more about\nyourself"
+        tellMeMoreAboutYourselfLabel.text = GlobalStrings.Message.createUserNameScreenMessage
     }
     
 }

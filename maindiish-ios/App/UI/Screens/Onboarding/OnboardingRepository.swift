@@ -22,13 +22,14 @@ struct OnboardingRepository {
         GlobalStrings.Title.onboarding2,
         GlobalStrings.Title.onboarding3
     ]
+    
     private let descriptions = [
         GlobalStrings.Message.onboarding1Description,
         GlobalStrings.Message.onboarding2Description,
         GlobalStrings.Message.onboarding3Description
     ]
     
-    // MARK: - Instance Methods
+    // MARK: - Public Methods
     
     func onboardingList() -> [OnboardingDetail] {
         var details = [OnboardingDetail]()

@@ -22,6 +22,7 @@ struct GlobalStrings {
         static let onboarding1Description = "Discover and adopt innovative culinary methods and recipes to elevate your cooking skills and repertoire."
         static let onboarding2Description = "Share your culinary creations with the world by uploading engaging food videos and reels, capturing your passion and expertise."
         static let onboarding3Description = "Discover a treasure trove of mouthwatering recipes to fuel your culinary imagination and Save your favorites."
+        static let createUserNameScreenMessage = "Tell Us more about\nyourself"
     }
     
     struct UserDefaultKey {

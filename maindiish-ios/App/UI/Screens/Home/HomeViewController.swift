@@ -29,8 +29,7 @@ class HomeViewController: ViewController<HomeViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        UserDefaultsManager.shared.isOnboarding = false
+        UserDefaultsManager.shared.isOnboarding = false
     }
-    
     
 }

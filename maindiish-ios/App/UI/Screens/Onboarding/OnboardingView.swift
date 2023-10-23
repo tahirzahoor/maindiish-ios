@@ -32,7 +32,7 @@ class OnboardingView: UIView {
         )
     }
     
-    // MARK: - Helper Methods
+    // MARK: - Public Methods
     
     func updateView(for page: Int, with data: OnboardingDetail) {
         hideSkipButton(page != 0)
@@ -43,6 +43,8 @@ class OnboardingView: UIView {
         titleLabel.text = data.title
         descriptionLabel.text = data.description
     }
+    
+    // MARK: - Private Methods
     
     private func updatePageControlView() {
 

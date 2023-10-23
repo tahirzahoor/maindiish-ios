@@ -23,6 +23,8 @@ class LoginViewController: ViewController<LoginViewModel> {
     
 }
 
+// MARK: - AuthenticationScreenHeaderViewDelegate Methods
+
 extension LoginViewController: AuthenticationScreenHeaderViewDelegate {
     func didTapBackButton() {
         viewModel.router.pop(animated: true)

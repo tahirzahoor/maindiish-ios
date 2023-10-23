@@ -11,7 +11,6 @@ class LoginView: UIView {
     
     // MARK: - Outlets
     
-   
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
@@ -20,10 +19,14 @@ class LoginView: UIView {
     @IBOutlet weak var emailInputView: PaddedTextField!
     @IBOutlet weak var passwordInputView: PaddedTextField!
     
+    // MARK: - Lifecycle Methods
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setLabelFonts()
     }
+    
+    // MARK: - Public Methods
     
     func setLabelFonts() {
         
