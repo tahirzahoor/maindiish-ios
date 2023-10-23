@@ -12,7 +12,6 @@ class SignUpView: UIView {
    // MARK: - Outlets
     
     @IBOutlet weak var headerView: UIView!
-    @IBOutlet weak var formTableView: UITableView!
     @IBOutlet weak var registerationLabel: UILabel!
     @IBOutlet weak var agreementConfirmationButton: UIButton!
     @IBOutlet weak var iAgreeWithLabel: UILabel!
@@ -22,13 +21,13 @@ class SignUpView: UIView {
     @IBOutlet weak var nextButton: RoundedButton!
     @IBOutlet weak var iHaveAnAccountLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var needHelpLabel: UILabel!
+    @IBOutlet weak var needHelpButton: UIButton!
     
     // MARK: - Lifecycle Methods
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        //setupView()
+        setupView()
     }
     
     func setupView() {
@@ -40,7 +39,7 @@ class SignUpView: UIView {
         andLabel.font = agreementStatementFont
         termsAndConditionsButton.titleLabel?.font = agreementStatementFont
         
-        needHelpLabel.font = Fonts.interMedium.font(12)
+        needHelpButton.titleLabel?.font = Fonts.interMedium.font(12)
         iHaveAnAccountLabel.font = Fonts.interRegular.font(12)
         
         loginButton.titleLabel?.font = Fonts.interRegular.font(12)
