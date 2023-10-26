@@ -204,11 +204,11 @@
             </objects>
             <point key="canvasLocation" x="922.90076335877859" y="-35.211267605633807"/>
         </scene>
-        <!--HomeViewController-->
+        <!--WelcomeViewController-->
         <scene sceneID="2gL-1E-daf">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" title="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="61N-Hk-IEB" customClass="HomeViewController" customModule="maindiish_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TCz-p5-2VR" customClass="HomeView" customModule="maindiish_ios" customModuleProvider="target">
+                <viewController storyboardIdentifier="WelcomeViewController" title="WelcomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="61N-Hk-IEB" customClass="WelcomeViewController" customModule="maindiish_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TCz-p5-2VR" customClass="WelcomeView" customModule="maindiish_ios" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -225,7 +225,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="onSignUpButtonTap:" destination="61N-Hk-IEB" eventType="touchUpInside" id="asE-VQ-q8R"/>
+                                    <action selector="onSignUpButtonTap:" destination="61N-Hk-IEB" eventType="touchUpInside" id="sNH-7Y-SI6"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Opc-JH-n9Z">
@@ -299,7 +299,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="onLoginButtonTap:" destination="61N-Hk-IEB" eventType="touchUpInside" id="LnZ-LZ-npO"/>
+                                    <action selector="onLoginButtonTap:" destination="61N-Hk-IEB" eventType="touchUpInside" id="kCr-DT-uvh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYW-zz-2LG" customClass="RoundedButton" customModule="maindiish_ios" customModuleProvider="target">
@@ -350,13 +350,13 @@
                             <constraint firstItem="1kZ-BQ-k6e" firstAttribute="top" secondItem="TCz-p5-2VR" secondAttribute="top" constant="-5" id="ziu-KD-u0g"/>
                         </constraints>
                         <connections>
-                            <outlet property="googleIntegrationButton" destination="QYW-zz-2LG" id="m18-If-i6g"/>
-                            <outlet property="loginButton" destination="ODM-p8-Xev" id="axO-nS-utD"/>
-                            <outlet property="signupButton" destination="39b-Ab-J4j" id="j0Y-Bv-cJp"/>
+                            <outlet property="googleIntegrationButton" destination="QYW-zz-2LG" id="fBe-iC-niu"/>
+                            <outlet property="loginButton" destination="ODM-p8-Xev" id="pqw-eJ-Vqa"/>
+                            <outlet property="signupButton" destination="39b-Ab-J4j" id="AQz-7b-yUf"/>
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="homeView" destination="TCz-p5-2VR" id="7IU-vb-vgB"/>
+                        <outlet property="welcomeView" destination="TCz-p5-2VR" id="A6h-0h-EEn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4SP-du-tHJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

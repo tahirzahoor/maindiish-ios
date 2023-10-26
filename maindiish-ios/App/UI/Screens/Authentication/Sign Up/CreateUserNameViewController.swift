@@ -15,8 +15,12 @@ class CreateUserNameViewController: ViewController<ViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        includeHeader("Sign Up", delegate: self, fixIn: createUserNameView.headerView)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        title = "Sign Up"
     }
  
     // MARK: - Action Methods
@@ -24,12 +28,5 @@ class CreateUserNameViewController: ViewController<ViewModel> {
     @IBAction func signUpButtonTapped(_ sender: RoundedButton) {
         viewModel.router.setRoot(.home)
         viewModel.router.append(.login, animated: false)
-    }
-}
-
-// MARK: - AuthenticationScreenHeaderViewDelegate Methods
-extension CreateUserNameViewController: AuthenticationScreenHeaderViewDelegate {
-    func didTapBackButton() {
-        viewModel.router.pop(animated: true)
     }
 }

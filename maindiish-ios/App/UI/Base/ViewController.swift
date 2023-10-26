@@ -44,6 +44,7 @@ class ViewController<T: ViewModel>: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        setNavigationBar()
         setupBinding()
     }
 }
@@ -89,22 +90,12 @@ extension ViewController {
             activityIndicator.stopAnimating()
         }
     }
-    
-    func includeHeader(_ title: String, delegate: AuthenticationScreenHeaderViewDelegate, fixIn view: UIView) {
-        
-        let nibWrappedView = NibWrapperView<AuthenticationScreenHeaderView>()
-        let headerView = nibWrappedView.contentView
-        
-        headerView.delegate = delegate
-        headerView.screenTitleLabel.text = title
-        
-        headerView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(headerView)
-        
-        headerView.fixInView(view)
-    }
-    
-}
 
+    func setNavigationBar() {
+        let isLoggedIn = UserDefaultsManager.shared.isLoggedIn
+        navigationController?.setNavigationBar(for: isLoggedIn ? .postLogin : .preLogin)
+    }
+
+}
 
 

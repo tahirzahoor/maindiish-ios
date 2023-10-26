@@ -12,5 +12,6 @@ extension UIStoryboard {
     enum Storyboard: String {
         case Main
         case Authentication
+        case PopUp
     }
 }

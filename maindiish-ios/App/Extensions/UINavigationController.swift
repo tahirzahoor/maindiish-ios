@@ -1,0 +1,46 @@
+//
+//  UINavigationController.swift
+//  maindiish-ios
+//
+//  Created by Faizan Tanveer on 24/10/2023.
+//
+
+import Foundation
+import UIKit
+
+extension UINavigationController {
+    
+    open override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        navigationBar.topItem?.backButtonDisplayMode = .minimal
+        navigationBar.topItem?.setHidesBackButton(true, animated: false)
+    }
+    
+    enum NavigationBarType {
+        case preLogin
+        case postLogin
+    }
+    
+    func setNavigationBar(for barType: NavigationBarType) {
+        switch barType {
+            case .preLogin:
+                setPreLogin()
+            case .postLogin:
+                setPostLogin()
+        }
+    }
+    
+    private func setPreLogin() {
+        navigationBar.tintColor = .onboardingTitleLabel
+        
+        navigationBar.titleTextAttributes = [.font: Fonts.robotoRegular.font(15)!]
+       
+        let backButtonImage = UIImage(named: "back_button_icon")
+        navigationBar.backIndicatorImage = backButtonImage
+        navigationBar.backIndicatorTransitionMaskImage = backButtonImage
+    }
+    
+    private func setPostLogin() {
+        
+    }
+}

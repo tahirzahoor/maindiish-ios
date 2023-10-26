@@ -10,6 +10,11 @@ import UIKit
 
 class LoginViewController: ViewController<LoginViewModel> {
     
+    // MARK: - Private Properties
+    
+    private let emailTextFieldTag = 1
+    private let passwordTextFieldTag = 2
+    
     // MARK: - Outlets
     
     @IBOutlet weak var loginView: LoginView!
@@ -18,17 +23,53 @@ class LoginViewController: ViewController<LoginViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        includeHeader("Log In", delegate: self, fixIn: loginView.headerView)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        title = "Log In"
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    // MARK: - Action Methods
+    
+    @IBAction
+    func forgotPasswordButtonTapped(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction
+    func passwordVisibilityButtonTapped(_ sender: UIButton) {
+        
+        let isHidden = loginView.passwordInputField.isSecureTextEntry
+        
+        let image = isHidden ? AssetsImage.eyesOn.image : AssetsImage.eyesOff.image
+        sender.setImage(image, for: .normal)
+        
+        loginView.passwordInputField.isSecureTextEntry.toggle()
+    }
+    
+    
+    @IBAction
+    func loginButtonTapped(_ sender: RoundedButton) {
+        viewModel.validate()
+    }
+    
+    @IBAction
+    func texttFieldEditingDidChange(_ sender: UITextField) {
+        
+        switch sender.tag {
+            case emailTextFieldTag:
+                viewModel.email = sender.text ?? ""
+            case passwordTextFieldTag:
+                viewModel.password = sender.text ?? ""
+            default:
+                break
+        }
+        
     }
     
 }
 
-// MARK: - AuthenticationScreenHeaderViewDelegate Methods
-
-extension LoginViewController: AuthenticationScreenHeaderViewDelegate {
-    func didTapBackButton() {
-        viewModel.router.pop(animated: true)
-    }
-}
 
 

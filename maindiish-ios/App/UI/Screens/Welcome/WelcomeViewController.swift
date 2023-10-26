@@ -7,11 +7,11 @@
 
 import Foundation
 
-class HomeViewController: ViewController<HomeViewModel> {
+class WelcomeViewController: ViewController<WelcomeViewModel> {
     
     // MARK: - Outlets
     
-    @IBOutlet weak var homeView: HomeView!
+    @IBOutlet weak var welcomeView: WelcomeView!
     
     // MARK: - Action Methods
     
@@ -29,8 +29,11 @@ class HomeViewController: ViewController<HomeViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         UserDefaultsManager.shared.isOnboarding = false
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
 }

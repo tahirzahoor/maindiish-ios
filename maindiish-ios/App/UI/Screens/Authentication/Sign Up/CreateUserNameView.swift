@@ -11,7 +11,6 @@ class CreateUserNameView: UIView {
 
    // MARK: - Outlets
     
-    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var tellMeMoreAboutYourselfLabel: UILabel!
     @IBOutlet weak var createAUserNameLabel: UILabel!
     @IBOutlet weak var inputField: UITextField!

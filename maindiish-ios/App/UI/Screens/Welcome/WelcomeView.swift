@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeView: UIView {
+class WelcomeView: UIView {
     
     // MARK: - Outlets
     

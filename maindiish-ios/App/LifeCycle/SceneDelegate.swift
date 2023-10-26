@@ -5,6 +5,7 @@
 //  Created by  on 26/07/2023.
 //
 
+import IQKeyboardManagerSwift
 import SwiftDI
 import UIKit
 
@@ -23,9 +24,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     private func configureApp(with windowScene: UIWindowScene) {
+        
+        IQKeyboardManager.shared.enable = true
+        
         let window = UIWindow(windowScene: windowScene)
         let navigationController = UINavigationController()
         navigationController.setNavigationBarHidden(true, animated: true)
+        
         let router = AppRouter(
             navigationController: navigationController,
             route: .splash
@@ -47,6 +52,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     private func registerDependencies() {
         // TODO: Register dependencies such as repositories, managers etc
+    }
+    
+    private func setNavigationBar() {
+        
     }
 }
 

@@ -7,14 +7,14 @@
 
 import UIKit
 
-enum Route: String {
+enum Route {
 
     case splash
     case onboarding
     case home
     case login
     case signup
-    case createUsername
+    case createUsername(viewModel: SignUpViewModel? = nil)
     
     func controller() -> UIViewController {
         switch self {
@@ -27,8 +27,8 @@ enum Route: String {
                 let onboardingViewController = OnboardingViewController.instantiate(from: .Main, viewModel: viewModel)
                 return onboardingViewController
             case .home:
-                let viewModel = HomeViewModel()
-                let controller = HomeViewController.instantiate(from: .Main, viewModel: viewModel)
+                let viewModel = WelcomeViewModel()
+                let controller = WelcomeViewController.instantiate(from: .Main, viewModel: viewModel)
                 return controller
             case .login:
                 let viewModel = LoginViewModel()
@@ -38,8 +38,8 @@ enum Route: String {
                 let viewModel = SignUpViewModel()
                 let controller = SignUpViewController.instantiate(from: .Authentication, viewModel: viewModel)
                 return controller
-            case .createUsername:
-                let viewModel = SignUpViewModel()
+            case .createUsername(let SignUpVM):
+                let viewModel = SignUpVM ?? SignUpViewModel()
                 let controller = CreateUserNameViewController.instantiate(from: .Authentication, viewModel: viewModel)
                 return controller
             

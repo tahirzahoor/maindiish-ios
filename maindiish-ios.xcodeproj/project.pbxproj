@@ -33,11 +33,15 @@
 		18209EE22A7260B70024F47B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE12A7260B70024F47B /* UIView.swift */; };
 		18209EE42A7260D30024F47B /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE32A7260D30024F47B /* XibView.swift */; };
 		18209EE72A7261C30024F47B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE62A7261C30024F47B /* Storage.swift */; };
-		7901B4E92AE43E7B00D24064 /* AuthenticationScreenHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7901B4E82AE43E7B00D24064 /* AuthenticationScreenHeaderView.xib */; };
-		7901B4EB2AE441F000D24064 /* AuthenticationScreenHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7901B4EA2AE441F000D24064 /* AuthenticationScreenHeaderView.swift */; };
 		7901B4ED2AE4434200D24064 /* NibWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7901B4EC2AE4434200D24064 /* NibWrapperView.swift */; };
 		790856102ADE24300021C8E5 /* APIManager in Frameworks */ = {isa = PBXBuildFile; productRef = 7908560F2ADE24300021C8E5 /* APIManager */; };
 		793E65D72AE451A200381F32 /* NibWrapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E65D62AE451A200381F32 /* NibWrapped.swift */; };
+		795D658F2AEA78DF007AF064 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D658E2AEA78DF007AF064 /* Notification.swift */; };
+		795D65912AEA92C8007AF064 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D65902AEA92C8007AF064 /* String.swift */; };
+		795D65932AEA9FC7007AF064 /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795D65922AEA9FC7007AF064 /* PopUp.storyboard */; };
+		795D65952AEAA462007AF064 /* OkAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D65942AEAA462007AF064 /* OkAlertViewController.swift */; };
+		795D65972AEAA4AC007AF064 /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D65962AEAA4AC007AF064 /* AlertViewModel.swift */; };
+		795D65992AEAA560007AF064 /* OkAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D65982AEAA560007AF064 /* OkAlertView.swift */; };
 		798055F22AE6F9D700717FB4 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798055F12AE6F9D700717FB4 /* BorderedView.swift */; };
 		7991E54E2ADF341900C8F348 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991E54D2ADF341900C8F348 /* SplashView.swift */; };
 		7991E5512ADF382700C8F348 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991E5502ADF382700C8F348 /* OnboardingViewModel.swift */; };
@@ -64,9 +68,9 @@
 		79BA2A1E2AE1C2D80019E880 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA2A1D2AE1C2D80019E880 /* UIColor.swift */; };
 		79BA2A222AE1DF4E0019E880 /* RobotoCondensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79BA2A212AE1DF4E0019E880 /* RobotoCondensed-SemiBold.ttf */; };
 		79BA2A242AE1E0570019E880 /* WorkSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79BA2A232AE1E0570019E880 /* WorkSans-SemiBold.ttf */; };
-		79BA2A272AE1E9CA0019E880 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA2A262AE1E9CA0019E880 /* HomeViewModel.swift */; };
-		79BA2A292AE1E9DC0019E880 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA2A282AE1E9DC0019E880 /* HomeViewController.swift */; };
-		79BA2A2B2AE1EA520019E880 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA2A2A2AE1EA520019E880 /* HomeView.swift */; };
+		79BA2A272AE1E9CA0019E880 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA2A262AE1E9CA0019E880 /* WelcomeViewModel.swift */; };
+		79BA2A292AE1E9DC0019E880 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA2A282AE1E9DC0019E880 /* WelcomeViewController.swift */; };
+		79BA2A2B2AE1EA520019E880 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA2A2A2AE1EA520019E880 /* WelcomeView.swift */; };
 		79BA2A2D2AE1EE710019E880 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79BA2A2C2AE1EE710019E880 /* Inter-SemiBold.ttf */; };
 		79BA2A2F2AE1F6E10019E880 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA2A2E2AE1F6E10019E880 /* UserDefaultsManager.swift */; };
 		79BF3C652ADF7AFB009CE04B /* OnboardingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF3C642ADF7AFB009CE04B /* OnboardingRepository.swift */; };
@@ -75,6 +79,11 @@
 		79BF3C732ADFF3B5009CE04B /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 79BF3C722ADFF3B5009CE04B /* Inter-Medium.otf */; };
 		79BF3C762ADFF655009CE04B /* poppins-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79BF3C742ADFF655009CE04B /* poppins-semibold.ttf */; };
 		79BF3C7B2ADFF85D009CE04B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF3C7A2ADFF85D009CE04B /* Fonts.swift */; };
+		79C247ED2AE9374C00D2FF6E /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79C247EC2AE9374C00D2FF6E /* Roboto-Regular.ttf */; };
+		79CCE1C62AE829DB00ADB8E9 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE1C52AE829DB00ADB8E9 /* UINavigationController.swift */; };
+		79D018E32AEA739D0066AAF6 /* NewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D018E22AEA739D0066AAF6 /* NewUser.swift */; };
+		79D018E52AEA73E10066AAF6 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D018E42AEA73E10066AAF6 /* Number.swift */; };
+		79D6FF682AEB236600370BEA /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 79D6FF672AEB236600370BEA /* IQKeyboardManagerSwift */; };
 		79E4445E2AE5C04C003CB9C8 /* SwiftDI in Frameworks */ = {isa = PBXBuildFile; productRef = 79E4445D2AE5C04C003CB9C8 /* SwiftDI */; };
 		79E444612AE5C075003CB9C8 /* APIManager in Frameworks */ = {isa = PBXBuildFile; productRef = 79E444602AE5C075003CB9C8 /* APIManager */; };
 		79E444632AE5C0FE003CB9C8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E444622AE5C0FE003CB9C8 /* RoundedButton.swift */; };
@@ -109,10 +118,14 @@
 		18209EE12A7260B70024F47B /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		18209EE32A7260D30024F47B /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		18209EE62A7261C30024F47B /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		7901B4E82AE43E7B00D24064 /* AuthenticationScreenHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationScreenHeaderView.xib; sourceTree = "<group>"; };
-		7901B4EA2AE441F000D24064 /* AuthenticationScreenHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationScreenHeaderView.swift; sourceTree = "<group>"; };
 		7901B4EC2AE4434200D24064 /* NibWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibWrapperView.swift; sourceTree = "<group>"; };
 		793E65D62AE451A200381F32 /* NibWrapped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibWrapped.swift; sourceTree = "<group>"; };
+		795D658E2AEA78DF007AF064 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		795D65902AEA92C8007AF064 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		795D65922AEA9FC7007AF064 /* PopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUp.storyboard; sourceTree = "<group>"; };
+		795D65942AEAA462007AF064 /* OkAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OkAlertViewController.swift; path = "maindiish-ios/App/UI/Storyboards/OkAlertViewController.swift"; sourceTree = SOURCE_ROOT; };
+		795D65962AEAA4AC007AF064 /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertViewModel.swift; path = "maindiish-ios/App/UI/Storyboards/AlertViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		795D65982AEAA560007AF064 /* OkAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OkAlertView.swift; path = "maindiish-ios/App/UI/Storyboards/OkAlertView.swift"; sourceTree = SOURCE_ROOT; };
 		798055F12AE6F9D700717FB4 /* BorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
 		7991E54D2ADF341900C8F348 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		7991E5502ADF382700C8F348 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -131,7 +144,6 @@
 		799E074F2AE58A3400D853B5 /* CreateUserNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserNameView.swift; sourceTree = "<group>"; };
 		79A145DF2AE0078500C184BE /* WorkSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Medium.ttf"; sourceTree = "<group>"; };
 		79B5CC4F2AE212E0005E19AD /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
-		79B5CC532AE216E2005E19AD /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "/Users/faizan_tanveer/Desktop/My Projects/maindiish-ios/maindiish-ios/Resources/Fonts/Roboto-Regular.ttf"; sourceTree = "<absolute>"; };
 		79B5CC572AE21EF5005E19AD /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		79B5CC622AE24874005E19AD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		79B5CC642AE2488B005E19AD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -140,9 +152,9 @@
 		79BA2A1D2AE1C2D80019E880 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		79BA2A212AE1DF4E0019E880 /* RobotoCondensed-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-SemiBold.ttf"; sourceTree = "<group>"; };
 		79BA2A232AE1E0570019E880 /* WorkSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-SemiBold.ttf"; sourceTree = "<group>"; };
-		79BA2A262AE1E9CA0019E880 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		79BA2A282AE1E9DC0019E880 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		79BA2A2A2AE1EA520019E880 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		79BA2A262AE1E9CA0019E880 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		79BA2A282AE1E9DC0019E880 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		79BA2A2A2AE1EA520019E880 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		79BA2A2C2AE1EE710019E880 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		79BA2A2E2AE1F6E10019E880 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		79BF3C642ADF7AFB009CE04B /* OnboardingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRepository.swift; sourceTree = "<group>"; };
@@ -151,6 +163,10 @@
 		79BF3C722ADFF3B5009CE04B /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.otf"; sourceTree = "<group>"; };
 		79BF3C742ADFF655009CE04B /* poppins-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "poppins-semibold.ttf"; sourceTree = "<group>"; };
 		79BF3C7A2ADFF85D009CE04B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		79C247EC2AE9374C00D2FF6E /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		79CCE1C52AE829DB00ADB8E9 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		79D018E22AEA739D0066AAF6 /* NewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewUser.swift; path = "maindiish-ios/App/Extensions/NewUser.swift"; sourceTree = SOURCE_ROOT; };
+		79D018E42AEA73E10066AAF6 /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Number.swift; path = "maindiish-ios/App/Extensions/Number.swift"; sourceTree = SOURCE_ROOT; };
 		79E444622AE5C0FE003CB9C8 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = "../../../../../food-social-ios/BaseCode/App/UI/Components/RoundedButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E4445E2AE5C04C003CB9C8 /* SwiftDI in Frameworks */,
+				79D6FF682AEB236600370BEA /* IQKeyboardManagerSwift in Frameworks */,
 				790856102ADE24300021C8E5 /* APIManager in Frameworks */,
 				79E444612AE5C075003CB9C8 /* APIManager in Frameworks */,
 			);
@@ -262,6 +279,9 @@
 				7991E5522ADF391E00C8F348 /* UIStoryboard.swift */,
 				79BA2A1D2AE1C2D80019E880 /* UIColor.swift */,
 				799E07352AE50EC500D853B5 /* UIButton.swift */,
+				79CCE1C52AE829DB00ADB8E9 /* UINavigationController.swift */,
+				795D658E2AEA78DF007AF064 /* Notification.swift */,
+				795D65902AEA92C8007AF064 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -303,7 +323,6 @@
 		18209EA92A714C790024F47B /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				79B5CC592AE22199005E19AD /* HeaderView */,
 				793E65D52AE4517700381F32 /* NibWrapper */,
 				799E07372AE533C100D853B5 /* PaddedTextField.swift */,
 				79E444622AE5C0FE003CB9C8 /* RoundedButton.swift */,
@@ -318,7 +337,7 @@
 				7974B3692AE30FBE00F76D91 /* Authentication */,
 				18209EC82A7257110024F47B /* Splash */,
 				7991E54F2ADF37EA00C8F348 /* Onboarding */,
-				79BA2A252AE1E9830019E880 /* Home */,
+				79BA2A252AE1E9830019E880 /* Welcome */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -326,6 +345,9 @@
 		18209EAB2A714C8B0024F47B /* Sheets */ = {
 			isa = PBXGroup;
 			children = (
+				795D65942AEAA462007AF064 /* OkAlertViewController.swift */,
+				795D65962AEAA4AC007AF064 /* AlertViewModel.swift */,
+				795D65982AEAA560007AF064 /* OkAlertView.swift */,
 			);
 			path = Sheets;
 			sourceTree = "<group>";
@@ -378,6 +400,7 @@
 			children = (
 				18209E842A7146690024F47B /* Main.storyboard */,
 				79B5CC4F2AE212E0005E19AD /* Authentication.storyboard */,
+				795D65922AEA9FC7007AF064 /* PopUp.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -385,6 +408,8 @@
 		18209ED22A725C270024F47B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				79D018E22AEA739D0066AAF6 /* NewUser.swift */,
+				79D018E42AEA73E10066AAF6 /* Number.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -441,15 +466,6 @@
 			path = "Sign Up";
 			sourceTree = "<group>";
 		};
-		79B5CC592AE22199005E19AD /* HeaderView */ = {
-			isa = PBXGroup;
-			children = (
-				7901B4E82AE43E7B00D24064 /* AuthenticationScreenHeaderView.xib */,
-				7901B4EA2AE441F000D24064 /* AuthenticationScreenHeaderView.swift */,
-			);
-			path = HeaderView;
-			sourceTree = "<group>";
-		};
 		79B5CC612AE2485E005E19AD /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,20 +476,20 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		79BA2A252AE1E9830019E880 /* Home */ = {
+		79BA2A252AE1E9830019E880 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				79BA2A262AE1E9CA0019E880 /* HomeViewModel.swift */,
-				79BA2A282AE1E9DC0019E880 /* HomeViewController.swift */,
-				79BA2A2A2AE1EA520019E880 /* HomeView.swift */,
+				79BA2A262AE1E9CA0019E880 /* WelcomeViewModel.swift */,
+				79BA2A282AE1E9DC0019E880 /* WelcomeViewController.swift */,
+				79BA2A2A2AE1EA520019E880 /* WelcomeView.swift */,
 			);
-			path = Home;
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		79BF3C5F2ADF7659009CE04B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				79B5CC532AE216E2005E19AD /* Roboto-Regular.ttf */,
+				79C247EC2AE9374C00D2FF6E /* Roboto-Regular.ttf */,
 				79B5CC572AE21EF5005E19AD /* Inter-Regular.ttf */,
 				79BA2A2C2AE1EE710019E880 /* Inter-SemiBold.ttf */,
 				79BA2A232AE1E0570019E880 /* WorkSans-SemiBold.ttf */,
@@ -506,6 +522,7 @@
 				7908560F2ADE24300021C8E5 /* APIManager */,
 				79E4445D2AE5C04C003CB9C8 /* SwiftDI */,
 				79E444602AE5C075003CB9C8 /* APIManager */,
+				79D6FF672AEB236600370BEA /* IQKeyboardManagerSwift */,
 			);
 			productName = BaseCode;
 			productReference = 18209E7B2A7146690024F47B /* maindiish-ios.app */;
@@ -538,6 +555,7 @@
 			packageReferences = (
 				79E4445C2AE5C04C003CB9C8 /* XCRemoteSwiftPackageReference "SwiftDI" */,
 				79E4445F2AE5C075003CB9C8 /* XCRemoteSwiftPackageReference "Swift-API-Manager" */,
+				79D6FF662AEB236600370BEA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 18209E7C2A7146690024F47B /* Products */;
 			projectDirPath = "";
@@ -556,11 +574,12 @@
 				18209EB42A7245720024F47B /* Localizable.strings in Resources */,
 				18209EBF2A72493F0024F47B /* InfoPlist.strings in Resources */,
 				18209E882A71466A0024F47B /* Assets.xcassets in Resources */,
-				7901B4E92AE43E7B00D24064 /* AuthenticationScreenHeaderView.xib in Resources */,
+				795D65932AEA9FC7007AF064 /* PopUp.storyboard in Resources */,
 				79B5CC502AE212E0005E19AD /* Authentication.storyboard in Resources */,
 				18209E862A7146690024F47B /* Main.storyboard in Resources */,
 				79B5CC582AE21EF5005E19AD /* Inter-Regular.ttf in Resources */,
 				79BA2A222AE1DF4E0019E880 /* RobotoCondensed-SemiBold.ttf in Resources */,
+				79C247ED2AE9374C00D2FF6E /* Roboto-Regular.ttf in Resources */,
 				79BF3C762ADFF655009CE04B /* poppins-semibold.ttf in Resources */,
 				79BA2A242AE1E0570019E880 /* WorkSans-SemiBold.ttf in Resources */,
 				79A145E02AE0078500C184BE /* WorkSans-Medium.ttf in Resources */,
@@ -611,15 +630,16 @@
 				18209ECB2A7257940024F47B /* SplashViewController.swift in Sources */,
 				79BA2A1C2AE1C22A0019E880 /* Color.swift in Sources */,
 				18209EE72A7261C30024F47B /* Storage.swift in Sources */,
-				79BA2A2B2AE1EA520019E880 /* HomeView.swift in Sources */,
-				7901B4EB2AE441F000D24064 /* AuthenticationScreenHeaderView.swift in Sources */,
+				79BA2A2B2AE1EA520019E880 /* WelcomeView.swift in Sources */,
 				7901B4ED2AE4434200D24064 /* NibWrapperView.swift in Sources */,
+				795D65992AEAA560007AF064 /* OkAlertView.swift in Sources */,
 				18209EDA2A725FEB0024F47B /* UITableView.swift in Sources */,
 				7991E5572ADF3D8300C8F348 /* OnboardingViewController.swift in Sources */,
 				799E074E2AE5897400D853B5 /* CreateUserNameViewController.swift in Sources */,
 				18209E7F2A7146690024F47B /* AppDelegate.swift in Sources */,
 				7991E5552ADF3BF500C8F348 /* SplashViewModel.swift in Sources */,
 				7991E5532ADF391E00C8F348 /* UIStoryboard.swift in Sources */,
+				795D65952AEAA462007AF064 /* OkAlertViewController.swift in Sources */,
 				799E074C2AE5571700D853B5 /* SignUpView.swift in Sources */,
 				79BF3C6F2ADFC4A7009CE04B /* GlobalStrings.swift in Sources */,
 				79BF3C6D2ADFC053009CE04B /* AssetImage.swift in Sources */,
@@ -637,18 +657,24 @@
 				79BA2A1E2AE1C2D80019E880 /* UIColor.swift in Sources */,
 				18209EC72A724E030024F47B /* AppRouter.swift in Sources */,
 				79BF3C652ADF7AFB009CE04B /* OnboardingRepository.swift in Sources */,
+				79CCE1C62AE829DB00ADB8E9 /* UINavigationController.swift in Sources */,
+				79D018E32AEA739D0066AAF6 /* NewUser.swift in Sources */,
 				79B5CC672AE248BC005E19AD /* LoginView.swift in Sources */,
 				7991E5512ADF382700C8F348 /* OnboardingViewModel.swift in Sources */,
+				795D65912AEA92C8007AF064 /* String.swift in Sources */,
 				799E07482AE556D100D853B5 /* SignUpViewModel.swift in Sources */,
 				18209E812A7146690024F47B /* SceneDelegate.swift in Sources */,
 				18209ED62A725CD40024F47B /* Config.swift in Sources */,
 				799E07382AE533C100D853B5 /* PaddedTextField.swift in Sources */,
 				799E07502AE58A3400D853B5 /* CreateUserNameView.swift in Sources */,
-				79BA2A272AE1E9CA0019E880 /* HomeViewModel.swift in Sources */,
-				79BA2A292AE1E9DC0019E880 /* HomeViewController.swift in Sources */,
+				79BA2A272AE1E9CA0019E880 /* WelcomeViewModel.swift in Sources */,
+				795D658F2AEA78DF007AF064 /* Notification.swift in Sources */,
+				79D018E52AEA73E10066AAF6 /* Number.swift in Sources */,
+				79BA2A292AE1E9DC0019E880 /* WelcomeViewController.swift in Sources */,
 				18209EA82A714AB30024F47B /* UIViewController.swift in Sources */,
 				799E07462AE556B200D853B5 /* SignUpViewController.swift in Sources */,
 				79BA2A2F2AE1F6E10019E880 /* UserDefaultsManager.swift in Sources */,
+				795D65972AEAA4AC007AF064 /* AlertViewModel.swift in Sources */,
 				18209EBC2A7249140024F47B /* Strings.swift in Sources */,
 				18209ED82A725FD90024F47B /* UITableViewCell.swift in Sources */,
 			);
@@ -894,6 +920,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		79D6FF662AEB236600370BEA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.16;
+			};
+		};
 		79E4445C2AE5C04C003CB9C8 /* XCRemoteSwiftPackageReference "SwiftDI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:FaizanTan/SwiftDI.git";
@@ -916,6 +950,11 @@
 		7908560F2ADE24300021C8E5 /* APIManager */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = APIManager;
+		};
+		79D6FF672AEB236600370BEA /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79D6FF662AEB236600370BEA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 		79E4445D2AE5C04C003CB9C8 /* SwiftDI */ = {
 			isa = XCSwiftPackageProductDependency;

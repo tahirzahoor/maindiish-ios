@@ -11,13 +11,11 @@ class LoginView: UIView {
     
     // MARK: - Outlets
     
-    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var forgotPasswordButton: UIButton!
-    @IBOutlet weak var emailInputView: PaddedTextField!
-    @IBOutlet weak var passwordInputView: PaddedTextField!
+    @IBOutlet weak var passwordInputField: UITextField!
     
     // MARK: - Lifecycle Methods
     

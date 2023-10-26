@@ -11,9 +11,9 @@ class SignUpView: UIView {
 
    // MARK: - Outlets
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var fieldsLabel: [UILabel]!
     @IBOutlet var passwordFields: [UITextField]!
-    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var registerationLabel: UILabel!
     @IBOutlet weak var agreementConfirmationButton: UIButton!
     @IBOutlet weak var iAgreeWithLabel: UILabel!
@@ -32,7 +32,7 @@ class SignUpView: UIView {
         setupView()
     }
     
-    private
+    private 
     func setupView() {
         registerationLabel.font = Fonts.interRegular.font(28)
         
