@@ -33,6 +33,13 @@ class SignUpViewController: ViewController<SignUpViewModel> {
     
     @IBAction
     func numberCountrySelectorDropDownButtonTapped(_ sender: UIButton) {
+        let options = viewModel.countryCodes.map {
+            "\($0.countryCode) (\($0.dialCode))"
+        }
+        viewModel.router.showSheet(
+            .bottomUp(options, delegate: self),
+            animated: true
+        )
     }
     
     @IBAction
@@ -119,24 +126,13 @@ extension SignUpViewController: UITextFieldDelegate {
     
 }
 
-// MARK: - UIPickerViewDelegate Methods
+// MARK: - BottomUpOptionsSheetDelegate Methods
 
-extension SignUpViewController: UIPickerViewDelegate {
-    
+extension SignUpViewController: BottomUpOptionsDelegate {
+    func didSelectOption(_ option: String, at index: Int) {
+        signUpView.selectedCountryLabel.text = viewModel.countryCodes[index].countryCode
+    }
 }
 
-// MARK: - UIPickerViewDataSource Methods
 
-extension SignUpViewController: UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        1
-    }
-    
-//    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//        <#code#>
-//    }
-}
+

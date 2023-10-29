@@ -24,6 +24,13 @@ struct GlobalStrings {
         static let termsNotAgreed = "Terms & Condtions not agreed"
         static let error = "Error"
         static let alert = "Alert"
+        static let resetPassword = "Reset password"
+        static let sendCode = "Send code"
+        static let doesNotExistInSystem: (String) -> String = {
+            "This \($0) is not existing in our system "
+        }
+        static let resetThroughEmail = "Reset using email"
+        static let resetThroughPhone = "Reset using phone"
     }
     
     struct Message {
@@ -36,6 +43,8 @@ struct GlobalStrings {
         static let passwordMustContain = "Password must be atleast 8 characters long, contain number, a lowercase letter, an uppercase letter, a special character e.g. @.[]/!"
         static let passwordsMustBeSame = "Passwords must be same"
         static let agreeToTerms = "agree to terms & conditions"
+        static let resetThroughEmail = "Enter your email and we will send you the letter with the instruction of pasword changing"
+        static let resetThroughPhone = "We will send you a code to your phone number"
     }
     
     struct UserDefaultKey {

@@ -46,6 +46,23 @@
 		795D65972AEAA4AC007AF064 /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D65962AEAA4AC007AF064 /* AlertViewModel.swift */; };
 		795D65992AEAA560007AF064 /* OkAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D65982AEAA560007AF064 /* OkAlertView.swift */; };
 		798055F22AE6F9D700717FB4 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798055F12AE6F9D700717FB4 /* BorderedView.swift */; };
+		798423012AEE770900441707 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423002AEE770900441707 /* ForgotPasswordView.swift */; };
+		798423032AEE79CB00441707 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423022AEE79CB00441707 /* ForgotPasswordViewController.swift */; };
+		798423052AEE79E600441707 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423042AEE79E600441707 /* ForgotPasswordViewModel.swift */; };
+		7984230B2AEE7D4500441707 /* BottomUpOptionsSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984230A2AEE7D4500441707 /* BottomUpOptionsSheetViewController.swift */; };
+		7984230D2AEE7D5500441707 /* BottomUpOptionsSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984230C2AEE7D5500441707 /* BottomUpOptionsSheetView.swift */; };
+		7984230F2AEE7D6B00441707 /* BottomUpOptionsSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984230E2AEE7D6B00441707 /* BottomUpOptionsSheetViewModel.swift */; };
+		798423112AEE7FB600441707 /* BottomUpOptionsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423102AEE7FB600441707 /* BottomUpOptionsDelegate.swift */; };
+		798423142AEE995300441707 /* OpenEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423132AEE995300441707 /* OpenEmailView.swift */; };
+		798423162AEE9A2400441707 /* OpenEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423152AEE9A2400441707 /* OpenEmailViewModel.swift */; };
+		798423182AEE9A4600441707 /* OpenEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423172AEE9A4600441707 /* OpenEmailViewController.swift */; };
+		7984231B2AEEA07800441707 /* TypeCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984231A2AEEA07800441707 /* TypeCodeViewModel.swift */; };
+		7984231D2AEEA09D00441707 /* TypeCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984231C2AEEA09D00441707 /* TypeCodeView.swift */; };
+		7984231F2AEEA0AA00441707 /* TypeCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984231E2AEEA0AA00441707 /* TypeCodeViewController.swift */; };
+		798423252AEEB5ED00441707 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423242AEEB5ED00441707 /* Utils.swift */; };
+		798423282AEEC14500441707 /* SetNewPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423272AEEC14500441707 /* SetNewPasswordViewModel.swift */; };
+		7984232A2AEEC15E00441707 /* SetNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423292AEEC15E00441707 /* SetNewPasswordViewController.swift */; };
+		7984232C2AEEC19000441707 /* SetNewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984232B2AEEC19000441707 /* SetNewPasswordView.swift */; };
 		7991E54E2ADF341900C8F348 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991E54D2ADF341900C8F348 /* SplashView.swift */; };
 		7991E5512ADF382700C8F348 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991E5502ADF382700C8F348 /* OnboardingViewModel.swift */; };
 		7991E5532ADF391E00C8F348 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991E5522ADF391E00C8F348 /* UIStoryboard.swift */; };
@@ -134,10 +151,27 @@
 		795D658E2AEA78DF007AF064 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		795D65902AEA92C8007AF064 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		795D65922AEA9FC7007AF064 /* PopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUp.storyboard; sourceTree = "<group>"; };
-		795D65942AEAA462007AF064 /* OkAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OkAlertViewController.swift; path = "maindiish-ios/App/UI/Storyboards/OkAlertViewController.swift"; sourceTree = SOURCE_ROOT; };
-		795D65962AEAA4AC007AF064 /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertViewModel.swift; path = "maindiish-ios/App/UI/Storyboards/AlertViewModel.swift"; sourceTree = SOURCE_ROOT; };
-		795D65982AEAA560007AF064 /* OkAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OkAlertView.swift; path = "maindiish-ios/App/UI/Storyboards/OkAlertView.swift"; sourceTree = SOURCE_ROOT; };
+		795D65942AEAA462007AF064 /* OkAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OkAlertViewController.swift; path = "maindiish-ios/App/UI/Sheets/Alerts/OkAlertViewController.swift"; sourceTree = SOURCE_ROOT; };
+		795D65962AEAA4AC007AF064 /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertViewModel.swift; path = "maindiish-ios/App/UI/Sheets/Alerts/AlertViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		795D65982AEAA560007AF064 /* OkAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OkAlertView.swift; path = "maindiish-ios/App/UI/Sheets/Alerts/OkAlertView.swift"; sourceTree = SOURCE_ROOT; };
 		798055F12AE6F9D700717FB4 /* BorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
+		798423002AEE770900441707 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		798423022AEE79CB00441707 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		798423042AEE79E600441707 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		7984230A2AEE7D4500441707 /* BottomUpOptionsSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomUpOptionsSheetViewController.swift; sourceTree = "<group>"; };
+		7984230C2AEE7D5500441707 /* BottomUpOptionsSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomUpOptionsSheetView.swift; sourceTree = "<group>"; };
+		7984230E2AEE7D6B00441707 /* BottomUpOptionsSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomUpOptionsSheetViewModel.swift; sourceTree = "<group>"; };
+		798423102AEE7FB600441707 /* BottomUpOptionsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomUpOptionsDelegate.swift; sourceTree = "<group>"; };
+		798423132AEE995300441707 /* OpenEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEmailView.swift; sourceTree = "<group>"; };
+		798423152AEE9A2400441707 /* OpenEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEmailViewModel.swift; sourceTree = "<group>"; };
+		798423172AEE9A4600441707 /* OpenEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEmailViewController.swift; sourceTree = "<group>"; };
+		7984231A2AEEA07800441707 /* TypeCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCodeViewModel.swift; sourceTree = "<group>"; };
+		7984231C2AEEA09D00441707 /* TypeCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCodeView.swift; sourceTree = "<group>"; };
+		7984231E2AEEA0AA00441707 /* TypeCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCodeViewController.swift; sourceTree = "<group>"; };
+		798423242AEEB5ED00441707 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		798423272AEEC14500441707 /* SetNewPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPasswordViewModel.swift; sourceTree = "<group>"; };
+		798423292AEEC15E00441707 /* SetNewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPasswordViewController.swift; sourceTree = "<group>"; };
+		7984232B2AEEC19000441707 /* SetNewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPasswordView.swift; sourceTree = "<group>"; };
 		7991E54D2ADF341900C8F348 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		7991E5502ADF382700C8F348 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		7991E5522ADF391E00C8F348 /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
@@ -362,9 +396,8 @@
 		18209EAB2A714C8B0024F47B /* Sheets */ = {
 			isa = PBXGroup;
 			children = (
-				795D65942AEAA462007AF064 /* OkAlertViewController.swift */,
-				795D65962AEAA4AC007AF064 /* AlertViewModel.swift */,
-				795D65982AEAA560007AF064 /* OkAlertView.swift */,
+				798423092AEE7D2000441707 /* BottomUps */,
+				798423062AEE7CFA00441707 /* Alerts */,
 			);
 			path = Sheets;
 			sourceTree = "<group>";
@@ -443,6 +476,7 @@
 				79BA2A2E2AE1F6E10019E880 /* UserDefaultsManager.swift */,
 				79E406F52AEBC7A1001B6AC0 /* APIService.swift */,
 				79E407002AEBEC2E001B6AC0 /* APIClient.swift */,
+				798423242AEEB5ED00441707 /* Utils.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -459,10 +493,75 @@
 		7974B3692AE30FBE00F76D91 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				798423262AEEC13100441707 /* Set New Password */,
+				798423192AEEA06900441707 /* Type Code */,
+				798423122AEE993300441707 /* Open Email */,
+				798422FF2AEE758E00441707 /* Forgot Password */,
 				799E073B2AE5531400D853B5 /* Sign Up */,
 				79B5CC612AE2485E005E19AD /* Login */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		798422FF2AEE758E00441707 /* Forgot Password */ = {
+			isa = PBXGroup;
+			children = (
+				798423002AEE770900441707 /* ForgotPasswordView.swift */,
+				798423022AEE79CB00441707 /* ForgotPasswordViewController.swift */,
+				798423042AEE79E600441707 /* ForgotPasswordViewModel.swift */,
+			);
+			path = "Forgot Password";
+			sourceTree = "<group>";
+		};
+		798423062AEE7CFA00441707 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				795D65942AEAA462007AF064 /* OkAlertViewController.swift */,
+				795D65962AEAA4AC007AF064 /* AlertViewModel.swift */,
+				795D65982AEAA560007AF064 /* OkAlertView.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		798423092AEE7D2000441707 /* BottomUps */ = {
+			isa = PBXGroup;
+			children = (
+				7984230A2AEE7D4500441707 /* BottomUpOptionsSheetViewController.swift */,
+				7984230C2AEE7D5500441707 /* BottomUpOptionsSheetView.swift */,
+				7984230E2AEE7D6B00441707 /* BottomUpOptionsSheetViewModel.swift */,
+				798423102AEE7FB600441707 /* BottomUpOptionsDelegate.swift */,
+			);
+			path = BottomUps;
+			sourceTree = "<group>";
+		};
+		798423122AEE993300441707 /* Open Email */ = {
+			isa = PBXGroup;
+			children = (
+				798423132AEE995300441707 /* OpenEmailView.swift */,
+				798423152AEE9A2400441707 /* OpenEmailViewModel.swift */,
+				798423172AEE9A4600441707 /* OpenEmailViewController.swift */,
+			);
+			path = "Open Email";
+			sourceTree = "<group>";
+		};
+		798423192AEEA06900441707 /* Type Code */ = {
+			isa = PBXGroup;
+			children = (
+				7984231A2AEEA07800441707 /* TypeCodeViewModel.swift */,
+				7984231C2AEEA09D00441707 /* TypeCodeView.swift */,
+				7984231E2AEEA0AA00441707 /* TypeCodeViewController.swift */,
+			);
+			path = "Type Code";
+			sourceTree = "<group>";
+		};
+		798423262AEEC13100441707 /* Set New Password */ = {
+			isa = PBXGroup;
+			children = (
+				798423272AEEC14500441707 /* SetNewPasswordViewModel.swift */,
+				798423292AEEC15E00441707 /* SetNewPasswordViewController.swift */,
+				7984232B2AEEC19000441707 /* SetNewPasswordView.swift */,
+			);
+			path = "Set New Password";
 			sourceTree = "<group>";
 		};
 		7991E54F2ADF37EA00C8F348 /* Onboarding */ = {
@@ -642,18 +741,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				7991E5592ADF3DAD00C8F348 /* OnboardingView.swift in Sources */,
+				7984230F2AEE7D6B00441707 /* BottomUpOptionsSheetViewModel.swift in Sources */,
 				798055F22AE6F9D700717FB4 /* BorderedView.swift in Sources */,
 				18209EDC2A7260210024F47B /* UICollectionViewCell.swift in Sources */,
 				18209EE42A7260D30024F47B /* XibView.swift in Sources */,
+				7984231D2AEEA09D00441707 /* TypeCodeView.swift in Sources */,
+				7984230D2AEE7D5500441707 /* BottomUpOptionsSheetView.swift in Sources */,
 				7991E54E2ADF341900C8F348 /* SplashView.swift in Sources */,
 				79E406F82AEBCB57001B6AC0 /* Repository.swift in Sources */,
 				18209EC32A724D5D0024F47B /* Route.swift in Sources */,
 				18209EE22A7260B70024F47B /* UIView.swift in Sources */,
 				18209EC12A724CC50024F47B /* Router.swift in Sources */,
+				7984230B2AEE7D4500441707 /* BottomUpOptionsSheetViewController.swift in Sources */,
 				793E65D72AE451A200381F32 /* NibWrapped.swift in Sources */,
 				79B5CC632AE24874005E19AD /* LoginViewModel.swift in Sources */,
+				798423252AEEB5ED00441707 /* Utils.swift in Sources */,
 				7940FAFF2AEB581900108E9A /* SignUpRepository.swift in Sources */,
+				7984231B2AEEA07800441707 /* TypeCodeViewModel.swift in Sources */,
 				18209EA62A714A390024F47B /* ViewModel.swift in Sources */,
+				798423052AEE79E600441707 /* ForgotPasswordViewModel.swift in Sources */,
+				798423012AEE770900441707 /* ForgotPasswordView.swift in Sources */,
 				18209ED12A725B6F0024F47B /* Environment.swift in Sources */,
 				18209ECB2A7257940024F47B /* SplashViewController.swift in Sources */,
 				79BA2A1C2AE1C22A0019E880 /* Color.swift in Sources */,
@@ -672,23 +779,31 @@
 				799E074C2AE5571700D853B5 /* SignUpView.swift in Sources */,
 				79BF3C6F2ADFC4A7009CE04B /* GlobalStrings.swift in Sources */,
 				79BF3C6D2ADFC053009CE04B /* AssetImage.swift in Sources */,
+				7984232C2AEEC19000441707 /* SetNewPasswordView.swift in Sources */,
 				799E07362AE50EC500D853B5 /* UIButton.swift in Sources */,
+				798423182AEE9A4600441707 /* OpenEmailViewController.swift in Sources */,
 				79E444632AE5C0FE003CB9C8 /* RoundedButton.swift in Sources */,
+				798423112AEE7FB600441707 /* BottomUpOptionsDelegate.swift in Sources */,
+				798423142AEE995300441707 /* OpenEmailView.swift in Sources */,
 				18209EBB2A7249140024F47B /* Assets.swift in Sources */,
 				7991E5612ADF671F00C8F348 /* OnboardingDetail.swift in Sources */,
+				798423032AEE79CB00441707 /* ForgotPasswordViewController.swift in Sources */,
 				79E407012AEBEC2E001B6AC0 /* APIClient.swift in Sources */,
 				7991E55E2ADF635800C8F348 /* OnboardingCollectionViewCell.swift in Sources */,
 				79B5CC652AE2488B005E19AD /* LoginViewController.swift in Sources */,
+				798423162AEE9A2400441707 /* OpenEmailViewModel.swift in Sources */,
 				79BF3C7B2ADFF85D009CE04B /* Fonts.swift in Sources */,
 				18209EC52A724D860024F47B /* Sheet.swift in Sources */,
 				18209EDE2A7260320024F47B /* UICollectionView.swift in Sources */,
 				18209ED42A725C770024F47B /* UIFont.swift in Sources */,
 				18209EA42A714A250024F47B /* ViewController.swift in Sources */,
 				79BA2A1E2AE1C2D80019E880 /* UIColor.swift in Sources */,
+				7984231F2AEEA0AA00441707 /* TypeCodeViewController.swift in Sources */,
 				18209EC72A724E030024F47B /* AppRouter.swift in Sources */,
 				79BF3C652ADF7AFB009CE04B /* OnboardingRepository.swift in Sources */,
 				79CCE1C62AE829DB00ADB8E9 /* UINavigationController.swift in Sources */,
 				79D018E32AEA739D0066AAF6 /* NewUser.swift in Sources */,
+				798423282AEEC14500441707 /* SetNewPasswordViewModel.swift in Sources */,
 				79B5CC672AE248BC005E19AD /* LoginView.swift in Sources */,
 				7991E5512ADF382700C8F348 /* OnboardingViewModel.swift in Sources */,
 				795D65912AEA92C8007AF064 /* String.swift in Sources */,
@@ -703,6 +818,7 @@
 				79E406FD2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift in Sources */,
 				79BA2A292AE1E9DC0019E880 /* WelcomeViewController.swift in Sources */,
 				18209EA82A714AB30024F47B /* UIViewController.swift in Sources */,
+				7984232A2AEEC15E00441707 /* SetNewPasswordViewController.swift in Sources */,
 				799E07462AE556B200D853B5 /* SignUpViewController.swift in Sources */,
 				79BA2A2F2AE1F6E10019E880 /* UserDefaultsManager.swift in Sources */,
 				79E406F62AEBC7A1001B6AC0 /* APIService.swift in Sources */,

@@ -35,7 +35,7 @@ class LoginViewController: ViewController<LoginViewModel> {
     
     @IBAction
     func forgotPasswordButtonTapped(_ sender: UIButton) {
-        
+        viewModel.router.append(.forgotPassword, animated: true)
     }
     
     @IBAction

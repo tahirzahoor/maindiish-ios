@@ -19,4 +19,8 @@ class ViewModel: ObservableObject {
 
     @Injected var router: Router
     
+    var countryCodes: [CountryPhoneCode] {
+        Utils.fetchCountryCodes()
+    }
+    
 }

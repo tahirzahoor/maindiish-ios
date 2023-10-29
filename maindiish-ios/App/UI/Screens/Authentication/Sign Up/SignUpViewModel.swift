@@ -11,16 +11,12 @@ fileprivate typealias validationMessage = (title: String, Message: String)
 
 class SignUpViewModel: ViewModel {
    
-    private let repository = SignUpRepository(apiManager: APIClient())
+    private let repository = SignUpRepository(apiService: APIClient())
     var signUpData = SignUpDataModel()
-    
-    var countryCodes = CountryPhoneCodeList()
     
     override init() {
         super.init()
-        repository.fetchCountryCodes { list in
-            self.countryCodes = list
-        }
+        
     }
     
     func validateData() {

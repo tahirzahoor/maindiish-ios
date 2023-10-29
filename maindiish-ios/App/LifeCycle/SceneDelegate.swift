@@ -44,7 +44,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             type: Router.self,
             factory: { router }
         )
-
+        
         registerDependencies()
         
         router.start()

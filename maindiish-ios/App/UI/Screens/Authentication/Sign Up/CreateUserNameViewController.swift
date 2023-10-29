@@ -25,8 +25,15 @@ class CreateUserNameViewController: ViewController<ViewModel> {
  
     // MARK: - Action Methods
     
-    @IBAction func signUpButtonTapped(_ sender: RoundedButton) {
+    @IBAction
+    func signUpButtonTapped(_ sender: RoundedButton) {
         viewModel.router.setRoot(.home)
         viewModel.router.append(.login, animated: false)
     }
+    
+    @IBAction
+    func forgotPasswordButtonTapped(_ sender: UIButton) {
+        viewModel.router.append(.forgotPassword, animated: true)
+    }
+    
 }

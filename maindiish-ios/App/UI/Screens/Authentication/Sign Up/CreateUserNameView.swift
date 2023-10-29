@@ -31,6 +31,11 @@ class CreateUserNameView: UIView {
         tellMeMoreAboutYourselfLabel.font = Fonts.robotoRegular.font(28)
         createAUserNameLabel.font = Fonts.interRegular.font(12)
         
+        let robotoRegular12 = Fonts.robotoRegular.font(12)
+        forgotPasswordButton.titleLabel?.font = robotoRegular12
+        forgotPasswordButton.underlineText()
+        usernameAlreadyExistsLabel.font = robotoRegular12
+        
         let font = Fonts.interSemibold.font(15)
         signUpButton.titleLabel?.font = font
         
