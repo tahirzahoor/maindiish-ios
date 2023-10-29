@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Oq-QO-Hsq">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfm-fe-exo">
-                                        <rect key="frame" x="50" y="300.33333333333331" width="293" height="158.33333333333331"/>
+                                        <rect key="frame" x="50" y="347" width="293" height="158.33333333333337"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgs-cI-3Ah">
                                                 <rect key="frame" x="20" y="20" width="253" height="24"/>
@@ -36,7 +36,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hy8-Wc-Z6b" customClass="RoundedButton" customModule="maindiish_ios" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="98.333333333333371" width="253" height="40"/>
+                                                <rect key="frame" x="20" y="98.333333333333314" width="253" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="lcC-L2-FYW"/>
                                                 </constraints>
@@ -79,8 +79,8 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="2Oq-QO-Hsq" secondAttribute="bottom" id="9Of-Nt-jnu"/>
-                            <constraint firstItem="2Oq-QO-Hsq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="HEH-UY-cEE"/>
+                            <constraint firstAttribute="bottom" secondItem="2Oq-QO-Hsq" secondAttribute="bottom" id="9Of-Nt-jnu"/>
+                            <constraint firstItem="2Oq-QO-Hsq" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="HEH-UY-cEE"/>
                             <constraint firstItem="2Oq-QO-Hsq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="KrY-kV-S5r"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2Oq-QO-Hsq" secondAttribute="trailing" id="leT-K0-Xvn"/>
                         </constraints>
@@ -98,6 +98,11 @@
             <point key="canvasLocation" x="-54.198473282442748" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Hy8-Wc-Z6b">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

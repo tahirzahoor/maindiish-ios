@@ -22,6 +22,8 @@ struct GlobalStrings {
         static let invalidPassword = "Invalid Password"
         static let mismatchedPasswords = "Password donot match"
         static let termsNotAgreed = "Terms & Condtions not agreed"
+        static let error = "Error"
+        static let alert = "Alert"
     }
     
     struct Message {

@@ -24,7 +24,8 @@ class SignUpView: UIView {
     @IBOutlet weak var iHaveAnAccountLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var needHelpButton: UIButton!
-    
+    @IBOutlet weak var countryPickerOuterView: UIView!
+    @IBOutlet weak var numberCountryPickerView: UIPickerView!
     // MARK: - Lifecycle Methods
     
     override func awakeFromNib() {

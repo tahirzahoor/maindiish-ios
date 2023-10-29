@@ -9,14 +9,12 @@ import UIKit
 
 enum Sheet {
 
-    case okAlert(_ viewModel: ViewModel? = nil)
+    case confirmation
 
     func controller() -> UIViewController {
         switch self {
-            case .okAlert(let VM):
-                let viewModel = (VM as? AlertViewModel) ?? AlertViewModel()
-                let controller = OkAlertViewController.instantiate(from: .PopUp, viewModel: viewModel)
-                return controller
+            case .confirmation:
+                return UIViewController()
         }
     }
 }

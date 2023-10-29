@@ -11,7 +11,17 @@ fileprivate typealias validationMessage = (title: String, Message: String)
 
 class SignUpViewModel: ViewModel {
    
+    private let repository = SignUpRepository(apiManager: APIClient())
     var signUpData = SignUpDataModel()
+    
+    var countryCodes = CountryPhoneCodeList()
+    
+    override init() {
+        super.init()
+        repository.fetchCountryCodes { list in
+            self.countryCodes = list
+        }
+    }
     
     func validateData() {
         
@@ -20,8 +30,7 @@ class SignUpViewModel: ViewModel {
             return
         }
         
-        let alertVM = AlertViewModel(title: message.0, message: message.1)
-        router.showSheet(.okAlert(alertVM), animated: true)
+        alert = message.1
     }
     
     private func invalidDataMessage() -> validationMessage? {

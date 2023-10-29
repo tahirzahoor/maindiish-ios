@@ -118,3 +118,25 @@ extension SignUpViewController: UITextFieldDelegate {
     }
     
 }
+
+// MARK: - UIPickerViewDelegate Methods
+
+extension SignUpViewController: UIPickerViewDelegate {
+    
+}
+
+// MARK: - UIPickerViewDataSource Methods
+
+extension SignUpViewController: UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        1
+    }
+    
+//    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+//        <#code#>
+//    }
+}

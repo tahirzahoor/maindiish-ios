@@ -17,9 +17,11 @@ class LoginViewModel: ViewModel {
     // MARK: - Public Methods
     
     func validate() {
-        guard isValidEmail() else {
+        
+        if fieldIsEmpty() {
+            alert = GlobalStrings.Message.fillInRequiredFields
+        } else if isNotValidEmail() {
             alert = GlobalStrings.Message.enterValidEmail
-            return
         }
         
         // MARK: - API Call (will be implemented later)
@@ -27,7 +29,11 @@ class LoginViewModel: ViewModel {
     
     // MARK: - Private Methods
     
-    private func isValidEmail() -> Bool {
-        return email.isValidEmail
+    private func isNotValidEmail() -> Bool {
+        return !email.isValidEmail
+    }
+    
+    private func fieldIsEmpty() -> Bool {
+        return email.isEmpty || password.isEmpty
     }
 }

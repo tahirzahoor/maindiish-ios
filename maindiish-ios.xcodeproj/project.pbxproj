@@ -36,6 +36,9 @@
 		7901B4ED2AE4434200D24064 /* NibWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7901B4EC2AE4434200D24064 /* NibWrapperView.swift */; };
 		790856102ADE24300021C8E5 /* APIManager in Frameworks */ = {isa = PBXBuildFile; productRef = 7908560F2ADE24300021C8E5 /* APIManager */; };
 		793E65D72AE451A200381F32 /* NibWrapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E65D62AE451A200381F32 /* NibWrapped.swift */; };
+		7940FAFD2AEB578C00108E9A /* countries_phone_codes_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 7940FAFC2AEB578C00108E9A /* countries_phone_codes_data.json */; };
+		7940FAFF2AEB581900108E9A /* SignUpRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940FAFE2AEB581900108E9A /* SignUpRepository.swift */; };
+		7940FB012AEB586D00108E9A /* CountryPhoneCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940FB002AEB586D00108E9A /* CountryPhoneCode.swift */; };
 		795D658F2AEA78DF007AF064 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D658E2AEA78DF007AF064 /* Notification.swift */; };
 		795D65912AEA92C8007AF064 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D65902AEA92C8007AF064 /* String.swift */; };
 		795D65932AEA9FC7007AF064 /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795D65922AEA9FC7007AF064 /* PopUp.storyboard */; };
@@ -84,6 +87,11 @@
 		79D018E32AEA739D0066AAF6 /* NewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D018E22AEA739D0066AAF6 /* NewUser.swift */; };
 		79D018E52AEA73E10066AAF6 /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D018E42AEA73E10066AAF6 /* Number.swift */; };
 		79D6FF682AEB236600370BEA /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 79D6FF672AEB236600370BEA /* IQKeyboardManagerSwift */; };
+		79E406F62AEBC7A1001B6AC0 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E406F52AEBC7A1001B6AC0 /* APIService.swift */; };
+		79E406F82AEBCB57001B6AC0 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E406F72AEBCB57001B6AC0 /* Repository.swift */; };
+		79E406FB2AEBE6FF001B6AC0 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 79E406FA2AEBE6FF001B6AC0 /* ObjectMapper */; };
+		79E406FD2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E406FC2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift */; };
+		79E407012AEBEC2E001B6AC0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E407002AEBEC2E001B6AC0 /* APIClient.swift */; };
 		79E4445E2AE5C04C003CB9C8 /* SwiftDI in Frameworks */ = {isa = PBXBuildFile; productRef = 79E4445D2AE5C04C003CB9C8 /* SwiftDI */; };
 		79E444612AE5C075003CB9C8 /* APIManager in Frameworks */ = {isa = PBXBuildFile; productRef = 79E444602AE5C075003CB9C8 /* APIManager */; };
 		79E444632AE5C0FE003CB9C8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E444622AE5C0FE003CB9C8 /* RoundedButton.swift */; };
@@ -120,6 +128,9 @@
 		18209EE62A7261C30024F47B /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		7901B4EC2AE4434200D24064 /* NibWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibWrapperView.swift; sourceTree = "<group>"; };
 		793E65D62AE451A200381F32 /* NibWrapped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibWrapped.swift; sourceTree = "<group>"; };
+		7940FAFC2AEB578C00108E9A /* countries_phone_codes_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries_phone_codes_data.json; sourceTree = "<group>"; };
+		7940FAFE2AEB581900108E9A /* SignUpRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRepository.swift; sourceTree = "<group>"; };
+		7940FB002AEB586D00108E9A /* CountryPhoneCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CountryPhoneCode.swift; path = "maindiish-ios/App/UI/Screens/Authentication/Sign Up/CountryPhoneCode.swift"; sourceTree = SOURCE_ROOT; };
 		795D658E2AEA78DF007AF064 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		795D65902AEA92C8007AF064 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		795D65922AEA9FC7007AF064 /* PopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUp.storyboard; sourceTree = "<group>"; };
@@ -167,6 +178,10 @@
 		79CCE1C52AE829DB00ADB8E9 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		79D018E22AEA739D0066AAF6 /* NewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewUser.swift; path = "maindiish-ios/App/Extensions/NewUser.swift"; sourceTree = SOURCE_ROOT; };
 		79D018E42AEA73E10066AAF6 /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Number.swift; path = "maindiish-ios/App/Extensions/Number.swift"; sourceTree = SOURCE_ROOT; };
+		79E406F52AEBC7A1001B6AC0 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		79E406F72AEBCB57001B6AC0 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		79E406FC2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CountryPhoneCodeList.swift; path = "maindiish-ios/App/Core/Repositories/CountryPhoneCodeList.swift"; sourceTree = SOURCE_ROOT; };
+		79E407002AEBEC2E001B6AC0 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		79E444622AE5C0FE003CB9C8 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = "../../../../../food-social-ios/BaseCode/App/UI/Components/RoundedButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E4445E2AE5C04C003CB9C8 /* SwiftDI in Frameworks */,
+				79E406FB2AEBE6FF001B6AC0 /* ObjectMapper in Frameworks */,
 				79D6FF682AEB236600370BEA /* IQKeyboardManagerSwift in Frameworks */,
 				790856102ADE24300021C8E5 /* APIManager in Frameworks */,
 				79E444612AE5C075003CB9C8 /* APIManager in Frameworks */,
@@ -214,6 +230,7 @@
 		18209E992A7149A00024F47B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7940FAFC2AEB578C00108E9A /* countries_phone_codes_data.json */,
 				79BF3C5F2ADF7659009CE04B /* Fonts */,
 				18209EB12A72455B0024F47B /* Localization */,
 				18209EB02A7245550024F47B /* Assets */,
@@ -355,6 +372,9 @@
 		18209EAC2A714EF90024F47B /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				7940FAFE2AEB581900108E9A /* SignUpRepository.swift */,
+				79BF3C642ADF7AFB009CE04B /* OnboardingRepository.swift */,
+				79E406F72AEBCB57001B6AC0 /* Repository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -410,6 +430,8 @@
 			children = (
 				79D018E22AEA739D0066AAF6 /* NewUser.swift */,
 				79D018E42AEA73E10066AAF6 /* Number.swift */,
+				7940FB002AEB586D00108E9A /* CountryPhoneCode.swift */,
+				79E406FC2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -419,6 +441,8 @@
 			children = (
 				18209EE62A7261C30024F47B /* Storage.swift */,
 				79BA2A2E2AE1F6E10019E880 /* UserDefaultsManager.swift */,
+				79E406F52AEBC7A1001B6AC0 /* APIService.swift */,
+				79E407002AEBEC2E001B6AC0 /* APIClient.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -449,7 +473,6 @@
 				7991E5582ADF3DAD00C8F348 /* OnboardingView.swift */,
 				7991E55C2ADF635800C8F348 /* OnboardingCollectionViewCell.swift */,
 				7991E5602ADF671F00C8F348 /* OnboardingDetail.swift */,
-				79BF3C642ADF7AFB009CE04B /* OnboardingRepository.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -523,6 +546,7 @@
 				79E4445D2AE5C04C003CB9C8 /* SwiftDI */,
 				79E444602AE5C075003CB9C8 /* APIManager */,
 				79D6FF672AEB236600370BEA /* IQKeyboardManagerSwift */,
+				79E406FA2AEBE6FF001B6AC0 /* ObjectMapper */,
 			);
 			productName = BaseCode;
 			productReference = 18209E7B2A7146690024F47B /* maindiish-ios.app */;
@@ -556,6 +580,7 @@
 				79E4445C2AE5C04C003CB9C8 /* XCRemoteSwiftPackageReference "SwiftDI" */,
 				79E4445F2AE5C075003CB9C8 /* XCRemoteSwiftPackageReference "Swift-API-Manager" */,
 				79D6FF662AEB236600370BEA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				79E406F92AEBE6FF001B6AC0 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 			);
 			productRefGroup = 18209E7C2A7146690024F47B /* Products */;
 			projectDirPath = "";
@@ -572,6 +597,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18209EB42A7245720024F47B /* Localizable.strings in Resources */,
+				7940FAFD2AEB578C00108E9A /* countries_phone_codes_data.json in Resources */,
 				18209EBF2A72493F0024F47B /* InfoPlist.strings in Resources */,
 				18209E882A71466A0024F47B /* Assets.xcassets in Resources */,
 				795D65932AEA9FC7007AF064 /* PopUp.storyboard in Resources */,
@@ -620,11 +646,13 @@
 				18209EDC2A7260210024F47B /* UICollectionViewCell.swift in Sources */,
 				18209EE42A7260D30024F47B /* XibView.swift in Sources */,
 				7991E54E2ADF341900C8F348 /* SplashView.swift in Sources */,
+				79E406F82AEBCB57001B6AC0 /* Repository.swift in Sources */,
 				18209EC32A724D5D0024F47B /* Route.swift in Sources */,
 				18209EE22A7260B70024F47B /* UIView.swift in Sources */,
 				18209EC12A724CC50024F47B /* Router.swift in Sources */,
 				793E65D72AE451A200381F32 /* NibWrapped.swift in Sources */,
 				79B5CC632AE24874005E19AD /* LoginViewModel.swift in Sources */,
+				7940FAFF2AEB581900108E9A /* SignUpRepository.swift in Sources */,
 				18209EA62A714A390024F47B /* ViewModel.swift in Sources */,
 				18209ED12A725B6F0024F47B /* Environment.swift in Sources */,
 				18209ECB2A7257940024F47B /* SplashViewController.swift in Sources */,
@@ -640,6 +668,7 @@
 				7991E5552ADF3BF500C8F348 /* SplashViewModel.swift in Sources */,
 				7991E5532ADF391E00C8F348 /* UIStoryboard.swift in Sources */,
 				795D65952AEAA462007AF064 /* OkAlertViewController.swift in Sources */,
+				7940FB012AEB586D00108E9A /* CountryPhoneCode.swift in Sources */,
 				799E074C2AE5571700D853B5 /* SignUpView.swift in Sources */,
 				79BF3C6F2ADFC4A7009CE04B /* GlobalStrings.swift in Sources */,
 				79BF3C6D2ADFC053009CE04B /* AssetImage.swift in Sources */,
@@ -647,6 +676,7 @@
 				79E444632AE5C0FE003CB9C8 /* RoundedButton.swift in Sources */,
 				18209EBB2A7249140024F47B /* Assets.swift in Sources */,
 				7991E5612ADF671F00C8F348 /* OnboardingDetail.swift in Sources */,
+				79E407012AEBEC2E001B6AC0 /* APIClient.swift in Sources */,
 				7991E55E2ADF635800C8F348 /* OnboardingCollectionViewCell.swift in Sources */,
 				79B5CC652AE2488B005E19AD /* LoginViewController.swift in Sources */,
 				79BF3C7B2ADFF85D009CE04B /* Fonts.swift in Sources */,
@@ -670,10 +700,12 @@
 				79BA2A272AE1E9CA0019E880 /* WelcomeViewModel.swift in Sources */,
 				795D658F2AEA78DF007AF064 /* Notification.swift in Sources */,
 				79D018E52AEA73E10066AAF6 /* Number.swift in Sources */,
+				79E406FD2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift in Sources */,
 				79BA2A292AE1E9DC0019E880 /* WelcomeViewController.swift in Sources */,
 				18209EA82A714AB30024F47B /* UIViewController.swift in Sources */,
 				799E07462AE556B200D853B5 /* SignUpViewController.swift in Sources */,
 				79BA2A2F2AE1F6E10019E880 /* UserDefaultsManager.swift in Sources */,
+				79E406F62AEBC7A1001B6AC0 /* APIService.swift in Sources */,
 				795D65972AEAA4AC007AF064 /* AlertViewModel.swift in Sources */,
 				18209EBC2A7249140024F47B /* Strings.swift in Sources */,
 				18209ED82A725FD90024F47B /* UITableViewCell.swift in Sources */,
@@ -928,6 +960,14 @@
 				minimumVersion = 6.5.16;
 			};
 		};
+		79E406F92AEBE6FF001B6AC0 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
 		79E4445C2AE5C04C003CB9C8 /* XCRemoteSwiftPackageReference "SwiftDI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:FaizanTan/SwiftDI.git";
@@ -955,6 +995,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 79D6FF662AEB236600370BEA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		79E406FA2AEBE6FF001B6AC0 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79E406F92AEBE6FF001B6AC0 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
 		};
 		79E4445D2AE5C04C003CB9C8 /* SwiftDI */ = {
 			isa = XCSwiftPackageProductDependency;

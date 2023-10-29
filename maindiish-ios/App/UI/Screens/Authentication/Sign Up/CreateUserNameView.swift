@@ -15,11 +15,17 @@ class CreateUserNameView: UIView {
     @IBOutlet weak var createAUserNameLabel: UILabel!
     @IBOutlet weak var inputField: UITextField!
     @IBOutlet weak var signUpButton: RoundedButton!
+    @IBOutlet weak var forgotPasswordButton: UIButton!
+    @IBOutlet weak var usernameAlreadyExistsLabel: UILabel!
+    
+    // MARK: - Lifecycle Methods
     
     override func awakeFromNib() {
         super.awakeFromNib()
         setupView()
     }
+    
+    // MARK: - Private Methods
     
     private func setupView() {
         tellMeMoreAboutYourselfLabel.font = Fonts.robotoRegular.font(28)

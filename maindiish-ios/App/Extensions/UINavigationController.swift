@@ -13,7 +13,6 @@ extension UINavigationController {
     open override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         navigationBar.topItem?.backButtonDisplayMode = .minimal
-        navigationBar.topItem?.setHidesBackButton(true, animated: false)
     }
     
     enum NavigationBarType {

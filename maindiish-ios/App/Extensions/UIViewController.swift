@@ -14,28 +14,26 @@ extension UIViewController {
     }
 
     func showAlert(with error: Error) {
-        let title = L10n.Localizable.error
-        let message = error.localizedDescription
-        let alertController = UIAlertController(
-            title: title,
-            message: message,
-            preferredStyle: .alert
+        let viewModel = AlertViewModel(
+            title: GlobalStrings.Title.error,
+            message: error.localizedDescription
         )
-        let actionTitle = L10n.Localizable.ok
-        let action = UIAlertAction(title: actionTitle, style: .default)
-        alertController.addAction(action)
+        let alertController = OkAlertViewController.instantiate(
+            from: .PopUp,
+            viewModel: viewModel
+        )
         present(alertController, animated: true)
     }
 
     func showAlert(with message: String) {
-        let alertController = UIAlertController(
-            title: nil,
-            message: message,
-            preferredStyle: .alert
+        let viewModel = AlertViewModel(
+            title: GlobalStrings.Title.alert,
+            message: message
         )
-        let actionTitle = L10n.Localizable.ok
-        let action = UIAlertAction(title: actionTitle, style: .default)
-        alertController.addAction(action)
+        let alertController = OkAlertViewController.instantiate(
+            from: .PopUp,
+            viewModel: viewModel
+        )
         present(alertController, animated: true)
     }
     
