@@ -17,8 +17,8 @@ enum Route {
     case createUsername(viewModel: SignUpViewModel? = nil)
     case forgotPassword
     case typeCode
-    case openEmail
     case setNewPassword
+    case mainTab
     
     func controller() -> UIViewController {
         switch self {
@@ -54,15 +54,14 @@ enum Route {
                 let viewModel = TypeCodeViewModel()
                 let controller = TypeCodeViewController.instantiate(from: .Authentication, viewModel: viewModel)
                 return controller
-            case .openEmail:
-                let viewModel = OpenEmailViewModel()
-                let controller = OpenEmailViewController.instantiate(from: .Authentication, viewModel: viewModel)
-                return controller
             case .setNewPassword:
                 let viewModel = SetNewPasswordViewModel()
                 let controller = SetNewPasswordViewController.instantiate(from: .Authentication, viewModel: viewModel)
                 return controller
-            
+            case .mainTab:
+                //let viewModel = MainTabViewModel()
+                let controller = MainTabViewController.instantiate(from: .TabControllers)
+                return controller
         }
     }
 }

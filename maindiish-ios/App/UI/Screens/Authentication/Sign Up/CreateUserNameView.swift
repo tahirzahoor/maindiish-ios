@@ -25,6 +25,13 @@ class CreateUserNameView: UIView {
         setupView()
     }
     
+    // MARK: - Public Methods
+    
+    func updateView(userNameExists: Bool) {
+        forgotPasswordButton.isHidden = !userNameExists
+        usernameAlreadyExistsLabel.isHidden = !userNameExists
+    }
+    
     // MARK: - Private Methods
     
     private func setupView() {

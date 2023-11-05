@@ -35,10 +35,18 @@
 		18209EE72A7261C30024F47B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18209EE62A7261C30024F47B /* Storage.swift */; };
 		7901B4ED2AE4434200D24064 /* NibWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7901B4EC2AE4434200D24064 /* NibWrapperView.swift */; };
 		790856102ADE24300021C8E5 /* APIManager in Frameworks */ = {isa = PBXBuildFile; productRef = 7908560F2ADE24300021C8E5 /* APIManager */; };
+		790B4F4D2AF246E200C429CD /* CurveInTheMiddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B4F4C2AF246E200C429CD /* CurveInTheMiddleView.swift */; };
+		790B4F512AF24AF200C429CD /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B4F502AF24AF200C429CD /* MainTabBar.swift */; };
+		790B4F532AF24BF300C429CD /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B4F522AF24BF300C429CD /* MainTabViewModel.swift */; };
+		790B4F552AF24C1900C429CD /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B4F542AF24C1900C429CD /* MainTabViewController.swift */; };
+		790B4F5A2AF24E9300C429CD /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B4F592AF24E9300C429CD /* ExploreView.swift */; };
+		790B4F5C2AF24EA400C429CD /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B4F5B2AF24EA400C429CD /* ExploreViewModel.swift */; };
+		790B4F5E2AF24EB100C429CD /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B4F5D2AF24EB100C429CD /* ExploreViewController.swift */; };
 		793E65D72AE451A200381F32 /* NibWrapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E65D62AE451A200381F32 /* NibWrapped.swift */; };
 		7940FAFD2AEB578C00108E9A /* countries_phone_codes_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 7940FAFC2AEB578C00108E9A /* countries_phone_codes_data.json */; };
 		7940FAFF2AEB581900108E9A /* SignUpRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940FAFE2AEB581900108E9A /* SignUpRepository.swift */; };
 		7940FB012AEB586D00108E9A /* CountryPhoneCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940FB002AEB586D00108E9A /* CountryPhoneCode.swift */; };
+		795D56D12AF5C20100F15611 /* TabControllers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795D56D02AF5C20100F15611 /* TabControllers.storyboard */; };
 		795D658F2AEA78DF007AF064 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D658E2AEA78DF007AF064 /* Notification.swift */; };
 		795D65912AEA92C8007AF064 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D65902AEA92C8007AF064 /* String.swift */; };
 		795D65932AEA9FC7007AF064 /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795D65922AEA9FC7007AF064 /* PopUp.storyboard */; };
@@ -53,9 +61,6 @@
 		7984230D2AEE7D5500441707 /* BottomUpOptionsSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984230C2AEE7D5500441707 /* BottomUpOptionsSheetView.swift */; };
 		7984230F2AEE7D6B00441707 /* BottomUpOptionsSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984230E2AEE7D6B00441707 /* BottomUpOptionsSheetViewModel.swift */; };
 		798423112AEE7FB600441707 /* BottomUpOptionsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423102AEE7FB600441707 /* BottomUpOptionsDelegate.swift */; };
-		798423142AEE995300441707 /* OpenEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423132AEE995300441707 /* OpenEmailView.swift */; };
-		798423162AEE9A2400441707 /* OpenEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423152AEE9A2400441707 /* OpenEmailViewModel.swift */; };
-		798423182AEE9A4600441707 /* OpenEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423172AEE9A4600441707 /* OpenEmailViewController.swift */; };
 		7984231B2AEEA07800441707 /* TypeCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984231A2AEEA07800441707 /* TypeCodeViewModel.swift */; };
 		7984231D2AEEA09D00441707 /* TypeCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984231C2AEEA09D00441707 /* TypeCodeView.swift */; };
 		7984231F2AEEA0AA00441707 /* TypeCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984231E2AEEA0AA00441707 /* TypeCodeViewController.swift */; };
@@ -144,10 +149,18 @@
 		18209EE32A7260D30024F47B /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		18209EE62A7261C30024F47B /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		7901B4EC2AE4434200D24064 /* NibWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibWrapperView.swift; sourceTree = "<group>"; };
+		790B4F4C2AF246E200C429CD /* CurveInTheMiddleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveInTheMiddleView.swift; sourceTree = "<group>"; };
+		790B4F502AF24AF200C429CD /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		790B4F522AF24BF300C429CD /* MainTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
+		790B4F542AF24C1900C429CD /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		790B4F592AF24E9300C429CD /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		790B4F5B2AF24EA400C429CD /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		790B4F5D2AF24EB100C429CD /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		793E65D62AE451A200381F32 /* NibWrapped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibWrapped.swift; sourceTree = "<group>"; };
 		7940FAFC2AEB578C00108E9A /* countries_phone_codes_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries_phone_codes_data.json; sourceTree = "<group>"; };
 		7940FAFE2AEB581900108E9A /* SignUpRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRepository.swift; sourceTree = "<group>"; };
 		7940FB002AEB586D00108E9A /* CountryPhoneCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CountryPhoneCode.swift; path = "maindiish-ios/App/UI/Screens/Authentication/Sign Up/CountryPhoneCode.swift"; sourceTree = SOURCE_ROOT; };
+		795D56D02AF5C20100F15611 /* TabControllers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabControllers.storyboard; sourceTree = "<group>"; };
 		795D658E2AEA78DF007AF064 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		795D65902AEA92C8007AF064 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		795D65922AEA9FC7007AF064 /* PopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUp.storyboard; sourceTree = "<group>"; };
@@ -162,9 +175,6 @@
 		7984230C2AEE7D5500441707 /* BottomUpOptionsSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomUpOptionsSheetView.swift; sourceTree = "<group>"; };
 		7984230E2AEE7D6B00441707 /* BottomUpOptionsSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomUpOptionsSheetViewModel.swift; sourceTree = "<group>"; };
 		798423102AEE7FB600441707 /* BottomUpOptionsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomUpOptionsDelegate.swift; sourceTree = "<group>"; };
-		798423132AEE995300441707 /* OpenEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEmailView.swift; sourceTree = "<group>"; };
-		798423152AEE9A2400441707 /* OpenEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEmailViewModel.swift; sourceTree = "<group>"; };
-		798423172AEE9A4600441707 /* OpenEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEmailViewController.swift; sourceTree = "<group>"; };
 		7984231A2AEEA07800441707 /* TypeCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCodeViewModel.swift; sourceTree = "<group>"; };
 		7984231C2AEEA09D00441707 /* TypeCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCodeView.swift; sourceTree = "<group>"; };
 		7984231E2AEEA0AA00441707 /* TypeCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCodeViewController.swift; sourceTree = "<group>"; };
@@ -378,6 +388,7 @@
 				799E07372AE533C100D853B5 /* PaddedTextField.swift */,
 				79E444622AE5C0FE003CB9C8 /* RoundedButton.swift */,
 				798055F12AE6F9D700717FB4 /* BorderedView.swift */,
+				790B4F4C2AF246E200C429CD /* CurveInTheMiddleView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -385,6 +396,7 @@
 		18209EAA2A714C840024F47B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				790B4F4E2AF24A7200C429CD /* Tab */,
 				7974B3692AE30FBE00F76D91 /* Authentication */,
 				18209EC82A7257110024F47B /* Splash */,
 				7991E54F2ADF37EA00C8F348 /* Onboarding */,
@@ -454,6 +466,7 @@
 				18209E842A7146690024F47B /* Main.storyboard */,
 				79B5CC4F2AE212E0005E19AD /* Authentication.storyboard */,
 				795D65922AEA9FC7007AF064 /* PopUp.storyboard */,
+				795D56D02AF5C20100F15611 /* TabControllers.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -481,6 +494,35 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		790B4F4E2AF24A7200C429CD /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				790B4F582AF24E7400C429CD /* Explore */,
+				790B4F4F2AF24ABA00C429CD /* Main Tab */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		790B4F4F2AF24ABA00C429CD /* Main Tab */ = {
+			isa = PBXGroup;
+			children = (
+				790B4F502AF24AF200C429CD /* MainTabBar.swift */,
+				790B4F522AF24BF300C429CD /* MainTabViewModel.swift */,
+				790B4F542AF24C1900C429CD /* MainTabViewController.swift */,
+			);
+			path = "Main Tab";
+			sourceTree = "<group>";
+		};
+		790B4F582AF24E7400C429CD /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				790B4F592AF24E9300C429CD /* ExploreView.swift */,
+				790B4F5B2AF24EA400C429CD /* ExploreViewModel.swift */,
+				790B4F5D2AF24EB100C429CD /* ExploreViewController.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
 		793E65D52AE4517700381F32 /* NibWrapper */ = {
 			isa = PBXGroup;
 			children = (
@@ -495,7 +537,6 @@
 			children = (
 				798423262AEEC13100441707 /* Set New Password */,
 				798423192AEEA06900441707 /* Type Code */,
-				798423122AEE993300441707 /* Open Email */,
 				798422FF2AEE758E00441707 /* Forgot Password */,
 				799E073B2AE5531400D853B5 /* Sign Up */,
 				79B5CC612AE2485E005E19AD /* Login */,
@@ -532,16 +573,6 @@
 				798423102AEE7FB600441707 /* BottomUpOptionsDelegate.swift */,
 			);
 			path = BottomUps;
-			sourceTree = "<group>";
-		};
-		798423122AEE993300441707 /* Open Email */ = {
-			isa = PBXGroup;
-			children = (
-				798423132AEE995300441707 /* OpenEmailView.swift */,
-				798423152AEE9A2400441707 /* OpenEmailViewModel.swift */,
-				798423172AEE9A4600441707 /* OpenEmailViewController.swift */,
-			);
-			path = "Open Email";
 			sourceTree = "<group>";
 		};
 		798423192AEEA06900441707 /* Type Code */ = {
@@ -707,6 +738,7 @@
 				79C247ED2AE9374C00D2FF6E /* Roboto-Regular.ttf in Resources */,
 				79BF3C762ADFF655009CE04B /* poppins-semibold.ttf in Resources */,
 				79BA2A242AE1E0570019E880 /* WorkSans-SemiBold.ttf in Resources */,
+				795D56D12AF5C20100F15611 /* TabControllers.storyboard in Resources */,
 				79A145E02AE0078500C184BE /* WorkSans-Medium.ttf in Resources */,
 				79BA2A2D2AE1EE710019E880 /* Inter-SemiBold.ttf in Resources */,
 				79BF3C732ADFF3B5009CE04B /* Inter-Medium.otf in Resources */,
@@ -741,6 +773,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7991E5592ADF3DAD00C8F348 /* OnboardingView.swift in Sources */,
+				790B4F5A2AF24E9300C429CD /* ExploreView.swift in Sources */,
 				7984230F2AEE7D6B00441707 /* BottomUpOptionsSheetViewModel.swift in Sources */,
 				798055F22AE6F9D700717FB4 /* BorderedView.swift in Sources */,
 				18209EDC2A7260210024F47B /* UICollectionViewCell.swift in Sources */,
@@ -770,6 +803,7 @@
 				795D65992AEAA560007AF064 /* OkAlertView.swift in Sources */,
 				18209EDA2A725FEB0024F47B /* UITableView.swift in Sources */,
 				7991E5572ADF3D8300C8F348 /* OnboardingViewController.swift in Sources */,
+				790B4F5E2AF24EB100C429CD /* ExploreViewController.swift in Sources */,
 				799E074E2AE5897400D853B5 /* CreateUserNameViewController.swift in Sources */,
 				18209E7F2A7146690024F47B /* AppDelegate.swift in Sources */,
 				7991E5552ADF3BF500C8F348 /* SplashViewModel.swift in Sources */,
@@ -777,21 +811,21 @@
 				795D65952AEAA462007AF064 /* OkAlertViewController.swift in Sources */,
 				7940FB012AEB586D00108E9A /* CountryPhoneCode.swift in Sources */,
 				799E074C2AE5571700D853B5 /* SignUpView.swift in Sources */,
+				790B4F532AF24BF300C429CD /* MainTabViewModel.swift in Sources */,
+				790B4F552AF24C1900C429CD /* MainTabViewController.swift in Sources */,
 				79BF3C6F2ADFC4A7009CE04B /* GlobalStrings.swift in Sources */,
 				79BF3C6D2ADFC053009CE04B /* AssetImage.swift in Sources */,
 				7984232C2AEEC19000441707 /* SetNewPasswordView.swift in Sources */,
 				799E07362AE50EC500D853B5 /* UIButton.swift in Sources */,
-				798423182AEE9A4600441707 /* OpenEmailViewController.swift in Sources */,
 				79E444632AE5C0FE003CB9C8 /* RoundedButton.swift in Sources */,
 				798423112AEE7FB600441707 /* BottomUpOptionsDelegate.swift in Sources */,
-				798423142AEE995300441707 /* OpenEmailView.swift in Sources */,
 				18209EBB2A7249140024F47B /* Assets.swift in Sources */,
 				7991E5612ADF671F00C8F348 /* OnboardingDetail.swift in Sources */,
 				798423032AEE79CB00441707 /* ForgotPasswordViewController.swift in Sources */,
 				79E407012AEBEC2E001B6AC0 /* APIClient.swift in Sources */,
 				7991E55E2ADF635800C8F348 /* OnboardingCollectionViewCell.swift in Sources */,
 				79B5CC652AE2488B005E19AD /* LoginViewController.swift in Sources */,
-				798423162AEE9A2400441707 /* OpenEmailViewModel.swift in Sources */,
+				790B4F5C2AF24EA400C429CD /* ExploreViewModel.swift in Sources */,
 				79BF3C7B2ADFF85D009CE04B /* Fonts.swift in Sources */,
 				18209EC52A724D860024F47B /* Sheet.swift in Sources */,
 				18209EDE2A7260320024F47B /* UICollectionView.swift in Sources */,
@@ -815,11 +849,13 @@
 				79BA2A272AE1E9CA0019E880 /* WelcomeViewModel.swift in Sources */,
 				795D658F2AEA78DF007AF064 /* Notification.swift in Sources */,
 				79D018E52AEA73E10066AAF6 /* Number.swift in Sources */,
+				790B4F512AF24AF200C429CD /* MainTabBar.swift in Sources */,
 				79E406FD2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift in Sources */,
 				79BA2A292AE1E9DC0019E880 /* WelcomeViewController.swift in Sources */,
 				18209EA82A714AB30024F47B /* UIViewController.swift in Sources */,
 				7984232A2AEEC15E00441707 /* SetNewPasswordViewController.swift in Sources */,
 				799E07462AE556B200D853B5 /* SignUpViewController.swift in Sources */,
+				790B4F4D2AF246E200C429CD /* CurveInTheMiddleView.swift in Sources */,
 				79BA2A2F2AE1F6E10019E880 /* UserDefaultsManager.swift in Sources */,
 				79E406F62AEBC7A1001B6AC0 /* APIService.swift in Sources */,
 				795D65972AEAA4AC007AF064 /* AlertViewModel.swift in Sources */,

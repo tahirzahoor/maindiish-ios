@@ -17,7 +17,7 @@ class WelcomeViewController: ViewController<WelcomeViewModel> {
     
     @IBAction
     func onLoginButtonTap(_ sender: RoundedButton) {
-        viewModel.router.append(.login, animated: true)
+        viewModel.router.setRoot(.mainTab)
     }
     
     @IBAction

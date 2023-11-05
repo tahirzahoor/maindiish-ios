@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab View Controller-->
+        <scene sceneID="dXr-FO-WA0">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yjz-mz-h3W" customClass="MainTabViewController" customModule="maindiish_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AIo-6X-LzF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.90980392160000001" green="0.25882352939999997" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                            <color key="value" systemColor="systemGray6Color"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" systemColor="systemMintColor"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="RM7-kr-bve" kind="relationship" relationship="viewControllers" id="JkU-Ul-kCu"/>
+                        <segue destination="krB-FL-345" kind="relationship" relationship="viewControllers" id="wgu-bE-ahy"/>
+                        <segue destination="l7S-nW-won" kind="relationship" relationship="viewControllers" id="9Bu-IY-1ap"/>
+                        <segue destination="GYF-sH-XwH" kind="relationship" relationship="viewControllers" id="Qvy-yK-byB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7UL-T0-9we" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="-382"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zSW-Hp-bmm">
+            <objects>
+                <viewController id="RM7-kr-bve" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tkW-ZS-9f0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crO-WY-RXp">
+                                <rect key="frame" x="12.666666666666657" y="59" width="368" height="32"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_diish_label_icon" translatesAutoresizingMaskIntoConstraints="NO" id="A2m-lk-OqZ">
+                                        <rect key="frame" x="0.0" y="6" width="115" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="4c3-Lk-Nbk"/>
+                                            <constraint firstAttribute="width" constant="115" id="u9m-BE-QMh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFv-9Z-EZm">
+                                        <rect key="frame" x="347.66666666666663" y="6" width="20.333333333333314" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="ioj-J5-XbZ"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="profile_icon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bW9-Ii-WMH">
+                                        <rect key="frame" x="313.33333333333331" y="6" width="20.333333333333314" height="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="bell_icon"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="A2m-lk-OqZ" firstAttribute="leading" secondItem="crO-WY-RXp" secondAttribute="leading" id="5ee-Jj-Ntu"/>
+                                    <constraint firstAttribute="height" constant="32" id="APn-5F-lsd"/>
+                                    <constraint firstItem="bW9-Ii-WMH" firstAttribute="centerY" secondItem="pFv-9Z-EZm" secondAttribute="centerY" id="DIg-wA-PAn"/>
+                                    <constraint firstItem="A2m-lk-OqZ" firstAttribute="centerY" secondItem="crO-WY-RXp" secondAttribute="centerY" id="HhY-gK-phV"/>
+                                    <constraint firstItem="bW9-Ii-WMH" firstAttribute="height" secondItem="pFv-9Z-EZm" secondAttribute="height" id="Sca-Qe-kyv"/>
+                                    <constraint firstAttribute="trailing" secondItem="pFv-9Z-EZm" secondAttribute="trailing" id="Yc8-5P-OES"/>
+                                    <constraint firstItem="pFv-9Z-EZm" firstAttribute="centerY" secondItem="crO-WY-RXp" secondAttribute="centerY" id="cVO-96-6HN"/>
+                                    <constraint firstItem="bW9-Ii-WMH" firstAttribute="width" secondItem="pFv-9Z-EZm" secondAttribute="width" id="hfd-la-QQJ"/>
+                                    <constraint firstItem="pFv-9Z-EZm" firstAttribute="leading" secondItem="bW9-Ii-WMH" secondAttribute="trailing" constant="14" id="o8z-Pp-Szf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2md-5P-iEr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="crO-WY-RXp" firstAttribute="leading" secondItem="2md-5P-iEr" secondAttribute="leading" constant="12.5" id="6BI-N7-cwY"/>
+                            <constraint firstItem="2md-5P-iEr" firstAttribute="trailing" secondItem="crO-WY-RXp" secondAttribute="trailing" constant="12.5" id="UqY-cm-cqC"/>
+                            <constraint firstItem="crO-WY-RXp" firstAttribute="top" secondItem="2md-5P-iEr" secondAttribute="top" id="bwJ-cQ-02s"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="explore_unselected_themed" selectedImage="explore_selected" id="bea-34-Ij6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Asn-1X-oE2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.946564885496173" y="-1169.0140845070423"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="COD-lE-nuj">
+            <objects>
+                <viewController id="l7S-nW-won" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tgb-wy-EpF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GRm-s1-xLI"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="trending_unselected_themed" selectedImage="trendings_selected" id="6BD-VT-6S5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fnM-pM-TqH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1640" y="-382"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Bb5-we-W8t">
+            <objects>
+                <viewController id="krB-FL-345" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oMW-MW-jCG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="W5x-rx-upa"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="brief_unselected_themed" selectedImage="briefs_selected" id="Ruh-hb-uDF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gt6-Gh-xkk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1447" y="-382"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tul-PT-1Bu">
+            <objects>
+                <viewController id="GYF-sH-XwH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6g9-6m-snm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yUc-qE-9CC"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="inbox_unselected_themed" selectedImage="inbox_selected" id="dYV-xb-7hL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7sx-CO-FcB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="444"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bell_icon" width="20.333333969116211" height="20.333333969116211"/>
+        <image name="brief_unselected_themed" width="42" height="39"/>
+        <image name="briefs_selected" width="42" height="39"/>
+        <image name="explore_selected" width="42" height="39.333332061767578"/>
+        <image name="explore_unselected_themed" width="42" height="39.333332061767578"/>
+        <image name="inbox_selected" width="42" height="39"/>
+        <image name="inbox_unselected_themed" width="42" height="39"/>
+        <image name="main_diish_label_icon" width="115.33333587646484" height="20.666666030883789"/>
+        <image name="profile_icon" width="20.333333969116211" height="20.333333969116211"/>
+        <image name="trending_unselected_themed" width="42" height="39.333332061767578"/>
+        <image name="trendings_selected" width="42" height="39.333332061767578"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SignUpField: Int {
+enum SignUpField: Int, CaseIterable {
     case name = 0, email, number, password, confirmPassword
     case country
 }

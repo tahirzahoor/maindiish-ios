@@ -7,255 +7,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C4AD05C2-4676-472C-8F6E-909417EA240E"
+            uuid = "BF26C389-DCBF-4A16-8B77-52D484D61352"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/Extensions/UINavigationController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "setPreLogin()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2C270E49-62C9-43CF-91C9-2D1C47C79117"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/Extensions/UINavigationController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "viewWillLayoutSubviews()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B30F61B0-348F-47C4-B214-0C2E8100AF49"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Authentication/Sign Up/SignUpViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "init()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "40F5295F-19E9-4E5D-98AB-083DAD89E049"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Authentication/Sign Up/SignUpViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "init()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "690EC21E-B5C7-452A-9DEB-815B588C4B29"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/Core/Repositories/SignUpRepository.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "fetchCountryCodes()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1B9F0AE8-D06B-4549-A573-F5A86A124F83"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/Core/Utilities/APIClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "fetch(fileDataOf:fileType:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A2DFAEF8-587D-47A4-AFEE-536D525A05E4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Authentication/Type Code/TypeCodeViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "textField(_:shouldChangeCharactersIn:replacementString:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A2DFAEF8-587D-47A4-AFEE-536D525A05E4 - ba8744e674a36b0c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "maindiish_ios.TypeCodeViewController.textField(_: __C.UITextField, shouldChangeCharactersIn: __C._NSRange, replacementString: Swift.String) -&gt; Swift.Bool"
-                  moduleName = "maindiish-ios"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Screens/Authentication/Type%20Code/TypeCodeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "164">
-               </Location>
-               <Location
-                  uuid = "A2DFAEF8-587D-47A4-AFEE-536D525A05E4 - ba8744e674a36b0c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "maindiish_ios.TypeCodeViewController.textField(_: __C.UITextField, shouldChangeCharactersIn: __C._NSRange, replacementString: Swift.String) -&gt; Swift.Bool"
-                  moduleName = "maindiish-ios"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Screens/Authentication/Type%20Code/TypeCodeViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "152">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E885A766-E7DD-4C91-9628-4F6DB662AD4A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Sheets/BottomUps/BottomUpOptionsSheetViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "backgroundTapped(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E885A766-E7DD-4C91-9628-4F6DB662AD4A - 53a9fe3e92127ec0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "maindiish_ios.BottomUpOptionsSheetViewController.backgroundTapped(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "maindiish-ios"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Sheets/BottomUps/BottomUpOptionsSheetViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  uuid = "E885A766-E7DD-4C91-9628-4F6DB662AD4A - 293062a4d2d6fe92"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in maindiish_ios.BottomUpOptionsSheetViewController.backgroundTapped(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "maindiish-ios"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Sheets/BottomUps/BottomUpOptionsSheetViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  uuid = "E885A766-E7DD-4C91-9628-4F6DB662AD4A - 53a9fe3e92127ec0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "maindiish_ios.BottomUpOptionsSheetViewController.backgroundTapped(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "maindiish-ios"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Sheets/BottomUps/BottomUpOptionsSheetViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "60">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AB71E0C7-2F1F-4ECA-AF22-51F9FB8F91AF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Sheets/BottomUps/BottomUpOptionsSheetViewController.swift"
+            filePath = "maindiish-ios/App/UI/Base/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
             endingLineNumber = "25"
-            landmarkName = "viewDidLoad()"
+            landmarkName = "init?(coder:viewModel:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BB018193-7D8E-4515-B31B-F43A376F9958"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Authentication/Set New Password/SetNewPasswordViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "textfieldEditingChanged(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BC41FCB7-0EC4-4964-9E62-6A7037BFCF8B"
+            uuid = "2B0218E8-1F47-4CE3-9267-CD14431257D0"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Authentication/Set New Password/SetNewPasswordViewModel.swift"
+            filePath = "maindiish-ios/App/Routing/Route.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "validate()"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "controller()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F6B2A0A-430E-461B-A42A-D4A984D8BC9D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "maindiish-ios/App/Routing/Route.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "controller()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81E1B2E1-77F6-4D5B-A797-71B1F0C646E2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "maindiish-ios/App/UI/Screens/Tab/Main Tab/MainTabViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -25,11 +25,11 @@ class ViewController<T: ViewModel>: UIViewController {
         self.viewModel = viewModel
         super.init(coder: coder)
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     static func instantiate(from storyboard: UIStoryboard.Storyboard, viewModel: T) -> Self {
         let identifier = Self.identifier
         let storyboard = UIStoryboard(name: storyboard.rawValue, bundle: nil)

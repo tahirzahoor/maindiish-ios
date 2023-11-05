@@ -19,10 +19,6 @@ class SignUpViewController: ViewController<SignUpViewModel> {
     
     @IBOutlet weak var signUpView: SignUpView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
@@ -34,10 +30,11 @@ class SignUpViewController: ViewController<SignUpViewModel> {
     @IBAction
     func numberCountrySelectorDropDownButtonTapped(_ sender: UIButton) {
         let options = viewModel.countryCodes.map {
-            "\($0.countryCode) (\($0.dialCode))"
+            "\($0.countryCode)(\($0.dialCode))"
         }
+        let selectedOptionIndex = options.firstIndex(where: { $0.contains(signUpView.selectedCountryLabel.text ?? "") }) ?? 0
         viewModel.router.showSheet(
-            .bottomUp(options, delegate: self),
+            .bottomUp(options, selectedOptionIndex: selectedOptionIndex, delegate: self),
             animated: true
         )
     }
@@ -98,15 +95,16 @@ class SignUpViewController: ViewController<SignUpViewModel> {
 // MARK: - UITextFieldDelegate Methods
 
 extension SignUpViewController: UITextFieldDelegate {
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        guard let text = textField.text as? NSString else {
+        guard let text = textField.text?.trimmingCharacters(in: .whitespacesAndNewlines) as? NSString else {
             return false
         }
         
         let textAfterUpdate = text.replacingCharacters(in: range, with: string)
         
-        let field = SignUpField(rawValue: textField.tag)!
+        let field = SignUpField.allCases[textField.tag]
         
         viewModel.signUpData[field] = textAfterUpdate
         

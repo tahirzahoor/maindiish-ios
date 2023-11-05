@@ -14,15 +14,10 @@ class SignUpViewModel: ViewModel {
     private let repository = SignUpRepository(apiService: APIClient())
     var signUpData = SignUpDataModel()
     
-    override init() {
-        super.init()
-        
-    }
-    
     func validateData() {
         
         guard let message = invalidDataMessage() else {
-            router.append(.createUsername(viewModel: self), animated: true)
+            router.append(.createUsername(viewModel: nil), animated: true)
             return
         }
         
@@ -30,30 +25,35 @@ class SignUpViewModel: ViewModel {
     }
     
     private func invalidDataMessage() -> validationMessage? {
-        var message: validationMessage? = nil
-        
+    
         if fieldIsEmpty() {
-            message = validationMessage(
+            return validationMessage(
                 GlobalStrings.Title.emptyField,
                 GlobalStrings.Message.fillInRequiredFields
             )
         } else if isInvalidEmail() {
-            message = validationMessage(
+            return validationMessage(
                 GlobalStrings.Title.invalidEmail,
                 GlobalStrings.Message.enterValidEmail
             )
         } else if isInvalidPassword() {
-            message = validationMessage(
+            return validationMessage(
                 GlobalStrings.Title.invalidPassword,
                 GlobalStrings.Message.passwordMustContain
             )
         } else if passwordsDonotMatch() {
-            message = validationMessage(GlobalStrings.Title.mismatchedPasswords, GlobalStrings.Message.passwordsMustBeSame)
+            return validationMessage(
+                GlobalStrings.Title.mismatchedPasswords,
+                GlobalStrings.Message.passwordsMustBeSame
+            )
         } else if notAgreedToTerms() {
-            message = validationMessage(GlobalStrings.Title.termsNotAgreed, GlobalStrings.Message.agreeToTerms)
+            return validationMessage(
+                GlobalStrings.Title.termsNotAgreed,
+                GlobalStrings.Message.agreeToTerms
+            )
         }
         
-        return message
+        return nil
     }
    
     private func fieldIsEmpty() -> Bool {

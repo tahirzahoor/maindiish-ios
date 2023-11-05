@@ -13,5 +13,6 @@ extension UIStoryboard {
         case Main
         case Authentication
         case PopUp
+        case TabControllers
     }
 }

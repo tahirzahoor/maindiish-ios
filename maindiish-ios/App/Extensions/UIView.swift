@@ -47,10 +47,10 @@ extension UIView {
         }
 
         var end: CGPoint {
-            switch self {
-            case .vertical: return CGPoint(x: 0, y: 1)
-            case .horizontal: return CGPoint(x: 1, y: 0)
-            case .diagonal: return CGPoint(x: 1, y: 1)
+            return switch self {
+                case .vertical: CGPoint(x: 0, y: 1)
+                case .horizontal: CGPoint(x: 1, y: 0)
+                case .diagonal: CGPoint(x: 1, y: 1)
             }
         }
     }

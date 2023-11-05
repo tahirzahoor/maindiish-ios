@@ -23,7 +23,10 @@ class BottomUpOptionsSheetViewController: ViewController<BottomUpOptionsSheetVie
     override func viewDidLoad() {
         super.viewDidLoad()
         addGestures()
+        setupPickerView()
     }
+    
+    // MARK: - Private Methods
     
     private func addGestures() {
         let backgroundTapGesture = UITapGestureRecognizer(target: self, action: #selector(backgroundTapped))
@@ -31,13 +34,21 @@ class BottomUpOptionsSheetViewController: ViewController<BottomUpOptionsSheetVie
     }
     
     @objc
-    func backgroundTapped(_ sender: UITapGestureRecognizer) {
+    private func backgroundTapped(_ sender: UITapGestureRecognizer) {
         dismiss(animated: true) {
             self.delegate?.didSelectOption(
                 self.viewModel.selectedOption,
                 at: self.viewModel.selectedOptionIndex
             )
         }
+    }
+    
+    private func setupPickerView() {
+        bottomUpView.optionSelectionView.selectRow(
+            viewModel.selectedOptionIndex,
+            inComponent: 0,
+            animated: false
+        )
     }
     
 }

@@ -30,10 +30,7 @@ class ForgotPasswordViewController: ViewController<ForgotPasswordViewModel> {
     
     @IBAction
     func countryDialCodeSelectionButtonTapped(_ sender: UIButton) {
-        let options = viewModel.countryCodes.map {
-            "\($0.countryCode) (\($0.dialCode))"
-        }
-        viewModel.router.showSheet(.bottomUp(options, delegate: self), animated: true)
+        openBottomSheet()
     }
     
     @IBAction
@@ -43,8 +40,7 @@ class ForgotPasswordViewController: ViewController<ForgotPasswordViewModel> {
             return
         }
         
-        let nextRoute: Route = viewIsToggled ? .typeCode : .openEmail
-        viewModel.router.append(nextRoute, animated: true)
+        viewModel.router.append(.typeCode, animated: true)
     }
     
     @IBAction
@@ -69,6 +65,28 @@ class ForgotPasswordViewController: ViewController<ForgotPasswordViewModel> {
         } else {
             return forgotPasswordView.emailField.text?.isEmpty ?? true
         }
+    }
+    
+    private func openBottomSheet() {
+        let countryCodes = Utils.fetchCountryCodes()
+        let options = countryCodes.map { "\($0.countryCode) (\($0.dialCode))" }
+        let selectedOptionIndex = options.firstIndex {
+            $0.contains(
+                forgotPasswordView
+                    .countryDialCodeSelectionButton
+                    .titleLabel?
+                    .text ?? ""
+            )
+        } ?? 0
+        
+        viewModel.router.showSheet(
+            .bottomUp(
+                options,
+                selectedOptionIndex: selectedOptionIndex,
+                delegate: self
+            ),
+            animated: true
+        )
     }
     
 }

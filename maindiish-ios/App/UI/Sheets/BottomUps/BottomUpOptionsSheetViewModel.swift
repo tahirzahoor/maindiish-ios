@@ -15,8 +15,9 @@ class BottomUpOptionsSheetViewModel: ViewModel {
     }
     var selectedOptionIndex = 0
     
-    init(optionsList: [String]) {
+    init(optionsList: [String], selectedOptionIndex: Int) {
         self.optionsList = optionsList
+        self.selectedOptionIndex = selectedOptionIndex
     }
     
 }
