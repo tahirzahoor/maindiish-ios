@@ -18,11 +18,12 @@ enum Fonts: String {
     case interSemibold = "Inter-SemiBold"
     case robotoRegular = "Roboto-Regular"
     case interRegular = "Inter-Regular"
+    case robotoMedium = "Roboto-Medium"
+    case poppinsLight = "Poppins-Light"
+    case poppinsRegular = "Poppins-Regular"
     
     func font(_ size: CGFloat = 15) -> UIFont? {
         return UIFont(name: rawValue, size: size)
     }
     
 }
-
-

@@ -84,6 +84,18 @@
 		799E074E2AE5897400D853B5 /* CreateUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E074D2AE5897400D853B5 /* CreateUserNameViewController.swift */; };
 		799E07502AE58A3400D853B5 /* CreateUserNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E074F2AE58A3400D853B5 /* CreateUserNameView.swift */; };
 		79A145E02AE0078500C184BE /* WorkSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79A145DF2AE0078500C184BE /* WorkSans-Medium.ttf */; };
+		79A525832AF8328600DBC4A0 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525822AF8328600DBC4A0 /* PostTableViewCell.swift */; };
+		79A525852AF8353700DBC4A0 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79A525842AF8353700DBC4A0 /* Roboto-Medium.ttf */; };
+		79A525872AF835AD00DBC4A0 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79A525862AF835AD00DBC4A0 /* Poppins-Light.ttf */; };
+		79A525892AF8367E00DBC4A0 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79A525882AF8367E00DBC4A0 /* Poppins-Regular.ttf */; };
+		79A525952AF84AA900DBC4A0 /* SingleImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A525942AF84AA900DBC4A0 /* SingleImageView.xib */; };
+		79A525972AF84AB200DBC4A0 /* TwoImagesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A525962AF84AB200DBC4A0 /* TwoImagesView.xib */; };
+		79A525992AF84ABD00DBC4A0 /* ThreeImagesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A525982AF84ABD00DBC4A0 /* ThreeImagesView.xib */; };
+		79A5259B2AF84ACA00DBC4A0 /* FourOrMoreImagesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A5259A2AF84ACA00DBC4A0 /* FourOrMoreImagesView.xib */; };
+		79A5259D2AF84F5500DBC4A0 /* SingleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5259C2AF84F5500DBC4A0 /* SingleImageView.swift */; };
+		79A5259F2AF84F6100DBC4A0 /* TwoImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A5259E2AF84F6100DBC4A0 /* TwoImagesView.swift */; };
+		79A525A12AF84F6A00DBC4A0 /* ThreeImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525A02AF84F6A00DBC4A0 /* ThreeImagesView.swift */; };
+		79A525A32AF84F7300DBC4A0 /* FourOrMoreImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525A22AF84F7300DBC4A0 /* FourOrMoreImagesView.swift */; };
 		79B5CC502AE212E0005E19AD /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B5CC4F2AE212E0005E19AD /* Authentication.storyboard */; };
 		79B5CC582AE21EF5005E19AD /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79B5CC572AE21EF5005E19AD /* Inter-Regular.ttf */; };
 		79B5CC632AE24874005E19AD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B5CC622AE24874005E19AD /* LoginViewModel.swift */; };
@@ -198,6 +210,18 @@
 		799E074D2AE5897400D853B5 /* CreateUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserNameViewController.swift; sourceTree = "<group>"; };
 		799E074F2AE58A3400D853B5 /* CreateUserNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserNameView.swift; sourceTree = "<group>"; };
 		79A145DF2AE0078500C184BE /* WorkSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Medium.ttf"; sourceTree = "<group>"; };
+		79A525822AF8328600DBC4A0 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		79A525842AF8353700DBC4A0 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		79A525862AF835AD00DBC4A0 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		79A525882AF8367E00DBC4A0 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		79A525942AF84AA900DBC4A0 /* SingleImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleImageView.xib; sourceTree = "<group>"; };
+		79A525962AF84AB200DBC4A0 /* TwoImagesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoImagesView.xib; sourceTree = "<group>"; };
+		79A525982AF84ABD00DBC4A0 /* ThreeImagesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreeImagesView.xib; sourceTree = "<group>"; };
+		79A5259A2AF84ACA00DBC4A0 /* FourOrMoreImagesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourOrMoreImagesView.xib; sourceTree = "<group>"; };
+		79A5259C2AF84F5500DBC4A0 /* SingleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageView.swift; sourceTree = "<group>"; };
+		79A5259E2AF84F6100DBC4A0 /* TwoImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoImagesView.swift; sourceTree = "<group>"; };
+		79A525A02AF84F6A00DBC4A0 /* ThreeImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeImagesView.swift; sourceTree = "<group>"; };
+		79A525A22AF84F7300DBC4A0 /* FourOrMoreImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourOrMoreImagesView.swift; sourceTree = "<group>"; };
 		79B5CC4F2AE212E0005E19AD /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		79B5CC572AE21EF5005E19AD /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		79B5CC622AE24874005E19AD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -516,9 +540,11 @@
 		790B4F582AF24E7400C429CD /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				79A525932AF84A7600DBC4A0 /* CellImagesViews */,
 				790B4F592AF24E9300C429CD /* ExploreView.swift */,
 				790B4F5B2AF24EA400C429CD /* ExploreViewModel.swift */,
 				790B4F5D2AF24EB100C429CD /* ExploreViewController.swift */,
+				79A525822AF8328600DBC4A0 /* PostTableViewCell.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -619,6 +645,21 @@
 			path = "Sign Up";
 			sourceTree = "<group>";
 		};
+		79A525932AF84A7600DBC4A0 /* CellImagesViews */ = {
+			isa = PBXGroup;
+			children = (
+				79A525942AF84AA900DBC4A0 /* SingleImageView.xib */,
+				79A525962AF84AB200DBC4A0 /* TwoImagesView.xib */,
+				79A525982AF84ABD00DBC4A0 /* ThreeImagesView.xib */,
+				79A5259A2AF84ACA00DBC4A0 /* FourOrMoreImagesView.xib */,
+				79A5259C2AF84F5500DBC4A0 /* SingleImageView.swift */,
+				79A5259E2AF84F6100DBC4A0 /* TwoImagesView.swift */,
+				79A525A02AF84F6A00DBC4A0 /* ThreeImagesView.swift */,
+				79A525A22AF84F7300DBC4A0 /* FourOrMoreImagesView.swift */,
+			);
+			path = CellImagesViews;
+			sourceTree = "<group>";
+		};
 		79B5CC612AE2485E005E19AD /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -644,6 +685,9 @@
 			children = (
 				79C247EC2AE9374C00D2FF6E /* Roboto-Regular.ttf */,
 				79B5CC572AE21EF5005E19AD /* Inter-Regular.ttf */,
+				79A525862AF835AD00DBC4A0 /* Poppins-Light.ttf */,
+				79A525842AF8353700DBC4A0 /* Roboto-Medium.ttf */,
+				79A525882AF8367E00DBC4A0 /* Poppins-Regular.ttf */,
 				79BA2A2C2AE1EE710019E880 /* Inter-SemiBold.ttf */,
 				79BA2A232AE1E0570019E880 /* WorkSans-SemiBold.ttf */,
 				79BA2A212AE1DF4E0019E880 /* RobotoCondensed-SemiBold.ttf */,
@@ -726,21 +770,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A525952AF84AA900DBC4A0 /* SingleImageView.xib in Resources */,
+				79A525972AF84AB200DBC4A0 /* TwoImagesView.xib in Resources */,
 				18209EB42A7245720024F47B /* Localizable.strings in Resources */,
+				79A525872AF835AD00DBC4A0 /* Poppins-Light.ttf in Resources */,
+				79A5259B2AF84ACA00DBC4A0 /* FourOrMoreImagesView.xib in Resources */,
 				7940FAFD2AEB578C00108E9A /* countries_phone_codes_data.json in Resources */,
 				18209EBF2A72493F0024F47B /* InfoPlist.strings in Resources */,
+				79A525852AF8353700DBC4A0 /* Roboto-Medium.ttf in Resources */,
 				18209E882A71466A0024F47B /* Assets.xcassets in Resources */,
 				795D65932AEA9FC7007AF064 /* PopUp.storyboard in Resources */,
 				79B5CC502AE212E0005E19AD /* Authentication.storyboard in Resources */,
 				18209E862A7146690024F47B /* Main.storyboard in Resources */,
 				79B5CC582AE21EF5005E19AD /* Inter-Regular.ttf in Resources */,
 				79BA2A222AE1DF4E0019E880 /* RobotoCondensed-SemiBold.ttf in Resources */,
+				79A525992AF84ABD00DBC4A0 /* ThreeImagesView.xib in Resources */,
 				79C247ED2AE9374C00D2FF6E /* Roboto-Regular.ttf in Resources */,
 				79BF3C762ADFF655009CE04B /* poppins-semibold.ttf in Resources */,
 				79BA2A242AE1E0570019E880 /* WorkSans-SemiBold.ttf in Resources */,
 				795D56D12AF5C20100F15611 /* TabControllers.storyboard in Resources */,
 				79A145E02AE0078500C184BE /* WorkSans-Medium.ttf in Resources */,
 				79BA2A2D2AE1EE710019E880 /* Inter-SemiBold.ttf in Resources */,
+				79A525892AF8367E00DBC4A0 /* Poppins-Regular.ttf in Resources */,
 				79BF3C732ADFF3B5009CE04B /* Inter-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -777,9 +828,11 @@
 				7984230F2AEE7D6B00441707 /* BottomUpOptionsSheetViewModel.swift in Sources */,
 				798055F22AE6F9D700717FB4 /* BorderedView.swift in Sources */,
 				18209EDC2A7260210024F47B /* UICollectionViewCell.swift in Sources */,
+				79A5259F2AF84F6100DBC4A0 /* TwoImagesView.swift in Sources */,
 				18209EE42A7260D30024F47B /* XibView.swift in Sources */,
 				7984231D2AEEA09D00441707 /* TypeCodeView.swift in Sources */,
 				7984230D2AEE7D5500441707 /* BottomUpOptionsSheetView.swift in Sources */,
+				79A5259D2AF84F5500DBC4A0 /* SingleImageView.swift in Sources */,
 				7991E54E2ADF341900C8F348 /* SplashView.swift in Sources */,
 				79E406F82AEBCB57001B6AC0 /* Repository.swift in Sources */,
 				18209EC32A724D5D0024F47B /* Route.swift in Sources */,
@@ -789,6 +842,7 @@
 				793E65D72AE451A200381F32 /* NibWrapped.swift in Sources */,
 				79B5CC632AE24874005E19AD /* LoginViewModel.swift in Sources */,
 				798423252AEEB5ED00441707 /* Utils.swift in Sources */,
+				79A525832AF8328600DBC4A0 /* PostTableViewCell.swift in Sources */,
 				7940FAFF2AEB581900108E9A /* SignUpRepository.swift in Sources */,
 				7984231B2AEEA07800441707 /* TypeCodeViewModel.swift in Sources */,
 				18209EA62A714A390024F47B /* ViewModel.swift in Sources */,
@@ -800,6 +854,7 @@
 				18209EE72A7261C30024F47B /* Storage.swift in Sources */,
 				79BA2A2B2AE1EA520019E880 /* WelcomeView.swift in Sources */,
 				7901B4ED2AE4434200D24064 /* NibWrapperView.swift in Sources */,
+				79A525A12AF84F6A00DBC4A0 /* ThreeImagesView.swift in Sources */,
 				795D65992AEAA560007AF064 /* OkAlertView.swift in Sources */,
 				18209EDA2A725FEB0024F47B /* UITableView.swift in Sources */,
 				7991E5572ADF3D8300C8F348 /* OnboardingViewController.swift in Sources */,
@@ -816,6 +871,7 @@
 				79BF3C6F2ADFC4A7009CE04B /* GlobalStrings.swift in Sources */,
 				79BF3C6D2ADFC053009CE04B /* AssetImage.swift in Sources */,
 				7984232C2AEEC19000441707 /* SetNewPasswordView.swift in Sources */,
+				79A525A32AF84F7300DBC4A0 /* FourOrMoreImagesView.swift in Sources */,
 				799E07362AE50EC500D853B5 /* UIButton.swift in Sources */,
 				79E444632AE5C0FE003CB9C8 /* RoundedButton.swift in Sources */,
 				798423112AEE7FB600441707 /* BottomUpOptionsDelegate.swift in Sources */,
