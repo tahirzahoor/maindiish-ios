@@ -41,15 +41,16 @@ extension TrendingPostsViewController: UITableViewDataSource {
         let data = viewModel.posts[indexPath.row]
         
         cell.configure(with: data)
+        cell.mediaCollectionView.tag = indexPath.row
         
         return cell
     }
 }
 
-// MARK: - UITableViewDelegate Methods
+// MARK: - UICollectionViewDelegate Methods
 extension TrendingPostsViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
+        //let cell = collectionView.cellForItem(at: indexPath)
         
     }
 }
@@ -85,3 +86,5 @@ extension TrendingPostsViewController: UICollectionViewDataSource {
         }
     }
 }
+
+

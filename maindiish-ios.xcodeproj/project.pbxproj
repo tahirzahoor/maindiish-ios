@@ -358,6 +358,7 @@
 		18209E9E2A7149C90024F47B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				18209EAA2A714C840024F47B /* Screens */,
 				18209EA22A714A0F0024F47B /* Base */,
 				18209EA92A714C790024F47B /* Components */,
 				18209EAB2A714C8B0024F47B /* Sheets */,
@@ -369,7 +370,6 @@
 		18209E9F2A7149CE0024F47B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				18209EAA2A714C840024F47B /* Screens */,
 				18209EDD2A7260320024F47B /* UICollectionView.swift */,
 				18209EDB2A7260210024F47B /* UICollectionViewCell.swift */,
 				18209ED32A725C770024F47B /* UIFont.swift */,

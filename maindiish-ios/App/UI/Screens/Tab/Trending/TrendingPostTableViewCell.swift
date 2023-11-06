@@ -31,14 +31,23 @@ class TrendingPostTableViewCell: UITableViewCell {
         
         setLabelFonts()
     }
-   
+    
+    // MARK: - Action Methods
+    
+    @IBAction
+    func pageControlDidChange(_ sender: UIPageControl) {
+        let pageNo = sender.currentPage
+        
+        mediaCollectionView.scrollToItem(at: IndexPath(item: pageNo, section: 0), at: .centeredHorizontally, animated: true)
+    }
+    
     // MARK: - Private Methods
     
     private func setLabelFonts() {
         nameLabel.font = Fonts.robotoMedium.font(15)
         timeAgoLabel.font = Fonts.poppinsLight.font(11.5)
         followButton.titleLabel?.font = Fonts.robotoRegular.font(10)
-        postDescriptionLabel.font = Fonts.interMedium.font(18)
+        postDescriptionLabel.font = Fonts.robotoRegular.font(13)
         
         let font = Fonts.poppinsRegular.font(11.5)
         numberOfHeartsButton.titleLabel?.font = font
@@ -58,6 +67,35 @@ class TrendingPostTableViewCell: UITableViewCell {
         numberOfCommentsButton.titleLabel?.text = "\(data.numberOfComments)"
         numberOfViewsButton.titleLabel?.text = "\(data.numberOfViews)"
         numberOfSharesButton.titleLabel?.text = "\(data.numberOfShares)"
+        
+        mediaPageControl.numberOfPages = data.mediaImageNames?.count ?? 0
     }
 
+}
+
+extension TrendingPostTableViewCell: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        .zero
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        .zero
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        .zero
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let pageNo = scrollView.contentOffset.x / scrollView.frame.size.width
+        
+        mediaPageControl.currentPage = Int(pageNo)
+    }
+    
 }
