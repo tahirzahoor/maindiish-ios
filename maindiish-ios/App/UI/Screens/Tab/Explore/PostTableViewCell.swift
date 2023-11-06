@@ -19,10 +19,10 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var moreOptionsButton: UIButton!
     @IBOutlet weak var postDescriptionLabel: UILabel!
     @IBOutlet weak var mediaView: UIView!
-    @IBOutlet weak var numberOfHeartsLabel: UILabel!
-    @IBOutlet weak var numberOfCommentsLabel: UILabel!
-    @IBOutlet weak var numberOfViewsLabel: UILabel!
-    @IBOutlet weak var numberOfSharesLabel: UILabel!
+    @IBOutlet weak var numberOfHeartsButton: UIButton!
+    @IBOutlet weak var numberOfCommentsButton: UIButton!
+    @IBOutlet weak var numberOfViewsButton: UIButton!
+    @IBOutlet weak var numberOfSharesButton: UIButton!
     
     // MARK: - Lifecycle Methods
     
@@ -41,10 +41,10 @@ class PostTableViewCell: UITableViewCell {
         postDescriptionLabel.font = Fonts.interMedium.font(18)
         
         let font = Fonts.poppinsRegular.font(11.5)
-        numberOfHeartsLabel.font = font
-        numberOfCommentsLabel.font = font
-        numberOfViewsLabel.font = font
-        numberOfSharesLabel.font = font
+        numberOfHeartsButton.titleLabel?.font = font
+        numberOfCommentsButton.titleLabel?.font = font
+        numberOfViewsButton.titleLabel?.font = font
+        numberOfSharesButton.titleLabel?.font = font
     }
     
 }

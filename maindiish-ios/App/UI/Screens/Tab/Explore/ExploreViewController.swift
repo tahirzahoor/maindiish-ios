@@ -20,6 +20,39 @@ class ExploreViewController: ViewController<ExploreViewModel> {
         super.viewDidLoad()
     }
     
+    // MARK: - Action Methods
+    
+    @IBAction
+    func followButtonTapped(_ sender: RoundedButton) {
+        
+        sender.isSelected.toggle()
+        
+        let title = sender.isSelected ? "unfollow" : "follow"
+        
+        sender.setTitle(title, for: .normal)
+    }
+    
+    @IBAction
+    func moreOptionsTapped(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction
+    func heartButtonTapped(_ sender: UIButton) {
+        sender.isSelected.toggle()
+        
+        let title = sender.isSelected ? " 1" : " 0"
+        sender.setTitle(title, for: .normal)
+    }
+    
+    @IBAction
+    func commentsButtonTapped(_ sender: UIButton) {
+    }
+    
+    @IBAction
+    func shareButtonTapped(_ sender: UIButton) {
+    }
+    
 }
 
 // MARK: - UITableViewDelegate Methods
@@ -36,11 +69,11 @@ extension ExploreViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.selectionStyle = .none
     }
-    
+
 }
 
-
 // MARK: - UITableViewDataSource Methods
+
 extension ExploreViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         15
@@ -49,6 +82,8 @@ extension ExploreViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: PostTableViewCell = tableView.dequeueCell(for: indexPath)
         
+        cell.followButton.tag = indexPath.row
+        cell.moreOptionsButton.tag = indexPath.row
         cell.blueCircleImageView.isHidden = indexPath.row % 2 == 0
         
         var viewToFix: UIView
