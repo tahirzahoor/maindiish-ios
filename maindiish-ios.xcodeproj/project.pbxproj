@@ -97,6 +97,13 @@
 		79A525A12AF84F6A00DBC4A0 /* ThreeImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525A02AF84F6A00DBC4A0 /* ThreeImagesView.swift */; };
 		79A525A32AF84F7300DBC4A0 /* FourOrMoreImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525A22AF84F7300DBC4A0 /* FourOrMoreImagesView.swift */; };
 		79A525A62AF903A800DBC4A0 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525A52AF903A800DBC4A0 /* FilterCollectionViewCell.swift */; };
+		79A525AA2AF96EA300DBC4A0 /* TrendingPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525A92AF96EA300DBC4A0 /* TrendingPostTableViewCell.swift */; };
+		79A525AC2AF97E7900DBC4A0 /* TrendingPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525AB2AF97E7900DBC4A0 /* TrendingPostsViewController.swift */; };
+		79A525AE2AF97E9D00DBC4A0 /* TrendingPostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525AD2AF97E9D00DBC4A0 /* TrendingPostsViewModel.swift */; };
+		79A525B02AF97EEC00DBC4A0 /* TrendingPostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525AF2AF97EEC00DBC4A0 /* TrendingPostsView.swift */; };
+		79A525B22AF9829000DBC4A0 /* TrendingPostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525B12AF9829000DBC4A0 /* TrendingPostData.swift */; };
+		79A525B42AF9835B00DBC4A0 /* TrendingPostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525B32AF9835B00DBC4A0 /* TrendingPostRepository.swift */; };
+		79A525B62AF988FB00DBC4A0 /* TrendingPostImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525B52AF988FB00DBC4A0 /* TrendingPostImageCollectionViewCell.swift */; };
 		79B5CC502AE212E0005E19AD /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B5CC4F2AE212E0005E19AD /* Authentication.storyboard */; };
 		79B5CC582AE21EF5005E19AD /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79B5CC572AE21EF5005E19AD /* Inter-Regular.ttf */; };
 		79B5CC632AE24874005E19AD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B5CC622AE24874005E19AD /* LoginViewModel.swift */; };
@@ -224,6 +231,13 @@
 		79A525A02AF84F6A00DBC4A0 /* ThreeImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeImagesView.swift; sourceTree = "<group>"; };
 		79A525A22AF84F7300DBC4A0 /* FourOrMoreImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourOrMoreImagesView.swift; sourceTree = "<group>"; };
 		79A525A52AF903A800DBC4A0 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		79A525A92AF96EA300DBC4A0 /* TrendingPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPostTableViewCell.swift; sourceTree = "<group>"; };
+		79A525AB2AF97E7900DBC4A0 /* TrendingPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPostsViewController.swift; sourceTree = "<group>"; };
+		79A525AD2AF97E9D00DBC4A0 /* TrendingPostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPostsViewModel.swift; sourceTree = "<group>"; };
+		79A525AF2AF97EEC00DBC4A0 /* TrendingPostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPostsView.swift; sourceTree = "<group>"; };
+		79A525B12AF9829000DBC4A0 /* TrendingPostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPostData.swift; sourceTree = "<group>"; };
+		79A525B32AF9835B00DBC4A0 /* TrendingPostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPostRepository.swift; sourceTree = "<group>"; };
+		79A525B52AF988FB00DBC4A0 /* TrendingPostImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPostImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		79B5CC4F2AE212E0005E19AD /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		79B5CC572AE21EF5005E19AD /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		79B5CC622AE24874005E19AD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -346,7 +360,6 @@
 			children = (
 				18209EA22A714A0F0024F47B /* Base */,
 				18209EA92A714C790024F47B /* Components */,
-				18209EAA2A714C840024F47B /* Screens */,
 				18209EAB2A714C8B0024F47B /* Sheets */,
 				18209ECF2A72596D0024F47B /* Storyboards */,
 			);
@@ -356,6 +369,7 @@
 		18209E9F2A7149CE0024F47B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				18209EAA2A714C840024F47B /* Screens */,
 				18209EDD2A7260320024F47B /* UICollectionView.swift */,
 				18209EDB2A7260210024F47B /* UICollectionViewCell.swift */,
 				18209ED32A725C770024F47B /* UIFont.swift */,
@@ -667,6 +681,13 @@
 			isa = PBXGroup;
 			children = (
 				79A525A52AF903A800DBC4A0 /* FilterCollectionViewCell.swift */,
+				79A525A92AF96EA300DBC4A0 /* TrendingPostTableViewCell.swift */,
+				79A525AB2AF97E7900DBC4A0 /* TrendingPostsViewController.swift */,
+				79A525AD2AF97E9D00DBC4A0 /* TrendingPostsViewModel.swift */,
+				79A525AF2AF97EEC00DBC4A0 /* TrendingPostsView.swift */,
+				79A525B12AF9829000DBC4A0 /* TrendingPostData.swift */,
+				79A525B32AF9835B00DBC4A0 /* TrendingPostRepository.swift */,
+				79A525B52AF988FB00DBC4A0 /* TrendingPostImageCollectionViewCell.swift */,
 			);
 			path = Trending;
 			sourceTree = "<group>";
@@ -858,12 +879,15 @@
 				7984231B2AEEA07800441707 /* TypeCodeViewModel.swift in Sources */,
 				18209EA62A714A390024F47B /* ViewModel.swift in Sources */,
 				798423052AEE79E600441707 /* ForgotPasswordViewModel.swift in Sources */,
+				79A525B22AF9829000DBC4A0 /* TrendingPostData.swift in Sources */,
 				798423012AEE770900441707 /* ForgotPasswordView.swift in Sources */,
 				18209ED12A725B6F0024F47B /* Environment.swift in Sources */,
 				18209ECB2A7257940024F47B /* SplashViewController.swift in Sources */,
 				79BA2A1C2AE1C22A0019E880 /* Color.swift in Sources */,
 				18209EE72A7261C30024F47B /* Storage.swift in Sources */,
 				79BA2A2B2AE1EA520019E880 /* WelcomeView.swift in Sources */,
+				79A525B42AF9835B00DBC4A0 /* TrendingPostRepository.swift in Sources */,
+				79A525AA2AF96EA300DBC4A0 /* TrendingPostTableViewCell.swift in Sources */,
 				7901B4ED2AE4434200D24064 /* NibWrapperView.swift in Sources */,
 				79A525A12AF84F6A00DBC4A0 /* ThreeImagesView.swift in Sources */,
 				795D65992AEAA560007AF064 /* OkAlertView.swift in Sources */,
@@ -884,6 +908,7 @@
 				7984232C2AEEC19000441707 /* SetNewPasswordView.swift in Sources */,
 				79A525A32AF84F7300DBC4A0 /* FourOrMoreImagesView.swift in Sources */,
 				799E07362AE50EC500D853B5 /* UIButton.swift in Sources */,
+				79A525AE2AF97E9D00DBC4A0 /* TrendingPostsViewModel.swift in Sources */,
 				79E444632AE5C0FE003CB9C8 /* RoundedButton.swift in Sources */,
 				798423112AEE7FB600441707 /* BottomUpOptionsDelegate.swift in Sources */,
 				18209EBB2A7249140024F47B /* Assets.swift in Sources */,
@@ -917,10 +942,13 @@
 				79BA2A272AE1E9CA0019E880 /* WelcomeViewModel.swift in Sources */,
 				795D658F2AEA78DF007AF064 /* Notification.swift in Sources */,
 				79D018E52AEA73E10066AAF6 /* Number.swift in Sources */,
+				79A525B62AF988FB00DBC4A0 /* TrendingPostImageCollectionViewCell.swift in Sources */,
 				790B4F512AF24AF200C429CD /* MainTabBar.swift in Sources */,
 				79E406FD2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift in Sources */,
 				79BA2A292AE1E9DC0019E880 /* WelcomeViewController.swift in Sources */,
+				79A525AC2AF97E7900DBC4A0 /* TrendingPostsViewController.swift in Sources */,
 				18209EA82A714AB30024F47B /* UIViewController.swift in Sources */,
+				79A525B02AF97EEC00DBC4A0 /* TrendingPostsView.swift in Sources */,
 				7984232A2AEEC15E00441707 /* SetNewPasswordViewController.swift in Sources */,
 				799E07462AE556B200D853B5 /* SignUpViewController.swift in Sources */,
 				790B4F4D2AF246E200C429CD /* CurveInTheMiddleView.swift in Sources */,

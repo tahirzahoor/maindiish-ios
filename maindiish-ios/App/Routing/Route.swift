@@ -20,6 +20,7 @@ enum Route {
     case setNewPassword
     case mainTab
     case explore
+    case trending
     
     func controller() -> UIViewController {
         switch self {
@@ -66,6 +67,10 @@ enum Route {
             case .explore:
                 let viewModel = ExploreViewModel()
                 let controller = ExploreViewController.instantiate(from: .TabControllers, viewModel: viewModel)
+                return controller
+            case .trending:
+                let viewModel = TrendingPostsViewModel()
+                let controller = TrendingPostsViewController.instantiate(from: .TabControllers, viewModel: viewModel)
                 return controller
         }
     }

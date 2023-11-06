@@ -332,11 +332,11 @@
             </objects>
             <point key="canvasLocation" x="1640" y="-382"/>
         </scene>
-        <!--View Controller-->
+        <!--Trending Posts View Controller-->
         <scene sceneID="Bb5-we-W8t">
             <objects>
-                <viewController id="krB-FL-345" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oMW-MW-jCG">
+                <viewController storyboardIdentifier="TrendingPostsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="krB-FL-345" customClass="TrendingPostsViewController" customModule="maindiish_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oMW-MW-jCG" customClass="TrendingPostsView" customModule="maindiish_ios" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -355,7 +355,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gM8-xP-2bP">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="-1" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gM8-xP-2bP">
                                 <rect key="frame" x="15" y="69" width="302" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -408,6 +408,10 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="106" height="39"/>
+                                        <connections>
+                                            <outlet property="filterLabel" destination="oHy-9J-kn2" id="hL9-T5-fuB"/>
+                                            <outlet property="labelBackground" destination="ZsU-vQ-4Th" id="sgu-P6-TG8"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -419,7 +423,7 @@
                                 <rect key="frame" x="12" y="133" width="369" height="685"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="377" id="HiH-Tl-jDV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TrendingPostTableViewCell" rowHeight="377" id="HiH-Tl-jDV" customClass="TrendingPostTableViewCell" customModule="maindiish_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="369" height="377"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HiH-Tl-jDV" id="dPY-2c-chZ">
@@ -557,14 +561,14 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="230" id="ZP3-qx-eRg"/>
                                                                     </constraints>
-                                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K7O-MY-c2L">
+                                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="K7O-MY-c2L">
                                                                         <size key="itemSize" width="339" height="229"/>
                                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                     </collectionViewFlowLayout>
                                                                     <cells>
-                                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BES-EG-Ygf">
+                                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="TrendingPostImageCollectionViewCell" id="BES-EG-Ygf" customClass="TrendingPostImageCollectionViewCell" customModule="maindiish_ios" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.66666666666666663" width="339" height="229"/>
                                                                             <autoresizingMask key="autoresizingMask"/>
                                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="062-Xb-OKx">
@@ -605,7 +609,9 @@
                                                                                     <constraint firstAttribute="trailing" secondItem="0VH-8E-yRg" secondAttribute="trailing" id="wa0-Tu-uN5"/>
                                                                                 </constraints>
                                                                             </collectionViewCellContentView>
-                                                                            <size key="customSize" width="339" height="229"/>
+                                                                            <connections>
+                                                                                <outlet property="postImageView" destination="xsT-HK-AAn" id="Hxe-Oa-BUu"/>
+                                                                            </connections>
                                                                         </collectionViewCell>
                                                                     </cells>
                                                                     <connections>
@@ -670,8 +676,26 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="followButton" destination="Hvc-3d-yxG" id="1dl-Ix-1az"/>
+                                            <outlet property="mediaCollectionView" destination="Gmn-3X-sX6" id="hlC-8g-uYq"/>
+                                            <outlet property="mediaPageControl" destination="Ooe-eh-1rJ" id="bxa-60-kxz"/>
+                                            <outlet property="moreOptionsButton" destination="D55-Rn-CIs" id="GBK-hK-XFg"/>
+                                            <outlet property="nameLabel" destination="EvH-Ua-kve" id="9dn-o9-EC0"/>
+                                            <outlet property="numberOfCommentsButton" destination="xBC-z8-ukx" id="3S0-LO-yWa"/>
+                                            <outlet property="numberOfHeartsButton" destination="V36-l6-5YN" id="Nlc-pX-jmS"/>
+                                            <outlet property="numberOfSharesButton" destination="rpS-AV-89g" id="WtZ-lF-FRX"/>
+                                            <outlet property="numberOfViewsButton" destination="TRY-o4-FrQ" id="ged-xr-j4J"/>
+                                            <outlet property="postDescriptionLabel" destination="36s-tI-n41" id="wfv-jR-Njn"/>
+                                            <outlet property="profileImageView" destination="cSh-MS-D0n" id="vsq-uY-G5M"/>
+                                            <outlet property="timeAgoLabel" destination="mcH-AQ-vXS" id="uJ1-yR-3G2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="krB-FL-345" id="lrL-Ea-Pjr"/>
+                                    <outlet property="delegate" destination="krB-FL-345" id="s64-um-ZyQ"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W5x-rx-upa"/>
@@ -687,8 +711,16 @@
                             <constraint firstItem="W5x-rx-upa" firstAttribute="bottom" secondItem="Rt8-qu-Zna" secondAttribute="bottom" id="dtr-bA-teK"/>
                             <constraint firstItem="W5x-rx-upa" firstAttribute="trailing" secondItem="sAe-cd-4zX" secondAttribute="trailing" constant="13" id="wNp-fq-dr2"/>
                         </constraints>
+                        <connections>
+                            <outlet property="filtersCollectionView" destination="gM8-xP-2bP" id="nmD-AL-5y5"/>
+                            <outlet property="postsTableView" destination="Rt8-qu-Zna" id="1MY-FL-qHJ"/>
+                            <outlet property="searchButton" destination="sAe-cd-4zX" id="L4T-JQ-qYf"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="brief_unselected_themed" selectedImage="briefs_selected" id="Ruh-hb-uDF"/>
+                    <connections>
+                        <outlet property="trendingPostsView" destination="oMW-MW-jCG" id="fuU-oT-6rl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gt6-Gh-xkk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
