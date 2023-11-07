@@ -63,7 +63,9 @@ extension ExploreViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewModel.alert = "Selected Row is \(indexPath.row)"
+        let data = viewModel.data[indexPath.row]
+        
+        viewModel.router.append(.postDetail(data: data), animated: true)
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -76,22 +78,25 @@ extension ExploreViewController: UITableViewDelegate {
 
 extension ExploreViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        15
+        viewModel.data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: PostTableViewCell = tableView.dequeueCell(for: indexPath)
         
+        let data = viewModel.data[indexPath.row]
+        
+        
         cell.followButton.tag = indexPath.row
         cell.moreOptionsButton.tag = indexPath.row
-        cell.blueCircleImageView.isHidden = indexPath.row % 2 == 0
+        cell.configure(with: data)
         
         var viewToFix: UIView
         
         let rem = indexPath.row % 4
         
         let image = UIImage(named: "dummy_post_image")!
-        let images = Array<UIImage>(repeating: image, count: rem + 1)
+        let images = Array<UIImage>(repeating: image, count: data.mediaImageNames?.count ?? 0)
         
         if rem == 0 {
             let view = SingleImageView.loadFromNib()

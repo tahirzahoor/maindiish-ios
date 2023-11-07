@@ -21,6 +21,7 @@ enum Route {
     case mainTab
     case explore
     case trending
+    case postDetail(data: TrendingPostData)
     
     func controller() -> UIViewController {
         switch self {
@@ -71,6 +72,10 @@ enum Route {
             case .trending:
                 let viewModel = TrendingPostsViewModel()
                 let controller = TrendingPostsViewController.instantiate(from: .TabControllers, viewModel: viewModel)
+                return controller
+            case .postDetail(let data):
+                let viewModel = PostDetailViewModel(data: data)
+                let controller = PostDetailViewController.instantiate(from: .TabControllers, viewModel: viewModel)
                 return controller
         }
     }

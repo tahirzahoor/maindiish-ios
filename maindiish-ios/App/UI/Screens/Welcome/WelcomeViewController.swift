@@ -17,7 +17,7 @@ class WelcomeViewController: ViewController<WelcomeViewModel> {
     
     @IBAction
     func onLoginButtonTap(_ sender: RoundedButton) {
-        viewModel.router.setRoot(.trending)
+        viewModel.router.setRoot(.mainTab)
     }
     
     @IBAction

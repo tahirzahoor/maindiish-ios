@@ -11,17 +11,13 @@ class TrendingPostRepository {
     
     // MARK: - Instance Properties
     
-    var filterLabels: [String] = ["All", "Italian", "Desi", "Cuban"]
+    var filterLabels: [String] = ["All", "Italian", "Desi", "Cuban", "French", "Indian", "Pakistani"]
     
     var postData: [TrendingPostData] {
         loadData()
     }
     
     // MARK: - Public Methods
-    
-    init() {
-        
-    }
     
     private func loadData() -> [TrendingPostData] {
         var data = [TrendingPostData]()

@@ -10,6 +10,10 @@ import UIKit
 
 class TrendingPostsViewController: ViewController<TrendingPostsViewModel> {
     
+    // MARK: - Private properties
+    
+    private var selectedFilterIndex: Int = 0
+    
     // MARK: - Outlets
     
     @IBOutlet weak var trendingPostsView: TrendingPostsView!
@@ -20,12 +24,32 @@ class TrendingPostsViewController: ViewController<TrendingPostsViewModel> {
         super.viewDidLoad()
     }
     
+    // MARK: - Action Methods
+    
+    @IBAction
+    func followButtonTapped(_ sender: RoundedButton) {
+        sender.isSelected.toggle()
+        
+        let title = sender.isSelected ? "Unfollow" : "Follow"
+        sender.setTitle(title, for: .normal)
+    }
+    
 }
 
 // MARK: - UITableViewDelegate Methods
 extension TrendingPostsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = viewModel.posts[indexPath.row]
+        
+        viewModel.router.append(.postDetail(data: data), animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.selectionStyle = .none
     }
 }
 
@@ -47,15 +71,7 @@ extension TrendingPostsViewController: UITableViewDataSource {
     }
 }
 
-// MARK: - UICollectionViewDelegate Methods
-extension TrendingPostsViewController: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //let cell = collectionView.cellForItem(at: indexPath)
-        
-    }
-}
-
-// MARK: - UITableViewDataSource Methods
+// MARK: - UICollectionViewDataSource Methods
 extension TrendingPostsViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -73,6 +89,8 @@ extension TrendingPostsViewController: UICollectionViewDataSource {
             let filterName = viewModel.filters[indexPath.item]
             cell.filterLabel.text = filterName
             
+            cell.setSelection(indexPath.row == selectedFilterIndex)
+            
             return cell
             
         } else {
@@ -84,6 +102,28 @@ extension TrendingPostsViewController: UICollectionViewDataSource {
             
             return cell
         }
+    }
+}
+
+extension TrendingPostsViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedFilterIndex = indexPath.row
+        collectionView.reloadData()
+    }
+}
+
+extension TrendingPostsViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cell: FilterCollectionViewCell = collectionView.dequeueCell(for: indexPath)
+        
+        let text = viewModel.filters[indexPath.row]
+        cell.filterLabel.text = text
+        
+        let labelWidth = cell.filterLabel.sizeThatFits(CGSize(width: CGFloat.greatestFiniteMagnitude, height: cell.filterLabel.frame.height)).width
+        
+        let cellWidth = labelWidth + 40
+        
+        return CGSize(width: cellWidth, height: 40)
     }
 }
 

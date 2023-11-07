@@ -47,4 +47,11 @@ class PostTableViewCell: UITableViewCell {
         numberOfSharesButton.titleLabel?.font = font
     }
     
+    func configure(with data: TrendingPostData) {
+        displayPictureImageView.image = UIImage(named: data.profileImageName)
+        profileNameLabel.text = data.profileName
+        postDescriptionLabel.text = data.postDescription
+        postedTimeAgoLabel.text = data.postedTimeAgo
+    }
+    
 }

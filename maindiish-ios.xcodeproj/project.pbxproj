@@ -124,6 +124,13 @@
 		79BF3C732ADFF3B5009CE04B /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 79BF3C722ADFF3B5009CE04B /* Inter-Medium.otf */; };
 		79BF3C762ADFF655009CE04B /* poppins-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79BF3C742ADFF655009CE04B /* poppins-semibold.ttf */; };
 		79BF3C7B2ADFF85D009CE04B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BF3C7A2ADFF85D009CE04B /* Fonts.swift */; };
+		79C04BB32AFACBAF00C7FF2C /* MainTabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C04BB22AFACBAF00C7FF2C /* MainTabsView.swift */; };
+		79C04BB62AFAEB7800C7FF2C /* PostTextDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C04BB52AFAEB7800C7FF2C /* PostTextDetailsTableViewCell.swift */; };
+		79C04BB82AFAEB8B00C7FF2C /* PostImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C04BB72AFAEB8B00C7FF2C /* PostImageTableViewCell.swift */; };
+		79C04BBB2AFAED3300C7FF2C /* Inter-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79C04BBA2AFAED3300C7FF2C /* Inter-Italic.ttf */; };
+		79C04BBD2AFAEF2400C7FF2C /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C04BBC2AFAEF2400C7FF2C /* PostDetailView.swift */; };
+		79C04BBF2AFAEF4600C7FF2C /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C04BBE2AFAEF4600C7FF2C /* PostDetailViewController.swift */; };
+		79C04BC12AFAEF6200C7FF2C /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C04BC02AFAEF6200C7FF2C /* PostDetailViewModel.swift */; };
 		79C247ED2AE9374C00D2FF6E /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79C247EC2AE9374C00D2FF6E /* Roboto-Regular.ttf */; };
 		79CCE1C62AE829DB00ADB8E9 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCE1C52AE829DB00ADB8E9 /* UINavigationController.swift */; };
 		79D018E32AEA739D0066AAF6 /* NewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D018E22AEA739D0066AAF6 /* NewUser.swift */; };
@@ -258,6 +265,13 @@
 		79BF3C722ADFF3B5009CE04B /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.otf"; sourceTree = "<group>"; };
 		79BF3C742ADFF655009CE04B /* poppins-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "poppins-semibold.ttf"; sourceTree = "<group>"; };
 		79BF3C7A2ADFF85D009CE04B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		79C04BB22AFACBAF00C7FF2C /* MainTabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabsView.swift; sourceTree = "<group>"; };
+		79C04BB52AFAEB7800C7FF2C /* PostTextDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTextDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		79C04BB72AFAEB8B00C7FF2C /* PostImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageTableViewCell.swift; sourceTree = "<group>"; };
+		79C04BBA2AFAED3300C7FF2C /* Inter-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Italic.ttf"; sourceTree = "<group>"; };
+		79C04BBC2AFAEF2400C7FF2C /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		79C04BBE2AFAEF4600C7FF2C /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		79C04BC02AFAEF6200C7FF2C /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
 		79C247EC2AE9374C00D2FF6E /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		79CCE1C52AE829DB00ADB8E9 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		79D018E22AEA739D0066AAF6 /* NewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewUser.swift; path = "maindiish-ios/App/Extensions/NewUser.swift"; sourceTree = SOURCE_ROOT; };
@@ -537,6 +551,7 @@
 		790B4F4E2AF24A7200C429CD /* Tab */ = {
 			isa = PBXGroup;
 			children = (
+				79C04BB42AFAEB3E00C7FF2C /* Post Details */,
 				79A525A42AF9038000DBC4A0 /* Trending */,
 				790B4F582AF24E7400C429CD /* Explore */,
 				790B4F4F2AF24ABA00C429CD /* Main Tab */,
@@ -550,6 +565,7 @@
 				790B4F502AF24AF200C429CD /* MainTabBar.swift */,
 				790B4F522AF24BF300C429CD /* MainTabViewModel.swift */,
 				790B4F542AF24C1900C429CD /* MainTabViewController.swift */,
+				79C04BB22AFACBAF00C7FF2C /* MainTabsView.swift */,
 			);
 			path = "Main Tab";
 			sourceTree = "<group>";
@@ -715,6 +731,7 @@
 		79BF3C5F2ADF7659009CE04B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				79C04BBA2AFAED3300C7FF2C /* Inter-Italic.ttf */,
 				79C247EC2AE9374C00D2FF6E /* Roboto-Regular.ttf */,
 				79B5CC572AE21EF5005E19AD /* Inter-Regular.ttf */,
 				79A525862AF835AD00DBC4A0 /* Poppins-Light.ttf */,
@@ -728,6 +745,26 @@
 				79BF3C722ADFF3B5009CE04B /* Inter-Medium.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		79C04BB42AFAEB3E00C7FF2C /* Post Details */ = {
+			isa = PBXGroup;
+			children = (
+				79C04BB92AFAEB9000C7FF2C /* Cells */,
+				79C04BBC2AFAEF2400C7FF2C /* PostDetailView.swift */,
+				79C04BBE2AFAEF4600C7FF2C /* PostDetailViewController.swift */,
+				79C04BC02AFAEF6200C7FF2C /* PostDetailViewModel.swift */,
+			);
+			path = "Post Details";
+			sourceTree = "<group>";
+		};
+		79C04BB92AFAEB9000C7FF2C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				79C04BB52AFAEB7800C7FF2C /* PostTextDetailsTableViewCell.swift */,
+				79C04BB72AFAEB8B00C7FF2C /* PostImageTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -803,6 +840,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79A525952AF84AA900DBC4A0 /* SingleImageView.xib in Resources */,
+				79C04BBB2AFAED3300C7FF2C /* Inter-Italic.ttf in Resources */,
 				79A525972AF84AB200DBC4A0 /* TwoImagesView.xib in Resources */,
 				18209EB42A7245720024F47B /* Localizable.strings in Resources */,
 				79A525872AF835AD00DBC4A0 /* Poppins-Light.ttf in Resources */,
@@ -868,6 +906,7 @@
 				7991E54E2ADF341900C8F348 /* SplashView.swift in Sources */,
 				79E406F82AEBCB57001B6AC0 /* Repository.swift in Sources */,
 				18209EC32A724D5D0024F47B /* Route.swift in Sources */,
+				79C04BB62AFAEB7800C7FF2C /* PostTextDetailsTableViewCell.swift in Sources */,
 				18209EE22A7260B70024F47B /* UIView.swift in Sources */,
 				18209EC12A724CC50024F47B /* Router.swift in Sources */,
 				7984230B2AEE7D4500441707 /* BottomUpOptionsSheetViewController.swift in Sources */,
@@ -881,6 +920,7 @@
 				798423052AEE79E600441707 /* ForgotPasswordViewModel.swift in Sources */,
 				79A525B22AF9829000DBC4A0 /* TrendingPostData.swift in Sources */,
 				798423012AEE770900441707 /* ForgotPasswordView.swift in Sources */,
+				79C04BB82AFAEB8B00C7FF2C /* PostImageTableViewCell.swift in Sources */,
 				18209ED12A725B6F0024F47B /* Environment.swift in Sources */,
 				18209ECB2A7257940024F47B /* SplashViewController.swift in Sources */,
 				79BA2A1C2AE1C22A0019E880 /* Color.swift in Sources */,
@@ -893,10 +933,12 @@
 				795D65992AEAA560007AF064 /* OkAlertView.swift in Sources */,
 				18209EDA2A725FEB0024F47B /* UITableView.swift in Sources */,
 				7991E5572ADF3D8300C8F348 /* OnboardingViewController.swift in Sources */,
+				79C04BBF2AFAEF4600C7FF2C /* PostDetailViewController.swift in Sources */,
 				790B4F5E2AF24EB100C429CD /* ExploreViewController.swift in Sources */,
 				799E074E2AE5897400D853B5 /* CreateUserNameViewController.swift in Sources */,
 				18209E7F2A7146690024F47B /* AppDelegate.swift in Sources */,
 				7991E5552ADF3BF500C8F348 /* SplashViewModel.swift in Sources */,
+				79C04BB32AFACBAF00C7FF2C /* MainTabsView.swift in Sources */,
 				7991E5532ADF391E00C8F348 /* UIStoryboard.swift in Sources */,
 				795D65952AEAA462007AF064 /* OkAlertViewController.swift in Sources */,
 				7940FB012AEB586D00108E9A /* CountryPhoneCode.swift in Sources */,
@@ -928,6 +970,7 @@
 				7984231F2AEEA0AA00441707 /* TypeCodeViewController.swift in Sources */,
 				18209EC72A724E030024F47B /* AppRouter.swift in Sources */,
 				79BF3C652ADF7AFB009CE04B /* OnboardingRepository.swift in Sources */,
+				79C04BC12AFAEF6200C7FF2C /* PostDetailViewModel.swift in Sources */,
 				79CCE1C62AE829DB00ADB8E9 /* UINavigationController.swift in Sources */,
 				79D018E32AEA739D0066AAF6 /* NewUser.swift in Sources */,
 				798423282AEEC14500441707 /* SetNewPasswordViewModel.swift in Sources */,
@@ -943,6 +986,7 @@
 				795D658F2AEA78DF007AF064 /* Notification.swift in Sources */,
 				79D018E52AEA73E10066AAF6 /* Number.swift in Sources */,
 				79A525B62AF988FB00DBC4A0 /* TrendingPostImageCollectionViewCell.swift in Sources */,
+				79C04BBD2AFAEF2400C7FF2C /* PostDetailView.swift in Sources */,
 				790B4F512AF24AF200C429CD /* MainTabBar.swift in Sources */,
 				79E406FD2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift in Sources */,
 				79BA2A292AE1E9DC0019E880 /* WelcomeViewController.swift in Sources */,
