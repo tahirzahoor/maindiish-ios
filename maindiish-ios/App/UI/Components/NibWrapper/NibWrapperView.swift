@@ -1,10 +1,3 @@
-//
-//  NibWrapperView.swift
-//  BaseCode
-//
-//  Created by Faizan Tanveer on 21/10/2023.
-//
-
 import UIKit
 
 class NibWrapperView<T: UIView>: UIView {

@@ -1,10 +1,3 @@
-//
-//  SignUpViewModel.swift
-//  BaseCode
-//
-//  Created by Faizan Tanveer on 22/10/2023.
-//
-
 import Foundation
 
 fileprivate typealias validationMessage = (title: String, Message: String)

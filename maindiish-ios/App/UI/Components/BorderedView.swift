@@ -1,10 +1,3 @@
-//
-//  BorderedView.swift
-//  maindiish-ios
-//
-//  Created by Faizan Tanveer on 23/10/2023.
-//
-
 import UIKit
 
 class BorderedView: UIView {

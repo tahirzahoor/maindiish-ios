@@ -1,10 +1,3 @@
-//
-//  ViewModel.swift
-//  BaseCode
-//
-//  Created by  on 26/07/2023.
-//
-
 import Combine
 import Foundation
 import SwiftDI

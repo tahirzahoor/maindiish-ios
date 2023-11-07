@@ -1,10 +1,3 @@
-//
-//  SignUpRepository.swift
-//  maindiish-ios
-//
-//  Created by Faizan Tanveer on 27/10/2023.
-//
-
 import APIManager
 import Foundation
 import ObjectMapper

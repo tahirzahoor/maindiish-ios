@@ -1,10 +1,3 @@
-//
-//  SignUpViewController.swift
-//  BaseCode
-//
-//  Created by Faizan Tanveer on 22/10/2023.
-//
-
 import Combine
 import Foundation
 import UIKit

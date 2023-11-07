@@ -1,10 +1,3 @@
-//
-//  SignUpView.swift
-//  BaseCode
-//
-//  Created by Faizan Tanveer on 22/10/2023.
-//
-
 import UIKit
 
 class SignUpView: UIView {

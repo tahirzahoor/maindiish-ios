@@ -1,10 +1,3 @@
-//
-//  CountryPhoneCode.swift
-//  maindiish-ios
-//
-//  Created by Faizan Tanveer on 27/10/2023.
-//
-
 import Foundation
 import ObjectMapper
 

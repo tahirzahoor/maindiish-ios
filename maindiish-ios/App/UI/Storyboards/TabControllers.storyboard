@@ -1069,6 +1069,9 @@
         <designable name="MuC-VY-k1R">
             <size key="intrinsicContentSize" width="31" height="24"/>
         </designable>
+        <designable name="jcV-lb-1AK">
+            <size key="intrinsicContentSize" width="37" height="27"/>
+        </designable>
     </designables>
     <resources>
         <image name="back_button_icon" width="24" height="24"/>

@@ -1,10 +1,3 @@
-//
-//  TrendingPostsViewModel.swift
-//  maindiish-ios
-//
-//  Created by Faizan Tanveer on 07/11/2023.
-//
-
 import Foundation
 
 class TrendingPostsViewModel: ViewModel {

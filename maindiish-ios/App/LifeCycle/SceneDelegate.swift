@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  BaseCode
-//
-//  Created by  on 26/07/2023.
-//
-
 import IQKeyboardManagerSwift
 import SwiftDI
 import UIKit
