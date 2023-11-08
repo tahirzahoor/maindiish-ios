@@ -45,10 +45,10 @@ class PostTableViewCell: UITableViewCell {
         profileNameLabel.text = data.profileName
         postDescriptionLabel.text = data.postDescription
         postedTimeAgoLabel.text = data.postedTimeAgo
-        numberOfViewsButton.titleLabel?.text = "\(data.numberOfViews)"
-        numberOfHeartsButton.titleLabel?.text = "\(data.numberOfHearts)"
-        numberOfCommentsButton.titleLabel?.text = "\(data.numberOfComments)"
-        numberOfSharesButton.titleLabel?.text = "\(data.numberOfShares)"
+        numberOfHeartsButton.setTitle(" \(data.numberOfHearts)", for: .normal)
+        numberOfCommentsButton.setTitle(" \(data.numberOfComments)", for: .normal)
+        numberOfViewsButton.setTitle(" \(data.numberOfViews)", for: .normal)
+        numberOfSharesButton.setTitle(" \(data.numberOfShares)", for: .normal)
         setImages(withImageNames: data.mediaImageNames)
     }
     

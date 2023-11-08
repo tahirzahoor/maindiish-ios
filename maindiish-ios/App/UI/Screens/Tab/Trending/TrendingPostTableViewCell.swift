@@ -56,10 +56,10 @@ class TrendingPostTableViewCell: UITableViewCell {
         timeAgoLabel.text = data.postedTimeAgo
         postDescriptionLabel.text = data.postDescription
         
-        numberOfHeartsButton.titleLabel?.text = "\(data.numberOfHearts)"
-        numberOfCommentsButton.titleLabel?.text = "\(data.numberOfComments)"
-        numberOfViewsButton.titleLabel?.text = "\(data.numberOfViews)"
-        numberOfSharesButton.titleLabel?.text = "\(data.numberOfShares)"
+        numberOfHeartsButton.setTitle(" \(data.numberOfHearts)", for: .normal)
+        numberOfCommentsButton.setTitle(" \(data.numberOfComments)", for: .normal)
+        numberOfViewsButton.setTitle(" \(data.numberOfViews)", for: .normal)
+        numberOfSharesButton.setTitle(" \(data.numberOfShares)", for: .normal)
         
         mediaPageControl.numberOfPages = data.mediaImageNames.count
         
