@@ -32,7 +32,7 @@ extension PostDetailViewController: UITableViewDelegate {
 extension PostDetailViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        (viewModel.data.mediaImageNames?.count ?? 0) + 1
+        viewModel.data.mediaImageNames.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,7 +48,7 @@ extension PostDetailViewController: UITableViewDataSource {
         } else {
             let cell: PostImageTableViewCell = tableView.dequeueCell(for: indexPath)
             
-            let imageName = viewModel.data.mediaImageNames?[indexPath.row - 1] ?? ""
+            let imageName = viewModel.data.mediaImageNames[indexPath.row - 1]
             cell.setImage(imageName)
             
             return cell

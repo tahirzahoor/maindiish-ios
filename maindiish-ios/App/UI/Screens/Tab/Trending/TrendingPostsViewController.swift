@@ -49,7 +49,7 @@ extension TrendingPostsViewController: UITableViewDelegate {
 // MARK: - UITableViewDataSource Methods
 extension TrendingPostsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        viewModel.posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -71,7 +71,7 @@ extension TrendingPostsViewController: UICollectionViewDataSource {
         if collectionView.tag == -1 {
             viewModel.filters.count
         } else {
-            viewModel.posts[collectionView.tag].mediaImageNames?.count ?? 0
+            viewModel.posts[collectionView.tag].mediaImageNames.count
         }
     }
     
@@ -89,7 +89,7 @@ extension TrendingPostsViewController: UICollectionViewDataSource {
         } else {
             let cell: TrendingPostImageCollectionViewCell = collectionView.dequeueCell(for: indexPath)
             
-            let imageName = viewModel.posts[collectionView.tag].mediaImageNames?[indexPath.item] ?? ""
+            let imageName = viewModel.posts[collectionView.tag].mediaImageNames[indexPath.row]
             let image = UIImage(named: imageName)
             cell.postImageView.image = image
             
@@ -101,6 +101,7 @@ extension TrendingPostsViewController: UICollectionViewDataSource {
 extension TrendingPostsViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedFilterIndex = indexPath.row
+        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         collectionView.reloadData()
     }
 }

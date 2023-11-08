@@ -61,9 +61,9 @@ class TrendingPostTableViewCell: UITableViewCell {
         numberOfViewsButton.titleLabel?.text = "\(data.numberOfViews)"
         numberOfSharesButton.titleLabel?.text = "\(data.numberOfShares)"
         
-        mediaPageControl.numberOfPages = data.mediaImageNames?.count ?? 0
+        mediaPageControl.numberOfPages = data.mediaImageNames.count
     }
-
+    
 }
 
 extension TrendingPostTableViewCell: UICollectionViewDelegateFlowLayout {

@@ -45,6 +45,45 @@ class PostTableViewCell: UITableViewCell {
         profileNameLabel.text = data.profileName
         postDescriptionLabel.text = data.postDescription
         postedTimeAgoLabel.text = data.postedTimeAgo
+        numberOfViewsButton.titleLabel?.text = "\(data.numberOfViews)"
+        numberOfHeartsButton.titleLabel?.text = "\(data.numberOfHearts)"
+        numberOfCommentsButton.titleLabel?.text = "\(data.numberOfComments)"
+        numberOfSharesButton.titleLabel?.text = "\(data.numberOfShares)"
+        setImages(withImageNames: data.mediaImageNames)
+    }
+    
+    private func setImages(withImageNames names: [String]) {
+        
+        var images = [UIImage]()
+    
+        for name in names {
+            let image = UIImage(named: name) ?? UIImage()
+            images.append(image)
+        }
+        
+        let numberOfImages = names.count
+        
+        var imagesView = UIView()
+        
+        if numberOfImages == 1 {
+            let view = SingleImageView.loadFromNib()
+            view.setImages(images: images)
+            imagesView = view
+        } else if numberOfImages == 2 {
+            let view = TwoImagesView.loadFromNib()
+            view.setImages(images: images)
+            imagesView = view
+        } else if numberOfImages == 3 {
+            let view = ThreeImagesView.loadFromNib()
+            view.setImages(images: images)
+            imagesView = view
+        } else if numberOfImages >= 4 {
+            let view = FourOrMoreImagesView.loadFromNib()
+            view.setImages(images: images)
+            imagesView = view
+        }
+        
+        imagesView.fixInView(mediaView)
     }
     
 }

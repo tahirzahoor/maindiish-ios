@@ -79,37 +79,7 @@ extension ExploreViewController: UITableViewDataSource {
         
         let data = viewModel.data[indexPath.row]
         
-        
-        cell.followButton.tag = indexPath.row
-        cell.moreOptionsButton.tag = indexPath.row
         cell.configure(with: data)
-        
-        var viewToFix: UIView
-        
-        let rem = indexPath.row % 4
-        
-        let image = UIImage(named: "dummy_post_image")!
-        let images = Array<UIImage>(repeating: image, count: data.mediaImageNames?.count ?? 0)
-        
-        if rem == 0 {
-            let view = SingleImageView.loadFromNib()
-            view.setImages(images: images)
-            viewToFix = view
-        } else if rem == 1{
-            let view = TwoImagesView.loadFromNib()
-            view.setImages(images: images)
-            viewToFix = view
-        } else if rem == 2 {
-            let view = ThreeImagesView.loadFromNib()
-            view.setImages(images: images)
-            viewToFix = view
-        } else {
-            let view = FourOrMoreImagesView.loadFromNib()
-            view.setImages(images: images)
-            viewToFix = view
-        }
-        
-        viewToFix.fixInView(cell.mediaView)
         
         return cell
     }

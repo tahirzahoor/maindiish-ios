@@ -17,8 +17,8 @@ class FourOrMoreImagesView: UIView {
     // MARK: - Public Methods
     
     func setImages(images: [UIImage]) {
-        for (index, image) in images.enumerated() {
-            imageViews[index].image = image
+        for index in 0..<4 {
+            imageViews[index].image = images[index]
         }
     }
 }
