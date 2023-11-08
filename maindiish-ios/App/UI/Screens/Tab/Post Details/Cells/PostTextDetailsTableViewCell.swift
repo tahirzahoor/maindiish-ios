@@ -32,6 +32,11 @@ class PostTextDetailsTableViewCell: UITableViewCell {
         nameLabel.text = data.profileName
         descriptionLabel.text = data.postDescription
         tagsLabel.text = "#tag"
+        
+        buttonStack[0].setTitle(" \(data.numberOfHearts)", for: .normal)
+        buttonStack[1].setTitle(" \(data.numberOfComments)", for: .normal)
+        buttonStack[2].setTitle(" \(data.numberOfViews)", for: .normal)
+        buttonStack[3].setTitle(" \(data.numberOfShares)", for: .normal)
     }
 
 }
