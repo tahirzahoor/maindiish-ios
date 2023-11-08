@@ -62,6 +62,8 @@ class TrendingPostTableViewCell: UITableViewCell {
         numberOfSharesButton.titleLabel?.text = "\(data.numberOfShares)"
         
         mediaPageControl.numberOfPages = data.mediaImageNames.count
+        
+        mediaCollectionView.reloadData()
     }
     
 }

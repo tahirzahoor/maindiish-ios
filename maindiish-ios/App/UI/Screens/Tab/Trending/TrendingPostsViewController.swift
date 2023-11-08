@@ -57,8 +57,8 @@ extension TrendingPostsViewController: UITableViewDataSource {
         
         let data = viewModel.posts[indexPath.row]
         
-        cell.configure(with: data)
         cell.mediaCollectionView.tag = indexPath.row
+        cell.configure(with: data)
         
         return cell
     }
