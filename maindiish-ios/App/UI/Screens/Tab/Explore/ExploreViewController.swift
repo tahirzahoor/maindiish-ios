@@ -13,6 +13,11 @@ class ExploreViewController: ViewController<ExploreViewModel> {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        exploreView.postsTableView.reloadData()
+    }
+    
     // MARK: - Action Methods
     
     @IBAction
@@ -92,4 +97,5 @@ extension ExploreViewController: UITableViewDataSource {
     }
     
 }
+
 

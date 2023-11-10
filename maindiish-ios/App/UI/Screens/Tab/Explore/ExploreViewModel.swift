@@ -2,10 +2,8 @@ import Foundation
 
 class ExploreViewModel: ViewModel {
     
-    private var repository = TrendingPostRepository()
-    
-    var data: [TrendingPostData] {
-        repository.postData
+    var data: [PostData] {
+        PostRepository.shared.postData
     }
     
 }

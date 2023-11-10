@@ -948,6 +948,7 @@
                                                 </cells>
                                                 <connections>
                                                     <outlet property="dataSource" destination="JZJ-uH-dgI" id="4kB-mz-F5q"/>
+                                                    <outlet property="delegate" destination="JZJ-uH-dgI" id="RmJ-qz-2NX"/>
                                                 </connections>
                                             </collectionView>
                                         </subviews>
@@ -1075,21 +1076,21 @@
                                                     <constraint firstAttribute="height" constant="300" id="1oH-ua-WOK"/>
                                                 </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Bua-b8-EY3">
-                                                    <size key="itemSize" width="361" height="297"/>
+                                                    <size key="itemSize" width="367" height="297"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReviewPostImageCollectionViewCell" id="53e-Yw-dXU" customClass="ReviewPostImageCollectionViewCell" customModule="maindiish_ios" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="1.6666666666666667" width="361" height="297"/>
+                                                        <rect key="frame" x="0.0" y="1.6666666666666667" width="367" height="297"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7wS-Fb-wTH">
-                                                            <rect key="frame" x="0.0" y="0.0" width="361" height="297"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="367" height="297"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_post_image" translatesAutoresizingMaskIntoConstraints="NO" id="z9z-gj-0EG">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="361" height="297"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="367" height="297"/>
                                                                 </imageView>
                                                             </subviews>
                                                             <constraints>
@@ -1099,7 +1100,7 @@
                                                                 <constraint firstItem="z9z-gj-0EG" firstAttribute="leading" secondItem="7wS-Fb-wTH" secondAttribute="leading" id="fcz-fP-Igj"/>
                                                             </constraints>
                                                         </collectionViewCellContentView>
-                                                        <size key="customSize" width="361" height="297"/>
+                                                        <size key="customSize" width="367" height="297"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <integer key="value" value="20"/>
@@ -1227,6 +1228,95 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iNL-ij-tcf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5596.1832061068699" y="-1119.0140845070423"/>
+        </scene>
+        <!--Images View Controller-->
+        <scene sceneID="ZWp-pi-848">
+            <objects>
+                <viewController storyboardIdentifier="ImagesViewController" modalPresentationStyle="overFullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Cz4-1J-Gpe" customClass="ImagesViewController" customModule="maindiish_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Mb-7o-VJB" customClass="ImagesView" customModule="maindiish_ios" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5s-DK-phk">
+                                <rect key="frame" x="20" y="71" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="PVl-wg-Fje"/>
+                                    <constraint firstAttribute="width" constant="24" id="QjB-kE-0U9"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="xmark" catalog="system"/>
+                                <connections>
+                                    <action selector="crossButtonTapped:" destination="Cz4-1J-Gpe" eventType="touchUpInside" id="9U1-Uf-SSW"/>
+                                    <action selector="crossButtonTapped:" destination="JZJ-uH-dgI" eventType="touchUpInside" id="rqQ-E3-Whv"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6CQ-IL-HCD">
+                                <rect key="frame" x="0.0" y="288.66666666666669" width="393" height="300.00000000000006"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Feg-BQ-9mP"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="kwH-ZY-SZu">
+                                    <size key="itemSize" width="390" height="299"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReviewPostImageCollectionViewCell" id="ceg-P3-ij0" customClass="ReviewPostImageCollectionViewCell" customModule="maindiish_ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.66666666666666663" width="390" height="299"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rik-VV-Y0u">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="299"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_post_image" translatesAutoresizingMaskIntoConstraints="NO" id="abX-fe-tVu">
+                                                    <rect key="frame" x="0.0" y="0.0" width="390" height="299"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="abX-fe-tVu" firstAttribute="top" secondItem="rik-VV-Y0u" secondAttribute="top" id="Hyr-ix-Qqd"/>
+                                                <constraint firstAttribute="bottom" secondItem="abX-fe-tVu" secondAttribute="bottom" id="ejk-bE-odj"/>
+                                                <constraint firstItem="abX-fe-tVu" firstAttribute="leading" secondItem="rik-VV-Y0u" secondAttribute="leading" id="nFd-iy-5Ke"/>
+                                                <constraint firstAttribute="trailing" secondItem="abX-fe-tVu" secondAttribute="trailing" id="pZu-UT-4vL"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="390" height="299"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="abX-fe-tVu" id="Jc7-2w-LBX"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Cz4-1J-Gpe" id="dXc-kC-01g"/>
+                                    <outlet property="delegate" destination="Cz4-1J-Gpe" id="P0G-Wz-LBl"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RAg-Hc-k6w"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.89848923841059603" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6CQ-IL-HCD" firstAttribute="leading" secondItem="RAg-Hc-k6w" secondAttribute="leading" id="0od-Gs-Ubu"/>
+                            <constraint firstItem="6CQ-IL-HCD" firstAttribute="centerY" secondItem="RAg-Hc-k6w" secondAttribute="centerY" id="64D-ao-YNx"/>
+                            <constraint firstItem="C5s-DK-phk" firstAttribute="leading" secondItem="RAg-Hc-k6w" secondAttribute="leading" constant="20" id="J5d-6F-eyy"/>
+                            <constraint firstItem="C5s-DK-phk" firstAttribute="top" secondItem="RAg-Hc-k6w" secondAttribute="top" constant="12" id="oe9-fx-Ed7"/>
+                            <constraint firstItem="RAg-Hc-k6w" firstAttribute="trailing" secondItem="6CQ-IL-HCD" secondAttribute="trailing" id="sHY-5F-CUA"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="imagesCollectionView" destination="6CQ-IL-HCD" id="X2b-TO-kiz"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="imagesView" destination="8Mb-7o-VJB" id="hdZ-Kf-C1J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpc-ss-qYW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6397.7099236641216" y="-1119.0140845070423"/>
         </scene>
         <!--Trending Posts View Controller-->
         <scene sceneID="Bb5-we-W8t">
@@ -1661,6 +1751,7 @@
         <image name="trending_unselected_themed" width="42" height="39.333332061767578"/>
         <image name="trendings_selected" width="42" height="39.333332061767578"/>
         <image name="upload_media_icon" width="20" height="20"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="author_title">
             <color red="0.9100000262260437" green="0.25499999523162842" blue="0.15299999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

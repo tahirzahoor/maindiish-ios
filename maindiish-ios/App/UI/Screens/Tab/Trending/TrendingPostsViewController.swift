@@ -71,7 +71,7 @@ extension TrendingPostsViewController: UICollectionViewDataSource {
         if collectionView.tag == -1 {
             viewModel.filters.count
         } else {
-            viewModel.posts[collectionView.tag].mediaImageNames.count
+            viewModel.posts[collectionView.tag].imagesData.count
         }
     }
     
@@ -89,8 +89,8 @@ extension TrendingPostsViewController: UICollectionViewDataSource {
         } else {
             let cell: TrendingPostImageCollectionViewCell = collectionView.dequeueCell(for: indexPath)
             
-            let imageName = viewModel.posts[collectionView.tag].mediaImageNames[indexPath.row]
-            let image = UIImage(named: imageName)
+            let imageData = viewModel.posts[collectionView.tag].imagesData[indexPath.row]
+            let image = UIImage(data: imageData)
             cell.postImageView.image = image
             
             return cell

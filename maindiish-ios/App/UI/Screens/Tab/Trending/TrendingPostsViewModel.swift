@@ -4,7 +4,7 @@ class TrendingPostsViewModel: ViewModel {
     
     // MARK: - Private Properties
     
-    private let repository = TrendingPostRepository()
+    private let repository = PostRepository.shared
     
     // MARK: - Instance Properties
     
@@ -12,7 +12,7 @@ class TrendingPostsViewModel: ViewModel {
         repository.filterLabels
     }
     
-    var posts: [TrendingPostData] {
+    var posts: [PostData] {
         repository.postData
     }
     

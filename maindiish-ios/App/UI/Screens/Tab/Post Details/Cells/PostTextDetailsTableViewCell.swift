@@ -27,11 +27,11 @@ class PostTextDetailsTableViewCell: UITableViewCell {
         }
     }
     
-    func configure(with data: TrendingPostData) {
-        displayImageView.image = UIImage(named: data.profileImageName)
-        nameLabel.text = data.profileName
-        descriptionLabel.text = data.postDescription
-        tagsLabel.text = "#tag"
+    func configure(with data: PostData) {
+        displayImageView.image = UIImage(named: "dummy_dp")
+        nameLabel.text = data.owner
+        descriptionLabel.text = data.description
+        tagsLabel.text = data.tags
         
         buttonStack[0].setTitle(" \(data.numberOfHearts)", for: .normal)
         buttonStack[1].setTitle(" \(data.numberOfComments)", for: .normal)

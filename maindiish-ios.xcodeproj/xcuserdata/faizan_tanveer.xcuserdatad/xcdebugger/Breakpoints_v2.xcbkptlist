@@ -30,10 +30,74 @@
             filePath = "maindiish-ios/App/UI/Screens/Tab/Create Post/CreateBlogViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "picker(_:didFinishPicking:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A04F78B-7CEA-4F34-AB14-943A7FB5010E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "maindiish-ios/App/UI/Screens/Tab/Images Viewer/ImagesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91559E40-1CDC-4759-AEFF-5CE00EE0467D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "maindiish-ios/App/UI/Sheets/Post Type/PostTypeBottomSheetViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "blogOptionButtonTapped(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "91559E40-1CDC-4759-AEFF-5CE00EE0467D - a56784f6be9ef1f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "maindiish_ios.PostTypeBottomSheetViewController.blogOptionButtonTapped(maindiish_ios.RoundedButton) -&gt; ()"
+                  moduleName = "maindiish-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Sheets/Post%20Type/PostTypeBottomSheetViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "91559E40-1CDC-4759-AEFF-5CE00EE0467D - b4b9fb3eeb741c38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in maindiish_ios.PostTypeBottomSheetViewController.blogOptionButtonTapped(maindiish_ios.RoundedButton) -&gt; ()"
+                  moduleName = "maindiish-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Sheets/Post%20Type/PostTypeBottomSheetViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

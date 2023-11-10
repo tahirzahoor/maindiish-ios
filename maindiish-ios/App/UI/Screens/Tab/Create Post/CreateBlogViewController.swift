@@ -8,8 +8,6 @@
 import Foundation
 import UIKit
 import PhotosUI
-import UniformTypeIdentifiers
-import MobileCoreServices
 
 class CreateBlogViewController: ViewController<CreateBlogViewModel> {
     
@@ -76,6 +74,18 @@ extension CreateBlogViewController: UICollectionViewDataSource {
         return cell
     }
 }
+
+// MARK: - UICollectionViewDelegate Methods
+
+extension CreateBlogViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let imageTappedAt = indexPath.row
+        let controller = Route.imagesView(viewModel.postData.imagesData, tappedIndex: imageTappedAt).controller()
+        navigationController?.present(controller, animated: true)
+    }
+}
+
 
 // MARK: - UITextViewDelegate
 extension CreateBlogViewController: UITextViewDelegate {

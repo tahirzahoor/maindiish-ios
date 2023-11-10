@@ -16,4 +16,11 @@ class ReviewPostViewModel: ViewModel {
     init(_ postData: PostData) {
         self.postData = postData
     }
+    
+    // MARK: - Public Methods
+    
+    func publishPost() {
+        PostRepository.shared.postData.insert(postData, at: 0)
+        router.pop(back: 2)
+    }
 }

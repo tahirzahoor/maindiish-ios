@@ -31,7 +31,7 @@ class ReviewPostViewController: ViewController<ReviewPostViewModel> {
     
     @IBAction
     func publishButtonTapped(_ sender: RoundedButton) {
-        
+        viewModel.publishPost()
     }
     
     @IBAction

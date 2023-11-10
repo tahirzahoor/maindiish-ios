@@ -37,7 +37,7 @@ class MainTabViewController: ViewController<MainTabViewModel> {
     
     @IBAction
     func addButtonTapped(_ sender: UIButton) {
-        viewModel.router.append(.createBlog, animated: false)
+        viewModel.router.showSheet(.postType, animated: true)
     }
     
     @IBAction

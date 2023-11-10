@@ -40,46 +40,39 @@ class PostTableViewCell: UITableViewCell {
         numberOfSharesButton.titleLabel?.font = font
     }
     
-    func configure(with data: TrendingPostData) {
-        displayPictureImageView.image = UIImage(named: data.profileImageName)
-        profileNameLabel.text = data.profileName
-        postDescriptionLabel.text = data.postDescription
-        postedTimeAgoLabel.text = data.postedTimeAgo
+    func configure(with data: PostData) {
+        displayPictureImageView.image = UIImage(named: "dummy_dp")
+        profileNameLabel.text = data.owner
+        postDescriptionLabel.text = data.description
+        postedTimeAgoLabel.text = data.timeElapsedSincePosted
         numberOfHeartsButton.setTitle(" \(data.numberOfHearts)", for: .normal)
         numberOfCommentsButton.setTitle(" \(data.numberOfComments)", for: .normal)
         numberOfViewsButton.setTitle(" \(data.numberOfViews)", for: .normal)
         numberOfSharesButton.setTitle(" \(data.numberOfShares)", for: .normal)
-        setImages(withImageNames: data.mediaImageNames)
+        setImages(withImageData: data.imagesData)
     }
     
-    private func setImages(withImageNames names: [String]) {
+    private func setImages(withImageData data: [Data]) {
         
-        var images = [UIImage]()
-    
-        for name in names {
-            let image = UIImage(named: name) ?? UIImage()
-            images.append(image)
-        }
-        
-        let numberOfImages = names.count
+        let numberOfImages = data.count
         
         var imagesView = UIView()
         
         if numberOfImages == 1 {
             let view = SingleImageView.loadFromNib()
-            view.setImages(images: images)
+            view.setImages(imagesData: data)
             imagesView = view
         } else if numberOfImages == 2 {
             let view = TwoImagesView.loadFromNib()
-            view.setImages(images: images)
+            view.setImages(imagesData: data)
             imagesView = view
         } else if numberOfImages == 3 {
             let view = ThreeImagesView.loadFromNib()
-            view.setImages(images: images)
+            view.setImages(imagesData: data)
             imagesView = view
         } else if numberOfImages >= 4 {
             let view = FourOrMoreImagesView.loadFromNib()
-            view.setImages(images: images)
+            view.setImages(imagesData: data)
             imagesView = view
         }
         

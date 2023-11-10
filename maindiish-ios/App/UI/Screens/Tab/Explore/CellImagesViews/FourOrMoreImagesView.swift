@@ -21,4 +21,10 @@ class FourOrMoreImagesView: UIView {
             imageViews[index].image = images[index]
         }
     }
+    
+    func setImages(imagesData: [Data]) {
+        for index in 0..<4 {
+            imageViews[index].image = UIImage(data: imagesData[index])
+        }
+    }
 }

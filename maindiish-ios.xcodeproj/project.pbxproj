@@ -68,6 +68,13 @@
 		798423282AEEC14500441707 /* SetNewPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423272AEEC14500441707 /* SetNewPasswordViewModel.swift */; };
 		7984232A2AEEC15E00441707 /* SetNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423292AEEC15E00441707 /* SetNewPasswordViewController.swift */; };
 		7984232C2AEEC19000441707 /* SetNewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984232B2AEEC19000441707 /* SetNewPasswordView.swift */; };
+		7991A0992AFE7BA000C4990B /* ImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991A0982AFE7BA000C4990B /* ImagesView.swift */; };
+		7991A09B2AFE7BB200C4990B /* ImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991A09A2AFE7BB200C4990B /* ImagesViewModel.swift */; };
+		7991A09D2AFE7BE500C4990B /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991A09C2AFE7BE500C4990B /* ImagesViewController.swift */; };
+		7991A09F2AFE8A2E00C4990B /* PostPublish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991A09E2AFE8A2E00C4990B /* PostPublish.swift */; };
+		7991A0A42AFED81300C4990B /* PostTypeBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991A0A32AFED81300C4990B /* PostTypeBottomSheetView.swift */; };
+		7991A0A62AFED82600C4990B /* PostTypeBottomSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991A0A52AFED82600C4990B /* PostTypeBottomSheetViewModel.swift */; };
+		7991A0A82AFED85100C4990B /* PostTypeBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991A0A72AFED85100C4990B /* PostTypeBottomSheetViewController.swift */; };
 		7991E54E2ADF341900C8F348 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991E54D2ADF341900C8F348 /* SplashView.swift */; };
 		7991E5512ADF382700C8F348 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991E5502ADF382700C8F348 /* OnboardingViewModel.swift */; };
 		7991E5532ADF391E00C8F348 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991E5522ADF391E00C8F348 /* UIStoryboard.swift */; };
@@ -220,6 +227,13 @@
 		798423272AEEC14500441707 /* SetNewPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPasswordViewModel.swift; sourceTree = "<group>"; };
 		798423292AEEC15E00441707 /* SetNewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPasswordViewController.swift; sourceTree = "<group>"; };
 		7984232B2AEEC19000441707 /* SetNewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPasswordView.swift; sourceTree = "<group>"; };
+		7991A0982AFE7BA000C4990B /* ImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesView.swift; sourceTree = "<group>"; };
+		7991A09A2AFE7BB200C4990B /* ImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewModel.swift; sourceTree = "<group>"; };
+		7991A09C2AFE7BE500C4990B /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		7991A09E2AFE8A2E00C4990B /* PostPublish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPublish.swift; sourceTree = "<group>"; };
+		7991A0A32AFED81300C4990B /* PostTypeBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTypeBottomSheetView.swift; sourceTree = "<group>"; };
+		7991A0A52AFED82600C4990B /* PostTypeBottomSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTypeBottomSheetViewModel.swift; sourceTree = "<group>"; };
+		7991A0A72AFED85100C4990B /* PostTypeBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTypeBottomSheetViewController.swift; sourceTree = "<group>"; };
 		7991E54D2ADF341900C8F348 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		7991E5502ADF382700C8F348 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		7991E5522ADF391E00C8F348 /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
@@ -484,6 +498,7 @@
 		18209EAB2A714C8B0024F47B /* Sheets */ = {
 			isa = PBXGroup;
 			children = (
+				7991A0A02AFED7B500C4990B /* Post Type */,
 				798423092AEE7D2000441707 /* BottomUps */,
 				798423062AEE7CFA00441707 /* Alerts */,
 			);
@@ -575,6 +590,7 @@
 		790B4F4E2AF24A7200C429CD /* Tab */ = {
 			isa = PBXGroup;
 			children = (
+				7991A0972AFE7B6800C4990B /* Images Viewer */,
 				79A2E3062AFE40EE0039633D /* Review */,
 				79A2E2FB2AFDE9270039633D /* Create Post */,
 				79C04BB42AFAEB3E00C7FF2C /* Post Details */,
@@ -680,6 +696,26 @@
 			path = "Set New Password";
 			sourceTree = "<group>";
 		};
+		7991A0972AFE7B6800C4990B /* Images Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				7991A0982AFE7BA000C4990B /* ImagesView.swift */,
+				7991A09A2AFE7BB200C4990B /* ImagesViewModel.swift */,
+				7991A09C2AFE7BE500C4990B /* ImagesViewController.swift */,
+			);
+			path = "Images Viewer";
+			sourceTree = "<group>";
+		};
+		7991A0A02AFED7B500C4990B /* Post Type */ = {
+			isa = PBXGroup;
+			children = (
+				7991A0A32AFED81300C4990B /* PostTypeBottomSheetView.swift */,
+				7991A0A52AFED82600C4990B /* PostTypeBottomSheetViewModel.swift */,
+				7991A0A72AFED85100C4990B /* PostTypeBottomSheetViewController.swift */,
+			);
+			path = "Post Type";
+			sourceTree = "<group>";
+		};
 		7991E54F2ADF37EA00C8F348 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -723,6 +759,7 @@
 				79A2E30B2AFE413C0039633D /* ReviewPostViewModel.swift */,
 				79A2E30D2AFE414E0039633D /* ReviewPostViewController.swift */,
 				79A2E30F2AFE47840039633D /* ReviewPostImageCollectionViewCell.swift */,
+				7991A09E2AFE8A2E00C4990B /* PostPublish.swift */,
 			);
 			path = Review;
 			sourceTree = "<group>";
@@ -961,10 +998,12 @@
 				18209EC32A724D5D0024F47B /* Route.swift in Sources */,
 				79C04BB62AFAEB7800C7FF2C /* PostTextDetailsTableViewCell.swift in Sources */,
 				18209EE22A7260B70024F47B /* UIView.swift in Sources */,
+				7991A09B2AFE7BB200C4990B /* ImagesViewModel.swift in Sources */,
 				18209EC12A724CC50024F47B /* Router.swift in Sources */,
 				7984230B2AEE7D4500441707 /* BottomUpOptionsSheetViewController.swift in Sources */,
 				793E65D72AE451A200381F32 /* NibWrapped.swift in Sources */,
 				79A2E3012AFDE9910039633D /* CreateBlogViewController.swift in Sources */,
+				7991A0A82AFED85100C4990B /* PostTypeBottomSheetViewController.swift in Sources */,
 				79B5CC632AE24874005E19AD /* LoginViewModel.swift in Sources */,
 				798423252AEEB5ED00441707 /* Utils.swift in Sources */,
 				79A525832AF8328600DBC4A0 /* PostTableViewCell.swift in Sources */,
@@ -974,6 +1013,7 @@
 				798423052AEE79E600441707 /* ForgotPasswordViewModel.swift in Sources */,
 				79A2E2FF2AFDE97B0039633D /* CreateBlogViewModel.swift in Sources */,
 				79A525B22AF9829000DBC4A0 /* TrendingPostData.swift in Sources */,
+				7991A0A42AFED81300C4990B /* PostTypeBottomSheetView.swift in Sources */,
 				798423012AEE770900441707 /* ForgotPasswordView.swift in Sources */,
 				79C04BB82AFAEB8B00C7FF2C /* PostImageTableViewCell.swift in Sources */,
 				18209ED12A725B6F0024F47B /* Environment.swift in Sources */,
@@ -1023,6 +1063,7 @@
 				79A525A62AF903A800DBC4A0 /* FilterCollectionViewCell.swift in Sources */,
 				18209EC52A724D860024F47B /* Sheet.swift in Sources */,
 				18209EDE2A7260320024F47B /* UICollectionView.swift in Sources */,
+				7991A0992AFE7BA000C4990B /* ImagesView.swift in Sources */,
 				18209ED42A725C770024F47B /* UIFont.swift in Sources */,
 				18209EA42A714A250024F47B /* ViewController.swift in Sources */,
 				79A2E30E2AFE414E0039633D /* ReviewPostViewController.swift in Sources */,
@@ -1036,13 +1077,16 @@
 				798423282AEEC14500441707 /* SetNewPasswordViewModel.swift in Sources */,
 				79B5CC672AE248BC005E19AD /* LoginView.swift in Sources */,
 				7991E5512ADF382700C8F348 /* OnboardingViewModel.swift in Sources */,
+				7991A09F2AFE8A2E00C4990B /* PostPublish.swift in Sources */,
 				795D65912AEA92C8007AF064 /* String.swift in Sources */,
 				799E07482AE556D100D853B5 /* SignUpViewModel.swift in Sources */,
 				18209E812A7146690024F47B /* SceneDelegate.swift in Sources */,
 				18209ED62A725CD40024F47B /* Config.swift in Sources */,
 				799E07382AE533C100D853B5 /* PaddedTextField.swift in Sources */,
 				799E07502AE58A3400D853B5 /* CreateUserNameView.swift in Sources */,
+				7991A0A62AFED82600C4990B /* PostTypeBottomSheetViewModel.swift in Sources */,
 				79BA2A272AE1E9CA0019E880 /* WelcomeViewModel.swift in Sources */,
+				7991A09D2AFE7BE500C4990B /* ImagesViewController.swift in Sources */,
 				795D658F2AEA78DF007AF064 /* Notification.swift in Sources */,
 				79D018E52AEA73E10066AAF6 /* Number.swift in Sources */,
 				79A525B62AF988FB00DBC4A0 /* TrendingPostImageCollectionViewCell.swift in Sources */,

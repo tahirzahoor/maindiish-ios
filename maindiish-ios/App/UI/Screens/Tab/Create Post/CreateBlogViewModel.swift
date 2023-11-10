@@ -26,7 +26,7 @@ class CreateBlogViewModel: ViewModel {
             router.append(.reviewPost(postData), animated: true)
         }
     }
-    
+   
     // MARK: - Private Methods
     
     private func refineData() {

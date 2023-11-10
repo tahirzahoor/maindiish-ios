@@ -11,7 +11,7 @@ class PostDetailViewController: ViewController<PostDetailViewModel> {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
         
-        postDetailView.postOwnerNameLabel.text = viewModel.data.profileName + "'s post"
+        postDetailView.postOwnerNameLabel.text = viewModel.data.owner + "'s post"
     }
     
     // MARK: - Action Methods
@@ -32,7 +32,7 @@ extension PostDetailViewController: UITableViewDelegate {
 extension PostDetailViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.data.mediaImageNames.count + 1
+        viewModel.data.imagesData.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,8 +48,8 @@ extension PostDetailViewController: UITableViewDataSource {
         } else {
             let cell: PostImageTableViewCell = tableView.dequeueCell(for: indexPath)
             
-            let imageName = viewModel.data.mediaImageNames[indexPath.row - 1]
-            cell.setImage(imageName)
+            let imageData = viewModel.data.imagesData[indexPath.row - 1]
+            cell.setImage(imageData)
             
             return cell
         }

@@ -2,9 +2,9 @@ import Foundation
 
 class PostDetailViewModel: ViewModel {
     
-    var data: TrendingPostData
+    var data: PostData
     
-    init(data: TrendingPostData) {
+    init(data: PostData) {
         self.data = data
     }
     

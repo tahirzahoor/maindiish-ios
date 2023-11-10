@@ -13,4 +13,10 @@ class TwoImagesView: UIView {
             imageViews[index].image = image
         }
     }
+    
+    func setImages(imagesData: [Data]) {
+        for (index, data) in imagesData.enumerated() {
+            imageViews[index].image = UIImage(data: data)
+        }
+    }
 }

@@ -6,8 +6,8 @@ class PostImageTableViewCell: UITableViewCell {
     
     @IBOutlet weak var postImageView: UIImageView!
    
-    func setImage(_ imageName: String) {
-        postImageView.image = UIImage(named: imageName)
+    func setImage(_ imageData: Data) {
+        postImageView.image = UIImage(data: imageData)
     }
 
 }

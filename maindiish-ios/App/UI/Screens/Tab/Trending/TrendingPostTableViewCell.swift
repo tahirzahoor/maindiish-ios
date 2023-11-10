@@ -51,17 +51,17 @@ class TrendingPostTableViewCell: UITableViewCell {
     
     // MARK: - Public Methods
     
-    func configure(with data: TrendingPostData) {
-        nameLabel.text = data.profileName
-        timeAgoLabel.text = data.postedTimeAgo
-        postDescriptionLabel.text = data.postDescription
+    func configure(with data: PostData) {
+        nameLabel.text = data.owner
+        timeAgoLabel.text = data.timeElapsedSincePosted
+        postDescriptionLabel.text = data.description
         
         numberOfHeartsButton.setTitle(" \(data.numberOfHearts)", for: .normal)
         numberOfCommentsButton.setTitle(" \(data.numberOfComments)", for: .normal)
         numberOfViewsButton.setTitle(" \(data.numberOfViews)", for: .normal)
         numberOfSharesButton.setTitle(" \(data.numberOfShares)", for: .normal)
         
-        mediaPageControl.numberOfPages = data.mediaImageNames.count
+        mediaPageControl.numberOfPages = data.imagesData.count
         
         mediaCollectionView.reloadData()
     }

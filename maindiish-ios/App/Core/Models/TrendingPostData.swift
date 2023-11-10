@@ -11,5 +11,5 @@ struct TrendingPostData {
     var numberOfComments: Int
     var numberOfViews: Int
     var numberOfShares: Int
-    
+    var imagesData: [Data]
 }

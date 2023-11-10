@@ -14,4 +14,10 @@ class SingleImageView: UIView {
         }
     }
     
+    func setImages(imagesData: [Data]) {
+        for data in imagesData {
+            imageView.image = UIImage(data: data)
+        }
+    }
+    
 }
