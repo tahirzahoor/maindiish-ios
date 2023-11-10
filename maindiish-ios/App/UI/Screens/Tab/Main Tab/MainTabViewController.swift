@@ -36,6 +36,11 @@ class MainTabViewController: ViewController<MainTabViewModel> {
     // MARK: - Action Methods
     
     @IBAction
+    func addButtonTapped(_ sender: UIButton) {
+        viewModel.router.append(.createBlog, animated: false)
+    }
+    
+    @IBAction
     func tabTapped(_ sender: UIButton) {
         removeCurrentController()
         

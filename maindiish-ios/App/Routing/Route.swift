@@ -15,6 +15,8 @@ enum Route {
     case explore
     case trending
     case postDetail(data: TrendingPostData)
+    case createBlog
+    case reviewPost(_ data: PostData)
     
     func controller() -> UIViewController {
         switch self {
@@ -69,6 +71,14 @@ enum Route {
             case .postDetail(let data):
                 let viewModel = PostDetailViewModel(data: data)
                 let controller = PostDetailViewController.instantiate(from: .TabControllers, viewModel: viewModel)
+                return controller
+            case .createBlog:
+                let viewModel = CreateBlogViewModel()
+                let controller = CreateBlogViewController.instantiate(from: .TabControllers, viewModel: viewModel)
+                return controller
+            case .reviewPost(let postData):
+                let viewModel = ReviewPostViewModel(postData)
+                let controller = ReviewPostViewController.instantiate(from: .TabControllers, viewModel: viewModel)
                 return controller
         }
     }

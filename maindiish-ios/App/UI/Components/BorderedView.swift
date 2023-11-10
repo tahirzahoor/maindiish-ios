@@ -1,6 +1,34 @@
 import UIKit
 
+@IBDesignable
 class BorderedView: UIView {
+    
+    @IBInspectable var borderColor: UIColor {
+        set {
+            layer.borderColor = newValue.cgColor
+        }
+        get {
+            UIColor(cgColor: layer.borderColor ?? UIColor.clear.cgColor)
+        }
+    }
+    
+    @IBInspectable var borderWidth: CGFloat {
+        set {
+            layer.borderWidth = newValue
+        }
+        get {
+            layer.borderWidth
+        }
+    }
+    
+    @IBInspectable var cornerRadius: CGFloat {
+        set {
+            layer.cornerRadius = newValue
+        }
+        get {
+            layer.cornerRadius
+        }
+    }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         /// reset color for UIInterfaceStyle
@@ -18,13 +46,13 @@ class BorderedView: UIView {
     }
     
     func commonInit() {
-        layer.cornerRadius = 20
-        layer.borderWidth = 1
+        layer.cornerRadius = cornerRadius
+        layer.borderWidth = borderWidth
         setBorderColor()
     }
     
     func setBorderColor() {
-        layer.borderColor = UIColor.onboardingTitleLabel.cgColor
+        layer.borderColor = borderColor.cgColor
     }
     
 }

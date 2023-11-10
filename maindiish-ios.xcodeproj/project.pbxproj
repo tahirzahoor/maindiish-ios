@@ -84,6 +84,17 @@
 		799E074E2AE5897400D853B5 /* CreateUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E074D2AE5897400D853B5 /* CreateUserNameViewController.swift */; };
 		799E07502AE58A3400D853B5 /* CreateUserNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E074F2AE58A3400D853B5 /* CreateUserNameView.swift */; };
 		79A145E02AE0078500C184BE /* WorkSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79A145DF2AE0078500C184BE /* WorkSans-Medium.ttf */; };
+		79A2E2FD2AFDE94F0039633D /* CreateBlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2E2FC2AFDE94F0039633D /* CreateBlogView.swift */; };
+		79A2E2FF2AFDE97B0039633D /* CreateBlogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2E2FE2AFDE97B0039633D /* CreateBlogViewModel.swift */; };
+		79A2E3012AFDE9910039633D /* CreateBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2E3002AFDE9910039633D /* CreateBlogViewController.swift */; };
+		79A2E3032AFDF0200039633D /* CreateBlogMediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2E3022AFDF0200039633D /* CreateBlogMediaCollectionViewCell.swift */; };
+		79A2E3052AFDFCC00039633D /* CreateBlogTextViewTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2E3042AFDFCC00039633D /* CreateBlogTextViewTag.swift */; };
+		79A2E30A2AFE41230039633D /* ReviewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2E3092AFE41230039633D /* ReviewPostView.swift */; };
+		79A2E30C2AFE413C0039633D /* ReviewPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2E30B2AFE413C0039633D /* ReviewPostViewModel.swift */; };
+		79A2E30E2AFE414E0039633D /* ReviewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2E30D2AFE414E0039633D /* ReviewPostViewController.swift */; };
+		79A2E3102AFE47840039633D /* ReviewPostImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2E30F2AFE47840039633D /* ReviewPostImageCollectionViewCell.swift */; };
+		79A2E3122AFE486E0039633D /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2E3112AFE486E0039633D /* PostData.swift */; };
+		79A2E3152AFE67FC0039633D /* TLPhotoPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 79A2E3142AFE67FC0039633D /* TLPhotoPicker */; };
 		79A525832AF8328600DBC4A0 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525822AF8328600DBC4A0 /* PostTableViewCell.swift */; };
 		79A525852AF8353700DBC4A0 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79A525842AF8353700DBC4A0 /* Roboto-Medium.ttf */; };
 		79A525872AF835AD00DBC4A0 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79A525862AF835AD00DBC4A0 /* Poppins-Light.ttf */; };
@@ -225,6 +236,16 @@
 		799E074D2AE5897400D853B5 /* CreateUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserNameViewController.swift; sourceTree = "<group>"; };
 		799E074F2AE58A3400D853B5 /* CreateUserNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserNameView.swift; sourceTree = "<group>"; };
 		79A145DF2AE0078500C184BE /* WorkSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Medium.ttf"; sourceTree = "<group>"; };
+		79A2E2FC2AFDE94F0039633D /* CreateBlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBlogView.swift; sourceTree = "<group>"; };
+		79A2E2FE2AFDE97B0039633D /* CreateBlogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBlogViewModel.swift; sourceTree = "<group>"; };
+		79A2E3002AFDE9910039633D /* CreateBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBlogViewController.swift; sourceTree = "<group>"; };
+		79A2E3022AFDF0200039633D /* CreateBlogMediaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBlogMediaCollectionViewCell.swift; sourceTree = "<group>"; };
+		79A2E3042AFDFCC00039633D /* CreateBlogTextViewTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBlogTextViewTag.swift; sourceTree = "<group>"; };
+		79A2E3092AFE41230039633D /* ReviewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPostView.swift; sourceTree = "<group>"; };
+		79A2E30B2AFE413C0039633D /* ReviewPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPostViewModel.swift; sourceTree = "<group>"; };
+		79A2E30D2AFE414E0039633D /* ReviewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPostViewController.swift; sourceTree = "<group>"; };
+		79A2E30F2AFE47840039633D /* ReviewPostImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPostImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		79A2E3112AFE486E0039633D /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		79A525822AF8328600DBC4A0 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		79A525842AF8353700DBC4A0 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		79A525862AF835AD00DBC4A0 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
@@ -289,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E4445E2AE5C04C003CB9C8 /* SwiftDI in Frameworks */,
+				79A2E3152AFE67FC0039633D /* TLPhotoPicker in Frameworks */,
 				79E406FB2AEBE6FF001B6AC0 /* ObjectMapper in Frameworks */,
 				79D6FF682AEB236600370BEA /* IQKeyboardManagerSwift in Frameworks */,
 				790856102ADE24300021C8E5 /* APIManager in Frameworks */,
@@ -531,7 +553,9 @@
 				79D018E22AEA739D0066AAF6 /* NewUser.swift */,
 				79D018E42AEA73E10066AAF6 /* Number.swift */,
 				7940FB002AEB586D00108E9A /* CountryPhoneCode.swift */,
+				79A525B12AF9829000DBC4A0 /* TrendingPostData.swift */,
 				79E406FC2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift */,
+				79A2E3112AFE486E0039633D /* PostData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -551,6 +575,8 @@
 		790B4F4E2AF24A7200C429CD /* Tab */ = {
 			isa = PBXGroup;
 			children = (
+				79A2E3062AFE40EE0039633D /* Review */,
+				79A2E2FB2AFDE9270039633D /* Create Post */,
 				79C04BB42AFAEB3E00C7FF2C /* Post Details */,
 				79A525A42AF9038000DBC4A0 /* Trending */,
 				790B4F582AF24E7400C429CD /* Explore */,
@@ -678,6 +704,29 @@
 			path = "Sign Up";
 			sourceTree = "<group>";
 		};
+		79A2E2FB2AFDE9270039633D /* Create Post */ = {
+			isa = PBXGroup;
+			children = (
+				79A2E2FC2AFDE94F0039633D /* CreateBlogView.swift */,
+				79A2E2FE2AFDE97B0039633D /* CreateBlogViewModel.swift */,
+				79A2E3002AFDE9910039633D /* CreateBlogViewController.swift */,
+				79A2E3022AFDF0200039633D /* CreateBlogMediaCollectionViewCell.swift */,
+				79A2E3042AFDFCC00039633D /* CreateBlogTextViewTag.swift */,
+			);
+			path = "Create Post";
+			sourceTree = "<group>";
+		};
+		79A2E3062AFE40EE0039633D /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				79A2E3092AFE41230039633D /* ReviewPostView.swift */,
+				79A2E30B2AFE413C0039633D /* ReviewPostViewModel.swift */,
+				79A2E30D2AFE414E0039633D /* ReviewPostViewController.swift */,
+				79A2E30F2AFE47840039633D /* ReviewPostImageCollectionViewCell.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
 		79A525932AF84A7600DBC4A0 /* CellImagesViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -701,7 +750,6 @@
 				79A525AB2AF97E7900DBC4A0 /* TrendingPostsViewController.swift */,
 				79A525AD2AF97E9D00DBC4A0 /* TrendingPostsViewModel.swift */,
 				79A525AF2AF97EEC00DBC4A0 /* TrendingPostsView.swift */,
-				79A525B12AF9829000DBC4A0 /* TrendingPostData.swift */,
 				79A525B32AF9835B00DBC4A0 /* TrendingPostRepository.swift */,
 				79A525B52AF988FB00DBC4A0 /* TrendingPostImageCollectionViewCell.swift */,
 			);
@@ -790,6 +838,7 @@
 				79E444602AE5C075003CB9C8 /* APIManager */,
 				79D6FF672AEB236600370BEA /* IQKeyboardManagerSwift */,
 				79E406FA2AEBE6FF001B6AC0 /* ObjectMapper */,
+				79A2E3142AFE67FC0039633D /* TLPhotoPicker */,
 			);
 			productName = BaseCode;
 			productReference = 18209E7B2A7146690024F47B /* maindiish-ios.app */;
@@ -824,6 +873,7 @@
 				79E4445F2AE5C075003CB9C8 /* XCRemoteSwiftPackageReference "Swift-API-Manager" */,
 				79D6FF662AEB236600370BEA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				79E406F92AEBE6FF001B6AC0 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				79A2E3132AFE67FC0039633D /* XCRemoteSwiftPackageReference "TLPhotoPicker" */,
 			);
 			productRefGroup = 18209E7C2A7146690024F47B /* Products */;
 			projectDirPath = "";
@@ -898,19 +948,23 @@
 				7984230F2AEE7D6B00441707 /* BottomUpOptionsSheetViewModel.swift in Sources */,
 				798055F22AE6F9D700717FB4 /* BorderedView.swift in Sources */,
 				18209EDC2A7260210024F47B /* UICollectionViewCell.swift in Sources */,
+				79A2E3122AFE486E0039633D /* PostData.swift in Sources */,
 				79A5259F2AF84F6100DBC4A0 /* TwoImagesView.swift in Sources */,
 				18209EE42A7260D30024F47B /* XibView.swift in Sources */,
 				7984231D2AEEA09D00441707 /* TypeCodeView.swift in Sources */,
 				7984230D2AEE7D5500441707 /* BottomUpOptionsSheetView.swift in Sources */,
 				79A5259D2AF84F5500DBC4A0 /* SingleImageView.swift in Sources */,
 				7991E54E2ADF341900C8F348 /* SplashView.swift in Sources */,
+				79A2E3052AFDFCC00039633D /* CreateBlogTextViewTag.swift in Sources */,
 				79E406F82AEBCB57001B6AC0 /* Repository.swift in Sources */,
+				79A2E2FD2AFDE94F0039633D /* CreateBlogView.swift in Sources */,
 				18209EC32A724D5D0024F47B /* Route.swift in Sources */,
 				79C04BB62AFAEB7800C7FF2C /* PostTextDetailsTableViewCell.swift in Sources */,
 				18209EE22A7260B70024F47B /* UIView.swift in Sources */,
 				18209EC12A724CC50024F47B /* Router.swift in Sources */,
 				7984230B2AEE7D4500441707 /* BottomUpOptionsSheetViewController.swift in Sources */,
 				793E65D72AE451A200381F32 /* NibWrapped.swift in Sources */,
+				79A2E3012AFDE9910039633D /* CreateBlogViewController.swift in Sources */,
 				79B5CC632AE24874005E19AD /* LoginViewModel.swift in Sources */,
 				798423252AEEB5ED00441707 /* Utils.swift in Sources */,
 				79A525832AF8328600DBC4A0 /* PostTableViewCell.swift in Sources */,
@@ -918,19 +972,24 @@
 				7984231B2AEEA07800441707 /* TypeCodeViewModel.swift in Sources */,
 				18209EA62A714A390024F47B /* ViewModel.swift in Sources */,
 				798423052AEE79E600441707 /* ForgotPasswordViewModel.swift in Sources */,
+				79A2E2FF2AFDE97B0039633D /* CreateBlogViewModel.swift in Sources */,
 				79A525B22AF9829000DBC4A0 /* TrendingPostData.swift in Sources */,
 				798423012AEE770900441707 /* ForgotPasswordView.swift in Sources */,
 				79C04BB82AFAEB8B00C7FF2C /* PostImageTableViewCell.swift in Sources */,
 				18209ED12A725B6F0024F47B /* Environment.swift in Sources */,
 				18209ECB2A7257940024F47B /* SplashViewController.swift in Sources */,
+				79A2E3032AFDF0200039633D /* CreateBlogMediaCollectionViewCell.swift in Sources */,
 				79BA2A1C2AE1C22A0019E880 /* Color.swift in Sources */,
+				79A2E30A2AFE41230039633D /* ReviewPostView.swift in Sources */,
 				18209EE72A7261C30024F47B /* Storage.swift in Sources */,
 				79BA2A2B2AE1EA520019E880 /* WelcomeView.swift in Sources */,
 				79A525B42AF9835B00DBC4A0 /* TrendingPostRepository.swift in Sources */,
 				79A525AA2AF96EA300DBC4A0 /* TrendingPostTableViewCell.swift in Sources */,
 				7901B4ED2AE4434200D24064 /* NibWrapperView.swift in Sources */,
+				79A2E3102AFE47840039633D /* ReviewPostImageCollectionViewCell.swift in Sources */,
 				79A525A12AF84F6A00DBC4A0 /* ThreeImagesView.swift in Sources */,
 				795D65992AEAA560007AF064 /* OkAlertView.swift in Sources */,
+				79A2E30C2AFE413C0039633D /* ReviewPostViewModel.swift in Sources */,
 				18209EDA2A725FEB0024F47B /* UITableView.swift in Sources */,
 				7991E5572ADF3D8300C8F348 /* OnboardingViewController.swift in Sources */,
 				79C04BBF2AFAEF4600C7FF2C /* PostDetailViewController.swift in Sources */,
@@ -966,6 +1025,7 @@
 				18209EDE2A7260320024F47B /* UICollectionView.swift in Sources */,
 				18209ED42A725C770024F47B /* UIFont.swift in Sources */,
 				18209EA42A714A250024F47B /* ViewController.swift in Sources */,
+				79A2E30E2AFE414E0039633D /* ReviewPostViewController.swift in Sources */,
 				79BA2A1E2AE1C2D80019E880 /* UIColor.swift in Sources */,
 				7984231F2AEEA0AA00441707 /* TypeCodeViewController.swift in Sources */,
 				18209EC72A724E030024F47B /* AppRouter.swift in Sources */,
@@ -1244,6 +1304,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		79A2E3132AFE67FC0039633D /* XCRemoteSwiftPackageReference "TLPhotoPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tilltue/TLPhotoPicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.9;
+			};
+		};
 		79D6FF662AEB236600370BEA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
@@ -1282,6 +1350,11 @@
 		7908560F2ADE24300021C8E5 /* APIManager */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = APIManager;
+		};
+		79A2E3142AFE67FC0039633D /* TLPhotoPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79A2E3132AFE67FC0039633D /* XCRemoteSwiftPackageReference "TLPhotoPicker" */;
+			productName = TLPhotoPicker;
 		};
 		79D6FF672AEB236600370BEA /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;

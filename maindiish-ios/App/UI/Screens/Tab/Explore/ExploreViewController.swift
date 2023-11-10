@@ -27,23 +27,30 @@ class ExploreViewController: ViewController<ExploreViewModel> {
     
     @IBAction
     func moreOptionsTapped(_ sender: UIButton) {
+        
     }
-    
     
     @IBAction
     func heartButtonTapped(_ sender: UIButton) {
         sender.isSelected.toggle()
         
-        let title = sender.isSelected ? " 1" : " 0"
-        sender.setTitle(title, for: .normal)
+        let currentText = sender.titleLabel?.text?.replacingOccurrences(of: " ", with: "") ?? ""
+        
+        if var number = Int(currentText) {
+            number += sender.isSelected ? 1 : -1
+            sender.setTitle(" \(number)", for: .normal)
+        }
+        
     }
     
     @IBAction
     func commentsButtonTapped(_ sender: UIButton) {
+        
     }
     
     @IBAction
     func shareButtonTapped(_ sender: UIButton) {
+        
     }
     
 }
