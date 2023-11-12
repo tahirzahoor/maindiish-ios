@@ -15,10 +15,18 @@ class VideoCaptureView: UIView {
     @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var uploadFromLibraryButton: UIButton!
     
+    // MARK: - Private Properties
+    
+    private var circleLayer = CAShapeLayer()
+    private var progressLayer = CAShapeLayer()
+    private var startPoint = CGFloat(-Double.pi / 2)
+    private var endPoint = CGFloat(3 * Double.pi / 2)
+    
     // MARK: - Lifecycle Methods
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        setView()
     }
     
     // MARK: - Private Methods
@@ -36,7 +44,7 @@ class VideoCaptureView: UIView {
                 UIView.animate(withDuration: 0.2) {
                     self.shutterButton.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
                 }
-                animateBorderColor()
+            
             case .ended:
                 UIView.animate(withDuration: 0.2) {
                     self.shutterButton.transform = .identity
@@ -44,18 +52,6 @@ class VideoCaptureView: UIView {
             default:
                 break
         }
-    }
-    
-    private func animateBorderColor() {
-        let colorAnimation = CABasicAnimation(keyPath: "borderColor")
-        colorAnimation.fromValue = UIColor.clear.cgColor
-        colorAnimation.toValue = UIColor.appThemeColor.cgColor
-        colorAnimation.duration = 1.0
-        colorAnimation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
-        colorAnimation.repeatCount = .infinity
-        colorAnimation.autoreverses = true
-        
-        shutterButton.layer.add(colorAnimation, forKey: "borderColorAnimation")
     }
     
 }

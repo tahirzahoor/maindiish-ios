@@ -158,8 +158,8 @@
             filePath = "maindiish-ios/App/UI/Screens/Briefs/Briefs Recording/VideoCaptureViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "331"
-            endingLineNumber = "331"
+            startingLineNumber = "364"
+            endingLineNumber = "364"
             landmarkName = "photoOutput(_:didFinishProcessingPhoto:error:)"
             landmarkType = "7">
          </BreakpointContent>

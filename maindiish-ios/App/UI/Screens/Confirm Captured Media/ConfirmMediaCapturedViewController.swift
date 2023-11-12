@@ -26,7 +26,9 @@ class ConfirmMediaCapturedViewController: ViewController<ConfirmMediaCapturedVie
     
     @IBAction
     func tickButtonPressed(_ sender: UIButton) {
+        viewModel.router.pop(animated: false)
         
+        dismiss(animated: false)
     }
     
     @IBAction

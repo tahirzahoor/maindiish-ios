@@ -271,6 +271,17 @@
                                                             <constraint firstAttribute="trailing" secondItem="5LV-bf-VML" secondAttribute="trailing" constant="20" id="cPu-e4-GXU"/>
                                                             <constraint firstAttribute="bottom" secondItem="5LV-bf-VML" secondAttribute="bottom" constant="20" id="nCO-eu-Xrh"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="onboarding_title_label_color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -313,6 +324,17 @@
                                                             <constraint firstAttribute="trailing" secondItem="xnG-Mc-QXW" secondAttribute="trailing" constant="20" id="YCh-RW-zQD"/>
                                                             <constraint firstItem="xnG-Mc-QXW" firstAttribute="leading" secondItem="i2G-D1-VV2" secondAttribute="leading" constant="20" id="bmn-qL-kS8"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="onboarding_title_label_color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -355,6 +377,17 @@
                                                             <constraint firstItem="txy-b3-rKa" firstAttribute="top" secondItem="Vkf-g3-0Nh" secondAttribute="top" constant="20" id="cU6-QQ-dZY"/>
                                                             <constraint firstAttribute="trailing" secondItem="txy-b3-rKa" secondAttribute="trailing" constant="20" id="xJQ-YV-vln"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="onboarding_title_label_color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54N-Oz-xxZ" userLabel="Country Selector" customClass="BorderedView" customModule="maindiish_ios" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="44" width="95" height="60"/>
@@ -452,6 +485,17 @@
                                                             <constraint firstItem="Hra-NY-Rwn" firstAttribute="top" secondItem="iCr-VO-jBj" secondAttribute="top" constant="20" id="i7L-vS-uE4"/>
                                                             <constraint firstItem="Hra-NY-Rwn" firstAttribute="leading" secondItem="iCr-VO-jBj" secondAttribute="leading" constant="20" id="yaE-vu-ek2"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="onboarding_title_label_color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -508,6 +552,17 @@
                                                             <constraint firstAttribute="trailing" secondItem="jRK-Rz-fj3" secondAttribute="trailing" constant="20" id="i8S-Vs-RUq"/>
                                                             <constraint firstItem="9Wz-xi-8lW" firstAttribute="leading" secondItem="fGc-7K-OnK" secondAttribute="leading" constant="20" id="mxq-Zl-xGg"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="onboarding_title_label_color"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -935,6 +990,11 @@
                                     <constraint firstAttribute="bottom" secondItem="hKI-Zg-Y2b" secondAttribute="bottom" constant="20" id="kfT-fI-iCQ"/>
                                     <constraint firstItem="hKI-Zg-Y2b" firstAttribute="leading" secondItem="VN4-fm-aqX" secondAttribute="trailing" constant="20" id="mqy-Hl-UIN"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="onboarding_title_label_color"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the email is not existing in our system" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRC-Bo-Yup">
                                 <rect key="frame" x="30.000000000000014" y="293.66666666666669" width="212.33333333333337" height="14.333333333333314"/>
@@ -1210,6 +1270,11 @@
                                     <constraint firstItem="16H-Eq-vEq" firstAttribute="centerY" secondItem="Txd-GL-dJV" secondAttribute="centerY" id="q9Q-SE-HQh"/>
                                     <constraint firstAttribute="bottom" secondItem="pwl-7d-btC" secondAttribute="bottom" constant="20" id="xHr-dh-wDc"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="onboarding_title_label_color"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AG-VD-5hu">
                                 <rect key="frame" x="19.999999999999993" y="293" width="97.333333333333314" height="14.333333333333314"/>
@@ -1251,6 +1316,11 @@
                                     <constraint firstAttribute="trailing" secondItem="yIP-yp-Ncb" secondAttribute="trailing" constant="20" id="sVw-Oo-mEP"/>
                                     <constraint firstItem="yIP-yp-Ncb" firstAttribute="leading" secondItem="VXs-pp-3zh" secondAttribute="trailing" constant="20" id="xRQ-1u-GqA"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="onboarding_title_label_color"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atb-fP-YoO" customClass="RoundedButton" customModule="maindiish_ios" customModuleProvider="target">
                                 <rect key="frame" x="20" y="404.66666666666669" width="353" height="60"/>

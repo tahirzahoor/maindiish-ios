@@ -41,6 +41,7 @@
 		79037C7D2B00ECF2009F2A4A /* ConfirmMediaCapturedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79037C7C2B00ECF2009F2A4A /* ConfirmMediaCapturedViewModel.swift */; };
 		79037C7F2B00ED24009F2A4A /* ConfirmMediaCapturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79037C7E2B00ED24009F2A4A /* ConfirmMediaCapturedViewController.swift */; };
 		79037C812B00ED6E009F2A4A /* ConfirmMediaCapturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79037C802B00ED6E009F2A4A /* ConfirmMediaCapturedView.swift */; };
+		79037C832B012E07009F2A4A /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79037C822B012E07009F2A4A /* CircularProgressView.swift */; };
 		790856102ADE24300021C8E5 /* APIManager in Frameworks */ = {isa = PBXBuildFile; productRef = 7908560F2ADE24300021C8E5 /* APIManager */; };
 		790B4F4D2AF246E200C429CD /* CurveInTheMiddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B4F4C2AF246E200C429CD /* CurveInTheMiddleView.swift */; };
 		790B4F512AF24AF200C429CD /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B4F502AF24AF200C429CD /* MainTabBar.swift */; };
@@ -208,6 +209,7 @@
 		79037C7C2B00ECF2009F2A4A /* ConfirmMediaCapturedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmMediaCapturedViewModel.swift; sourceTree = "<group>"; };
 		79037C7E2B00ED24009F2A4A /* ConfirmMediaCapturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmMediaCapturedViewController.swift; sourceTree = "<group>"; };
 		79037C802B00ED6E009F2A4A /* ConfirmMediaCapturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmMediaCapturedView.swift; sourceTree = "<group>"; };
+		79037C822B012E07009F2A4A /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		790B4F4C2AF246E200C429CD /* CurveInTheMiddleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveInTheMiddleView.swift; sourceTree = "<group>"; };
 		790B4F502AF24AF200C429CD /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		790B4F522AF24BF300C429CD /* MainTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
@@ -491,6 +493,7 @@
 			isa = PBXGroup;
 			children = (
 				793E65D52AE4517700381F32 /* NibWrapper */,
+				79037C822B012E07009F2A4A /* CircularProgressView.swift */,
 				799E07372AE533C100D853B5 /* PaddedTextField.swift */,
 				79E444622AE5C0FE003CB9C8 /* RoundedButton.swift */,
 				798055F12AE6F9D700717FB4 /* BorderedView.swift */,
@@ -1123,6 +1126,7 @@
 				799E074E2AE5897400D853B5 /* CreateUserNameViewController.swift in Sources */,
 				18209E7F2A7146690024F47B /* AppDelegate.swift in Sources */,
 				7991E5552ADF3BF500C8F348 /* SplashViewModel.swift in Sources */,
+				79037C832B012E07009F2A4A /* CircularProgressView.swift in Sources */,
 				79C04BB32AFACBAF00C7FF2C /* MainTabsView.swift in Sources */,
 				7991E5532ADF391E00C8F348 /* UIStoryboard.swift in Sources */,
 				795D65952AEAA462007AF064 /* OkAlertViewController.swift in Sources */,
@@ -1359,6 +1363,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "maindiish-ios/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_NSCameraUsageDescription = "To Take Photos and Video";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "To Record Audio With Video";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1371,7 +1377,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.faizantanveer.maindiish;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foodsocial.maindiish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1394,6 +1400,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "maindiish-ios/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_NSCameraUsageDescription = "To Take Photos and Video";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "To Record Audio With Video";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1406,7 +1414,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.faizantanveer.maindiish;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foodsocial.maindiish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

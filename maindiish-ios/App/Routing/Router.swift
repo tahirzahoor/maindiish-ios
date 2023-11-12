@@ -8,6 +8,6 @@ protocol Router {
     func setRoot(_ route: Route)
     func showSheet(_ sheet: Sheet, animated: Bool)
     func pop(back steps: Int)
-    func pop(to route: Route)
+    func present(_ route: Route, animated: Bool)
    
 }

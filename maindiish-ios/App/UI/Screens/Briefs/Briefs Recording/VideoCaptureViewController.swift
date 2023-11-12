@@ -1,7 +1,6 @@
 import AVKit
 import AVFoundation
 import Foundation
-//import MobileCoreServices
 import PhotosUI
 import Photos
 import UIKit
@@ -24,6 +23,10 @@ class VideoCaptureViewController: ViewController<VideoCaptureViewModel> {
     private lazy var captureSession = AVCaptureSession()
     private var currentCamera = AVCaptureDevice.default(for: .video)
     private var mediaPicker: UIImagePickerController?
+    private var progressView: CircularProgressView?
+    private var timer: Timer?
+    private var elapsedTime: TimeInterval = 0.0
+    private var maxDuration: TimeInterval = 90.0
     
     private var mediaOptions: [String] {
         if config.mediaType == .any {
@@ -113,8 +116,19 @@ class VideoCaptureViewController: ViewController<VideoCaptureViewModel> {
             
             switch gesture.state {
             case .began:
+                elapsedTime = 0.0
+                timer = Timer.scheduledTimer(
+                    timeInterval: 90,
+                    target: self,
+                    selector: #selector(updateProgressView),
+                    userInfo: nil,
+                    repeats: true
+                )
                 startRecording()
+            case .changed:
+                updateProgressView()
             case .ended:
+                stopTimer()
                 stopRecording()
             default:
                 break
@@ -122,6 +136,23 @@ class VideoCaptureViewController: ViewController<VideoCaptureViewModel> {
         } else {
             viewModel.alert = "Only image capturing allowed"
         }
+    }
+    
+    @objc
+    private func updateProgressView() {
+        
+        elapsedTime += 1.0
+        let progress = CGFloat(elapsedTime / maxDuration)
+        progressView?.progress = progress
+        
+        if elapsedTime >= maxDuration {
+            stopTimer()
+        }
+    }
+    
+    private func stopTimer() {
+        timer?.invalidate()
+        timer = nil
     }
     
     @objc
@@ -250,12 +281,14 @@ class VideoCaptureViewController: ViewController<VideoCaptureViewModel> {
     }
     
     private func initMediaPicker() {
-        let videoPicker = UIImagePickerController()
-        videoPicker.sourceType = .photoLibrary
-        videoPicker.mediaTypes = mediaOptions
-        videoPicker.delegate = self
-        
-        self.mediaPicker = videoPicker
+        DispatchQueue.main.async {
+            let videoPicker = UIImagePickerController()
+            videoPicker.sourceType = .photoLibrary
+            videoPicker.mediaTypes = self.mediaOptions
+            videoPicker.delegate = self
+            
+            self.mediaPicker = videoPicker
+        }
     }
 
     func capturePhoto() {
@@ -333,9 +366,8 @@ extension VideoCaptureViewController: AVCapturePhotoCaptureDelegate {
             return
         }
         
-        let controller = Route.confirmMediaCaptured(.image, imageData: imageData, videoFileURL: nil).controller()
-        
-        present(controller, animated: false)
+        let route = Route.confirmMediaCaptured(.image, imageData: imageData, videoFileURL: nil)
+        viewModel.router.present(route, animated: true)
     }
     
 }

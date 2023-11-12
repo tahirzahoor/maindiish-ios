@@ -30,6 +30,11 @@ class BorderedView: UIView {
         }
     }
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        commonInit()
+    }
+    
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         /// reset color for UIInterfaceStyle
         setBorderColor()
