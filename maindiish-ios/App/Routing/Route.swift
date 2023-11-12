@@ -18,6 +18,8 @@ enum Route {
     case createBlog
     case reviewPost(_ data: PostData)
     case imagesView(_ imageData: [Data], tappedIndex: Int)
+    case captureVideo
+    case confirmMediaCaptured(_ mediaType: MediaCaptureConfiguration.MediaType, imageData: Data?, videoFileURL: URL?)
     
     func controller() -> UIViewController {
         switch self {
@@ -84,6 +86,16 @@ enum Route {
             case .imagesView(let imagesData, let selectedIndex):
                 let viewModel = ImagesViewModel(imagesData, selectedItemIndex: selectedIndex)
                 let controller = ImagesViewController.instantiate(from: .TabControllers, viewModel: viewModel)
+                return controller
+            case .captureVideo:
+                let viewModel = VideoCaptureViewModel()
+                let controller = VideoCaptureViewController.instantiate(from: .PopUp, viewModel: viewModel)
+                return controller
+            
+            case .confirmMediaCaptured(let mediaType, let imageData, let videoURL):
+                let viewModel = ConfirmMediaCapturedViewModel(mediaType: mediaType, videoFileURL: videoURL, imageData: imageData)
+                let controller = ConfirmMediaCapturedViewController.instantiate(from: .PopUp, viewModel: viewModel)
+                
                 return controller
         }
     }

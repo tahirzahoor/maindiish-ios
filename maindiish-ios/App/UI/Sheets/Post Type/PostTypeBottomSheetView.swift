@@ -38,10 +38,8 @@ class PostTypeBottomSheetView: UIView {
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
-        if let gradientLayer = gLayer {
-            gradientLayer.removeFromSuperlayer()
-            gLayer = nil
-        }
+        gLayer?.removeFromSuperlayer()
+        gLayer = nil
         addGradient()
     }
 }

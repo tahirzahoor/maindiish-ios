@@ -16,6 +16,9 @@ enum AssetsImage: String {
     case unchecked = "unchecked_icon"
     case checked = "checked"
     case eyesOn = "eye-on"
+    case flashOn = "flash_on"
+    case flashOff = "flash_off"
+    case flashAuto = "flash_auto"
     
     var image: UIImage {
         UIImage(named: rawValue) ?? UIImage()
