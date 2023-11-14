@@ -275,7 +275,7 @@
                                     <color key="titleColor" name="onboarding_title_label_color"/>
                                 </state>
                                 <connections>
-                                    <action selector="videoLibraryButtonTapped:" destination="ltd-NG-oRN" eventType="touchUpInside" id="3u5-DS-IF5"/>
+                                    <action selector="mediaLibraryButtonTapped:" destination="ltd-NG-oRN" eventType="touchUpInside" id="SMf-Ag-S0k"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lno-uG-cgc">

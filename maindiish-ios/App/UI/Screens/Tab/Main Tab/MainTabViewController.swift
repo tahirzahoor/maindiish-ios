@@ -94,3 +94,11 @@ class MainTabViewController: ViewController<MainTabViewModel> {
     }
     
 }
+
+extension MainTabViewController: ConfirmMediaDelegate {
+    
+    func didConfirmSelectedMedia(type: MediaCaptureConfiguration.MediaType) {
+        viewModel.router.append(.createBrief(type), animated: false)
+    }
+    
+}

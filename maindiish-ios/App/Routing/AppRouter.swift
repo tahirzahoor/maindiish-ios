@@ -45,4 +45,11 @@ class AppRouter: Router {
         navigationController.present(controller, animated: animated)
     }
     
+    func topMostController() -> UIViewController {
+        guard let topMostViewController = navigationController.viewControllers.first else {
+            return UIViewController()
+        }
+        
+        return topMostViewController
+    }
 }

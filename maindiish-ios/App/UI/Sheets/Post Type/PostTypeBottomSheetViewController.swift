@@ -27,8 +27,12 @@ class PostTypeBottomSheetViewController: ViewController<PostTypeBottomSheetViewM
     
     @IBAction
     func videoOptionButtonTapped(_ sender: RoundedButton) {
+        guard let presenter = viewModel.router.topMostController() as? ConfirmMediaDelegate else { return }
         dismiss(animated: false) {
-            self.viewModel.router.append(.captureVideo, animated: false)
+            var configuration = MediaCaptureConfiguration()
+            configuration.mediaType = .any
+            configuration.libraryMediaSelectionLimit = 1
+            self.viewModel.router.append(.captureVideo(configuration, confirmationDelegate: presenter), animated: false)
         }
     }
     

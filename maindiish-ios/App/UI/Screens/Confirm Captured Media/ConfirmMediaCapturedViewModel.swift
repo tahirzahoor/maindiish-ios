@@ -11,13 +11,11 @@ class ConfirmMediaCapturedViewModel: ViewModel {
     
     // MARK: - Public Properties
     
-    var mediaType: MediaCaptureConfiguration.MediaType = .image
-    var videoFileURL: URL?
-    var imageData: Data?
+    var completion: ((Bool)->Void)?
+    var mediaType: MediaCaptureConfiguration.MediaType?
     
-    init(mediaType: MediaCaptureConfiguration.MediaType, videoFileURL: URL? = nil, imageData: Data? = nil) {
+    init(mediaType: MediaCaptureConfiguration.MediaType) {
         self.mediaType = mediaType
-        self.videoFileURL = videoFileURL
-        self.imageData = imageData
     }
+    
 }

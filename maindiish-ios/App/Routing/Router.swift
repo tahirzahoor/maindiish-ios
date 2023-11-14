@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 protocol Router {
 
@@ -9,5 +10,6 @@ protocol Router {
     func showSheet(_ sheet: Sheet, animated: Bool)
     func pop(back steps: Int)
     func present(_ route: Route, animated: Bool)
+    func topMostController() -> UIViewController
    
 }

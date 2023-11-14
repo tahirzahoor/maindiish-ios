@@ -18,8 +18,10 @@ enum Route {
     case createBlog
     case reviewPost(_ data: PostData)
     case imagesView(_ imageData: [Data], tappedIndex: Int)
-    case captureVideo
-    case confirmMediaCaptured(_ mediaType: MediaCaptureConfiguration.MediaType, imageData: Data?, videoFileURL: URL?)
+    case captureVideo(_ configuration: MediaCaptureConfiguration? = nil, confirmationDelegate: ConfirmMediaDelegate)
+    case confirmMediaCaptured(_ mediaType: MediaCaptureConfiguration.MediaType, _ completion: ((Bool) -> Void)?)
+    case createBrief(_ mediaType: MediaCaptureConfiguration.MediaType)
+    case reviewBrief(_ data: BriefData)
     
     func controller() -> UIViewController {
         switch self {
@@ -79,24 +81,35 @@ enum Route {
                 let viewModel = CreateBlogViewModel()
                 let controller = CreateBlogViewController.instantiate(from: .TabControllers, viewModel: viewModel)
                 return controller
-            case .reviewPost(let postData):
-                let viewModel = ReviewPostViewModel(postData)
+            case .reviewPost(let data):
+                let viewModel = ReviewPostViewModel(data)
                 let controller = ReviewPostViewController.instantiate(from: .TabControllers, viewModel: viewModel)
                 return controller
             case .imagesView(let imagesData, let selectedIndex):
                 let viewModel = ImagesViewModel(imagesData, selectedItemIndex: selectedIndex)
                 let controller = ImagesViewController.instantiate(from: .TabControllers, viewModel: viewModel)
                 return controller
-            case .captureVideo:
-                let viewModel = VideoCaptureViewModel()
+            case .captureVideo(let configuration, let delegate):
+            let viewModel = VideoCaptureViewModel(delegate: delegate)
                 let controller = VideoCaptureViewController.instantiate(from: .PopUp, viewModel: viewModel)
+                if let configuration = configuration {
+                    controller.config = configuration
+                }
+                return controller
+            case .confirmMediaCaptured(let mediaType, let completion):
+                let viewModel = ConfirmMediaCapturedViewModel(mediaType: mediaType)
+                viewModel.completion = completion
+                let controller = ConfirmMediaCapturedViewController.instantiate(from: .PopUp, viewModel: viewModel)
+                return controller
+            case .createBrief(let mediaType):
+                let viewModel = CreateBriefViewModel(mediaType: mediaType)
+                let controller = CreateBriefViewController.instantiate(from: .TabControllers, viewModel: viewModel)
+                return controller
+            case .reviewBrief(let brief):
+                let viewModel = ReviewBriefViewModel(brief: brief)
+                let controller = ReviewBriefViewController.instantiate(from: .TabControllers, viewModel: viewModel)
                 return controller
             
-            case .confirmMediaCaptured(let mediaType, let imageData, let videoURL):
-                let viewModel = ConfirmMediaCapturedViewModel(mediaType: mediaType, videoFileURL: videoURL, imageData: imageData)
-                let controller = ConfirmMediaCapturedViewController.instantiate(from: .PopUp, viewModel: viewModel)
-                
-                return controller
         }
     }
 }

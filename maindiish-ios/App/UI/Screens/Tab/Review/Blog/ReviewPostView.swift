@@ -38,7 +38,6 @@ class ReviewPostView: UIView {
         byOwnerLabel.text = data.byOwner
         descriptionLabel.text = data.description
         tagsLabel.text = data.tags
-        
     }
     
 }

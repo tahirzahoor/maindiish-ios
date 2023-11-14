@@ -1,5 +1,6 @@
 import Foundation
 import ObjectMapper
+import UIKit
 
 class Utils {
     static func fetchCountryCodes() -> [CountryPhoneCode] {
@@ -8,5 +9,9 @@ class Utils {
         }
         
         return countryCodes.data
+    }
+   
+    static func validateTags() {
+        
     }
 }

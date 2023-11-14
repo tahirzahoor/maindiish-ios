@@ -25,14 +25,13 @@ class CreateBlogViewController: ViewController<CreateBlogViewModel> {
     @IBAction
     func uploadImagesTapped(_ sender: UIButton) {
         
-        var configuration = PHPickerConfiguration()
-        configuration.selectionLimit = 0
-        configuration.filter = .images
+        var configuration = MediaCaptureConfiguration()
+        configuration.libraryMediaSelectionLimit = 5
+        configuration.mediaType = .images()
         
-        let picker = PHPickerViewController(configuration: configuration)
-        picker.delegate = self
+        let route = Route.captureVideo(configuration, confirmationDelegate: self)
         
-        present(picker, animated: true)
+        viewModel.router.append(route, animated: false)
     }
     
     @IBAction
@@ -154,5 +153,18 @@ extension CreateBlogViewController: PHPickerViewControllerDelegate {
             })
         }
         
+    }
+}
+
+extension CreateBlogViewController: ConfirmMediaDelegate {
+    func didConfirmSelectedMedia(type: MediaCaptureConfiguration.MediaType) {
+        switch type {
+            case .images(let data):
+                guard let data = data else { return }
+                viewModel.postData.imagesData.append(contentsOf: data)
+                createBlogView.mediaCollectionView.reloadData()
+            default:
+                break
+        }
     }
 }

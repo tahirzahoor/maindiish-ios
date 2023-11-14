@@ -11,6 +11,10 @@ import UIKit
 
 class ConfirmMediaCapturedViewController: ViewController<ConfirmMediaCapturedViewModel> {
     
+    // MARK: - Public Properties
+    
+    var confirmationCompletion: ((Bool) -> Void)?
+    
     // MARK: - Outlets
     
     @IBOutlet weak var confirmationView: ConfirmMediaCapturedView!
@@ -23,32 +27,38 @@ class ConfirmMediaCapturedViewController: ViewController<ConfirmMediaCapturedVie
     }
     
     // MARK: - Action Methods
-    
+
     @IBAction
     func tickButtonPressed(_ sender: UIButton) {
-        viewModel.router.pop(animated: false)
-        
-        dismiss(animated: false)
+        dismiss(animated: false) {
+            self.viewModel.completion?(true)
+        }
     }
     
     @IBAction
     func crossButtonPressed(_ sender: UIButton) {
-        dismiss(animated: true)
-    }
-    
-    // MARK: - Private Methods
-    
-    private func setupView() {
-        if viewModel.mediaType == .video {
-            embedVideoPlayer()
-        } else {
-            embedImageView()
+        dismiss(animated: true) {
+            self.viewModel.completion?(false)
         }
     }
     
-    private func embedVideoPlayer() {
+    // MARK: - Private Methods
+  
+    private func setupView() {
+        switch viewModel.mediaType {
+            case .video(let url):
+                embedVideoPlayer(url: url)
+            case .images(let imagesData):
+                guard let data = imagesData, !data.isEmpty else { return }
+                embedImageView(imageData: data[0])
+            default:
+                break
+        }
+    }
+    
+    private func embedVideoPlayer(url: URL?) {
         
-        guard let url = viewModel.videoFileURL else {
+        guard let url = url else {
             return
         }
         
@@ -64,8 +74,8 @@ class ConfirmMediaCapturedViewController: ViewController<ConfirmMediaCapturedVie
         player.play()
     }
     
-    private func embedImageView() {
-        guard let data = viewModel.imageData else {
+    private func embedImageView(imageData: Data?) {
+        guard let data = imageData else {
             return
         }
         

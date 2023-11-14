@@ -31,7 +31,7 @@ class ReviewPostViewController: ViewController<ReviewPostViewModel> {
     
     @IBAction
     func publishButtonTapped(_ sender: RoundedButton) {
-        viewModel.publishPost()
+        viewModel.publish()
     }
     
     @IBAction
@@ -39,7 +39,6 @@ class ReviewPostViewController: ViewController<ReviewPostViewModel> {
         let index = sender.currentPage
         reviewPostView.imagesCollectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: .centeredHorizontally, animated: true)
     }
-    
     
 }
 

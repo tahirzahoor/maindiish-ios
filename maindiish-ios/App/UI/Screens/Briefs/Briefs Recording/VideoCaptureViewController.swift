@@ -1,8 +1,6 @@
-import AVKit
 import AVFoundation
 import Foundation
 import PhotosUI
-import Photos
 import UIKit
 
 class VideoCaptureViewController: ViewController<VideoCaptureViewModel> {
@@ -22,42 +20,51 @@ class VideoCaptureViewController: ViewController<VideoCaptureViewModel> {
     
     private lazy var captureSession = AVCaptureSession()
     private var currentCamera = AVCaptureDevice.default(for: .video)
-    private var mediaPicker: UIImagePickerController?
-    private var progressView: CircularProgressView?
-    private var timer: Timer?
     private var elapsedTime: TimeInterval = 0.0
     private var maxDuration: TimeInterval = 90.0
     
     private var mediaOptions: [String] {
-        if config.mediaType == .any {
-            return MediaCaptureConfiguration
-                .MediaType
-                .any
-                .rawValue
+        return switch config.mediaType {
+            case .any:
+                    config
+                .mediaType
+                .asString
                 .split(separator: ",")
                 .map { String($0) }
-        } else {
-            return [config.mediaType.rawValue]
+            default:
+                [config.mediaType.asString]
+        }
+    }
+    
+    private var photoLibraryFilter: PHPickerFilter {
+        return switch config.mediaType {
+            case .any:
+                .any(of: [.images, .videos])
+            case .images(_):
+                .images
+            case .video(_):
+                .videos
         }
     }
     
     private var isPhotoCapturingAllowed: Bool {
-        config.mediaType == .any || config.mediaType == .image
+        config.mediaType == .any || config.mediaType == .images()
     }
     
     private var isVideoRecordingAllowed: Bool {
-        config.mediaType == .any || config.mediaType == .video
+        config.mediaType == .any || config.mediaType == .video()
     }
-        
+    
     // MARK: - Lifecycle Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         checkCameraPermissions()
+        requestPhotoLibraryAuthorization()
         addGestures()
-        initMediaPicker()
         disableFrontCameraVideoMirroring(config.disableFrontCameraMirroring)
+        initializeVideoRecordingButtonAnimation()
     }
     
     override func viewDidLayoutSubviews() {
@@ -76,10 +83,8 @@ class VideoCaptureViewController: ViewController<VideoCaptureViewModel> {
     }
     
     @IBAction
-    func videoLibraryButtonTapped(_ sender: UIButton) {
-        if let picker = mediaPicker {
-            present(picker, animated: true)
-        }
+    func mediaLibraryButtonTapped(_ sender: UIButton) {
+        openMediaPicker()
     }
     
     @IBAction
@@ -103,6 +108,11 @@ class VideoCaptureViewController: ViewController<VideoCaptureViewModel> {
     
     // MARK: - Private Methods
     
+    private func initializeVideoRecordingButtonAnimation() {
+        videoCaptureView.animation = CABasicAnimation(keyPath: "strokeEnd")
+        videoCaptureView.animation.delegate = self
+    }
+    
     private func addGestures() {
         let gesture = UILongPressGestureRecognizer(target: self, action: #selector(handleVideoRecordState(_:)))
         videoCaptureView.shutterButton.addGestureRecognizer(gesture)
@@ -112,23 +122,10 @@ class VideoCaptureViewController: ViewController<VideoCaptureViewModel> {
     private func handleVideoRecordState(_ gesture: UILongPressGestureRecognizer) {
         
         if isVideoRecordingAllowed {
-            videoCaptureView.updateButtonView(for: gesture.state)
-            
             switch gesture.state {
             case .began:
-                elapsedTime = 0.0
-                timer = Timer.scheduledTimer(
-                    timeInterval: 90,
-                    target: self,
-                    selector: #selector(updateProgressView),
-                    userInfo: nil,
-                    repeats: true
-                )
                 startRecording()
-            case .changed:
-                updateProgressView()
             case .ended:
-                stopTimer()
                 stopRecording()
             default:
                 break
@@ -137,29 +134,7 @@ class VideoCaptureViewController: ViewController<VideoCaptureViewModel> {
             viewModel.alert = "Only image capturing allowed"
         }
     }
-    
-    @objc
-    private func updateProgressView() {
-        
-        elapsedTime += 1.0
-        let progress = CGFloat(elapsedTime / maxDuration)
-        progressView?.progress = progress
-        
-        if elapsedTime >= maxDuration {
-            stopTimer()
-        }
-    }
-    
-    private func stopTimer() {
-        timer?.invalidate()
-        timer = nil
-    }
-    
-    @objc
-    private func dismissView() {
-        dismiss(animated: true)
-    }
-    
+   
     private func disableFrontCameraVideoMirroring(_ disable: Bool = true) {
         if let connection = previewLayer.connection, connection.isVideoMirroringSupported {
             connection.automaticallyAdjustsVideoMirroring = !disable
@@ -202,30 +177,21 @@ class VideoCaptureViewController: ViewController<VideoCaptureViewModel> {
         }
     }
     
-    func startRecording() {
+    private func startRecording() {
         guard let outputURL = getOutputURL() else {
             return
         }
-       
-        videoOutput.startRecording(to: outputURL, recordingDelegate: self)
         
+        videoCaptureView.animateCircularProgress(true)
+        videoOutput.startRecording(to: outputURL, recordingDelegate: self)
     }
     
-    func stopRecording() {
+    private func stopRecording() {
+        videoCaptureView.animateCircularProgress(false)
         videoOutput.stopRecording()
     }
     
-    func playRecordedVideo(outputFileURL: URL) {
-        
-        let controller = AVPlayerViewController()
-       
-        let player = AVPlayer(url: outputFileURL)
-        controller.player = player
-       
-        present(controller, animated: true)
-    }
-    
-    func switchCamera() {
+    private func switchCamera() {
 
         if let currentCameraInput = captureSession.inputs.first as? AVCaptureDeviceInput {
 
@@ -250,7 +216,7 @@ class VideoCaptureViewController: ViewController<VideoCaptureViewModel> {
 
     }
     
-    func toggleFlash(_ sender: UIButton) {
+    private func toggleFlash(_ sender: UIButton) {
         guard let videoDevice = currentCamera else {
             return
         }
@@ -280,30 +246,31 @@ class VideoCaptureViewController: ViewController<VideoCaptureViewModel> {
         }
     }
     
-    private func initMediaPicker() {
-        DispatchQueue.main.async {
-            let videoPicker = UIImagePickerController()
-            videoPicker.sourceType = .photoLibrary
-            videoPicker.mediaTypes = self.mediaOptions
-            videoPicker.delegate = self
-            
-            self.mediaPicker = videoPicker
-        }
+    private func openMediaPicker() {
+        var configuration = PHPickerConfiguration()
+        configuration.filter = photoLibraryFilter
+        configuration.selectionLimit = config.libraryMediaSelectionLimit
+        
+        let mediaPicker = PHPickerViewController(configuration: configuration)
+        
+        mediaPicker.delegate = self
+        
+        present(mediaPicker, animated: true)
     }
 
-    func capturePhoto() {
+    private func capturePhoto() {
         let photoSettings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])
         photoOutput.capturePhoto(with: photoSettings, delegate: self)
     }
     
-    func getOutputURL() -> URL? {
+    private func getOutputURL() -> URL? {
         let fileManager = FileManager.default
         let documentsPath = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first
         let videoOutputURL = documentsPath?.appendingPathComponent("output.mp4")
         return videoOutputURL
     }
     
-    func setupOutputs() {
+    private func setupOutputs() {
         
         if isPhotoCapturingAllowed && captureSession.canAddOutput(photoOutput) {
             captureSession.addOutput(photoOutput)
@@ -312,15 +279,6 @@ class VideoCaptureViewController: ViewController<VideoCaptureViewModel> {
         if isVideoRecordingAllowed && captureSession.canAddOutput(videoOutput) {
             captureSession.addOutput(videoOutput)
         }
-    }
-}
-
-extension VideoCaptureViewController: AVCaptureFileOutputRecordingDelegate {
-    
-    func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileURL: URL, from connections: [AVCaptureConnection], error: Error?) {
-        let controller = Route.confirmMediaCaptured(.video, imageData: nil, videoFileURL: outputFileURL).controller()
-        
-        present(controller, animated: false)
     }
     
     private func removeAllInputs() {
@@ -353,9 +311,33 @@ extension VideoCaptureViewController: AVCaptureFileOutputRecordingDelegate {
         catch {
             print(error)
         }
-        
     }
-   
+    
+    private func requestPhotoLibraryAuthorization() {
+     
+    }
+    
+    func replaceMovWithMp4(inputURL: URL, completion: @escaping (URL?, Error?) -> Void) {
+        var outputURL = inputURL.deletingPathExtension()
+        outputURL = outputURL.appendingPathExtension("mp4")
+
+        do {
+            try FileManager.default.moveItem(at: inputURL, to: outputURL)
+            completion(outputURL, nil)
+        } catch {
+            completion(nil, error)
+        }
+    }
+}
+
+extension VideoCaptureViewController: AVCaptureFileOutputRecordingDelegate {
+    
+    func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileURL: URL, from connections: [AVCaptureConnection], error: Error?) {
+       
+        viewModel.createdMedia = .video(fileURL: outputFileURL)
+        viewModel.confirmSelectedMedia()
+    }
+    
 }
 
 extension VideoCaptureViewController: AVCapturePhotoCaptureDelegate {
@@ -365,26 +347,66 @@ extension VideoCaptureViewController: AVCapturePhotoCaptureDelegate {
             print("Error converting photo to data.")
             return
         }
-        
-        let route = Route.confirmMediaCaptured(.image, imageData: imageData, videoFileURL: nil)
-        viewModel.router.present(route, animated: true)
+       
+        viewModel.createdMedia = .images(data: [imageData])
+        viewModel.confirmSelectedMedia()
     }
     
 }
 
-extension VideoCaptureViewController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+extension VideoCaptureViewController: PHPickerViewControllerDelegate {
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         
-        if let selectedImage = info[.originalImage] as? UIImage {
-            if let imageData = selectedImage.jpegData(compressionQuality: 1.0) {
-                viewModel.selectedImagesData.append(imageData)
+        picker.dismiss(animated: true)
+        
+        var processedImagesCount = 0
+        
+        if !results.isEmpty {
+            ProgressLoaderManager.shared.show(for: view)
+        }
+        
+        for result in results {
+            if result.itemProvider.canLoadObject(ofClass: UIImage.self) {
+                result.itemProvider.loadDataRepresentation(forTypeIdentifier: UTType.image.identifier, completionHandler: { data, error in
+                    guard let data = data else { return }
+                    self.viewModel.imagesData.append(data)
+                    processedImagesCount += 1
+                    
+                    if processedImagesCount == results.count {
+                        DispatchQueue.main.async {
+                            ProgressLoaderManager.shared.hide(for: self.view)
+                            self.viewModel.createdMedia = .images(data: self.viewModel.imagesData)
+                            self.viewModel.performConfirmation()
+                        }
+                    }
+                })
+            } else if result.itemProvider.hasItemConformingToTypeIdentifier(UTType.movie.identifier)  {
+                result.itemProvider.loadFileRepresentation(forTypeIdentifier: UTType.movie.identifier) { (url, error) in
+                    if let error = error {
+                        print("Error loading video: \(error.localizedDescription)")
+                        return
+                    }
+                    
+                    if let videoURL = url {
+                        self.replaceMovWithMp4(inputURL: videoURL) { url, _ in
+                            DispatchQueue.main.async {
+                                ProgressLoaderManager.shared.hide(for: self.view)
+                                self.viewModel.createdMedia = .video(fileURL: url)
+                                self.viewModel.performConfirmation()
+                            }
+                        }
+                    }
+                }
             }
         }
     }
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker.dismiss(animated: true)
+ 
+}
+
+extension VideoCaptureViewController: CAAnimationDelegate {
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        if flag {
+            stopRecording()
+        }
     }
-    
 }
