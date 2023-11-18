@@ -12,8 +12,6 @@ class SearchViewModel: ViewModel {
     // MARK: - Public Properties
     
     @Published var currentFilter = SearchFilter.people
-    var searchQuery = ""
     
-    // MARK: - Public Methods 
     
 }

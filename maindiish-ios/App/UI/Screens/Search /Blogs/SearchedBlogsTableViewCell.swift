@@ -48,6 +48,7 @@ class SearchedBlogsTableViewCell: UITableViewCell {
        
         titleLabel.text = data.title
         descriptionLabel.text = data.description
+        authorTitleLabel.text = data.byOwner
         
         numberOfHeartsButton.setTitle("\(data.numberOfHearts)", for: .normal)
         numberOfViewsButton.setTitle("\(data.numberOfViews)", for: .normal)

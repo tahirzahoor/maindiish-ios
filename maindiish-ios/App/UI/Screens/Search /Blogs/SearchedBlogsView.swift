@@ -13,4 +13,6 @@ class SearchedBlogsView: UIView {
     
     @IBOutlet weak var blogsTableView: UITableView!
     
+    // MARK: - Lifecycle Methods
+    
 }
