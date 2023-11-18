@@ -7,18 +7,25 @@
 
 import Foundation
 
-struct UserRepository {
+class UserRepository {
     
-    // MARK: - Private Methods
+    // MARK: - Private Properties
     
-    private init() { }
+    private let names = ["Arsalan", "Faizan", "Ahsan", "Tahir", "Burhan", "Aqeel", "Zahid", "Farhan", "Sheraz", "Ahmar"]
     
     // MARK: - Public Properties
     
     static let shared = UserRepository()
     
-    var users: [User] {
-        Array(1...50).map { User(name: "User-\($0)", followersCount: Int.random(in: 0...10000)) }
+    var users = [User]() 
+    
+    // MARK: - Private Methods
+    
+    private init() { 
+        users = loadData()
     }
     
+    private func loadData() -> [User] {
+        Array(1...50).map { User(name: names[$0 % names.count], followersCount: Int.random(in: 0...10000)) }
+    }
 }

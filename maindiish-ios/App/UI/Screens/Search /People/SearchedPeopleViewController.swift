@@ -13,7 +13,25 @@ class SearchedPeopleViewController: ViewController<SearchedPeopleViewModel> {
     // MARK: - Outlets
     
     @IBOutlet weak var searchedPeopleView: SearchedPeopleView!
+    
+    // MARK: -  Private Properties
+    
+    private let refreshControl = UIRefreshControl()
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        refreshControl.addTarget(self, action: #selector(refreshBlogs), for: .valueChanged)
+        
+        searchedPeopleView.peopleTableView.refreshControl = refreshControl
+    }
+    
+    @objc
+    private func refreshBlogs() {
+        viewModel.addData()
+        searchedPeopleView.peopleTableView.reloadData()
+        refreshControl.endRefreshing()
+    }
 }
 
 extension SearchedPeopleViewController: UITableViewDelegate {

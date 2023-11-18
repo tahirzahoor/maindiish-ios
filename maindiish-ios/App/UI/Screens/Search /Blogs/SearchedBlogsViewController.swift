@@ -14,8 +14,25 @@ class SearchedBlogsViewController: ViewController<SearchedBlogsViewModel> {
     
     @IBOutlet weak var searchedBlogsView: SearchedBlogsView!
     
+    // MARK: -  Private Properties
+    
+    private let refreshControl = UIRefreshControl()
+    
     // MARK: - Private Methods
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        refreshControl.addTarget(self, action: #selector(refreshBlogs), for: .valueChanged)
+        searchedBlogsView.blogsTableView.refreshControl = refreshControl
+    }
 
+    @objc
+    private func refreshBlogs() {
+        viewModel.addData()
+        searchedBlogsView.blogsTableView.reloadData()
+        refreshControl.endRefreshing()
+    }
 }
 
 extension SearchedBlogsViewController: UITableViewDelegate {

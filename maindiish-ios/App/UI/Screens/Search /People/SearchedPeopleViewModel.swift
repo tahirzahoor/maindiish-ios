@@ -11,7 +11,7 @@ class SearchedPeopleViewModel: ViewModel {
     
     // MARK: - Private Properties
     
-    private var usersList = UserRepository.shared.users
+    private var usersList: [User] { UserRepository.shared.users }
     
     // MARK: - Public Properties
     
@@ -24,6 +24,13 @@ class SearchedPeopleViewModel: ViewModel {
         return usersList.filter {
             $0.name.lowercased().contains(searchedQuery.lowercased())
         }
+    }
+    
+    // MARK: - Public Methods
+    
+    func addData() {
+        let newUser = User(name: "New User \(Int.random(in: 200...1000))", followersCount: 0)
+        UserRepository.shared.users.insert(newUser, at: 0)
     }
     
 }

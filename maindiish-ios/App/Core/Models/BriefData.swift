@@ -7,12 +7,17 @@
 
 import Foundation
 
-struct BriefData {
+struct BriefData: Identifiable {
     
     // MARK: - Public Properties
     
+    var id = UUID()
     var mediaType: MediaCaptureConfiguration.MediaType?
     var description = ""
     var tags = ""
+    var views = Double.random(in: 1...1_000_000_000)
+    var formattedCount: String {
+        Utils.formatLargeNumber(views)
+    }
     
 }

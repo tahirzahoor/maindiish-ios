@@ -13,4 +13,6 @@ class BriefCollectionView: UIView {
     
     @IBOutlet weak var briefCollectionView: UICollectionView!
     
+    // MARK: - Lifecycle Methods
+    
 }

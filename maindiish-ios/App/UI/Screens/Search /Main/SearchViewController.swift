@@ -16,23 +16,32 @@ class SearchViewController: ViewController<SearchViewModel> {
     
     // MARK: - Private Properties
     
+    private var currentController: UIViewController?
     private var delegate: SearchDelegate?
     
-    private lazy var blogsViewController: SearchedBlogsViewController = {
+    private var blogsViewController: SearchedBlogsViewController {
         let viewModel = SearchedBlogsViewModel()
         let controller = SearchedBlogsViewController.instantiate(from: .TabControllers, viewModel: viewModel)
         self.delegate = controller
         
         return controller
-    }()
+    }
     
-    private lazy var peopleListViewController: SearchedPeopleViewController = {
+    private var peopleListViewController: SearchedPeopleViewController {
         let viewModel = SearchedPeopleViewModel()
         let controller = SearchedPeopleViewController.instantiate(from: .TabControllers, viewModel: viewModel)
         self.delegate = controller
         
         return controller
-    }()
+    }
+    
+    private var briefsViewController: BriefCollectionViewController {
+        let viewModel = BriefCollectionViewModel()
+        let controller = BriefCollectionViewController.instantiate(from: .TabControllers, viewModel: viewModel)
+        self.delegate = controller
+        
+        return controller
+    }
     
     // MARK: - Lifecycle Methods
     
@@ -51,6 +60,8 @@ class SearchViewController: ViewController<SearchViewModel> {
     
     @IBAction
     func filterButtonTapped(_ sender: RoundedButton) {
+        guard sender.tag != viewModel.currentFilter.rawValue else { return }
+        
         removeCurrentFilterView()
         
         let selectedFilter = SearchFilter.allCases[sender.tag]
@@ -72,25 +83,21 @@ class SearchViewController: ViewController<SearchViewModel> {
     }
     
     private func setupViewForCurrentFilter() {
+        
         switch viewModel.currentFilter {
             case .blog:
-                addController(blogsViewController, fixIn: searchView.filteredDataView)
+                currentController = blogsViewController
             case .people:
-                addController(peopleListViewController, fixIn: searchView.filteredDataView)
-            default:
-                break
+                currentController = peopleListViewController
+            case .brief:
+                currentController = briefsViewController
         }
+        
+        addController(currentController!, fixIn: searchView.filteredDataView)
     }
     
     private func removeCurrentFilterView() {
-        switch viewModel.currentFilter {
-            case .blog:
-                removeController(blogsViewController)
-            case .people:
-                removeController(peopleListViewController)
-            default:
-                break
-        }
+        removeController(currentController!)
     }
    
 }

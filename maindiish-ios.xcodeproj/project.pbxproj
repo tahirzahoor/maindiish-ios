@@ -154,6 +154,8 @@
 		79A525B22AF9829000DBC4A0 /* TrendingPostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525B12AF9829000DBC4A0 /* TrendingPostData.swift */; };
 		79A525B42AF9835B00DBC4A0 /* TrendingPostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525B32AF9835B00DBC4A0 /* TrendingPostRepository.swift */; };
 		79A525B62AF988FB00DBC4A0 /* TrendingPostImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A525B52AF988FB00DBC4A0 /* TrendingPostImageCollectionViewCell.swift */; };
+		79A8ED152B09071100CDDA2C /* LayoutItemAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8ED142B09071100CDDA2C /* LayoutItemAlignment.swift */; };
+		79A8ED172B0949E800CDDA2C /* BriefRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8ED162B0949E800CDDA2C /* BriefRepository.swift */; };
 		79B5CC502AE212E0005E19AD /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B5CC4F2AE212E0005E19AD /* Authentication.storyboard */; };
 		79B5CC582AE21EF5005E19AD /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79B5CC572AE21EF5005E19AD /* Inter-Regular.ttf */; };
 		79B5CC632AE24874005E19AD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B5CC622AE24874005E19AD /* LoginViewModel.swift */; };
@@ -353,6 +355,8 @@
 		79A525B12AF9829000DBC4A0 /* TrendingPostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPostData.swift; sourceTree = "<group>"; };
 		79A525B32AF9835B00DBC4A0 /* TrendingPostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPostRepository.swift; sourceTree = "<group>"; };
 		79A525B52AF988FB00DBC4A0 /* TrendingPostImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPostImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		79A8ED142B09071100CDDA2C /* LayoutItemAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutItemAlignment.swift; sourceTree = "<group>"; };
+		79A8ED162B0949E800CDDA2C /* BriefRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefRepository.swift; sourceTree = "<group>"; };
 		79B5CC4F2AE212E0005E19AD /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		79B5CC572AE21EF5005E19AD /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		79B5CC622AE24874005E19AD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -598,6 +602,7 @@
 				79BF3C642ADF7AFB009CE04B /* OnboardingRepository.swift */,
 				79E406F72AEBCB57001B6AC0 /* Repository.swift */,
 				798905382B08E4B000B5A7EC /* UserRepository.swift */,
+				79A8ED162B0949E800CDDA2C /* BriefRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -900,6 +905,7 @@
 				7989053F2B08F5DA00B5A7EC /* BriefCollectionViewController.swift */,
 				798905412B08F6A600B5A7EC /* BriefCollectionViewLayout.swift */,
 				798905432B08F76300B5A7EC /* BriefCollectionViewCell.swift */,
+				79A8ED142B09071100CDDA2C /* LayoutItemAlignment.swift */,
 			);
 			path = Brief;
 			sourceTree = "<group>";
@@ -1324,6 +1330,7 @@
 				7991E5612ADF671F00C8F348 /* OnboardingDetail.swift in Sources */,
 				798423032AEE79CB00441707 /* ForgotPasswordViewController.swift in Sources */,
 				79E407012AEBEC2E001B6AC0 /* APIClient.swift in Sources */,
+				79A8ED172B0949E800CDDA2C /* BriefRepository.swift in Sources */,
 				7991E55E2ADF635800C8F348 /* OnboardingCollectionViewCell.swift in Sources */,
 				79B5CC652AE2488B005E19AD /* LoginViewController.swift in Sources */,
 				790B4F5C2AF24EA400C429CD /* ExploreViewModel.swift in Sources */,
@@ -1372,6 +1379,7 @@
 				79BA2A272AE1E9CA0019E880 /* WelcomeViewModel.swift in Sources */,
 				79037C7D2B00ECF2009F2A4A /* ConfirmMediaCapturedViewModel.swift in Sources */,
 				7991A09D2AFE7BE500C4990B /* ImagesViewController.swift in Sources */,
+				79A8ED152B09071100CDDA2C /* LayoutItemAlignment.swift in Sources */,
 				795D658F2AEA78DF007AF064 /* Notification.swift in Sources */,
 				79D018E52AEA73E10066AAF6 /* Number.swift in Sources */,
 				79A525B62AF988FB00DBC4A0 /* TrendingPostImageCollectionViewCell.swift in Sources */,
