@@ -81,6 +81,14 @@
 		798423282AEEC14500441707 /* SetNewPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423272AEEC14500441707 /* SetNewPasswordViewModel.swift */; };
 		7984232A2AEEC15E00441707 /* SetNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423292AEEC15E00441707 /* SetNewPasswordViewController.swift */; };
 		7984232C2AEEC19000441707 /* SetNewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7984232B2AEEC19000441707 /* SetNewPasswordView.swift */; };
+		7989051A2B080F7400B5A7EC /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798905192B080F7400B5A7EC /* SearchView.swift */; };
+		7989051C2B080F7E00B5A7EC /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989051B2B080F7E00B5A7EC /* SearchViewModel.swift */; };
+		7989051E2B080F9A00B5A7EC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989051D2B080F9A00B5A7EC /* SearchViewController.swift */; };
+		798905212B08357C00B5A7EC /* SearchedBlogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798905202B08357C00B5A7EC /* SearchedBlogsView.swift */; };
+		798905232B08358C00B5A7EC /* SearchedBlogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798905222B08358C00B5A7EC /* SearchedBlogsViewModel.swift */; };
+		798905252B0835AF00B5A7EC /* SearchedBlogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798905242B0835AF00B5A7EC /* SearchedBlogsViewController.swift */; };
+		798905282B08365B00B5A7EC /* SearchedBlogsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798905272B08365B00B5A7EC /* SearchedBlogsTableViewCell.swift */; };
+		7989052A2B083EBB00B5A7EC /* SearchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798905292B083EBB00B5A7EC /* SearchFilter.swift */; };
 		7991A0992AFE7BA000C4990B /* ImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991A0982AFE7BA000C4990B /* ImagesView.swift */; };
 		7991A09B2AFE7BB200C4990B /* ImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991A09A2AFE7BB200C4990B /* ImagesViewModel.swift */; };
 		7991A09D2AFE7BE500C4990B /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991A09C2AFE7BE500C4990B /* ImagesViewController.swift */; };
@@ -260,6 +268,14 @@
 		798423272AEEC14500441707 /* SetNewPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPasswordViewModel.swift; sourceTree = "<group>"; };
 		798423292AEEC15E00441707 /* SetNewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPasswordViewController.swift; sourceTree = "<group>"; };
 		7984232B2AEEC19000441707 /* SetNewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPasswordView.swift; sourceTree = "<group>"; };
+		798905192B080F7400B5A7EC /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		7989051B2B080F7E00B5A7EC /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		7989051D2B080F9A00B5A7EC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		798905202B08357C00B5A7EC /* SearchedBlogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedBlogsView.swift; sourceTree = "<group>"; };
+		798905222B08358C00B5A7EC /* SearchedBlogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedBlogsViewModel.swift; sourceTree = "<group>"; };
+		798905242B0835AF00B5A7EC /* SearchedBlogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedBlogsViewController.swift; sourceTree = "<group>"; };
+		798905272B08365B00B5A7EC /* SearchedBlogsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedBlogsTableViewCell.swift; sourceTree = "<group>"; };
+		798905292B083EBB00B5A7EC /* SearchFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilter.swift; sourceTree = "<group>"; };
 		7991A0982AFE7BA000C4990B /* ImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesView.swift; sourceTree = "<group>"; };
 		7991A09A2AFE7BB200C4990B /* ImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewModel.swift; sourceTree = "<group>"; };
 		7991A09C2AFE7BE500C4990B /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
@@ -529,6 +545,7 @@
 		18209EAA2A714C840024F47B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				798905182B080F5B00B5A7EC /* Search  */,
 				79037C7B2B00ECD3009F2A4A /* Confirm Captured Media */,
 				79037C712B004189009F2A4A /* Briefs */,
 				790B4F4E2AF24A7200C429CD /* Tab */,
@@ -802,6 +819,37 @@
 				7984232B2AEEC19000441707 /* SetNewPasswordView.swift */,
 			);
 			path = "Set New Password";
+			sourceTree = "<group>";
+		};
+		798905182B080F5B00B5A7EC /* Search  */ = {
+			isa = PBXGroup;
+			children = (
+				798905262B0835CC00B5A7EC /* Main */,
+				7989051F2B08355A00B5A7EC /* Blogs */,
+			);
+			path = "Search ";
+			sourceTree = "<group>";
+		};
+		7989051F2B08355A00B5A7EC /* Blogs */ = {
+			isa = PBXGroup;
+			children = (
+				798905202B08357C00B5A7EC /* SearchedBlogsView.swift */,
+				798905222B08358C00B5A7EC /* SearchedBlogsViewModel.swift */,
+				798905242B0835AF00B5A7EC /* SearchedBlogsViewController.swift */,
+				798905272B08365B00B5A7EC /* SearchedBlogsTableViewCell.swift */,
+			);
+			path = Blogs;
+			sourceTree = "<group>";
+		};
+		798905262B0835CC00B5A7EC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				798905192B080F7400B5A7EC /* SearchView.swift */,
+				7989051B2B080F7E00B5A7EC /* SearchViewModel.swift */,
+				7989051D2B080F9A00B5A7EC /* SearchViewController.swift */,
+				798905292B083EBB00B5A7EC /* SearchFilter.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		7991A0972AFE7B6800C4990B /* Images Viewer */ = {
@@ -1129,6 +1177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7991E5592ADF3DAD00C8F348 /* OnboardingView.swift in Sources */,
+				7989052A2B083EBB00B5A7EC /* SearchFilter.swift in Sources */,
 				790B4F5A2AF24E9300C429CD /* ExploreView.swift in Sources */,
 				7984230F2AEE7D6B00441707 /* BottomUpOptionsSheetViewModel.swift in Sources */,
 				798055F22AE6F9D700717FB4 /* BorderedView.swift in Sources */,
@@ -1208,6 +1257,7 @@
 				799E07362AE50EC500D853B5 /* UIButton.swift in Sources */,
 				79A525AE2AF97E9D00DBC4A0 /* TrendingPostsViewModel.swift in Sources */,
 				79E444632AE5C0FE003CB9C8 /* RoundedButton.swift in Sources */,
+				7989051C2B080F7E00B5A7EC /* SearchViewModel.swift in Sources */,
 				798423112AEE7FB600441707 /* BottomUpOptionsDelegate.swift in Sources */,
 				18209EBB2A7249140024F47B /* Assets.swift in Sources */,
 				79243FBB2B03919D00C4AFA5 /* ReviewBriefView.swift in Sources */,
@@ -1218,8 +1268,11 @@
 				79B5CC652AE2488B005E19AD /* LoginViewController.swift in Sources */,
 				790B4F5C2AF24EA400C429CD /* ExploreViewModel.swift in Sources */,
 				79BF3C7B2ADFF85D009CE04B /* Fonts.swift in Sources */,
+				798905212B08357C00B5A7EC /* SearchedBlogsView.swift in Sources */,
+				7989051A2B080F7400B5A7EC /* SearchView.swift in Sources */,
 				79037C7A2B00E196009F2A4A /* MediaCaptureConfiguration.swift in Sources */,
 				79A525A62AF903A800DBC4A0 /* FilterCollectionViewCell.swift in Sources */,
+				798905282B08365B00B5A7EC /* SearchedBlogsTableViewCell.swift in Sources */,
 				18209EC52A724D860024F47B /* Sheet.swift in Sources */,
 				18209EDE2A7260320024F47B /* UICollectionView.swift in Sources */,
 				7991A0992AFE7BA000C4990B /* ImagesView.swift in Sources */,
@@ -1228,6 +1281,7 @@
 				18209EA42A714A250024F47B /* ViewController.swift in Sources */,
 				79037C782B004236009F2A4A /* VideoCaptureView.swift in Sources */,
 				79A2E30E2AFE414E0039633D /* ReviewPostViewController.swift in Sources */,
+				798905252B0835AF00B5A7EC /* SearchedBlogsViewController.swift in Sources */,
 				79BA2A1E2AE1C2D80019E880 /* UIColor.swift in Sources */,
 				7984231F2AEEA0AA00441707 /* TypeCodeViewController.swift in Sources */,
 				18209EC72A724E030024F47B /* AppRouter.swift in Sources */,
@@ -1250,6 +1304,7 @@
 				18209ED62A725CD40024F47B /* Config.swift in Sources */,
 				799E07382AE533C100D853B5 /* PaddedTextField.swift in Sources */,
 				799E07502AE58A3400D853B5 /* CreateUserNameView.swift in Sources */,
+				798905232B08358C00B5A7EC /* SearchedBlogsViewModel.swift in Sources */,
 				7991A0A62AFED82600C4990B /* PostTypeBottomSheetViewModel.swift in Sources */,
 				79BA2A272AE1E9CA0019E880 /* WelcomeViewModel.swift in Sources */,
 				79037C7D2B00ECF2009F2A4A /* ConfirmMediaCapturedViewModel.swift in Sources */,
@@ -1267,6 +1322,7 @@
 				7984232A2AEEC15E00441707 /* SetNewPasswordViewController.swift in Sources */,
 				799E07462AE556B200D853B5 /* SignUpViewController.swift in Sources */,
 				790B4F4D2AF246E200C429CD /* CurveInTheMiddleView.swift in Sources */,
+				7989051E2B080F9A00B5A7EC /* SearchViewController.swift in Sources */,
 				79BA2A2F2AE1F6E10019E880 /* UserDefaultsManager.swift in Sources */,
 				79E406F62AEBC7A1001B6AC0 /* APIService.swift in Sources */,
 				795D65972AEAA4AC007AF064 /* AlertViewModel.swift in Sources */,

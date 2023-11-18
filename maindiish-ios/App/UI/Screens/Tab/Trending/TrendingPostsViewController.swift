@@ -20,6 +20,11 @@ class TrendingPostsViewController: ViewController<TrendingPostsViewModel> {
     // MARK: - Action Methods
     
     @IBAction
+    func searchButtonTapped(_ sender: UIButton) {
+        viewModel.router.append(.search, animated: false)
+    }
+    
+    @IBAction
     func followButtonTapped(_ sender: RoundedButton) {
         sender.isSelected.toggle()
         

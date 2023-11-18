@@ -88,6 +88,18 @@ extension ViewController {
         let isLoggedIn = UserDefaultsManager.shared.isLoggedIn
         navigationController?.setNavigationBar(for: isLoggedIn ? .postLogin : .preLogin)
     }
+    
+    func addController(_ controller: UIViewController, fixIn container: UIView) {
+        addChild(controller)
+        controller.view.fixInView(container)
+        controller.didMove(toParent: self)
+    }
+    
+    func removeController(_ controller: UIViewController) {
+        controller.willMove(toParent: nil)
+        controller.view.removeFromSuperview()
+        controller.removeFromParent()
+    }
 
 }
 

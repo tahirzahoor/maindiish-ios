@@ -64,9 +64,9 @@ class MainTabViewController: ViewController<MainTabViewModel> {
     private func addController() {
         switch currentTab {
             case .explore:
-                add(childController: exploreVC)
+                addController(exploreVC, fixIn: mainTabsView.selectedTabView)
             case .trending:
-                add(childController: trendingVC)
+                addController(trendingVC, fixIn: mainTabsView.selectedTabView)
         }
     
     }
@@ -74,24 +74,24 @@ class MainTabViewController: ViewController<MainTabViewModel> {
     private func removeCurrentController() {
         switch currentTab {
             case .explore:
-                remove(currentController: exploreVC)
+                removeController(exploreVC)
             case .trending:
-                remove(currentController: trendingVC)
+                removeController(trendingVC)
         }
     }
     
-    private func add(childController controller: UIViewController) {
-        addChild(controller)
-        controller.view.frame = mainTabsView.selectedTabView.bounds
-        mainTabsView.selectedTabView.addSubview(controller.view)
-        controller.didMove(toParent: self)
-    }
-    
-    private func remove(currentController controller: UIViewController) {
-        controller.willMove(toParent: nil)
-        controller.view.removeFromSuperview()
-        controller.removeFromParent()
-    }
+//    private func add(childController controller: UIViewController) {
+//        addChild(controller)
+//        controller.view.frame = mainTabsView.selectedTabView.bounds
+//        mainTabsView.selectedTabView.addSubview(controller.view)
+//        controller.didMove(toParent: self)
+//    }
+//    
+//    private func remove(currentController controller: UIViewController) {
+//        controller.willMove(toParent: nil)
+//        controller.view.removeFromSuperview()
+//        controller.removeFromParent()
+//    }
     
 }
 
