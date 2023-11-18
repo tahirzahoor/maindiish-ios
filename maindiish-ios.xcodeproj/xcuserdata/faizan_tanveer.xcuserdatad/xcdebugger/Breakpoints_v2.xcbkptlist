@@ -7,368 +7,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BE6D83DD-BD10-46A2-BFE3-D7BD04F89FB5"
+            uuid = "097C6D78-48E8-49C5-B1B5-8F2BFC73B157"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Briefs/Create Brief/CreateBriefViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "removeMediaView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B5A30E4B-0261-4F07-B456-E329233FEC30"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Briefs/Create Brief/CreateBriefViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "setMediaView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B3901E3B-9CD9-4886-980A-6511C5AEDD04"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Briefs/Briefs Recording/VideoCaptureViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "369"
-            endingLineNumber = "369"
-            landmarkName = "picker(_:didFinishPicking:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0DF60D77-DDA7-46AE-BB4F-B4C9F94EE368"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Briefs/Briefs Recording/VideoCaptureViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "384"
-            endingLineNumber = "384"
-            landmarkName = "picker(_:didFinishPicking:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0045FEA0-F1D1-409F-B480-2F0C487B83C7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Confirm Captured Media/ConfirmMediaCapturedViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "embedVideoPlayer(url:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CD11D5E9-F5C7-423E-9B60-6E0AD1C8CE4B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Tab/Create Post/CreateBlogViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
-            landmarkName = "didConfirmSelectedMedia(type:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CD11D5E9-F5C7-423E-9B60-6E0AD1C8CE4B - c07b1c7c32ec9d10"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "maindiish_ios.CreateBlogViewController.didConfirmSelectedMedia(type: maindiish_ios.MediaCaptureConfiguration.MediaType) -&gt; ()"
-                  moduleName = "maindiish-ios"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Screens/Tab/Create%20Post/CreateBlogViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "162"
-                  endingLineNumber = "162"
-                  offsetFromSymbolStart = "188">
-               </Location>
-               <Location
-                  uuid = "CD11D5E9-F5C7-423E-9B60-6E0AD1C8CE4B - c07b1c7c32ec9d10"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "maindiish_ios.CreateBlogViewController.didConfirmSelectedMedia(type: maindiish_ios.MediaCaptureConfiguration.MediaType) -&gt; ()"
-                  moduleName = "maindiish-ios"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Screens/Tab/Create%20Post/CreateBlogViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "162"
-                  endingLineNumber = "162"
-                  offsetFromSymbolStart = "212">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C55EE53C-3DA2-4F3B-9AF8-C4C8CE895961"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Tab/Create Post/CreateBlogViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "uploadImagesTapped(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F8EDC700-18CD-41BE-8D3C-7754806515ED"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Briefs/Briefs Recording/VideoCaptureViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "init(delegate:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8F7621AF-BC8C-4835-A19C-0D026DF31B09"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Briefs/Briefs Recording/VideoCaptureViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F3AF5074-EC44-4D63-B626-70B877B3CC73"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Briefs/Briefs Recording/VideoCaptureViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "72146D58-9257-407A-8C1E-900EAB250A2B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Sheets/Post Type/PostTypeBottomSheetViewController.swift"
+            filePath = "maindiish-ios/App/UI/Screens/Search /People/SearchedPeopleViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
             endingLineNumber = "35"
-            landmarkName = "videoOptionButtonTapped(_:)"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "72146D58-9257-407A-8C1E-900EAB250A2B - 4648249379dc8c27"
+                  uuid = "097C6D78-48E8-49C5-B1B5-8F2BFC73B157 - a7495abcd7461126"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in maindiish_ios.PostTypeBottomSheetViewController.videoOptionButtonTapped(maindiish_ios.RoundedButton) -&gt; ()"
+                  symbolName = "maindiish_ios.SearchedPeopleViewController.tableView(_: __C.UITableView, heightForRowAt: Foundation.IndexPath) -&gt; CoreGraphics.CGFloat"
                   moduleName = "maindiish-ios"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Sheets/Post%20Type/PostTypeBottomSheetViewController.swift"
+                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Screens/Search%20/People/SearchedPeopleViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "35"
                   endingLineNumber = "35"
-                  offsetFromSymbolStart = "600">
+                  offsetFromSymbolStart = "36">
                </Location>
                <Location
-                  uuid = "72146D58-9257-407A-8C1E-900EAB250A2B - 4648249379dc8c27"
+                  uuid = "097C6D78-48E8-49C5-B1B5-8F2BFC73B157 - 28f17e0c20436f33"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in maindiish_ios.PostTypeBottomSheetViewController.videoOptionButtonTapped(maindiish_ios.RoundedButton) -&gt; ()"
+                  symbolName = "maindiish_ios.SearchedPeopleViewController.tableView(_: __C.UITableView, numberOfRowsInSection: Swift.Int) -&gt; Swift.Int"
                   moduleName = "maindiish-ios"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Sheets/Post%20Type/PostTypeBottomSheetViewController.swift"
+                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Screens/Search%20/People/SearchedPeopleViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "35"
                   endingLineNumber = "35"
-                  offsetFromSymbolStart = "448">
+                  offsetFromSymbolStart = "56">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D63766C7-8BD1-4266-812F-3D5C3C88D7ED"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Sheets/Post Type/PostTypeBottomSheetViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "videoOptionButtonTapped(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6CFA237B-6440-4095-81AB-8F8B56AFFD52"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Briefs/Briefs Recording/VideoCaptureViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
-            landmarkName = "checkCameraPermissions()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6CFA237B-6440-4095-81AB-8F8B56AFFD52 - d9abc2f1f917fc54"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "maindiish_ios.VideoCaptureViewController.checkCameraPermissions() -&gt; ()"
-                  moduleName = "maindiish-ios"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Screens/Briefs/Briefs%20Recording/VideoCaptureViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "148"
-                  endingLineNumber = "148"
-                  offsetFromSymbolStart = "156">
-               </Location>
-               <Location
-                  uuid = "6CFA237B-6440-4095-81AB-8F8B56AFFD52 - c573eec6044fe4fe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool) -&gt; () in maindiish_ios.VideoCaptureViewController.checkCameraPermissions() -&gt; ()"
-                  moduleName = "maindiish-ios"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Screens/Briefs/Briefs%20Recording/VideoCaptureViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "148"
-                  endingLineNumber = "148"
-                  offsetFromSymbolStart = "208">
-               </Location>
-               <Location
-                  uuid = "6CFA237B-6440-4095-81AB-8F8B56AFFD52 - 338b7a8f416919f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Bool) -&gt; () in maindiish_ios.VideoCaptureViewController.checkCameraPermissions() -&gt; ()"
-                  moduleName = "maindiish-ios"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Screens/Briefs/Briefs%20Recording/VideoCaptureViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "148"
-                  endingLineNumber = "148"
-                  offsetFromSymbolStart = "20">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "605C9410-113A-47B4-9F73-8C3BD773FA51"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Briefs/Briefs Recording/VideoCaptureViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
-            landmarkName = "checkCameraPermissions()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D5A2F9F8-2D89-4674-8C9E-B9A079327495"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Briefs/Briefs Recording/VideoCaptureViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
-            landmarkName = "setupCamera()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8F7CF076-2E6F-4892-BEEE-CB643A71557A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "maindiish-ios/App/UI/Screens/Search /Main/SearchViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "removeCurrentFilterView()"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

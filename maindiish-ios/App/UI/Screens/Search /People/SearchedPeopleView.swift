@@ -11,5 +11,7 @@ import UIKit
 class SearchedPeopleView: UIView {
     
     // MARK: - Outlets
+
+    @IBOutlet weak var peopleTableView: UITableView!
     
 }

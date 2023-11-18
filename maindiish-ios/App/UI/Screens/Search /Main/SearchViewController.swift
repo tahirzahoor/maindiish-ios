@@ -26,13 +26,20 @@ class SearchViewController: ViewController<SearchViewModel> {
         return controller
     }()
     
-
+    private lazy var peopleListViewController: SearchedPeopleViewController = {
+        let viewModel = SearchedPeopleViewModel()
+        let controller = SearchedPeopleViewController.instantiate(from: .TabControllers, viewModel: viewModel)
+        self.delegate = controller
+        
+        return controller
+    }()
+    
     // MARK: - Lifecycle Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupBindings()
+        setupViewForCurrentFilter()
     }
     
     // MARK: - Action Methods
@@ -61,19 +68,15 @@ class SearchViewController: ViewController<SearchViewModel> {
     // MARK: - Private Methods
     
     private func setupBindings() {
-        viewModel
-            .$currentFilter
-            .sink { _ in
-               // self?.searchView.setButtonsView(for: $0)
-                //self?.setupViewForCurrentFilter()
-            }
-            .store(in: &bag)
+       
     }
     
     private func setupViewForCurrentFilter() {
         switch viewModel.currentFilter {
             case .blog:
                 addController(blogsViewController, fixIn: searchView.filteredDataView)
+            case .people:
+                addController(peopleListViewController, fixIn: searchView.filteredDataView)
             default:
                 break
         }
@@ -83,6 +86,8 @@ class SearchViewController: ViewController<SearchViewModel> {
         switch viewModel.currentFilter {
             case .blog:
                 removeController(blogsViewController)
+            case .people:
+                removeController(peopleListViewController)
             default:
                 break
         }
