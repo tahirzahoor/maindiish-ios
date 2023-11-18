@@ -26,6 +26,6 @@ class UserRepository {
     }
     
     private func loadData() -> [User] {
-        Array(1...50).map { User(name: names[$0 % names.count], followersCount: Int.random(in: 0...10000)) }
+        Array(1...100000).map { User(name: names[$0 % names.count], followersCount: Int.random(in: 0...10000)) }
     }
 }

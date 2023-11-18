@@ -22,7 +22,7 @@ class BriefRepository {
     }
     
     private func loadData() -> [BriefData] {
-        Array(1...50).map { BriefData(description: "This is description#\($0)", tags: "tag#\($0)") }
+        Array(1...5000).map { BriefData(description: "This is description#\($0)", tags: "tag#\($0)") }
     }
     
 }

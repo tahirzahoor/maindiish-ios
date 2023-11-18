@@ -62,6 +62,7 @@ class SearchViewController: ViewController<SearchViewModel> {
     func filterButtonTapped(_ sender: RoundedButton) {
         guard sender.tag != viewModel.currentFilter.rawValue else { return }
         
+        searchView.searchField.text = ""
         removeCurrentFilterView()
         
         let selectedFilter = SearchFilter.allCases[sender.tag]

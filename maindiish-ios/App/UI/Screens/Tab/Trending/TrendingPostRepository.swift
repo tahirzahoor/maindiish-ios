@@ -26,7 +26,7 @@ class PostRepository {
     private func loadData() -> [PostData] {
         var data = [PostData]()
         
-        for i in 1...10 {
+        for i in 1...10000 {
             
             let imagesData = Array<Data>(repeating: dummyImageData, count: i)
             let postData = PostData(
