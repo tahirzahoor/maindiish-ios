@@ -7,5 +7,6 @@ extension UIStoryboard {
         case Authentication
         case PopUp
         case TabControllers
+        case Profile
     }
 }

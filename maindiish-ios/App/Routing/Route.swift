@@ -23,6 +23,7 @@ enum Route {
     case createBrief(_ mediaType: MediaCaptureConfiguration.MediaType)
     case reviewBrief(_ data: BriefData)
     case search
+    case profile
     
     func controller() -> UIViewController {
         switch self {
@@ -113,6 +114,10 @@ enum Route {
             case .search:
                 let viewModel = SearchViewModel()
                 let controller = SearchViewController.instantiate(from: .TabControllers, viewModel: viewModel)
+                return controller
+            case .profile:
+                let viewModel = ProfileViewModel()
+                let controller = ProfileViewController.instantiate(from: .Profile, viewModel: viewModel)
                 return controller
             
         }

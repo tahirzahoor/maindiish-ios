@@ -36,7 +36,7 @@ class SearchedPeopleViewController: ViewController<SearchedPeopleViewModel> {
 
 extension SearchedPeopleViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        // MARK: - Open Profile
+        viewModel.router.append(.profile, animated: true)
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
