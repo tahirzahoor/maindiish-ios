@@ -21,25 +21,19 @@ class ProfileView: UIView {
     @IBOutlet weak var lovesCountLabel: UILabel!
     @IBOutlet weak var followersCountLabel: UILabel!
     @IBOutlet weak var followingsCountLabel: UILabel!
-    @IBOutlet weak var followButton: RoundedButton!
-    @IBOutlet weak var messageButton: RoundedButton!
-    @IBOutlet weak var allLabel: UILabel!
-    @IBOutlet weak var briefsLabel: UILabel!
-    @IBOutlet weak var blogsLabel: UILabel!
-    @IBOutlet weak var allTabIndicatorView: UIView!
-    @IBOutlet weak var briefTabIndicatorView: UIView!
-    @IBOutlet weak var blogsTabIndicatorView: UIView!
+    @IBOutlet weak var followButton: UIButton!
+    @IBOutlet weak var messageButton: UIButton!
     @IBOutlet weak var contentView: UIView!
-    
-    @IBOutlet weak var allTabsView: UIView!
-    @IBOutlet weak var briefsTabView: UIView!
-    @IBOutlet weak var blogTabView: UIView!
+    @IBOutlet weak var tabCollectionView: UICollectionView!
+    @IBOutlet weak var followAndMessageButtonsView: UIView!
     
     // MARK: - Lifecycle Methods
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        messageButton.layer.borderColor = UIColor.black.cgColor
+        messageButton.layer.masksToBounds = true
         setFonts()
     }
     
@@ -65,19 +59,4 @@ class ProfileView: UIView {
         messageButton.titleLabel?.font = buttonTextFont
     }
     
-    // MARK: - Public Methods
-    
-    func setView(for tab: TabItem) {
-        
-        let selectedColor = UIColor.appThemeColor
-        let unselectedColor = UIColor.gray
-        
-        allTabIndicatorView.isHidden = tab != .all
-        blogsTabIndicatorView.isHidden = tab != .blogs
-        briefTabIndicatorView.isHidden = tab != .briefs
-        
-        allLabel.textColor = tab == .all ? selectedColor : unselectedColor
-        briefsLabel.textColor = tab == .briefs ? selectedColor : unselectedColor
-        blogsLabel.textColor = tab == .blogs ? selectedColor : unselectedColor
-    }
 }

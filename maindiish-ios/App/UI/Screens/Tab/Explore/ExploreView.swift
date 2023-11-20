@@ -5,7 +5,7 @@ class ExploreView: UIView {
     // MARK: - Outlets
     
     @IBOutlet weak var postsTableView: UITableView!
-    
+    @IBOutlet weak var headerView: UIView!
     
     // MARK: - Lifecycle Methods
     

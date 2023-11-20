@@ -11,6 +11,12 @@ class ExploreViewController: ViewController<ExploreViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if viewModel.isForProfile {
+            NSLayoutConstraint.activate([
+                exploreView.headerView.heightAnchor.constraint(equalToConstant: 0)
+            ])
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

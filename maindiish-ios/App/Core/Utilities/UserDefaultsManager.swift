@@ -17,7 +17,6 @@ class UserDefaultsManager {
         wrappedValue: false,
         GlobalStrings.UserDefaultKey.isLoggedIn
     ) var isLoggedIn: Bool
-   
     
     // MARK: - Instance Methods
     

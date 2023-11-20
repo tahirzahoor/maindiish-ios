@@ -36,11 +36,14 @@ class SearchedPeopleViewController: ViewController<SearchedPeopleViewModel> {
 
 extension SearchedPeopleViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        viewModel.router.append(.profile, animated: true)
+        var user = User()
+        let id = indexPath.row % 2 == 0 ? "o" : ""
+        viewModel.router.append(.profile(id: id), animated: true)
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        (cell as! SearchedPeopleCell).highlightIndicatorImageView.isHidden = true
+        cell.selectionStyle = .none
+        (cell as! SearchedPeopleCell).highlightIndicatorImageView.isHidden = (indexPath.row % 2 == 0)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -9,6 +9,13 @@ import Foundation
 
 class ProfileViewModel: ViewModel {
     
-    var tab = TabItem.briefs
+    
+    var user = User()
+    var tab = TabItem.all
+    var id = ""
+    
+    init(id: String) {
+        self.id = id
+    }
     
 }

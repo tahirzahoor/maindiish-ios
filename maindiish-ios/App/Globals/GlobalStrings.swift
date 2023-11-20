@@ -2,6 +2,9 @@ import Foundation
 
 struct GlobalStrings {
     
+    // Untill API available
+    static let loggedInUserId = UUID()
+    
     struct Title {
         static let onboarding1 = "Learn New Cooking Techniques and Recipes"
         static let onboarding2 = "Upload Your Food Reels and Videos"

@@ -16,8 +16,6 @@ class ProfileViewController: ViewController<ProfileViewModel> {
     
     // MARK: - Private Properties
     
-    private var currentController: UIViewController?
-    
     private var blogsVC: SearchedBlogsViewController {
         let viewModel = SearchedBlogsViewModel()
         let controller = SearchedBlogsViewController.instantiate(from: .TabControllers, viewModel: viewModel)
@@ -32,35 +30,28 @@ class ProfileViewController: ViewController<ProfileViewModel> {
         return controller
     }
     
+    private var exploreVC: ExploreViewController {
+        let viewModel = ExploreViewModel()
+        viewModel.isForProfile = true
+        let controller = ExploreViewController.instantiate(from: .TabControllers, viewModel: viewModel)
+        
+        return controller
+    }
+    
+    private var currentController = UIViewController()
+    
     // MARK: - Lifecycle Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addGestures()
-        profileView.setView(for: .all)
-        setupViewForCurrentFilter()
+        setInitialView()
+        setupViewForCurrentTab()
     }
     
     // MARK: - Private Methods
     
-    private func addGestures() {
-        let gesture = UIGestureRecognizer(target: self, action: #selector(tabDidChange(_:)))
-        
-        profileView.allTabsView.addGestureRecognizer(gesture)
-        profileView.blogTabView.addGestureRecognizer(gesture)
-        profileView.briefsTabView.addGestureRecognizer(gesture)
-    }
-    
-    @objc
-    private func tabDidChange(_ view: UIView) {
-        let selectedTab = TabItem.allCases[view.tag - 1]
-        profileView.setView(for: selectedTab)
-        removeCurrentFilterView()
-        setupViewForCurrentFilter()
-    }
-    
-    private func setupViewForCurrentFilter() {
+    private func setupViewForCurrentTab() {
         
         switch viewModel.tab {
             case .blogs:
@@ -68,14 +59,55 @@ class ProfileViewController: ViewController<ProfileViewModel> {
             case .briefs:
                 currentController = briefsVC
             case .all:
-                currentController = UIViewController()
+                currentController = exploreVC
         }
         
-        addController(currentController!, fixIn: profileView.contentView)
+        addController(currentController, fixIn: profileView.contentView)
     }
     
-    private func removeCurrentFilterView() {
-        removeController(currentController!)
+    private func removeCurrentTabView() {
+        removeController(currentController)
     }
 
+    private func setInitialView() {
+        guard viewModel.id == "o" else { return }
+        
+//        NSLayoutConstraint.activate([
+//            profileView.followAndMessageButtonsView.heightAnchor.constraint(equalToConstant: 0)
+//        ])
+    }
 }
+
+extension ProfileViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        TabItem.allCases.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell: ProfileTabCollectionViewCell = collectionView.dequeueCell(for: indexPath)
+        
+        let tab = TabItem.allCases[indexPath.row]
+        cell.tabTitleLabel.text = tab.rawValue.capitalized
+        cell.setView(isSelected: tab == viewModel.tab)
+        
+        return cell
+    }
+}
+
+extension ProfileViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        removeCurrentTabView()
+        let tab = TabItem.allCases[indexPath.row]
+        viewModel.tab = tab
+        setupViewForCurrentTab()
+        profileView.tabCollectionView.reloadData()
+    }
+}
+
+extension ProfileViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = profileView.tabCollectionView.bounds.width / CGFloat(TabItem.allCases.count)
+        return CGSize(width: width, height: 32)
+    }
+}
+

@@ -78,11 +78,7 @@ class SearchViewController: ViewController<SearchViewModel> {
     }
     
     // MARK: - Private Methods
-    
-    private func setupBindings() {
-       
-    }
-    
+   
     private func setupViewForCurrentFilter() {
         
         switch viewModel.currentFilter {

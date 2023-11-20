@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum TabItem: Int, CaseIterable {
-    case all = 1
+enum TabItem: String, CaseIterable {
+    case all 
     case briefs
     case blogs
 }

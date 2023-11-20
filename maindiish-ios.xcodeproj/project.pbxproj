@@ -189,6 +189,7 @@
 		79C04BBF2AFAEF4600C7FF2C /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C04BBE2AFAEF4600C7FF2C /* PostDetailViewController.swift */; };
 		79C04BC12AFAEF6200C7FF2C /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C04BC02AFAEF6200C7FF2C /* PostDetailViewModel.swift */; };
 		79C247ED2AE9374C00D2FF6E /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79C247EC2AE9374C00D2FF6E /* Roboto-Regular.ttf */; };
+		79C37CBB2B0BE5D4002DE542 /* ProfileTabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C37CBA2B0BE5D4002DE542 /* ProfileTabCollectionViewCell.swift */; };
 		79C4F3692B03164900A0D232 /* CreateBriefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C4F3682B03164900A0D232 /* CreateBriefView.swift */; };
 		79C4F36B2B03165700A0D232 /* CreateBriefViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C4F36A2B03165700A0D232 /* CreateBriefViewModel.swift */; };
 		79C4F36D2B03166300A0D232 /* CreateBriefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C4F36C2B03166300A0D232 /* CreateBriefViewController.swift */; };
@@ -395,6 +396,7 @@
 		79C04BBE2AFAEF4600C7FF2C /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		79C04BC02AFAEF6200C7FF2C /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
 		79C247EC2AE9374C00D2FF6E /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		79C37CBA2B0BE5D4002DE542 /* ProfileTabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabCollectionViewCell.swift; sourceTree = "<group>"; };
 		79C4F3682B03164900A0D232 /* CreateBriefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBriefView.swift; sourceTree = "<group>"; };
 		79C4F36A2B03165700A0D232 /* CreateBriefViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBriefViewModel.swift; sourceTree = "<group>"; };
 		79C4F36C2B03166300A0D232 /* CreateBriefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBriefViewController.swift; sourceTree = "<group>"; };
@@ -973,6 +975,7 @@
 				79A1C8B32B0ABA450048CA8B /* ProfileViewModel.swift */,
 				79A1C8B52B0ABA590048CA8B /* ProfileViewController.swift */,
 				79A1C8B92B0ACD8F0048CA8B /* Tab.swift */,
+				79C37CBA2B0BE5D4002DE542 /* ProfileTabCollectionViewCell.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -1292,6 +1295,7 @@
 				79A525832AF8328600DBC4A0 /* PostTableViewCell.swift in Sources */,
 				798905422B08F6A600B5A7EC /* BriefCollectionViewLayout.swift in Sources */,
 				7940FAFF2AEB581900108E9A /* SignUpRepository.swift in Sources */,
+				79C37CBB2B0BE5D4002DE542 /* ProfileTabCollectionViewCell.swift in Sources */,
 				7984231B2AEEA07800441707 /* TypeCodeViewModel.swift in Sources */,
 				18209EA62A714A390024F47B /* ViewModel.swift in Sources */,
 				798423052AEE79E600441707 /* ForgotPasswordViewModel.swift in Sources */,
