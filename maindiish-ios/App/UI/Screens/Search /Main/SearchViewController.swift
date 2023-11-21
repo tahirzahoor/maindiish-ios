@@ -91,7 +91,8 @@ class SearchViewController: ViewController<SearchViewModel> {
             case .people:
                 currentController = peopleListViewController
             case .brief:
-                currentController = briefsViewController
+            currentController = peopleListViewController
+              //  currentController = briefsViewController
         }
         
         addController(currentController!, fixIn: searchView.filteredDataView)

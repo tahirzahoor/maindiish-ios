@@ -198,11 +198,10 @@
 		79E406FB2AEBE6FF001B6AC0 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 79E406FA2AEBE6FF001B6AC0 /* ObjectMapper */; };
 		79E406FD2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E406FC2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift */; };
 		79E407012AEBEC2E001B6AC0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E407002AEBEC2E001B6AC0 /* APIClient.swift */; };
-		79E4445E2AE5C04C003CB9C8 /* SwiftDI in Frameworks */ = {isa = PBXBuildFile; productRef = 79E4445D2AE5C04C003CB9C8 /* SwiftDI */; };
-		79E444612AE5C075003CB9C8 /* APIManager in Frameworks */ = {isa = PBXBuildFile; productRef = 79E444602AE5C075003CB9C8 /* APIManager */; };
-		79E444632AE5C0FE003CB9C8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E444622AE5C0FE003CB9C8 /* RoundedButton.swift */; };
 		79F3929F2B03B9570092A028 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 79F3929E2B03B9570092A028 /* MBProgressHUD */; };
 		79F392A12B03BA2D0092A028 /* ProgressLoaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F392A02B03BA2C0092A028 /* ProgressLoaderManager.swift */; };
+		D50631A32B0BFEA100D75D68 /* SwiftDI in Frameworks */ = {isa = PBXBuildFile; productRef = D50631A22B0BFEA100D75D68 /* SwiftDI */; };
+		D5626EAB2B0C8838009FA347 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5626EAA2B0C8838009FA347 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -397,8 +396,8 @@
 		79E406F72AEBCB57001B6AC0 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		79E406FC2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CountryPhoneCodeList.swift; path = "maindiish-ios/App/Core/Repositories/CountryPhoneCodeList.swift"; sourceTree = SOURCE_ROOT; };
 		79E407002AEBEC2E001B6AC0 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		79E444622AE5C0FE003CB9C8 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = "../../../../../food-social-ios/BaseCode/App/UI/Components/RoundedButton.swift"; sourceTree = "<group>"; };
 		79F392A02B03BA2C0092A028 /* ProgressLoaderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoaderManager.swift; sourceTree = "<group>"; };
+		D5626EAA2B0C8838009FA347 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		F9163216BAADB9C2D0979574 /* Pods-maindiish-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maindiish-ios.release.xcconfig"; path = "Target Support Files/Pods-maindiish-ios/Pods-maindiish-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -408,11 +407,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				79F3929F2B03B9570092A028 /* MBProgressHUD in Frameworks */,
-				79E4445E2AE5C04C003CB9C8 /* SwiftDI in Frameworks */,
+				D50631A32B0BFEA100D75D68 /* SwiftDI in Frameworks */,
 				79E406FB2AEBE6FF001B6AC0 /* ObjectMapper in Frameworks */,
 				79D6FF682AEB236600370BEA /* IQKeyboardManagerSwift in Frameworks */,
 				790856102ADE24300021C8E5 /* APIManager in Frameworks */,
-				79E444612AE5C075003CB9C8 /* APIManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,7 +561,7 @@
 				793E65D52AE4517700381F32 /* NibWrapper */,
 				79037C822B012E07009F2A4A /* CircularProgressView.swift */,
 				799E07372AE533C100D853B5 /* PaddedTextField.swift */,
-				79E444622AE5C0FE003CB9C8 /* RoundedButton.swift */,
+				D5626EAA2B0C8838009FA347 /* RoundedButton.swift */,
 				798055F12AE6F9D700717FB4 /* BorderedView.swift */,
 				790B4F4C2AF246E200C429CD /* CurveInTheMiddleView.swift */,
 			);
@@ -1103,11 +1101,10 @@
 			name = "maindiish-ios";
 			packageProductDependencies = (
 				7908560F2ADE24300021C8E5 /* APIManager */,
-				79E4445D2AE5C04C003CB9C8 /* SwiftDI */,
-				79E444602AE5C075003CB9C8 /* APIManager */,
 				79D6FF672AEB236600370BEA /* IQKeyboardManagerSwift */,
 				79E406FA2AEBE6FF001B6AC0 /* ObjectMapper */,
 				79F3929E2B03B9570092A028 /* MBProgressHUD */,
+				D50631A22B0BFEA100D75D68 /* SwiftDI */,
 			);
 			productName = BaseCode;
 			productReference = 18209E7B2A7146690024F47B /* maindiish-ios.app */;
@@ -1138,11 +1135,11 @@
 			);
 			mainGroup = 18209E722A7146690024F47B;
 			packageReferences = (
-				79E4445C2AE5C04C003CB9C8 /* XCRemoteSwiftPackageReference "SwiftDI" */,
-				79E4445F2AE5C075003CB9C8 /* XCRemoteSwiftPackageReference "Swift-API-Manager" */,
 				79D6FF662AEB236600370BEA /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				79E406F92AEBE6FF001B6AC0 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 				79F3929D2B03B9570092A028 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				D50631A02B0BFDC100D75D68 /* XCRemoteSwiftPackageReference "swift-api-manager" */,
+				D50631A12B0BFEA100D75D68 /* XCRemoteSwiftPackageReference "swiftdi" */,
 			);
 			productRefGroup = 18209E7C2A7146690024F47B /* Products */;
 			projectDirPath = "";
@@ -1290,6 +1287,7 @@
 				79A525AA2AF96EA300DBC4A0 /* TrendingPostTableViewCell.swift in Sources */,
 				798905332B086BAA00B5A7EC /* SearchedPeopleViewController.swift in Sources */,
 				7901B4ED2AE4434200D24064 /* NibWrapperView.swift in Sources */,
+				D5626EAB2B0C8838009FA347 /* RoundedButton.swift in Sources */,
 				79A2E3102AFE47840039633D /* ReviewPostImageCollectionViewCell.swift in Sources */,
 				79A525A12AF84F6A00DBC4A0 /* ThreeImagesView.swift in Sources */,
 				798905392B08E4B000B5A7EC /* UserRepository.swift in Sources */,
@@ -1322,7 +1320,6 @@
 				799E07362AE50EC500D853B5 /* UIButton.swift in Sources */,
 				79A525AE2AF97E9D00DBC4A0 /* TrendingPostsViewModel.swift in Sources */,
 				7989053E2B08F5CC00B5A7EC /* BriefCollectionViewModel.swift in Sources */,
-				79E444632AE5C0FE003CB9C8 /* RoundedButton.swift in Sources */,
 				7989051C2B080F7E00B5A7EC /* SearchViewModel.swift in Sources */,
 				798423112AEE7FB600441707 /* BottomUpOptionsDelegate.swift in Sources */,
 				18209EBB2A7249140024F47B /* Assets.swift in Sources */,
@@ -1559,7 +1556,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3AQNBD76FX;
+				DEVELOPMENT_TEAM = CM4V3585CR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "maindiish-ios/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
@@ -1596,7 +1593,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3AQNBD76FX;
+				DEVELOPMENT_TEAM = CM4V3585CR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "maindiish-ios/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
@@ -1665,28 +1662,28 @@
 				minimumVersion = 4.2.0;
 			};
 		};
-		79E4445C2AE5C04C003CB9C8 /* XCRemoteSwiftPackageReference "SwiftDI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:FaizanTan/SwiftDI.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		79E4445F2AE5C075003CB9C8 /* XCRemoteSwiftPackageReference "Swift-API-Manager" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:FaizanTan/Swift-API-Manager.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		79F3929D2B03B9570092A028 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:jdg/MBProgressHUD.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.2.0;
+			};
+		};
+		D50631A02B0BFDC100D75D68 /* XCRemoteSwiftPackageReference "swift-api-manager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tahirzahoor/swift-api-manager.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		D50631A12B0BFEA100D75D68 /* XCRemoteSwiftPackageReference "swiftdi" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tahirzahoor/swiftdi.git";
+			requirement = {
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -1706,20 +1703,15 @@
 			package = 79E406F92AEBE6FF001B6AC0 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
 			productName = ObjectMapper;
 		};
-		79E4445D2AE5C04C003CB9C8 /* SwiftDI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 79E4445C2AE5C04C003CB9C8 /* XCRemoteSwiftPackageReference "SwiftDI" */;
-			productName = SwiftDI;
-		};
-		79E444602AE5C075003CB9C8 /* APIManager */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 79E4445F2AE5C075003CB9C8 /* XCRemoteSwiftPackageReference "Swift-API-Manager" */;
-			productName = APIManager;
-		};
 		79F3929E2B03B9570092A028 /* MBProgressHUD */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 79F3929D2B03B9570092A028 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
 			productName = MBProgressHUD;
+		};
+		D50631A22B0BFEA100D75D68 /* SwiftDI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D50631A12B0BFEA100D75D68 /* XCRemoteSwiftPackageReference "swiftdi" */;
+			productName = SwiftDI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
