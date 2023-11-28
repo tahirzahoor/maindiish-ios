@@ -55,6 +55,7 @@
 		790557972B1563E20063EE98 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790557962B1563E20063EE98 /* EditProfileView.swift */; };
 		790557992B1563EE0063EE98 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790557982B1563EE0063EE98 /* EditProfileViewModel.swift */; };
 		7905579B2B1564000063EE98 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7905579A2B1564000063EE98 /* EditProfileViewController.swift */; };
+		7905579D2B156D6F0063EE98 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7905579C2B156D6F0063EE98 /* ThemeManager.swift */; };
 		790856102ADE24300021C8E5 /* APIManager in Frameworks */ = {isa = PBXBuildFile; productRef = 7908560F2ADE24300021C8E5 /* APIManager */; };
 		790B4F4D2AF246E200C429CD /* CurveInTheMiddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B4F4C2AF246E200C429CD /* CurveInTheMiddleView.swift */; };
 		790B4F512AF24AF200C429CD /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B4F502AF24AF200C429CD /* MainTabBar.swift */; };
@@ -275,6 +276,7 @@
 		790557962B1563E20063EE98 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		790557982B1563EE0063EE98 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		7905579A2B1564000063EE98 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		7905579C2B156D6F0063EE98 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		790B4F4C2AF246E200C429CD /* CurveInTheMiddleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveInTheMiddleView.swift; sourceTree = "<group>"; };
 		790B4F502AF24AF200C429CD /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		790B4F522AF24BF300C429CD /* MainTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
@@ -718,6 +720,7 @@
 				79E407002AEBEC2E001B6AC0 /* APIClient.swift */,
 				798423242AEEB5ED00441707 /* Utils.swift */,
 				79F392A02B03BA2C0092A028 /* ProgressLoaderManager.swift */,
+				7905579C2B156D6F0063EE98 /* ThemeManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1489,6 +1492,7 @@
 				79A525B62AF988FB00DBC4A0 /* TrendingPostImageCollectionViewCell.swift in Sources */,
 				79C04BBD2AFAEF2400C7FF2C /* PostDetailView.swift in Sources */,
 				790B4F512AF24AF200C429CD /* MainTabBar.swift in Sources */,
+				7905579D2B156D6F0063EE98 /* ThemeManager.swift in Sources */,
 				79E406FD2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift in Sources */,
 				79BA2A292AE1E9DC0019E880 /* WelcomeViewController.swift in Sources */,
 				79A525AC2AF97E7900DBC4A0 /* TrendingPostsViewController.swift in Sources */,

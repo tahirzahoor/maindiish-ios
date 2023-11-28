@@ -46,6 +46,7 @@ struct GlobalStrings {
     struct UserDefaultKey {
         static var getStarted = "isOnboarding"
         static var isLoggedIn = "isLoggedIn"
+        static var isDarkMode = "isDarkMode"
     }
     
 }

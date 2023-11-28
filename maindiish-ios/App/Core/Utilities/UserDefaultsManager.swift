@@ -18,6 +18,16 @@ class UserDefaultsManager {
         GlobalStrings.UserDefaultKey.isLoggedIn
     ) var isLoggedIn: Bool
     
+    @Storage(
+        wrappedValue: false,
+        GlobalStrings.UserDefaultKey.isDarkMode
+    ) var isDarkMode: Bool {
+        didSet {
+            let theme: Theme = isDarkMode ? .dark : .light
+            ThemeManager.shared.currentTheme = theme
+        }
+    }
+    
     // MARK: - Instance Methods
     
     private init() { }

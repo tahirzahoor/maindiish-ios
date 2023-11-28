@@ -19,6 +19,8 @@ class SettingsViewController: ViewController<SettingsViewModel> {
     @IBAction
     func switchToggled(_ sender: UISwitch) {
         sender.isSelected.toggle()
+        
+        UserDefaultsManager.shared.isDarkMode = sender.isSelected
     }
     
     @IBAction
@@ -73,6 +75,7 @@ extension SettingsViewController: UITableViewDataSource {
             case .toggleable(let title):
                 let cell: SwitchActionTableViewCell = tableView.dequeueCell(for: indexPath)
                 cell.actionNameLabel.text = title
+                cell.toggleSwitch.isOn = UserDefaultsManager.shared.isDarkMode
             
                 return cell
         }
