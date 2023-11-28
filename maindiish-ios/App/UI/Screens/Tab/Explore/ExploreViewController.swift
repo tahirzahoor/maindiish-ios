@@ -22,6 +22,7 @@ class ExploreViewController: ViewController<ExploreViewModel> {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         exploreView.postsTableView.reloadData()
+        exploreView.postsTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
     }
     
     // MARK: - Action Methods
@@ -64,6 +65,10 @@ class ExploreViewController: ViewController<ExploreViewModel> {
         
     }
     
+    @IBAction
+    func profileButtonTapped(_ sender: UIButton) {
+        viewModel.router.append(.profile(id: ""), animated: true)
+    }
 }
 
 // MARK: - UITableViewDelegate Methods

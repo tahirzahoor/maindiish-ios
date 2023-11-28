@@ -49,6 +49,13 @@ class ProfileViewController: ViewController<ProfileViewModel> {
         setupViewForCurrentTab()
     }
     
+    // MARK: - Action Methods
+    
+    @IBAction
+    func settingsButtonTapped(_ sender: UIButton) {
+        viewModel.router.append(.settings, animated: true)
+    }
+    
     // MARK: - Private Methods
     
     private func setupViewForCurrentTab() {
@@ -70,11 +77,11 @@ class ProfileViewController: ViewController<ProfileViewModel> {
     }
 
     private func setInitialView() {
-        guard viewModel.id == "o" else { return }
+        guard viewModel.id.isEmpty else { return }
         
-//        NSLayoutConstraint.activate([
-//            profileView.followAndMessageButtonsView.heightAnchor.constraint(equalToConstant: 0)
-//        ])
+        profileView.settingsButton.isHidden = false
+        profileView.buttonsViewHeightLayoutConstraint.constant = 0
+        profileView.followAndMessageButtonsView.isHidden = true
     }
 }
 

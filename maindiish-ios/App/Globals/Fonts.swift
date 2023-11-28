@@ -15,6 +15,7 @@ enum Fonts: String {
     case poppinsLight = "Poppins-Light"
     case poppinsRegular = "Poppins-Regular"
     case interItalic = "Inter-Italic"
+    case interBold = "Inter-Bold"
     
     func font(_ size: CGFloat = 15) -> UIFont? {
         return UIFont(name: rawValue, size: size)

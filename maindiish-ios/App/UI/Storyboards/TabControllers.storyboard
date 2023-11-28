@@ -11,24 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
-        <scene sceneID="dXr-FO-WA0">
-            <objects>
-                <tabBarController id="yjz-mz-h3W" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AIo-6X-LzF">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.90980392160000001" green="0.25882352939999997" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="RM7-kr-bve" kind="relationship" relationship="viewControllers" id="fRS-io-Fa8"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7UL-T0-9we" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="97" y="-382"/>
-        </scene>
         <!--Explore View Controller-->
         <scene sceneID="zSW-Hp-bmm">
             <objects>
@@ -54,6 +36,9 @@
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="profile_icon"/>
+                                        <connections>
+                                            <action selector="profileButtonTapped:" destination="RM7-kr-bve" eventType="touchUpInside" id="YEy-Iz-r9P"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bW9-Ii-WMH">
                                         <rect key="frame" x="313.33333333333331" y="6" width="20.333333333333314" height="20"/>
@@ -75,7 +60,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ebb-37-Acc">
-                                <rect key="frame" x="8" y="111" width="377" height="658"/>
+                                <rect key="frame" x="8" y="111" width="377" height="707"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="28" minY="0.0" maxX="28" maxY="0.0"/>
                                 <prototypes>
@@ -307,23 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Asn-1X-oE2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="96.946564885496173" y="-1169.0140845070423"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="COD-lE-nuj">
-            <objects>
-                <viewController id="l7S-nW-won" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tgb-wy-EpF">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="GRm-s1-xLI"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="trending_unselected_themed" selectedImage="trendings_selected" id="6BD-VT-6S5"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fnM-pM-TqH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1640" y="-382"/>
+            <point key="canvasLocation" x="146" y="-901"/>
         </scene>
         <!--Main Tab View Controller-->
         <scene sceneID="qZN-2c-LAf">
@@ -406,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1a-OZ-pB0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3069" y="-1119"/>
+            <point key="canvasLocation" x="-596" y="-1609"/>
         </scene>
         <!--Post Detail View Controller-->
         <scene sceneID="Lrd-cl-yCW">
@@ -1692,7 +1661,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gt6-Gh-xkk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1448.0916030534352" y="-382.3943661971831"/>
+            <point key="canvasLocation" x="-1447" y="-901"/>
         </scene>
         <!--Create Brief View Controller-->
         <scene sceneID="yDT-wH-a95">
@@ -2688,7 +2657,6 @@ Italian foods</string>
         <image name="search_icon" width="24" height="24"/>
         <image name="share" width="19.666666030883789" height="17.333333969116211"/>
         <image name="trending_unselected_themed" width="42" height="39.333332061767578"/>
-        <image name="trendings_selected" width="42" height="39.333332061767578"/>
         <image name="upload_media_icon" width="20" height="20"/>
         <image name="video_play_icon" width="15" height="15"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
@@ -2742,9 +2710,6 @@ Italian foods</string>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

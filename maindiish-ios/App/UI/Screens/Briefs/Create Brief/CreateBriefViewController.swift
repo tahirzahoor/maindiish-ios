@@ -95,6 +95,9 @@ class CreateBriefViewController: ViewController<CreateBriefViewModel> {
             return
         }
         
+        if let data = try? Data(contentsOf: url) {
+            print(data)
+        }
         let player = AVPlayer(url: url)
         
         videoPlayer = AVPlayerViewController()

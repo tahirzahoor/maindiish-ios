@@ -26,6 +26,8 @@ class ProfileView: UIView {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var tabCollectionView: UICollectionView!
     @IBOutlet weak var followAndMessageButtonsView: UIView!
+    @IBOutlet weak var settingsButton: UIButton!
+    @IBOutlet weak var buttonsViewHeightLayoutConstraint: NSLayoutConstraint!
     
     // MARK: - Lifecycle Methods
     

@@ -388,15 +388,19 @@ extension VideoCaptureViewController: PHPickerViewControllerDelegate {
                     }
                     
                     if let videoURL = url {
-                        self.replaceMovWithMp4(inputURL: videoURL) { url, _ in
-                            DispatchQueue.main.async {
-                                ProgressLoaderManager.shared.hide(for: self.view)
-                                self.viewModel.createdMedia = .video(fileURL: url)
-                                self.viewModel.performConfirmation()
-                            }
+                        let fileName = "\(Int(Date().timeIntervalSince1970)).\(videoURL.pathExtension)"
+                        let newURL = URL(fileURLWithPath: NSTemporaryDirectory() + fileName)
+                        try? FileManager.default.copyItem(at: videoURL, to: newURL)
+                        DispatchQueue.main.async {
+                            ProgressLoaderManager.shared.hide(for: self.view)
+                            self.viewModel.createdMedia = .video(fileURL: newURL)
+                            self.viewModel.performConfirmation()
                         }
                     }
                 }
+            } else {
+            
+                ProgressLoaderManager.shared.hide(for: self.view)
             }
         }
     }

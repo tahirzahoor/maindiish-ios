@@ -24,6 +24,11 @@ enum Route {
     case reviewBrief(_ data: BriefData)
     case search
     case profile(id: String)
+    case settings
+    case editProfile
+    case changePassword
+    case savedItems
+    case webView(url: URL?)
     
     func controller() -> UIViewController {
         switch self {
@@ -119,7 +124,19 @@ enum Route {
                 let viewModel = ProfileViewModel(id: id)
                 let controller = ProfileViewController.instantiate(from: .Profile, viewModel: viewModel)
                 return controller
+            case .settings:
+                let viewModel = SettingsViewModel()
+                let controller = SettingsViewController.instantiate(from: .Profile, viewModel: viewModel)
             
+                return controller
+            
+            case .editProfile:
+                let viewModel = EditProfileViewModel()
+                let controller = EditProfileViewController.instantiate(from: .Profile, viewModel: viewModel)
+                return controller
+                
+            default:
+                return UIViewController()
         }
     }
 }
