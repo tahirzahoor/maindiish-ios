@@ -20,7 +20,17 @@ class ThemeManager {
             applyTheme()
         }
     }
-
+    
+    private init() {
+        setInitialTheme()
+    }
+    
+    private func setInitialTheme() {
+        let theme: Theme = UserDefaultsManager.shared.isDarkMode ? .dark : .light
+        
+        self.currentTheme = theme
+    }
+    
     func applyTheme() {
         if currentTheme == .system {
             UIApplication.shared.windows.forEach { window in

@@ -18,9 +18,7 @@ class SettingsViewController: ViewController<SettingsViewModel> {
     
     @IBAction
     func switchToggled(_ sender: UISwitch) {
-        sender.isSelected.toggle()
-        
-        UserDefaultsManager.shared.isDarkMode = sender.isSelected
+        UserDefaultsManager.shared.isDarkMode = sender.isOn
     }
     
     @IBAction
@@ -39,6 +37,8 @@ extension SettingsViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.selectionStyle = .none
+        
         if let cell = cell as? SettingsSectionHeaderTableViewCell,
            cell.headerLabel.text == "Log out" {
             cell.headerLabel.topAnchor.constraint(equalTo: cell.topAnchor, constant: 25).isActive = true

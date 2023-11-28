@@ -43,10 +43,14 @@ struct GlobalStrings {
         static let resetThroughPhone = "We will send you a code to your phone number"
     }
     
-    struct UserDefaultKey {
-        static var getStarted = "isOnboarding"
-        static var isLoggedIn = "isLoggedIn"
-        static var isDarkMode = "isDarkMode"
+    enum UserDefaultKey: String {
+        case isOnboarding
+        case isLoggedIn
+        case isDarkMode
+        case profileImageData
+        case profileName
+        case email
+        case bio
     }
     
 }

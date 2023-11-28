@@ -25,6 +25,10 @@ class EditProfileView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        setFonts()
+        assignTexts()
+        setProfileImage()
     }
     
     // MARK: - Private Methods
@@ -42,5 +46,16 @@ class EditProfileView: UIView {
         
         font = Fonts.poppinsRegular.font(12)
         bioTextView.font = font
+    }
+    
+    private func assignTexts() {
+        nameTextField.text = UserDefaultsManager.shared.name
+        emailValueLabel.text = UserDefaultsManager.shared.email
+        bioTextView.text = UserDefaultsManager.shared.bio
+    }
+    
+    private func setProfileImage() {
+        let imageData = UserDefaultsManager.shared.profileImageData
+        profileImageView.image = UIImage(data: imageData)
     }
 }
