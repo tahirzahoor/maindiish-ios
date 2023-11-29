@@ -69,6 +69,10 @@
 		79243FBB2B03919D00C4AFA5 /* ReviewBriefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79243FBA2B03919D00C4AFA5 /* ReviewBriefView.swift */; };
 		79243FBD2B0391AF00C4AFA5 /* ReviewBriefViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79243FBC2B0391AF00C4AFA5 /* ReviewBriefViewModel.swift */; };
 		79243FBF2B0391BF00C4AFA5 /* ReviewBriefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79243FBE2B0391BF00C4AFA5 /* ReviewBriefViewController.swift */; };
+		7924C7352B16A67700FE3C37 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924C7342B16A67700FE3C37 /* ChangePasswordView.swift */; };
+		7924C7372B16A69700FE3C37 /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924C7362B16A69700FE3C37 /* ChangePasswordViewModel.swift */; };
+		7924C7392B16A6A900FE3C37 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924C7382B16A6A900FE3C37 /* ChangePasswordViewController.swift */; };
+		7924C73B2B16B0AF00FE3C37 /* ChangePasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924C73A2B16B0AF00FE3C37 /* ChangePasswordField.swift */; };
 		793E65D72AE451A200381F32 /* NibWrapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E65D62AE451A200381F32 /* NibWrapped.swift */; };
 		7940FAFD2AEB578C00108E9A /* countries_phone_codes_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 7940FAFC2AEB578C00108E9A /* countries_phone_codes_data.json */; };
 		7940FAFF2AEB581900108E9A /* SignUpRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940FAFE2AEB581900108E9A /* SignUpRepository.swift */; };
@@ -289,6 +293,10 @@
 		79243FBA2B03919D00C4AFA5 /* ReviewBriefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewBriefView.swift; sourceTree = "<group>"; };
 		79243FBC2B0391AF00C4AFA5 /* ReviewBriefViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewBriefViewModel.swift; sourceTree = "<group>"; };
 		79243FBE2B0391BF00C4AFA5 /* ReviewBriefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewBriefViewController.swift; sourceTree = "<group>"; };
+		7924C7342B16A67700FE3C37 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		7924C7362B16A69700FE3C37 /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		7924C7382B16A6A900FE3C37 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		7924C73A2B16B0AF00FE3C37 /* ChangePasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordField.swift; sourceTree = "<group>"; };
 		793E65D62AE451A200381F32 /* NibWrapped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibWrapped.swift; sourceTree = "<group>"; };
 		7940FAFC2AEB578C00108E9A /* countries_phone_codes_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries_phone_codes_data.json; sourceTree = "<group>"; };
 		7940FAFE2AEB581900108E9A /* SignUpRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRepository.swift; sourceTree = "<group>"; };
@@ -611,6 +619,7 @@
 		18209EAA2A714C840024F47B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				7924C7332B16A65E00FE3C37 /* Change Password */,
 				790557952B1563CB0063EE98 /* Edit Profile */,
 				790557812B1525A30063EE98 /* Settings */,
 				79A1C8B02B0ABA200048CA8B /* Profile */,
@@ -854,6 +863,17 @@
 				79243FBE2B0391BF00C4AFA5 /* ReviewBriefViewController.swift */,
 			);
 			path = Brief;
+			sourceTree = "<group>";
+		};
+		7924C7332B16A65E00FE3C37 /* Change Password */ = {
+			isa = PBXGroup;
+			children = (
+				7924C7342B16A67700FE3C37 /* ChangePasswordView.swift */,
+				7924C7362B16A69700FE3C37 /* ChangePasswordViewModel.swift */,
+				7924C7382B16A6A900FE3C37 /* ChangePasswordViewController.swift */,
+				7924C73A2B16B0AF00FE3C37 /* ChangePasswordField.swift */,
+			);
+			path = "Change Password";
 			sourceTree = "<group>";
 		};
 		793E65D52AE4517700381F32 /* NibWrapper */ = {
@@ -1357,6 +1377,7 @@
 				79A2E3012AFDE9910039633D /* CreateBlogViewController.swift in Sources */,
 				7991A0A82AFED85100C4990B /* PostTypeBottomSheetViewController.swift in Sources */,
 				79B5CC632AE24874005E19AD /* LoginViewModel.swift in Sources */,
+				7924C73B2B16B0AF00FE3C37 /* ChangePasswordField.swift in Sources */,
 				798423252AEEB5ED00441707 /* Utils.swift in Sources */,
 				79A525832AF8328600DBC4A0 /* PostTableViewCell.swift in Sources */,
 				798905422B08F6A600B5A7EC /* BriefCollectionViewLayout.swift in Sources */,
@@ -1430,12 +1451,14 @@
 				79A8ED172B0949E800CDDA2C /* BriefRepository.swift in Sources */,
 				7991E55E2ADF635800C8F348 /* OnboardingCollectionViewCell.swift in Sources */,
 				7905579B2B1564000063EE98 /* EditProfileViewController.swift in Sources */,
+				7924C7392B16A6A900FE3C37 /* ChangePasswordViewController.swift in Sources */,
 				79B5CC652AE2488B005E19AD /* LoginViewController.swift in Sources */,
 				790B4F5C2AF24EA400C429CD /* ExploreViewModel.swift in Sources */,
 				79BF3C7B2ADFF85D009CE04B /* Fonts.swift in Sources */,
 				798905212B08357C00B5A7EC /* SearchedBlogsView.swift in Sources */,
 				7989051A2B080F7400B5A7EC /* SearchView.swift in Sources */,
 				79037C7A2B00E196009F2A4A /* MediaCaptureConfiguration.swift in Sources */,
+				7924C7352B16A67700FE3C37 /* ChangePasswordView.swift in Sources */,
 				79A525A62AF903A800DBC4A0 /* FilterCollectionViewCell.swift in Sources */,
 				798905282B08365B00B5A7EC /* SearchedBlogsTableViewCell.swift in Sources */,
 				18209EC52A724D860024F47B /* Sheet.swift in Sources */,
@@ -1454,6 +1477,7 @@
 				18209EC72A724E030024F47B /* AppRouter.swift in Sources */,
 				79037C762B004224009F2A4A /* VideoCaptureViewController.swift in Sources */,
 				79BF3C652ADF7AFB009CE04B /* OnboardingRepository.swift in Sources */,
+				7924C7372B16A69700FE3C37 /* ChangePasswordViewModel.swift in Sources */,
 				79C04BC12AFAEF6200C7FF2C /* PostDetailViewModel.swift in Sources */,
 				79CCE1C62AE829DB00ADB8E9 /* UINavigationController.swift in Sources */,
 				79D018E32AEA739D0066AAF6 /* NewUser.swift in Sources */,

@@ -134,7 +134,13 @@ enum Route {
                 let viewModel = EditProfileViewModel()
                 let controller = EditProfileViewController.instantiate(from: .Profile, viewModel: viewModel)
                 return controller
+            
+            case .changePassword:
+                let viewModel = ChangePasswordViewModel()
+                let controller = ChangePasswordViewController.instantiate(from: .Profile, viewModel: viewModel)
                 
+                return controller
+           
             default:
                 return UIViewController()
         }
