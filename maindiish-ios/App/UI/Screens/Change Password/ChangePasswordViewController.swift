@@ -51,7 +51,6 @@ class ChangePasswordViewController: ViewController<ChangePasswordViewModel> {
     // MARK: - Private Methods
     
     private func setBindings() {
-        super.setupBinding()
         viewModel
             .$inputsAreValid
             .sink { areValid in

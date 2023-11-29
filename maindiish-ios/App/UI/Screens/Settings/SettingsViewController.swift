@@ -41,10 +41,10 @@ extension SettingsViewController: UITableViewDelegate {
         
         if let cell = cell as? SettingsSectionHeaderTableViewCell,
            cell.headerLabel.text == "Log out" {
-            cell.headerLabel.topAnchor.constraint(equalTo: cell.topAnchor, constant: 25).isActive = true
             cell.headerLabel.textColor = .red
             cell.headerLabel.font = Fonts.interMedium.font(14)
         }
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

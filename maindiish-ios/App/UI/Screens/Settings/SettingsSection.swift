@@ -21,7 +21,8 @@ enum SettingsSection: CaseIterable {
             .toggleable(title: "Dark Theme"),
             .routable(title: "My Profile", to: .editProfile),
             .routable(title: "Change Password", to: .changePassword),
-            .routable(title: "Saved Items", to: .savedItems)
+            .routable(title: "Saved Items", to: .savedItems),
+            .routable(title: "Blocked Accounts", to: .search)
         ] : [
             .header(title: self.title),
             .routable(title: "Terms And Conditions", to: .webView(url: nil)),

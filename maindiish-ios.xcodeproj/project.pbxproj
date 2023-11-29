@@ -73,6 +73,9 @@
 		7924C7372B16A69700FE3C37 /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924C7362B16A69700FE3C37 /* ChangePasswordViewModel.swift */; };
 		7924C7392B16A6A900FE3C37 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924C7382B16A6A900FE3C37 /* ChangePasswordViewController.swift */; };
 		7924C73B2B16B0AF00FE3C37 /* ChangePasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924C73A2B16B0AF00FE3C37 /* ChangePasswordField.swift */; };
+		7924C73E2B16CC1D00FE3C37 /* SavedItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924C73D2B16CC1D00FE3C37 /* SavedItemsView.swift */; };
+		7924C7402B16CC3100FE3C37 /* SavedItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924C73F2B16CC3100FE3C37 /* SavedItemsViewModel.swift */; };
+		7924C7422B16CC4600FE3C37 /* SavedItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924C7412B16CC4600FE3C37 /* SavedItemsViewController.swift */; };
 		793E65D72AE451A200381F32 /* NibWrapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E65D62AE451A200381F32 /* NibWrapped.swift */; };
 		7940FAFD2AEB578C00108E9A /* countries_phone_codes_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 7940FAFC2AEB578C00108E9A /* countries_phone_codes_data.json */; };
 		7940FAFF2AEB581900108E9A /* SignUpRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940FAFE2AEB581900108E9A /* SignUpRepository.swift */; };
@@ -297,6 +300,9 @@
 		7924C7362B16A69700FE3C37 /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
 		7924C7382B16A6A900FE3C37 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		7924C73A2B16B0AF00FE3C37 /* ChangePasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordField.swift; sourceTree = "<group>"; };
+		7924C73D2B16CC1D00FE3C37 /* SavedItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItemsView.swift; sourceTree = "<group>"; };
+		7924C73F2B16CC3100FE3C37 /* SavedItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItemsViewModel.swift; sourceTree = "<group>"; };
+		7924C7412B16CC4600FE3C37 /* SavedItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItemsViewController.swift; sourceTree = "<group>"; };
 		793E65D62AE451A200381F32 /* NibWrapped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibWrapped.swift; sourceTree = "<group>"; };
 		7940FAFC2AEB578C00108E9A /* countries_phone_codes_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries_phone_codes_data.json; sourceTree = "<group>"; };
 		7940FAFE2AEB581900108E9A /* SignUpRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRepository.swift; sourceTree = "<group>"; };
@@ -619,6 +625,7 @@
 		18209EAA2A714C840024F47B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				7924C73C2B16CC0A00FE3C37 /* Saved Items */,
 				7924C7332B16A65E00FE3C37 /* Change Password */,
 				790557952B1563CB0063EE98 /* Edit Profile */,
 				790557812B1525A30063EE98 /* Settings */,
@@ -874,6 +881,16 @@
 				7924C73A2B16B0AF00FE3C37 /* ChangePasswordField.swift */,
 			);
 			path = "Change Password";
+			sourceTree = "<group>";
+		};
+		7924C73C2B16CC0A00FE3C37 /* Saved Items */ = {
+			isa = PBXGroup;
+			children = (
+				7924C73D2B16CC1D00FE3C37 /* SavedItemsView.swift */,
+				7924C73F2B16CC3100FE3C37 /* SavedItemsViewModel.swift */,
+				7924C7412B16CC4600FE3C37 /* SavedItemsViewController.swift */,
+			);
+			path = "Saved Items";
 			sourceTree = "<group>";
 		};
 		793E65D52AE4517700381F32 /* NibWrapper */ = {
@@ -1352,6 +1369,7 @@
 				798055F22AE6F9D700717FB4 /* BorderedView.swift in Sources */,
 				18209EDC2A7260210024F47B /* UICollectionViewCell.swift in Sources */,
 				79A1C8B42B0ABA450048CA8B /* ProfileViewModel.swift in Sources */,
+				7924C73E2B16CC1D00FE3C37 /* SavedItemsView.swift in Sources */,
 				79A2E3122AFE486E0039633D /* PostData.swift in Sources */,
 				79A5259F2AF84F6100DBC4A0 /* TwoImagesView.swift in Sources */,
 				18209EE42A7260D30024F47B /* XibView.swift in Sources */,
@@ -1397,6 +1415,7 @@
 				79C4F36B2B03165700A0D232 /* CreateBriefViewModel.swift in Sources */,
 				79C04BB82AFAEB8B00C7FF2C /* PostImageTableViewCell.swift in Sources */,
 				18209ED12A725B6F0024F47B /* Environment.swift in Sources */,
+				7924C7402B16CC3100FE3C37 /* SavedItemsViewModel.swift in Sources */,
 				18209ECB2A7257940024F47B /* SplashViewController.swift in Sources */,
 				79A2E3032AFDF0200039633D /* CreateBlogMediaCollectionViewCell.swift in Sources */,
 				79BA2A1C2AE1C22A0019E880 /* Color.swift in Sources */,
@@ -1476,6 +1495,7 @@
 				7984231F2AEEA0AA00441707 /* TypeCodeViewController.swift in Sources */,
 				18209EC72A724E030024F47B /* AppRouter.swift in Sources */,
 				79037C762B004224009F2A4A /* VideoCaptureViewController.swift in Sources */,
+				7924C7422B16CC4600FE3C37 /* SavedItemsViewController.swift in Sources */,
 				79BF3C652ADF7AFB009CE04B /* OnboardingRepository.swift in Sources */,
 				7924C7372B16A69700FE3C37 /* ChangePasswordViewModel.swift in Sources */,
 				79C04BC12AFAEF6200C7FF2C /* PostDetailViewModel.swift in Sources */,
