@@ -140,6 +140,12 @@ enum Route {
                 let controller = ChangePasswordViewController.instantiate(from: .Profile, viewModel: viewModel)
                 
                 return controller
+            
+            case .savedItems:
+                let viewModel = SavedItemsViewModel()
+                let controller = SavedItemsViewController.instantiate(from: .Profile, viewModel: viewModel)
+                
+                return controller
            
             default:
                 return UIViewController()

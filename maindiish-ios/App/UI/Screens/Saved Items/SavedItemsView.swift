@@ -11,4 +11,20 @@ class SavedItemsView: UIView {
     
     // MARK: - Outlets
     
+    @IBOutlet weak var screenTitleLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    
+    // MARK: - Lifecycle Methods
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+    }
+    
+    // MARK: - Private Methods
+    
+    private func setFonts() {
+        
+    }
+    
 }

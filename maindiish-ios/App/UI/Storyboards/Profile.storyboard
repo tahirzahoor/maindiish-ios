@@ -1092,11 +1092,11 @@
             </objects>
             <point key="canvasLocation" x="2799" y="-35"/>
         </scene>
-        <!--View Controller-->
+        <!--Saved Items View Controller-->
         <scene sceneID="BtC-G1-9UZ">
             <objects>
-                <viewController id="5G0-mw-bFX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lpU-vc-m5d">
+                <viewController storyboardIdentifier="SavedItemsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5G0-mw-bFX" customClass="SavedItemsViewController" customModule="maindiish_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lpU-vc-m5d" customClass="SavedItemsView" customModule="maindiish_ios" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1111,17 +1111,22 @@
                                 <connections>
                                     <action selector="backButtonTapped:" destination="sS4-gb-4fg" eventType="touchUpInside" id="LAv-7q-uHi"/>
                                     <action selector="backButtonTapped:" destination="9C6-S6-Yvp" eventType="touchUpInside" id="R6i-hD-WQa"/>
+                                    <action selector="backButtonTapped:" destination="5G0-mw-bFX" eventType="touchUpInside" id="a5E-67-6zF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJr-UJ-04b">
-                                <rect key="frame" x="158.66666666666666" y="66.666666666666671" width="76" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved Items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJr-UJ-04b">
+                                <rect key="frame" x="150" y="66.666666666666671" width="93" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="T1p-Cy-aUI">
-                                <rect key="frame" x="12" y="134" width="369" height="718"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="T1p-Cy-aUI">
+                                <rect key="frame" x="12" y="114" width="369" height="738"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="5G0-mw-bFX" id="bda-pR-RKI"/>
+                                    <outlet property="delegate" destination="5G0-mw-bFX" id="e2p-0y-Ogf"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ldt-tT-EL7"/>
@@ -1133,14 +1138,21 @@
                             <constraint firstItem="aJr-UJ-04b" firstAttribute="centerX" secondItem="ldt-tT-EL7" secondAttribute="centerX" id="VDf-cq-cZB"/>
                             <constraint firstItem="aJr-UJ-04b" firstAttribute="centerY" secondItem="n03-RY-2gY" secondAttribute="centerY" id="hyW-iM-2zP"/>
                             <constraint firstAttribute="bottom" secondItem="T1p-Cy-aUI" secondAttribute="bottom" id="tTZ-we-VSf"/>
-                            <constraint firstItem="T1p-Cy-aUI" firstAttribute="top" secondItem="n03-RY-2gY" secondAttribute="bottom" constant="45" id="vOC-tx-ozj"/>
+                            <constraint firstItem="T1p-Cy-aUI" firstAttribute="top" secondItem="n03-RY-2gY" secondAttribute="bottom" constant="25" id="vOC-tx-ozj"/>
                             <constraint firstItem="T1p-Cy-aUI" firstAttribute="leading" secondItem="ldt-tT-EL7" secondAttribute="leading" constant="12" id="zFv-zj-1j1"/>
                         </constraints>
+                        <connections>
+                            <outlet property="screenTitleLabel" destination="aJr-UJ-04b" id="uff-La-9Jg"/>
+                            <outlet property="tableView" destination="T1p-Cy-aUI" id="lUI-lv-o6p"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="savedItemsView" destination="lpU-vc-m5d" id="5oo-Zz-U5y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tyX-Ro-ObO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3665" y="-35"/>
+            <point key="canvasLocation" x="3664.8854961832058" y="-35.211267605633807"/>
         </scene>
     </scenes>
     <resources>

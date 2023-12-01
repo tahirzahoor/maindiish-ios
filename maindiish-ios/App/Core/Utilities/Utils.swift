@@ -1,4 +1,5 @@
 import Foundation
+import AVFoundation
 import ObjectMapper
 import UIKit
 
@@ -29,4 +30,24 @@ class Utils {
             return "\(numberFormatter.string(from: NSNumber(value: number / 1_000_000_000_000)) ?? "")T"
         }
     }
+    
+    static func fetchThumbnail(
+        from videoURL: URL,
+        completion: @escaping (UIImage?) -> Void
+    ) {
+        let asset = AVAsset(url: videoURL)
+        let imageGenerator = AVAssetImageGenerator(asset: asset)
+
+        let time = CMTime(value: asset.duration.value / 2, timescale: asset.duration.timescale)
+
+        do {
+            let cgImage = try imageGenerator.copyCGImage(at: time, actualTime: nil)
+            let thumbnail = UIImage(cgImage: cgImage)
+            completion(thumbnail)
+        } catch {
+            print("Error generating thumbnail: \(error.localizedDescription)")
+            completion(nil)
+        }
+    }
+
 }

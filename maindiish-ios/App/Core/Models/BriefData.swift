@@ -13,11 +13,21 @@ struct BriefData: Identifiable {
     
     var id = UUID()
     var mediaType: MediaCaptureConfiguration.MediaType?
+    var title = ""
     var description = ""
     var tags = ""
+    var byUser = ""
     var views = Double.random(in: 1...1_000_000_000)
-    var formattedCount: String {
+    var hearts = Double.random(in: 1...1_000_000_000)
+    var comments = Double.random(in: 1...1_000)
+    var formattedViewsCount: String {
         Utils.formatLargeNumber(views)
+    }
+    var formattedHeartsCount: String {
+        Utils.formatLargeNumber(hearts)
+    }
+    var formattedCommentsCount: String {
+        Utils.formatLargeNumber(comments)
     }
     
 }

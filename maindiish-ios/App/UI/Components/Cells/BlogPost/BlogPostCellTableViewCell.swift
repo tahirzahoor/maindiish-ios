@@ -1,23 +1,24 @@
 //
-//  SearchedBlogsTableViewCell.swift
+//  BlogPostCellTableViewCell.swift
 //  maindiish-ios
 //
-//  Created by Faizan Tanveer on 18/11/2023.
+//  Created by Faizan Tanveer on 01/12/2023.
 //
 
 import UIKit
 
-class SearchedBlogsTableViewCell: UITableViewCell {
+class BlogPostCellTableViewCell: UITableViewCell {
 
     // MARK: - Outlets
     
-    @IBOutlet weak var thumbnailImageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var authorTitleLabel: UILabel!
+    @IBOutlet weak var postImageView: UIImageView!
+    @IBOutlet weak var postTitleLabel: UILabel!
+    @IBOutlet weak var postDescriptionLabel: UILabel!
+    @IBOutlet weak var byUserLabel: UILabel!
     @IBOutlet weak var numberOfHeartsButton: UIButton!
     @IBOutlet weak var numberOfCommentsButton: UIButton!
     @IBOutlet weak var numberOfViewsButton: UIButton!
+    @IBOutlet weak var threeDotsButton: UIButton!
     
     // MARK: - Lifecycle Methods
     
@@ -30,10 +31,9 @@ class SearchedBlogsTableViewCell: UITableViewCell {
     // MARK: - Private Methods
     
     private func setFonts() {
-        titleLabel.font = Fonts.robotoMedium.font(15)
-        descriptionLabel.font = Fonts.interMedium.font(18)
-        
-        authorTitleLabel.font = Fonts.interMedium.font(10)
+        postTitleLabel.font = Fonts.robotoMedium.font(15)
+        postDescriptionLabel.font = Fonts.interRegular.font(10)
+        byUserLabel.font = Fonts.interMedium.font(10)
         
         let font = Fonts.poppinsRegular.font(11.5)
         numberOfHeartsButton.titleLabel?.font = font
@@ -41,21 +41,19 @@ class SearchedBlogsTableViewCell: UITableViewCell {
         numberOfViewsButton.titleLabel?.font = font
     }
     
-    // MARK: - Public Methods
-    
     func setData(_ data: PostData) {
         
         if let firstImageData = data.imagesData.first, let image = UIImage(data: firstImageData) {
-            thumbnailImageView.image = image
+            postImageView.image = image
         }
        
-        titleLabel.text = data.title
-        descriptionLabel.text = data.description
-        authorTitleLabel.text = data.byOwner
+        postTitleLabel.text = data.title
+        postDescriptionLabel.text = data.description
+        byUserLabel.text = data.byOwner
         
         numberOfHeartsButton.setTitle("\(data.numberOfHearts)", for: .normal)
         numberOfViewsButton.setTitle("\(data.numberOfViews)", for: .normal)
         numberOfCommentsButton.setTitle("\(data.numberOfComments)", for: .normal)
     }
-
+    
 }

@@ -54,7 +54,7 @@ extension BriefCollectionViewController: UICollectionViewDataSource {
         let cell: BriefCollectionViewCell = collectionView.dequeueCell(for: indexPath)
         
         let data = viewModel.filteredBriefs[indexPath.item]
-        cell.viewsCountLabel.text = "\(data.formattedCount)"
+        cell.viewsCountLabel.text = data.formattedViewsCount
         
         return cell
     }

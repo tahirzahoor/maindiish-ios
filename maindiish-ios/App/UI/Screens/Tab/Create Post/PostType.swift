@@ -7,9 +7,20 @@
 
 import Foundation
 
-enum PostType {
-    
+enum PostType: Equatable {
     case brief(_ data: BriefData)
     case blog(_ data: PostData)
     
+    var identifier: String {
+        return switch self {
+            case .blog(_):
+                "blog"
+            case .brief(_):
+                "brief"
+        }
+    }
+    
+    static func == (lhs: PostType, rhs: PostType) -> Bool {
+        lhs.identifier == rhs.identifier
+    }
 }

@@ -3,4 +3,54 @@
    uuid = "70C3F116-2AA5-4797-865F-F0FEA1B3C269"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5131B6A7-2158-4687-9054-D7EFAC5CB0B2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "maindiish-ios/App/UI/Screens/Saved Items/SavedItemsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "tableView(_:viewForHeaderInSection:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5131B6A7-2158-4687-9054-D7EFAC5CB0B2 - 5a688d37dbfce727"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "maindiish_ios.SavedItemsViewController.tableView(_: __C.UITableView, viewForHeaderInSection: Swift.Int) -&gt; Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "maindiish-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Screens/Saved%20Items/SavedItemsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "5131B6A7-2158-4687-9054-D7EFAC5CB0B2 - 5a688d37dbfce7f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "maindiish_ios.SavedItemsViewController.tableView(_: __C.UITableView, viewForHeaderInSection: Swift.Int) -&gt; Swift.Optional&lt;__C.UIView&gt;"
+                  moduleName = "maindiish-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Screens/Saved%20Items/SavedItemsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "552">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
