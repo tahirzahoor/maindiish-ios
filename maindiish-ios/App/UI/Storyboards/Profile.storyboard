@@ -1105,7 +1105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="603-Ak-1G3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2799" y="-35"/>
+            <point key="canvasLocation" x="2679" y="-35"/>
         </scene>
         <!--Saved Items View Controller-->
         <scene sceneID="BtC-G1-9UZ">
@@ -1167,7 +1167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tyX-Ro-ObO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3664.8854961832058" y="-35.211267605633807"/>
+            <point key="canvasLocation" x="3444" y="-35"/>
         </scene>
         <!--Blocked Accounts View Controller-->
         <scene sceneID="Bg2-3O-sez">
@@ -1227,7 +1227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPl-Eq-65N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4543" y="-35"/>
+            <point key="canvasLocation" x="4216" y="-35"/>
         </scene>
     </scenes>
     <resources>

@@ -309,19 +309,35 @@
                                 <rect key="frame" x="0.0" y="772" width="393" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4p-Vg-DDC">
-                                        <rect key="frame" x="0.0" y="20.333333333333375" width="196.66666666666666" height="39.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="20.333333333333375" width="98.333333333333329" height="39.333333333333343"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="explore_unselected_themed"/>
                                         <connections>
                                             <action selector="tabTapped:" destination="5EX-TO-Qau" eventType="touchUpInside" id="tYC-Ep-kr3"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhz-3C-JlX">
-                                        <rect key="frame" x="196.66666666666663" y="20.333333333333375" width="196.33333333333337" height="39.333333333333343"/>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z26-HP-HeQ">
+                                        <rect key="frame" x="98.333333333333343" y="20.666666666666629" width="98.333333333333343" height="39"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="brief_unselected_themed"/>
+                                        <connections>
+                                            <action selector="tabTapped:" destination="5EX-TO-Qau" eventType="touchUpInside" id="Nf6-cN-V2Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhz-3C-JlX">
+                                        <rect key="frame" x="196.66666666666666" y="20.333333333333375" width="97.999999999999972" height="39.333333333333343"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="trending_unselected_themed"/>
                                         <connections>
                                             <action selector="tabTapped:" destination="5EX-TO-Qau" eventType="touchUpInside" id="z0S-ll-gPf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2B2-Cf-wGp">
+                                        <rect key="frame" x="294.66666666666669" y="20.666666666666629" width="98.333333333333314" height="39"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="inbox_unselected_themed"/>
+                                        <connections>
+                                            <action selector="tabTapped:" destination="5EX-TO-Qau" eventType="touchUpInside" id="kyD-lN-dGI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -364,8 +380,10 @@
                         </constraints>
                         <connections>
                             <outlet property="selectedTabView" destination="IkX-bQ-KaR" id="KZa-sp-fpN"/>
-                            <outletCollection property="tabButtons" destination="d4p-Vg-DDC" collectionClass="NSMutableArray" id="zk2-qb-YPs"/>
-                            <outletCollection property="tabButtons" destination="hhz-3C-JlX" collectionClass="NSMutableArray" id="0Gx-AL-mFE"/>
+                            <outletCollection property="tabButtons" destination="d4p-Vg-DDC" collectionClass="NSMutableArray" id="mKz-jq-jTE"/>
+                            <outletCollection property="tabButtons" destination="z26-HP-HeQ" collectionClass="NSMutableArray" id="KMk-L5-Lp7"/>
+                            <outletCollection property="tabButtons" destination="hhz-3C-JlX" collectionClass="NSMutableArray" id="tI8-xs-nJi"/>
+                            <outletCollection property="tabButtons" destination="2B2-Cf-wGp" collectionClass="NSMutableArray" id="8BA-Ye-Uaa"/>
                         </connections>
                     </view>
                     <connections>
@@ -2598,6 +2616,91 @@ Italian foods</string>
             </objects>
             <point key="canvasLocation" x="9925.9541984732823" y="-1119.0140845070423"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="mGP-Ih-g9z">
+            <objects>
+                <viewController id="x3v-iI-bfC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ut-Fd-oD6" customClass="BriefsView" customModule="maindiish_ios" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VOz-st-Ydc">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HL5-Mi-Bwp">
+                                <rect key="frame" x="12" y="59" width="369" height="36"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="gEZ-cU-7pZ">
+                                        <rect key="frame" x="276.33333333333331" y="5.6666666666666714" width="92.666666666666686" height="25"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUg-76-aV5">
+                                                <rect key="frame" x="0.0" y="0.0" width="24" height="25"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="search_icon"/>
+                                                <connections>
+                                                    <action selector="profileButtonTapped:" destination="RM7-kr-bve" eventType="touchUpInside" id="JQs-vc-Ywl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7S6-Oi-5re">
+                                                <rect key="frame" x="38" y="0.0" width="20.333333333333329" height="25"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="bell_icon"/>
+                                                <connections>
+                                                    <action selector="profileButtonTapped:" destination="RM7-kr-bve" eventType="touchUpInside" id="RJ2-LK-o84"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTi-Dp-D1q">
+                                                <rect key="frame" x="72.333333333333371" y="0.0" width="20.333333333333329" height="25"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="profile_icon"/>
+                                                <connections>
+                                                    <action selector="profileButtonTapped:" destination="RM7-kr-bve" eventType="touchUpInside" id="Xvy-p6-maZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="1ZT-Rk-W6Y"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_diish_label_icon" translatesAutoresizingMaskIntoConstraints="NO" id="tVM-j0-bKH">
+                                        <rect key="frame" x="0.0" y="8" width="115" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="115" id="eBG-3y-iXc"/>
+                                            <constraint firstAttribute="height" constant="20" id="ooC-cM-AZF"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="tVM-j0-bKH" firstAttribute="centerY" secondItem="HL5-Mi-Bwp" secondAttribute="centerY" id="1Ru-Jz-khV"/>
+                                    <constraint firstAttribute="height" constant="36" id="9AZ-2F-BHy"/>
+                                    <constraint firstAttribute="trailing" secondItem="gEZ-cU-7pZ" secondAttribute="trailing" id="Jv9-jw-pgK"/>
+                                    <constraint firstItem="tVM-j0-bKH" firstAttribute="leading" secondItem="HL5-Mi-Bwp" secondAttribute="leading" id="VoV-rg-CVj"/>
+                                    <constraint firstItem="gEZ-cU-7pZ" firstAttribute="centerY" secondItem="HL5-Mi-Bwp" secondAttribute="centerY" id="lVi-nS-K0t"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SzN-iq-ccj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SzN-iq-ccj" firstAttribute="trailing" secondItem="HL5-Mi-Bwp" secondAttribute="trailing" constant="12" id="7nC-XQ-2aM"/>
+                            <constraint firstItem="VOz-st-Ydc" firstAttribute="leading" secondItem="SzN-iq-ccj" secondAttribute="leading" id="KGI-R3-gol"/>
+                            <constraint firstItem="SzN-iq-ccj" firstAttribute="top" secondItem="HL5-Mi-Bwp" secondAttribute="top" id="OyL-tx-dpR"/>
+                            <constraint firstAttribute="bottom" secondItem="VOz-st-Ydc" secondAttribute="bottom" id="QZB-cf-rzo"/>
+                            <constraint firstItem="HL5-Mi-Bwp" firstAttribute="leading" secondItem="SzN-iq-ccj" secondAttribute="leading" constant="12" id="Rsj-ZR-Bei"/>
+                            <constraint firstItem="VOz-st-Ydc" firstAttribute="top" secondItem="2ut-Fd-oD6" secondAttribute="top" id="kaR-UH-aik"/>
+                            <constraint firstItem="SzN-iq-ccj" firstAttribute="trailing" secondItem="VOz-st-Ydc" secondAttribute="trailing" id="xxQ-SW-QZZ"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="tableView" destination="VOz-st-Ydc" id="B2l-4i-HXF"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8Z-G7-1Ar" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10750" y="-1119"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="EUy-9a-i9e">
@@ -2647,6 +2750,7 @@ Italian foods</string>
         <image name="eye" catalog="system" width="128" height="79"/>
         <image name="eyes-on" width="19.333333969116211" height="19.333333969116211"/>
         <image name="heart" width="19.333333969116211" height="19.333333969116211"/>
+        <image name="inbox_unselected_themed" width="42" height="39"/>
         <image name="main_diish_label_icon" width="115.33333587646484" height="20.666666030883789"/>
         <image name="more_options_horizontal" width="23.333333969116211" height="23.333333969116211"/>
         <image name="more_options_vertical" width="25" height="25"/>

@@ -1,18 +1,11 @@
 import Foundation
 import UIKit
 
-fileprivate enum Tab: CaseIterable {
+enum Tab: String, CaseIterable {
     case explore
+    case briefs
     case trending
-    
-    var controller: UIViewController {
-        return switch self {
-            case .explore:
-                Route.explore.controller()
-            case .trending:
-                Route.trending.controller()
-        }
-    }
+    case inbox
 }
 
 class MainTabViewController: ViewController<MainTabViewModel> {
@@ -31,6 +24,14 @@ class MainTabViewController: ViewController<MainTabViewModel> {
     
     private lazy var trendingVC: UIViewController = {
         Route.trending.controller()
+    }()
+    
+    private lazy var briefsVC: UIViewController = {
+        UIViewController()
+    }()
+    
+    private lazy var inboxVC: UIViewController = {
+       UIViewController()
     }()
     
     // MARK: - Action Methods
@@ -62,43 +63,47 @@ class MainTabViewController: ViewController<MainTabViewModel> {
     // MARK: - Public Methods
     
     private func addController() {
+        
+        var controller: UIViewController
+        
         switch currentTab {
             case .explore:
-                addController(exploreVC, fixIn: mainTabsView.selectedTabView)
+                controller = exploreVC
             case .trending:
-                addController(trendingVC, fixIn: mainTabsView.selectedTabView)
+                controller = trendingVC
+            case .briefs:
+                controller = briefsVC
+            case .inbox:
+                controller = inboxVC
         }
-    
+        
+        addController(controller, fixIn: mainTabsView.selectedTabView)
     }
     
     private func removeCurrentController() {
+        
+        var controller: UIViewController
+        
         switch currentTab {
             case .explore:
-                removeController(exploreVC)
+                controller = exploreVC
             case .trending:
-                removeController(trendingVC)
+                controller = trendingVC
+            case .briefs:
+                controller = briefsVC
+            case .inbox:
+                controller = inboxVC
         }
+        
+        removeController(controller)
     }
-    
-//    private func add(childController controller: UIViewController) {
-//        addChild(controller)
-//        controller.view.frame = mainTabsView.selectedTabView.bounds
-//        mainTabsView.selectedTabView.addSubview(controller.view)
-//        controller.didMove(toParent: self)
-//    }
-//    
-//    private func remove(currentController controller: UIViewController) {
-//        controller.willMove(toParent: nil)
-//        controller.view.removeFromSuperview()
-//        controller.removeFromParent()
-//    }
     
 }
 
+// MARK: - ConfirmMediaDelegate Methods
+
 extension MainTabViewController: ConfirmMediaDelegate {
-    
     func didConfirmSelectedMedia(type: MediaCaptureConfiguration.MediaType) {
         viewModel.router.append(.createBrief(type), animated: false)
     }
-    
 }

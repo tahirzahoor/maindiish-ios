@@ -23,9 +23,15 @@ class MainTabsView: UIView {
         guard tabButtons != nil else {
             return
         }
-        tabButtons[0].setImage(UIImage(named: "explore_selected"), for: .selected)
-        tabButtons[0].setImage(UIImage(named: "explore_unselected_themed"), for: .normal)
-        tabButtons[1].setImage(UIImage(named: "trendings_selected"), for: .selected)
-        tabButtons[1].setImage(UIImage(named: "trending_unselected_themed"), for: .normal)
+        
+        for button in tabButtons {
+            let prefix = Tab.allCases[button.tag].rawValue
+            let unselectedImageName = prefix + "_unselected_themed"
+            let selectedImageName = prefix + "_selected"
+            
+            button.setImage(UIImage(named: selectedImageName), for: .selected)
+            button.setImage(UIImage(named: unselectedImageName), for: .normal)
+        }
+        
     }
 }
