@@ -12,11 +12,12 @@ struct BriefData: Identifiable {
     // MARK: - Public Properties
     
     var id = UUID()
+    var user = User()
     var mediaType: MediaCaptureConfiguration.MediaType?
     var title = "Briefs Title".times(3)
     var description = "Brief Description"
     var tags = ""
-    var byUser = "by Logged In User"
+    var videoURL: URL? = VideoRepository.shared.videoURLs.randomElement()
     var views = Double.random(in: 1...1_000_000_000)
     var hearts = Double.random(in: 1...1_000_000_000)
     var comments = Double.random(in: 1...1_000)

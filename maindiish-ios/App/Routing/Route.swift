@@ -30,6 +30,7 @@ enum Route {
     case savedItems
     case webView(url: URL?)
     case blockedAccounts
+    case briefs
     
     func controller() -> UIViewController {
         switch self {
@@ -151,6 +152,12 @@ enum Route {
             case .blockedAccounts:
                 let viewModel = BlockedAccountsViewModel()
                 let controller = BlockedAccountsViewController.instantiate(from: .Profile, viewModel: viewModel)
+                
+                return controller
+            
+            case .briefs:
+                let viewModel = BriefsViewModel()
+                let controller = BriefsViewController.instantiate(from: .TabControllers, viewModel: viewModel)
                 
                 return controller
            

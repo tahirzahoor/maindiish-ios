@@ -2616,17 +2616,21 @@ Italian foods</string>
             </objects>
             <point key="canvasLocation" x="9925.9541984732823" y="-1119.0140845070423"/>
         </scene>
-        <!--View Controller-->
+        <!--Briefs View Controller-->
         <scene sceneID="mGP-Ih-g9z">
             <objects>
-                <viewController id="x3v-iI-bfC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BriefsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x3v-iI-bfC" customClass="BriefsViewController" customModule="maindiish_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ut-Fd-oD6" customClass="BriefsView" customModule="maindiish_ios" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VOz-st-Ydc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VOz-st-Ydc">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="x3v-iI-bfC" id="RyT-lF-FRA"/>
+                                    <outlet property="delegate" destination="x3v-iI-bfC" id="i3y-N7-7KI"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HL5-Mi-Bwp">
                                 <rect key="frame" x="12" y="59" width="369" height="36"/>
@@ -2640,6 +2644,7 @@ Italian foods</string>
                                                 <state key="normal" image="search_icon"/>
                                                 <connections>
                                                     <action selector="profileButtonTapped:" destination="RM7-kr-bve" eventType="touchUpInside" id="JQs-vc-Ywl"/>
+                                                    <action selector="searchButtonTapped:" destination="x3v-iI-bfC" eventType="touchUpInside" id="KJV-jA-y4O"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7S6-Oi-5re">
@@ -2647,6 +2652,7 @@ Italian foods</string>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="bell_icon"/>
                                                 <connections>
+                                                    <action selector="notificationsButtonTapped:" destination="x3v-iI-bfC" eventType="touchUpInside" id="Slj-3x-zcI"/>
                                                     <action selector="profileButtonTapped:" destination="RM7-kr-bve" eventType="touchUpInside" id="RJ2-LK-o84"/>
                                                 </connections>
                                             </button>
@@ -2655,6 +2661,7 @@ Italian foods</string>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="profile_icon"/>
                                                 <connections>
+                                                    <action selector="profileButtonTapped:" destination="x3v-iI-bfC" eventType="touchUpInside" id="9mt-6N-fA5"/>
                                                     <action selector="profileButtonTapped:" destination="RM7-kr-bve" eventType="touchUpInside" id="Xvy-p6-maZ"/>
                                                 </connections>
                                             </button>
@@ -2696,6 +2703,9 @@ Italian foods</string>
                             <outlet property="tableView" destination="VOz-st-Ydc" id="B2l-4i-HXF"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="briefsView" destination="2ut-Fd-oD6" id="D03-jn-BQ7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8Z-G7-1Ar" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

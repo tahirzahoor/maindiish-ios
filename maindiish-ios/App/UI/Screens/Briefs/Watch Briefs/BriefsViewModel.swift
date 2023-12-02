@@ -9,4 +9,8 @@ import Foundation
 
 class BriefsViewModel: ViewModel {
     
+    // MARK: - Public Properties
+    
+    var briefs: [BriefData] = Array(repeating: BriefData(), count: 10)
+    
 }

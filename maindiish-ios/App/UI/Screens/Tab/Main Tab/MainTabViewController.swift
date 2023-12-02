@@ -27,7 +27,7 @@ class MainTabViewController: ViewController<MainTabViewModel> {
     }()
     
     private lazy var briefsVC: UIViewController = {
-        UIViewController()
+        Route.briefs.controller()
     }()
     
     private lazy var inboxVC: UIViewController = {
