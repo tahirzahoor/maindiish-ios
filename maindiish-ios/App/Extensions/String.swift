@@ -16,4 +16,7 @@ extension String {
         return range(of: passwordRegex, options: .regularExpression) != nil
     }
     
+    func times(_ number: Int) -> String {
+        return String(repeating: self, count: number)
+    }
 }

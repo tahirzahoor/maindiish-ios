@@ -25,16 +25,27 @@ class SavedItemsViewModel: ViewModel {
     
     // MARK: - Public Properties
     
-    var blogs: [PostData] {
-        let blogs = PostRepository.shared.postData
-        let randomIntIndex = Int.random(in: 0..<50)
-        return Array(blogs[0..<randomIntIndex])
+    var blogs: [PostData] = []
+    var briefs: [BriefData] = []
+    
+    // MARK: - Initializers
+    
+    override init() {
+        super.init()
+        initializeBlogs()
+        initializeBriefs()
     }
     
-    var briefs: [BriefData] {
-        let briefs = BriefRepository.shared.briefs
+    // MARK: - Private Methods
+    
+    func initializeBriefs() {
         let randomIntIndex = Int.random(in: 0..<50)
-        return Array(briefs[0..<randomIntIndex])
+        briefs = Array(BriefRepository.shared.briefs[0..<randomIntIndex])
+    }
+    
+    func initializeBlogs() {
+        let randomIntIndex = Int.random(in: 0..<50)
+        blogs = Array(PostRepository.shared.postData[0..<randomIntIndex])
     }
     
 }

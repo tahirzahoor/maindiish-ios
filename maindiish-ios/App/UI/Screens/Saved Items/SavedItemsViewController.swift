@@ -79,7 +79,7 @@ extension SavedItemsViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 1 {
+        if indexPath.section == SavedItemsSection.blogs.rawValue {
             let post = viewModel.blogs[indexPath.row]
             showDetails(for: post)
         }
