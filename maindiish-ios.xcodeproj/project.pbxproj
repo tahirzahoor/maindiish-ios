@@ -68,6 +68,11 @@
 		791E7CE42B1A67920052E4D0 /* BriefPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E7CE22B1A67920052E4D0 /* BriefPostTableViewCell.swift */; };
 		791E7CE52B1A67920052E4D0 /* BriefPostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791E7CE32B1A67920052E4D0 /* BriefPostTableViewCell.xib */; };
 		791E7CE72B1A6B960052E4D0 /* CellButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E7CE62B1A6B960052E4D0 /* CellButton.swift */; };
+		791E7CEB2B1B1F950052E4D0 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E7CE92B1B1F950052E4D0 /* UserTableViewCell.swift */; };
+		791E7CEC2B1B1F950052E4D0 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791E7CEA2B1B1F950052E4D0 /* UserTableViewCell.xib */; };
+		791E7CEF2B1B21B30052E4D0 /* BlockedAccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E7CEE2B1B21B30052E4D0 /* BlockedAccountsView.swift */; };
+		791E7CF12B1B21C30052E4D0 /* BlockedAccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E7CF02B1B21C30052E4D0 /* BlockedAccountsViewModel.swift */; };
+		791E7CF32B1B21D40052E4D0 /* BlockedAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E7CF22B1B21D40052E4D0 /* BlockedAccountsViewController.swift */; };
 		79243FB52B03388F00C4AFA5 /* ConfirmMediaDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79243FB42B03388F00C4AFA5 /* ConfirmMediaDelegate.swift */; };
 		79243FB72B03878700C4AFA5 /* PostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79243FB62B03878700C4AFA5 /* PostType.swift */; };
 		79243FBB2B03919D00C4AFA5 /* ReviewBriefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79243FBA2B03919D00C4AFA5 /* ReviewBriefView.swift */; };
@@ -301,6 +306,11 @@
 		791E7CE22B1A67920052E4D0 /* BriefPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefPostTableViewCell.swift; sourceTree = "<group>"; };
 		791E7CE32B1A67920052E4D0 /* BriefPostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BriefPostTableViewCell.xib; sourceTree = "<group>"; };
 		791E7CE62B1A6B960052E4D0 /* CellButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellButton.swift; sourceTree = "<group>"; };
+		791E7CE92B1B1F950052E4D0 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		791E7CEA2B1B1F950052E4D0 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		791E7CEE2B1B21B30052E4D0 /* BlockedAccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedAccountsView.swift; sourceTree = "<group>"; };
+		791E7CF02B1B21C30052E4D0 /* BlockedAccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedAccountsViewModel.swift; sourceTree = "<group>"; };
+		791E7CF22B1B21D40052E4D0 /* BlockedAccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedAccountsViewController.swift; sourceTree = "<group>"; };
 		79243FB42B03388F00C4AFA5 /* ConfirmMediaDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmMediaDelegate.swift; sourceTree = "<group>"; };
 		79243FB62B03878700C4AFA5 /* PostType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostType.swift; sourceTree = "<group>"; };
 		79243FBA2B03919D00C4AFA5 /* ReviewBriefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewBriefView.swift; sourceTree = "<group>"; };
@@ -639,6 +649,7 @@
 		18209EAA2A714C840024F47B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				791E7CED2B1B21960052E4D0 /* Blocked Accounts */,
 				7924C73C2B16CC0A00FE3C37 /* Saved Items */,
 				7924C7332B16A65E00FE3C37 /* Change Password */,
 				790557952B1563CB0063EE98 /* Edit Profile */,
@@ -883,6 +894,25 @@
 			path = Brief;
 			sourceTree = "<group>";
 		};
+		791E7CE82B1B1F6A0052E4D0 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				791E7CE92B1B1F950052E4D0 /* UserTableViewCell.swift */,
+				791E7CEA2B1B1F950052E4D0 /* UserTableViewCell.xib */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		791E7CED2B1B21960052E4D0 /* Blocked Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				791E7CEE2B1B21B30052E4D0 /* BlockedAccountsView.swift */,
+				791E7CF02B1B21C30052E4D0 /* BlockedAccountsViewModel.swift */,
+				791E7CF22B1B21D40052E4D0 /* BlockedAccountsViewController.swift */,
+			);
+			path = "Blocked Accounts";
+			sourceTree = "<group>";
+		};
 		79243FB82B03912400C4AFA5 /* Blog */ = {
 			isa = PBXGroup;
 			children = (
@@ -1091,6 +1121,7 @@
 		7996F0792B192DBD004111F1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				791E7CE82B1B1F6A0052E4D0 /* User */,
 				791E7CE12B1A67730052E4D0 /* Brief */,
 				791E7CE02B1A67530052E4D0 /* BlogPost */,
 			);
@@ -1352,6 +1383,7 @@
 				795D56D12AF5C20100F15611 /* TabControllers.storyboard in Resources */,
 				79A145E02AE0078500C184BE /* WorkSans-Medium.ttf in Resources */,
 				79BA2A2D2AE1EE710019E880 /* Inter-SemiBold.ttf in Resources */,
+				791E7CEC2B1B1F950052E4D0 /* UserTableViewCell.xib in Resources */,
 				79A525892AF8367E00DBC4A0 /* Poppins-Regular.ttf in Resources */,
 				79BF3C732ADFF3B5009CE04B /* Inter-Medium.otf in Resources */,
 			);
@@ -1410,6 +1442,7 @@
 				7989052A2B083EBB00B5A7EC /* SearchFilter.swift in Sources */,
 				790B4F5A2AF24E9300C429CD /* ExploreView.swift in Sources */,
 				7984230F2AEE7D6B00441707 /* BottomUpOptionsSheetViewModel.swift in Sources */,
+				791E7CEB2B1B1F950052E4D0 /* UserTableViewCell.swift in Sources */,
 				798055F22AE6F9D700717FB4 /* BorderedView.swift in Sources */,
 				18209EDC2A7260210024F47B /* UICollectionViewCell.swift in Sources */,
 				79A1C8B42B0ABA450048CA8B /* ProfileViewModel.swift in Sources */,
@@ -1424,6 +1457,7 @@
 				79A2E3052AFDFCC00039633D /* CreateBlogTextViewTag.swift in Sources */,
 				79F392A12B03BA2D0092A028 /* ProgressLoaderManager.swift in Sources */,
 				79E406F82AEBCB57001B6AC0 /* Repository.swift in Sources */,
+				791E7CF32B1B21D40052E4D0 /* BlockedAccountsViewController.swift in Sources */,
 				79A2E2FD2AFDE94F0039633D /* CreateBlogView.swift in Sources */,
 				79037C742B004216009F2A4A /* VideoCaptureViewModel.swift in Sources */,
 				18209EC32A724D5D0024F47B /* Route.swift in Sources */,
@@ -1472,6 +1506,7 @@
 				798905332B086BAA00B5A7EC /* SearchedPeopleViewController.swift in Sources */,
 				7901B4ED2AE4434200D24064 /* NibWrapperView.swift in Sources */,
 				79A2E3102AFE47840039633D /* ReviewPostImageCollectionViewCell.swift in Sources */,
+				791E7CEF2B1B21B30052E4D0 /* BlockedAccountsView.swift in Sources */,
 				79A525A12AF84F6A00DBC4A0 /* ThreeImagesView.swift in Sources */,
 				798905392B08E4B000B5A7EC /* UserRepository.swift in Sources */,
 				795D65992AEAA560007AF064 /* OkAlertView.swift in Sources */,
@@ -1523,6 +1558,7 @@
 				798905212B08357C00B5A7EC /* SearchedBlogsView.swift in Sources */,
 				7989051A2B080F7400B5A7EC /* SearchView.swift in Sources */,
 				79037C7A2B00E196009F2A4A /* MediaCaptureConfiguration.swift in Sources */,
+				791E7CF12B1B21C30052E4D0 /* BlockedAccountsViewModel.swift in Sources */,
 				7924C7352B16A67700FE3C37 /* ChangePasswordView.swift in Sources */,
 				79A525A62AF903A800DBC4A0 /* FilterCollectionViewCell.swift in Sources */,
 				791E7CE42B1A67920052E4D0 /* BriefPostTableViewCell.swift in Sources */,

@@ -13,7 +13,7 @@ struct BriefData: Identifiable {
     
     var id = UUID()
     var mediaType: MediaCaptureConfiguration.MediaType?
-    var title = "Briefs Title".times(5)
+    var title = "Briefs Title".times(3)
     var description = "Brief Description"
     var tags = ""
     var byUser = "by Logged In User"

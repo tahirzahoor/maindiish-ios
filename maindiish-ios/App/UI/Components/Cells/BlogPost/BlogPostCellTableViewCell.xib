@@ -34,7 +34,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNt-hc-fOX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNt-hc-fOX" customClass="CellButton" customModule="maindiish_ios" customModuleProvider="target">
                                 <rect key="frame" x="559" y="10" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="0B8-AX-cCS"/>
@@ -42,6 +42,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="more_options_vertical"/>
+                                <connections>
+                                    <action selector="optionsButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="XK8-41-vwd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="middleTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fE2-AI-Ma3">
                                 <rect key="frame" x="134" y="10" width="411" height="38.333333333333336"/>
@@ -145,14 +148,19 @@ Italian foods</string>
                 <outlet property="numberOfCommentsButton" destination="rYW-wc-fYe" id="1gV-8h-Qal"/>
                 <outlet property="numberOfHeartsButton" destination="8AB-Qy-IjQ" id="jxV-Jb-Zqr"/>
                 <outlet property="numberOfViewsButton" destination="eDZ-u8-95x" id="rdO-fe-GG4"/>
+                <outlet property="optionsButton" destination="PNt-hc-fOX" id="5Ba-m4-VcN"/>
                 <outlet property="postDescriptionLabel" destination="33x-cP-ik1" id="kvb-sf-zYx"/>
                 <outlet property="postImageView" destination="Nhe-4r-cUA" id="fkG-E2-CEG"/>
                 <outlet property="postTitleLabel" destination="fE2-AI-Ma3" id="fBc-0W-hz1"/>
-                <outlet property="threeDotsButton" destination="PNt-hc-fOX" id="mQ7-vM-iu0"/>
             </connections>
             <point key="canvasLocation" x="82" y="-39"/>
         </tableViewCell>
     </objects>
+    <designables>
+        <designable name="PNt-hc-fOX">
+            <size key="intrinsicContentSize" width="25" height="25"/>
+        </designable>
+    </designables>
     <resources>
         <image name="chat_bubble" width="19.333333969116211" height="19.333333969116211"/>
         <image name="dummy_post_image" width="196.66667175292969" height="169.33332824707031"/>

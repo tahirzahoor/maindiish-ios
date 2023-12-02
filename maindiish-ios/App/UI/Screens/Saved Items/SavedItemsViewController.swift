@@ -103,6 +103,8 @@ extension SavedItemsViewController: UITableViewDataSource {
             
             let brief = viewModel.briefs[indexPath.row]
             cell.setData(brief)
+            cell.optionsButton.indexPath = indexPath
+            cell.optionsButtonDelegate = self
             
             return cell
         
@@ -111,6 +113,8 @@ extension SavedItemsViewController: UITableViewDataSource {
             
             let blog = viewModel.blogs[row]
             cell.setData(blog)
+            cell.optionsButton.indexPath = indexPath
+            cell.optionsButtonDelegate = self
             
             return cell
         }
@@ -118,6 +122,24 @@ extension SavedItemsViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         SavedItemsSection.allCases.count
+    }
+}
+
+// MARK: - Options Button Delegate
+
+extension SavedItemsViewController: OptionsButtonDelegate {
+    func didTapOptionsButton(forRowAt indexPath: IndexPath) {
+        let section = indexPath.section
+        let row = indexPath.row
+        
+        switch section {
+            case SavedItemsSection.videos.rawValue:
+                break
+            case SavedItemsSection.blogs.rawValue:
+                break
+            default:
+                break
+        }
     }
 }
  

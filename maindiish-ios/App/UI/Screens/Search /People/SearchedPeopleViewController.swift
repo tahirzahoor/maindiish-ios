@@ -36,7 +36,6 @@ class SearchedPeopleViewController: ViewController<SearchedPeopleViewModel> {
 
 extension SearchedPeopleViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        var user = User()
         let id = indexPath.row % 2 == 0 ? "o" : ""
         viewModel.router.append(.profile(id: id), animated: true)
     }

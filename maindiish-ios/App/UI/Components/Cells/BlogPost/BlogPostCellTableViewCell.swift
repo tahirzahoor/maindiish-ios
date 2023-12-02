@@ -18,7 +18,11 @@ class BlogPostCellTableViewCell: UITableViewCell {
     @IBOutlet weak var numberOfHeartsButton: UIButton!
     @IBOutlet weak var numberOfCommentsButton: UIButton!
     @IBOutlet weak var numberOfViewsButton: UIButton!
-    @IBOutlet weak var threeDotsButton: UIButton!
+    @IBOutlet weak var optionsButton: CellButton!
+    
+    // MARK: - Delegates
+    
+    var optionsButtonDelegate: OptionsButtonDelegate?
     
     // MARK: - Lifecycle Methods
     
@@ -26,6 +30,13 @@ class BlogPostCellTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         setFonts()
+    }
+    
+    // MARK: - Action Methods
+    
+    @IBAction
+    func optionsButtonTapped(_ sender: CellButton) {
+        optionsButtonDelegate?.didTapOptionsButton?(forRowAt: sender.indexPath)
     }
     
     // MARK: - Private Methods

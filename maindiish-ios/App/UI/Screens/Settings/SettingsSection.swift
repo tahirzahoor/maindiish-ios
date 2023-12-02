@@ -22,7 +22,7 @@ enum SettingsSection: CaseIterable {
             .routable(title: "My Profile", to: .editProfile),
             .routable(title: "Change Password", to: .changePassword),
             .routable(title: "Saved Items", to: .savedItems),
-            .routable(title: "Blocked Accounts", to: .search)
+            .routable(title: "Blocked Accounts", to: .blockedAccounts)
         ] : [
             .header(title: self.title),
             .routable(title: "Terms And Conditions", to: .webView(url: nil)),

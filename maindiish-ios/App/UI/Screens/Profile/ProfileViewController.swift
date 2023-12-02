@@ -52,6 +52,11 @@ class ProfileViewController: ViewController<ProfileViewModel> {
     // MARK: - Action Methods
     
     @IBAction
+    func backButtonTapped(_ sender: UIButton) {
+        viewModel.router.pop(animated: true)
+    }
+    
+    @IBAction
     func settingsButtonTapped(_ sender: UIButton) {
         viewModel.router.append(.settings, animated: true)
     }
@@ -77,11 +82,12 @@ class ProfileViewController: ViewController<ProfileViewModel> {
     }
 
     private func setInitialView() {
-        guard viewModel.id.isEmpty else { return }
+        profileView.settingsButton.isHidden = !viewModel.id.isEmpty
         
-        profileView.settingsButton.isHidden = false
-        profileView.buttonsViewHeightLayoutConstraint.constant = 0
-        profileView.followAndMessageButtonsView.isHidden = true
+        let heightConstant = viewModel.id.isEmpty ? 0 : profileView.buttonsViewHeightLayoutConstraint.constant
+        profileView.buttonsViewHeightLayoutConstraint.constant = heightConstant
+        
+        profileView.followAndMessageButtonsView.isHidden = viewModel.id.isEmpty
     }
 }
 

@@ -46,6 +46,7 @@ struct GlobalStrings {
     enum UserDefaultKey: String {
         case isOnboarding
         case isLoggedIn
+        case loggedInUserID
         case isDarkMode
         case profileImageData
         case profileName

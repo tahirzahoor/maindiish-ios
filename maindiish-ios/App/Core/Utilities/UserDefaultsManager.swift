@@ -18,6 +18,11 @@ class UserDefaultsManager {
         GlobalStrings.UserDefaultKey.isLoggedIn.rawValue
     ) var isLoggedIn: Bool
     
+    @Storage(
+        wrappedValue: "",
+        GlobalStrings.UserDefaultKey.loggedInUserID.rawValue
+    ) var userID: String
+    
     @Storage(wrappedValue: false, GlobalStrings.UserDefaultKey.isDarkMode.rawValue)
     var isDarkMode: Bool {
         didSet {
