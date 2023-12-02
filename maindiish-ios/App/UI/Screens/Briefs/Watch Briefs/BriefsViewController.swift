@@ -18,6 +18,12 @@ class BriefsViewController: ViewController<BriefsViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        registerTableViewCells()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
     }
     
     // MARK: - Action Methods
@@ -68,6 +74,7 @@ extension BriefsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if let videoCell = cell as? BriefsTableViewCell {
             videoCell.player?.pause()
+            videoCell.player = nil
         }
     }
     

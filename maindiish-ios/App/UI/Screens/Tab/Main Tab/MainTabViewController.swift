@@ -26,7 +26,7 @@ class MainTabViewController: ViewController<MainTabViewModel> {
         Route.trending.controller()
     }()
     
-    private lazy var briefsVC: UIViewController = {
+    private var briefsVC: UIViewController = {
         Route.briefs.controller()
     }()
     

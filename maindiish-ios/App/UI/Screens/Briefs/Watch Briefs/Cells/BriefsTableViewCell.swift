@@ -27,7 +27,7 @@ class BriefsTableViewCell: UITableViewCell {
     
     private var playerLayer: AVPlayerLayer?
     
-    // MARK: - Public Methods
+    // MARK: - Public Properties
     
     var player: AVPlayer?
     
@@ -37,6 +37,7 @@ class BriefsTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         setFonts()
+        configureFollowButtonView()
     }
    
     override func prepareForReuse() {
@@ -62,12 +63,20 @@ class BriefsTableViewCell: UITableViewCell {
         heartsButton.titleLabel?.font = font
     }
     
+    private func configureFollowButtonView() {
+        followButton.setTitle("Follow", for: .normal)
+        followButton.backgroundColor = .clear
+        followButton.layer.cornerRadius = 5
+        followButton.layer.borderColor = UIColor.white.cgColor
+        followButton.layer.borderWidth = 1
+    }
+    
     // MARK: - Public Methods
     
     func configure(with data: BriefData) {
         profileTitleLabel.text = data.user.name
-        briefDescriptionLabel.text = data.description
-        tagsLabel.text = data.tags
+        briefDescriptionLabel.text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        tagsLabel.text = "#tags ".times(7)
         
         sharesButton.setTitle(data.formattedViewsCount, for: .normal)
         commentsButton.setTitle(data.formattedViewsCount, for: .normal)
@@ -81,10 +90,24 @@ class BriefsTableViewCell: UITableViewCell {
     // MARK: - Private Methods
     
     private func configure(with videoURL: URL) {
-        player = AVPlayer(url: videoURL)
+        let playerItem = AVPlayerItem(url: videoURL)
+        player = AVPlayer(playerItem: playerItem)
         playerLayer = AVPlayerLayer(player: player)
+        playerLayer!.videoGravity = .resizeAspect
+        
         videoPlayerView.layer.addSublayer(playerLayer!)
-        playerLayer?.frame = videoPlayerView.bounds
+        playerLayer!.frame = videoPlayerView.bounds
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying), name: .AVPlayerItemDidPlayToEndTime, object: player!.currentItem)
     }
 
+    @objc
+    private func playerDidFinishPlaying() {
+        player?.seek(to: CMTime.zero)
+        player?.play()
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: player?.currentItem)
+    }
 }
