@@ -1229,6 +1229,66 @@
             </objects>
             <point key="canvasLocation" x="4216" y="-35"/>
         </scene>
+        <!--Text View Controller-->
+        <scene sceneID="xwb-VL-oa3">
+            <objects>
+                <viewController storyboardIdentifier="TextViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="unn-Cv-Xg0" customClass="TextViewController" customModule="maindiish_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kNc-Bn-PN9" customClass="TextView" customModule="maindiish_ios" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZn-x0-GG0">
+                                <rect key="frame" x="20" y="65" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="GmV-RP-i28"/>
+                                    <constraint firstAttribute="height" constant="24" id="LP3-Ru-pYr"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="back_button_icon"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="unn-Cv-Xg0" eventType="touchUpInside" id="61b-wI-Gcc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNw-Gg-HCQ">
+                                <rect key="frame" x="176" y="66.666666666666671" width="41.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agr-lR-KFT">
+                                <rect key="frame" x="20" y="114" width="353" height="738"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PiO-EB-7FF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Agr-lR-KFT" firstAttribute="top" secondItem="XZn-x0-GG0" secondAttribute="bottom" constant="25" id="8LD-ne-EgQ"/>
+                            <constraint firstItem="XZn-x0-GG0" firstAttribute="top" secondItem="PiO-EB-7FF" secondAttribute="top" constant="6" id="D0T-Ma-z4X"/>
+                            <constraint firstItem="XZn-x0-GG0" firstAttribute="leading" secondItem="PiO-EB-7FF" secondAttribute="leading" constant="20" id="INa-IN-jDk"/>
+                            <constraint firstItem="sNw-Gg-HCQ" firstAttribute="centerY" secondItem="XZn-x0-GG0" secondAttribute="centerY" id="Naf-PB-LKr"/>
+                            <constraint firstItem="PiO-EB-7FF" firstAttribute="trailing" secondItem="Agr-lR-KFT" secondAttribute="trailing" constant="20" id="UOp-Jc-82Z"/>
+                            <constraint firstItem="Agr-lR-KFT" firstAttribute="leading" secondItem="XZn-x0-GG0" secondAttribute="leading" id="cL5-ud-Wk8"/>
+                            <constraint firstAttribute="bottom" secondItem="Agr-lR-KFT" secondAttribute="bottom" id="vvM-Jy-jWI"/>
+                            <constraint firstItem="sNw-Gg-HCQ" firstAttribute="centerX" secondItem="PiO-EB-7FF" secondAttribute="centerX" id="xW4-cj-8ld"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="screenTitleLabel" destination="sNw-Gg-HCQ" id="bil-b9-nnu"/>
+                            <outlet property="textView" destination="Agr-lR-KFT" id="XDf-Dg-WIR"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="textScreenView" destination="kNc-Bn-PN9" id="t8j-Qi-NsP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ik3-sl-sBa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5181" y="-35"/>
+        </scene>
     </scenes>
     <resources>
         <image name="back_button_icon" width="24" height="24"/>
@@ -1251,6 +1311,9 @@
         <namedColor name="trending_background">
             <color red="0.89800000190734863" green="0.89800000190734863" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

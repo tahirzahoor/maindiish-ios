@@ -74,7 +74,6 @@ extension BriefsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if let videoCell = cell as? BriefsTableViewCell {
             videoCell.player?.pause()
-            videoCell.player = nil
         }
     }
     

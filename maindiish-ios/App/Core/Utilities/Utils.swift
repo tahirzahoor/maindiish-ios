@@ -18,16 +18,16 @@ class Utils {
         numberFormatter.maximumFractionDigits = 1
         
         switch number {
-        case 0..<1_000:
-            return "\(number)"
-        case 1_000..<1_000_000:
-            return "\(numberFormatter.string(from: NSNumber(value: number / 1_000)) ?? "")K"
-        case 1_000_000..<1_000_000_000:
-            return "\(numberFormatter.string(from: NSNumber(value: number / 1_000_000)) ?? "")M"
-        case 1_000_000_000..<1_000_000_000_000:
-            return "\(numberFormatter.string(from: NSNumber(value: number / 1_000_000_000)) ?? "")B"
-        default:
-            return "\(numberFormatter.string(from: NSNumber(value: number / 1_000_000_000_000)) ?? "")T"
+            case 0..<1_000:
+                return "\(number)"
+            case 1_000..<1_000_000:
+                return "\(numberFormatter.string(from: NSNumber(value: number / 1_000)) ?? "")K"
+            case 1_000_000..<1_000_000_000:
+                return "\(numberFormatter.string(from: NSNumber(value: number / 1_000_000)) ?? "")M"
+            case 1_000_000_000..<1_000_000_000_000:
+                return "\(numberFormatter.string(from: NSNumber(value: number / 1_000_000_000)) ?? "")B"
+            default:
+                return "\(numberFormatter.string(from: NSNumber(value: number / 1_000_000_000_000)) ?? "")T"
         }
     }
     
@@ -48,6 +48,33 @@ class Utils {
             print("Error generating thumbnail: \(error.localizedDescription)")
             completion(nil)
         }
+    }
+    
+    static func attributedStringFromHTMLFile(_ fileName: String) -> NSAttributedString {
+            
+        let htmlString = Utils.contentsOfFile(fileName, type: "html")
+        if let attributedString = try? NSAttributedString(data: htmlString.data(using: .utf8)!, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil) {
+            
+            return attributedString
+        }
+        
+        return NSAttributedString(string: "")
+    }
+    
+    static func contentsOfFile(_ filename: String, type: String) -> String {
+        if let htmlFilePath = Bundle.main.path(forResource: filename, ofType: type) {
+            do {
+                let string = try String(contentsOfFile: htmlFilePath, encoding: .utf8)
+                
+                return string
+            } catch {
+                print("Error reading file: \(error)")
+            }
+        } else {
+            print("file not found in the bundle.")
+        }
+        
+        return ""
     }
 
 }

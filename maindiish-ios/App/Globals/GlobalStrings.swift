@@ -27,6 +27,10 @@ struct GlobalStrings {
         }
         static let resetThroughEmail = "Reset using email"
         static let resetThroughPhone = "Reset using phone"
+        static let termsAndConditions = "Terms And Conditions"
+        static let privacyPolicy = "Privacy Policy"
+        static let privacyPolicyHeading = "Your Privacy Matters"
+        static let termsAndConditionsHeading = "Agreement Between You and Main Diish"
     }
     
     struct Message {

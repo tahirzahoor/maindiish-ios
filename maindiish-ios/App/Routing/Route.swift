@@ -31,6 +31,7 @@ enum Route {
     case webView(url: URL?)
     case blockedAccounts
     case briefs
+    case textBased(_ type: HTMLFile)
     
     func controller() -> UIViewController {
         switch self {
@@ -160,7 +161,13 @@ enum Route {
                 let controller = BriefsViewController.instantiate(from: .TabControllers, viewModel: viewModel)
                 
                 return controller
-           
+            
+            case .textBased(let type):
+                let viewModel = TextViewModel(textType: type)
+                let controller = TextViewController.instantiate(from: .Profile, viewModel: viewModel)
+            
+                return controller
+            
             default:
                 return UIViewController()
         }

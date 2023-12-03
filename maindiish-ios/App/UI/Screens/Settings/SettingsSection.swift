@@ -25,8 +25,8 @@ enum SettingsSection: CaseIterable {
             .routable(title: "Blocked Accounts", to: .blockedAccounts)
         ] : [
             .header(title: self.title),
-            .routable(title: "Terms And Conditions", to: .webView(url: nil)),
-            .routable(title: "Privacy Policy", to: .webView(url: nil)),
+            .routable(title: "Terms And Conditions", to: .textBased(.termsAndConditions)),
+            .routable(title: "Privacy Policy", to: .textBased(.privacyPolicy)),
             .routable(title: "Help Centre", to: .webView(url: nil)),
             .tappable(title: "Log out")
         ]

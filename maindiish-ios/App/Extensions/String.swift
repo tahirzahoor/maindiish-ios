@@ -20,5 +20,5 @@ extension String {
         guard number > 0 else { return "" }
         return String(repeating: self, count: number)
     }
-   
+
 }
