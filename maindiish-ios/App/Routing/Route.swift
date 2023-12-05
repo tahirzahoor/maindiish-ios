@@ -32,6 +32,8 @@ enum Route {
     case blockedAccounts
     case briefs
     case textBased(_ type: HTMLFile)
+    case inbox
+    case chat(_ user: User)
     
     func controller() -> UIViewController {
         switch self {
@@ -166,6 +168,18 @@ enum Route {
                 let viewModel = TextViewModel(textType: type)
                 let controller = TextViewController.instantiate(from: .Profile, viewModel: viewModel)
             
+                return controller
+            
+            case .inbox:
+                let viewModel = ChatListingViewModel()
+                let controller = ChatListingViewController.instantiate(from: .TabControllers, viewModel: viewModel)
+                
+                return controller
+            
+            case .chat(let user):
+            let viewModel = ChatViewModel(user: user)
+                let controller = ChatViewController.instantiate(from: .TabControllers, viewModel: viewModel)
+                
                 return controller
             
             default:

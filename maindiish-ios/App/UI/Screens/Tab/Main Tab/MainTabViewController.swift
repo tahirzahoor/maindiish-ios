@@ -31,7 +31,7 @@ class MainTabViewController: ViewController<MainTabViewModel> {
     }()
     
     private lazy var inboxVC: UIViewController = {
-       UIViewController()
+        Route.inbox.controller()
     }()
     
     // MARK: - Action Methods

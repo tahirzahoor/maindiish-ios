@@ -87,5 +87,12 @@ extension UIView {
         return image
     }
     
+    func roundCorner(_ corners: CACornerMask? = nil, radius: CGFloat) {
+        layer.cornerRadius = radius
+        if let corners = corners {
+            layer.maskedCorners = corners
+        }
+    }
+    
 }
 
