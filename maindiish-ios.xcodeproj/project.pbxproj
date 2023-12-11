@@ -110,6 +110,16 @@
 		795D65952AEAA462007AF064 /* OkAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D65942AEAA462007AF064 /* OkAlertViewController.swift */; };
 		795D65972AEAA4AC007AF064 /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D65962AEAA4AC007AF064 /* AlertViewModel.swift */; };
 		795D65992AEAA560007AF064 /* OkAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795D65982AEAA560007AF064 /* OkAlertView.swift */; };
+		796B24442B27B0BC007F69B1 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B24432B27B0BC007F69B1 /* OptionsView.swift */; };
+		796B24462B27B0C8007F69B1 /* OptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B24452B27B0C8007F69B1 /* OptionsViewModel.swift */; };
+		796B24482B27B0D5007F69B1 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B24472B27B0D5007F69B1 /* OptionsViewController.swift */; };
+		796B244A2B27B143007F69B1 /* OptionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B24492B27B143007F69B1 /* OptionDelegate.swift */; };
+		796B244C2B27B1DD007F69B1 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B244B2B27B1DD007F69B1 /* Option.swift */; };
+		796B244E2B27BB0C007F69B1 /* OptionCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B244D2B27BB0C007F69B1 /* OptionCellType.swift */; };
+		796B24512B27BC80007F69B1 /* SingleLabelOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B24502B27BC80007F69B1 /* SingleLabelOptionTableViewCell.swift */; };
+		796B24532B27BC92007F69B1 /* ImageAndLabelOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B24522B27BC92007F69B1 /* ImageAndLabelOptionTableViewCell.swift */; };
+		796B24562B27D0C1007F69B1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B24552B27D0C1007F69B1 /* Post.swift */; };
+		796B24582B27D0DB007F69B1 /* OptionsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B24572B27D0DB007F69B1 /* OptionsRepository.swift */; };
 		798055F22AE6F9D700717FB4 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798055F12AE6F9D700717FB4 /* BorderedView.swift */; };
 		798423012AEE770900441707 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423002AEE770900441707 /* ForgotPasswordView.swift */; };
 		798423032AEE79CB00441707 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798423022AEE79CB00441707 /* ForgotPasswordViewController.swift */; };
@@ -374,6 +384,16 @@
 		795D65942AEAA462007AF064 /* OkAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OkAlertViewController.swift; path = "maindiish-ios/App/UI/Sheets/Alerts/OkAlertViewController.swift"; sourceTree = SOURCE_ROOT; };
 		795D65962AEAA4AC007AF064 /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertViewModel.swift; path = "maindiish-ios/App/UI/Sheets/Alerts/AlertViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		795D65982AEAA560007AF064 /* OkAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OkAlertView.swift; path = "maindiish-ios/App/UI/Sheets/Alerts/OkAlertView.swift"; sourceTree = SOURCE_ROOT; };
+		796B24432B27B0BC007F69B1 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		796B24452B27B0C8007F69B1 /* OptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewModel.swift; sourceTree = "<group>"; };
+		796B24472B27B0D5007F69B1 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		796B24492B27B143007F69B1 /* OptionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionDelegate.swift; sourceTree = "<group>"; };
+		796B244B2B27B1DD007F69B1 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		796B244D2B27BB0C007F69B1 /* OptionCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCellType.swift; sourceTree = "<group>"; };
+		796B24502B27BC80007F69B1 /* SingleLabelOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLabelOptionTableViewCell.swift; sourceTree = "<group>"; };
+		796B24522B27BC92007F69B1 /* ImageAndLabelOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAndLabelOptionTableViewCell.swift; sourceTree = "<group>"; };
+		796B24552B27D0C1007F69B1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		796B24572B27D0DB007F69B1 /* OptionsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsRepository.swift; sourceTree = "<group>"; };
 		798055F12AE6F9D700717FB4 /* BorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
 		798423002AEE770900441707 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		798423022AEE79CB00441707 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -728,6 +748,7 @@
 		18209EAB2A714C8B0024F47B /* Sheets */ = {
 			isa = PBXGroup;
 			children = (
+				796B24422B27B0A1007F69B1 /* Options */,
 				7991A0A02AFED7B500C4990B /* Post Type */,
 				798423092AEE7D2000441707 /* BottomUps */,
 				798423062AEE7CFA00441707 /* Alerts */,
@@ -745,6 +766,7 @@
 				79A8ED162B0949E800CDDA2C /* BriefRepository.swift */,
 				79AC2ED32B1BE29900DAAD8D /* VideoRepository.swift */,
 				79515DA32B1E8CF700CD64DD /* ChatListRepository.swift */,
+				796B24572B27D0DB007F69B1 /* OptionsRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -1075,6 +1097,38 @@
 				79515DAA2B1E967800CD64DD /* ChatViewController.swift */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		796B24422B27B0A1007F69B1 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				796B24542B27D08C007F69B1 /* Option List */,
+				796B244F2B27BC62007F69B1 /* Cells */,
+				796B24432B27B0BC007F69B1 /* OptionsView.swift */,
+				796B24452B27B0C8007F69B1 /* OptionsViewModel.swift */,
+				796B24472B27B0D5007F69B1 /* OptionsViewController.swift */,
+				796B24492B27B143007F69B1 /* OptionDelegate.swift */,
+				796B244B2B27B1DD007F69B1 /* Option.swift */,
+				796B244D2B27BB0C007F69B1 /* OptionCellType.swift */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
+		796B244F2B27BC62007F69B1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				796B24502B27BC80007F69B1 /* SingleLabelOptionTableViewCell.swift */,
+				796B24522B27BC92007F69B1 /* ImageAndLabelOptionTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		796B24542B27D08C007F69B1 /* Option List */ = {
+			isa = PBXGroup;
+			children = (
+				796B24552B27D0C1007F69B1 /* Post.swift */,
+			);
+			path = "Option List";
 			sourceTree = "<group>";
 		};
 		7974B3692AE30FBE00F76D91 /* Authentication */ = {
@@ -1588,6 +1642,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7991E5592ADF3DAD00C8F348 /* OnboardingView.swift in Sources */,
+				796B24532B27BC92007F69B1 /* ImageAndLabelOptionTableViewCell.swift in Sources */,
 				7989052A2B083EBB00B5A7EC /* SearchFilter.swift in Sources */,
 				790B4F5A2AF24E9300C429CD /* ExploreView.swift in Sources */,
 				7984230F2AEE7D6B00441707 /* BottomUpOptionsSheetViewModel.swift in Sources */,
@@ -1676,6 +1731,7 @@
 				79243FBF2B0391BF00C4AFA5 /* ReviewBriefViewController.swift in Sources */,
 				790B4F5E2AF24EB100C429CD /* ExploreViewController.swift in Sources */,
 				799E074E2AE5897400D853B5 /* CreateUserNameViewController.swift in Sources */,
+				796B24482B27B0D5007F69B1 /* OptionsViewController.swift in Sources */,
 				18209E7F2A7146690024F47B /* AppDelegate.swift in Sources */,
 				7991E5552ADF3BF500C8F348 /* SplashViewModel.swift in Sources */,
 				791E7D012B1B60370052E4D0 /* BriefsTableViewCell.swift in Sources */,
@@ -1695,8 +1751,10 @@
 				790557972B1563E20063EE98 /* EditProfileView.swift in Sources */,
 				79515DAB2B1E967800CD64DD /* ChatViewController.swift in Sources */,
 				79A525A32AF84F7300DBC4A0 /* FourOrMoreImagesView.swift in Sources */,
+				796B24512B27BC80007F69B1 /* SingleLabelOptionTableViewCell.swift in Sources */,
 				799E07362AE50EC500D853B5 /* UIButton.swift in Sources */,
 				79A525AE2AF97E9D00DBC4A0 /* TrendingPostsViewModel.swift in Sources */,
+				796B244A2B27B143007F69B1 /* OptionDelegate.swift in Sources */,
 				7989053E2B08F5CC00B5A7EC /* BriefCollectionViewModel.swift in Sources */,
 				7989051C2B080F7E00B5A7EC /* SearchViewModel.swift in Sources */,
 				798423112AEE7FB600441707 /* BottomUpOptionsDelegate.swift in Sources */,
@@ -1708,6 +1766,8 @@
 				79FE03C72B1FB7F8001E91AB /* VideoPlayerManager.swift in Sources */,
 				79A8ED172B0949E800CDDA2C /* BriefRepository.swift in Sources */,
 				7991E55E2ADF635800C8F348 /* OnboardingCollectionViewCell.swift in Sources */,
+				796B24462B27B0C8007F69B1 /* OptionsViewModel.swift in Sources */,
+				796B244C2B27B1DD007F69B1 /* Option.swift in Sources */,
 				7905579B2B1564000063EE98 /* EditProfileViewController.swift in Sources */,
 				7924C7392B16A6A900FE3C37 /* ChangePasswordViewController.swift in Sources */,
 				79B5CC652AE2488B005E19AD /* LoginViewController.swift in Sources */,
@@ -1736,6 +1796,7 @@
 				798905252B0835AF00B5A7EC /* SearchedBlogsViewController.swift in Sources */,
 				79BA2A1E2AE1C2D80019E880 /* UIColor.swift in Sources */,
 				79515DA42B1E8CF700CD64DD /* ChatListRepository.swift in Sources */,
+				796B24442B27B0BC007F69B1 /* OptionsView.swift in Sources */,
 				7984231F2AEEA0AA00441707 /* TypeCodeViewController.swift in Sources */,
 				18209EC72A724E030024F47B /* AppRouter.swift in Sources */,
 				79037C762B004224009F2A4A /* VideoCaptureViewController.swift in Sources */,
@@ -1759,7 +1820,9 @@
 				791E7CFC2B1B5F450052E4D0 /* BriefsViewController.swift in Sources */,
 				7989052F2B086B6A00B5A7EC /* SearchedPeopleView.swift in Sources */,
 				799E07482AE556D100D853B5 /* SignUpViewModel.swift in Sources */,
+				796B24582B27D0DB007F69B1 /* OptionsRepository.swift in Sources */,
 				79A1C8BA2B0ACD8F0048CA8B /* Tab.swift in Sources */,
+				796B244E2B27BB0C007F69B1 /* OptionCellType.swift in Sources */,
 				79C4F36D2B03166300A0D232 /* CreateBriefViewController.swift in Sources */,
 				7905578E2B152F190063EE98 /* SwitchActionTableViewCell.swift in Sources */,
 				79C4F3732B032E1300A0D232 /* CreateBriefTextViewTag.swift in Sources */,
@@ -1780,6 +1843,7 @@
 				79515D992B1E7EAD00CD64DD /* ChatListingView.swift in Sources */,
 				7991A09D2AFE7BE500C4990B /* ImagesViewController.swift in Sources */,
 				790557852B1525EA0063EE98 /* SettingsViewModel.swift in Sources */,
+				796B24562B27D0C1007F69B1 /* Post.swift in Sources */,
 				79A8ED152B09071100CDDA2C /* LayoutItemAlignment.swift in Sources */,
 				795D658F2AEA78DF007AF064 /* Notification.swift in Sources */,
 				79D018E52AEA73E10066AAF6 /* Number.swift in Sources */,

@@ -32,6 +32,16 @@ class TrendingPostsViewController: ViewController<TrendingPostsViewModel> {
         sender.setTitle(title, for: .normal)
     }
     
+    @IBAction
+    func optionsButtonTapped(_ sender: CellButton) {
+        viewModel
+            .router
+            .showSheet(
+                .threeDotOption(options: OptionsRepository.shared.postOptions, delegate: self),
+                animated: true
+            )
+    }
+    
 }
 
 // MARK: - UITableViewDelegate Methods
@@ -63,6 +73,7 @@ extension TrendingPostsViewController: UITableViewDataSource {
         let data = viewModel.posts[indexPath.row]
         
         cell.mediaCollectionView.tag = indexPath.row
+        cell.optionsButton.indexPath = indexPath
         cell.configure(with: data)
         
         return cell
@@ -123,6 +134,12 @@ extension TrendingPostsViewController: UICollectionViewDelegateFlowLayout {
         let cellWidth = labelWidth + 40
         
         return CGSize(width: cellWidth, height: 40)
+    }
+}
+
+extension TrendingPostsViewController: OptionDelegate {
+    func didSelectOption(at index: Int) {
+        
     }
 }
 

@@ -5,6 +5,7 @@ enum Sheet {
     case confirmation
     case bottomUp(_ options: [String], selectedOptionIndex: Int, delegate: BottomUpOptionsDelegate)
     case postType
+    case threeDotOption(options: [Option], delegate: OptionDelegate)
 
     func controller() -> UIViewController {
         switch self {
@@ -18,6 +19,11 @@ enum Sheet {
             case .postType:
                 let viewModel = PostTypeBottomSheetViewModel()
                 let controller = PostTypeBottomSheetViewController.instantiate(from: .PopUp, viewModel: viewModel)
+                return controller
+            case .threeDotOption(let options, let delegate):
+                let viewModel = OptionsViewModel(optionList: options)
+                let controller = OptionsViewController.instantiate(from: .PopUp, viewModel: viewModel)
+                controller.delegate = delegate
                 return controller
         }
     }

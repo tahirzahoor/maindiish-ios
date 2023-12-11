@@ -68,13 +68,13 @@ class BriefsTableViewCell: UITableViewCell {
     
     // MARK: - Private Methods
     
-    func playVideo(url: URL?) {
-        guard let url = url else { return }
-        VideoPlayerManager.shared.playVideo(url: url, in: videoPlayerView.layer)
-    }
-    
-    func stopVideo() {
-        VideoPlayerManager.shared.stopVideo()
-    }
+//    func playVideo(url: URL?) {
+//        guard let url = url else { return }
+//        VideoPlayerManager.shared.playVideo(url: url, in: videoPlayerView.layer)
+//    }
+//    
+//    func stopVideo() {
+//        VideoPlayerManager.shared.stopVideo()
+//    }
     
 }

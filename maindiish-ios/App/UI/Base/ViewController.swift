@@ -6,6 +6,8 @@ class ViewController<T: ViewModel>: UIViewController {
     var viewModel: T
     var bag = Set<AnyCancellable>()
     var activityIndicator = UIActivityIndicatorView(style: .large)
+    var originalCenter: CGPoint = .zero
+    
 
     // MARK: - Initialization
 
@@ -39,6 +41,25 @@ class ViewController<T: ViewModel>: UIViewController {
        
         setNavigationBar()
         setupBinding()
+    }
+    
+    func addDragDownGesture(to view: UIView) {
+        let gesture = UIPanGestureRecognizer(target: self, action: #selector(didDragDown(_:)))
+        view.addGestureRecognizer(gesture)
+    }
+    
+    @objc
+    private func didDragDown(_ recognizer: UIPanGestureRecognizer) {
+        
+        guard let view = recognizer.view else { return }
+        
+        let translation = recognizer.translation(in: view)
+        let optionBgViewHeight = view.frame.height
+        let halfHeightYPoint = view.bounds.maxY - (optionBgViewHeight/2)
+        
+        // MARK: - Logic to be implemented
+        
+        dismiss(animated: true)
     }
 }
 

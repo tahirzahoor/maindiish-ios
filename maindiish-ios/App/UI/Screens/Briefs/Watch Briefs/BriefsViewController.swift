@@ -24,7 +24,7 @@ class BriefsViewController: ViewController<BriefsViewModel> {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        VideoPlayerManager.shared.stopVideo()
+//        VideoPlayerManager.shared.stopVideo()
     }
     
     // MARK: - Action Methods
@@ -72,8 +72,8 @@ extension BriefsViewController: UITableViewDelegate {
         let url = viewModel.briefs[indexPath.row].videoURL
         let cell: BriefsTableViewCell = briefsView.tableView.dequeueCell(for: indexPath)
         
-        cell.stopVideo()
-        cell.playVideo(url: url)
+//        cell.stopVideo()
+//        cell.playVideo(url: url)
     }
     
 }

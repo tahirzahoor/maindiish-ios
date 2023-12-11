@@ -8,7 +8,7 @@ class TrendingPostTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var timeAgoLabel: UILabel!
     @IBOutlet weak var followButton: RoundedButton!
-    @IBOutlet weak var moreOptionsButton: UIButton!
+    @IBOutlet weak var optionsButton: CellButton!
     @IBOutlet weak var postDescriptionLabel: UILabel!
     @IBOutlet weak var mediaCollectionView: UICollectionView!
     @IBOutlet weak var mediaPageControl: UIPageControl!

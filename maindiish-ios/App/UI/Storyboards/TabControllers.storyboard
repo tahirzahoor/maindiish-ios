@@ -1418,7 +1418,7 @@
                                                                     <color key="textColor" name="onboarding_description_label_color"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D55-Rn-CIs">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D55-Rn-CIs" customClass="CellButton" customModule="maindiish_ios" customModuleProvider="target">
                                                                     <rect key="frame" x="331" y="17" width="23" height="23"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="23" id="JED-QM-J12"/>
@@ -1426,6 +1426,9 @@
                                                                     </constraints>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" image="more_options_horizontal"/>
+                                                                    <connections>
+                                                                        <action selector="optionsButtonTapped:" destination="krB-FL-345" eventType="touchUpInside" id="fZo-hw-QyZ"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvc-3d-yxG" customClass="RoundedButton" customModule="maindiish_ios" customModuleProvider="target">
                                                                     <rect key="frame" x="248.66666666666663" y="16" width="66" height="25"/>
@@ -1634,12 +1637,12 @@
                                             <outlet property="followButton" destination="Hvc-3d-yxG" id="1dl-Ix-1az"/>
                                             <outlet property="mediaCollectionView" destination="dkZ-ft-1s2" id="Wgq-Sh-FPu"/>
                                             <outlet property="mediaPageControl" destination="AKg-Ak-HHv" id="QFc-AC-fRP"/>
-                                            <outlet property="moreOptionsButton" destination="D55-Rn-CIs" id="GBK-hK-XFg"/>
                                             <outlet property="nameLabel" destination="EvH-Ua-kve" id="9dn-o9-EC0"/>
                                             <outlet property="numberOfCommentsButton" destination="xeA-LY-POG" id="9X8-uF-ENn"/>
                                             <outlet property="numberOfHeartsButton" destination="YQc-SZ-avl" id="fDv-hE-pqq"/>
                                             <outlet property="numberOfSharesButton" destination="qpf-Kz-VoQ" id="NZ3-h9-J7d"/>
                                             <outlet property="numberOfViewsButton" destination="6NP-8K-rUU" id="UaG-9h-a17"/>
+                                            <outlet property="optionsButton" destination="D55-Rn-CIs" id="Zy8-qF-GUq"/>
                                             <outlet property="postDescriptionLabel" destination="36s-tI-n41" id="wfv-jR-Njn"/>
                                             <outlet property="profileImageView" destination="cSh-MS-D0n" id="vsq-uY-G5M"/>
                                             <outlet property="timeAgoLabel" destination="mcH-AQ-vXS" id="uJ1-yR-3G2"/>
@@ -3140,10 +3143,10 @@ Italian foods</string>
             <color red="0.016000000759959221" green="0.016000000759959221" blue="0.024000000208616257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="inbox_name_label_color">
-            <color red="0.015686274509803921" green="0.015686274509803921" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.016000000759959221" green="0.016000000759959221" blue="0.024000000208616257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="message_text_view_bg">
-            <color red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.82400000095367432" green="0.82400000095367432" blue="0.82400000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="onboarding_description_label_color">
             <color red="0.016000000759959221" green="0.016000000759959221" blue="0.024000000208616257" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3167,7 +3170,7 @@ Italian foods</string>
             <color red="0.016000000759959221" green="0.016000000759959221" blue="0.024000000208616257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="recent_message_label_color">
-            <color red="0.015686274509803921" green="0.015686274509803921" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.016000000759959221" green="0.016000000759959221" blue="0.024000000208616257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="trending_background">
             <color red="0.89800000190734863" green="0.89800000190734863" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
