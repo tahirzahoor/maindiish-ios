@@ -265,6 +265,7 @@
 		79E444612AE5C075003CB9C8 /* APIManager in Frameworks */ = {isa = PBXBuildFile; productRef = 79E444602AE5C075003CB9C8 /* APIManager */; };
 		79F3929F2B03B9570092A028 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 79F3929E2B03B9570092A028 /* MBProgressHUD */; };
 		79F392A12B03BA2D0092A028 /* ProgressLoaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F392A02B03BA2C0092A028 /* ProgressLoaderManager.swift */; };
+		79FE03C72B1FB7F8001E91AB /* VideoPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FE03C62B1FB7F8001E91AB /* VideoPlayerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -523,6 +524,7 @@
 		79E406FC2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CountryPhoneCodeList.swift; path = "maindiish-ios/App/Core/Repositories/CountryPhoneCodeList.swift"; sourceTree = SOURCE_ROOT; };
 		79E407002AEBEC2E001B6AC0 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		79F392A02B03BA2C0092A028 /* ProgressLoaderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoaderManager.swift; sourceTree = "<group>"; };
+		79FE03C62B1FB7F8001E91AB /* VideoPlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerManager.swift; sourceTree = "<group>"; };
 		F9163216BAADB9C2D0979574 /* Pods-maindiish-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maindiish-ios.release.xcconfig"; path = "Target Support Files/Pods-maindiish-ios/Pods-maindiish-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -589,6 +591,7 @@
 		18209E9A2A7149A60024F47B /* App */ = {
 			isa = PBXGroup;
 			children = (
+				79FE03C52B1FB7E2001E91AB /* Managers */,
 				18209E9C2A7149BB0024F47B /* Core */,
 				18209E9F2A7149CE0024F47B /* Extensions */,
 				18209EA02A7149D50024F47B /* Globals */,
@@ -1406,6 +1409,14 @@
 			path = "Create Brief";
 			sourceTree = "<group>";
 		};
+		79FE03C52B1FB7E2001E91AB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				79FE03C62B1FB7F8001E91AB /* VideoPlayerManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		8FF76D5F98340F8167B92FB5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1694,6 +1705,7 @@
 				7991E5612ADF671F00C8F348 /* OnboardingDetail.swift in Sources */,
 				798423032AEE79CB00441707 /* ForgotPasswordViewController.swift in Sources */,
 				79E407012AEBEC2E001B6AC0 /* APIClient.swift in Sources */,
+				79FE03C72B1FB7F8001E91AB /* VideoPlayerManager.swift in Sources */,
 				79A8ED172B0949E800CDDA2C /* BriefRepository.swift in Sources */,
 				7991E55E2ADF635800C8F348 /* OnboardingCollectionViewCell.swift in Sources */,
 				7905579B2B1564000063EE98 /* EditProfileViewController.swift in Sources */,

@@ -5,7 +5,6 @@
 //  Created by Faizan Tanveer on 02/12/2023.
 //
 import AVFoundation
-import AVKit
 import UIKit
 
 class BriefsTableViewCell: UITableViewCell {
@@ -23,14 +22,6 @@ class BriefsTableViewCell: UITableViewCell {
     @IBOutlet weak var commentsButton: CellButton!
     @IBOutlet weak var sharesButton: CellButton!
     
-    // MARK: - Private Properties
-    
-    private var playerLayer: AVPlayerLayer?
-    
-    // MARK: - Public Properties
-    
-    var player: AVPlayer?
-    
     // MARK: - Lifecycle Methods
     
     override func awakeFromNib() {
@@ -40,14 +31,6 @@ class BriefsTableViewCell: UITableViewCell {
         configureFollowButtonView()
     }
    
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        playerLayer?.removeFromSuperlayer()
-        player?.pause()
-        player = nil
-        playerLayer = nil
-    }
-    
     // MARK: - Private Methods
     
     private func setFonts() {
@@ -81,33 +64,17 @@ class BriefsTableViewCell: UITableViewCell {
         sharesButton.setTitle(data.formattedViewsCount, for: .normal)
         commentsButton.setTitle(data.formattedViewsCount, for: .normal)
         heartsButton.setTitle(data.formattedViewsCount, for: .normal)
-        
-        if let url = data.videoURL {
-            configure(with: url)
-        }
     }
     
     // MARK: - Private Methods
     
-    private func configure(with videoURL: URL) {
-        let playerItem = AVPlayerItem(url: videoURL)
-        player = AVPlayer(playerItem: playerItem)
-        playerLayer = AVPlayerLayer(player: player)
-        playerLayer!.videoGravity = .resizeAspect
-        
-        videoPlayerView.layer.addSublayer(playerLayer!)
-        playerLayer!.frame = videoPlayerView.bounds
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying), name: .AVPlayerItemDidPlayToEndTime, object: player!.currentItem)
-    }
-
-    @objc
-    private func playerDidFinishPlaying() {
-        player?.seek(to: CMTime.zero)
-        player?.play()
+    func playVideo(url: URL?) {
+        guard let url = url else { return }
+        VideoPlayerManager.shared.playVideo(url: url, in: videoPlayerView.layer)
     }
     
-    deinit {
-        NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: player?.currentItem)
+    func stopVideo() {
+        VideoPlayerManager.shared.stopVideo()
     }
+    
 }
