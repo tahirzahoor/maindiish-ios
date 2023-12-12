@@ -36,6 +36,10 @@ extension OptionsViewController: UITableViewDelegate {
             self.delegate?.didSelectOption(at: indexPath.row)
         }
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.selectionStyle = .none
+    }
 }
 
 // MARK: - UITableViewDataSource Methods

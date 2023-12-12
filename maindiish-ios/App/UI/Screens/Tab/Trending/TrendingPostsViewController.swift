@@ -139,6 +139,12 @@ extension TrendingPostsViewController: UICollectionViewDelegateFlowLayout {
 
 extension TrendingPostsViewController: OptionDelegate {
     func didSelectOption(at index: Int) {
+        var options = OptionsRepository.shared.postOptions
+        
+        if options[index].text.lowercased() == "report" {
+            options = OptionsRepository.shared.reportOptions
+            viewModel.router.showSheet(.threeDotOption(options: options, delegate: self), animated: false)
+        }
         
     }
 }

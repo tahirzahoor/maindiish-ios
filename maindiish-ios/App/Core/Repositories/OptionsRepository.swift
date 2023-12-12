@@ -20,11 +20,11 @@ class OptionsRepository {
     
     private func setOptions() {
         postOptions = [
-            Option(imageName: "", text: "Copy link", cellType: .imageAndLabel()),
-            Option(imageName: "", text: "Add to favourites", cellType: .imageAndLabel()),
-            Option(imageName: "", text: "Unfollow", cellType: .imageAndLabel()),
-            Option(imageName: "", text: "About this account", cellType: .imageAndLabel()),
-            Option(imageName: "", text: "Report", cellType: .imageAndLabel(isRed: true))
+            Option(imageName: "copy_link", text: "Copy link", cellType: .imageAndLabel()),
+            Option(imageName: "add_to_favs", text: "Add to favourites", cellType: .imageAndLabel()),
+            Option(imageName: "unfollow_option", text: "Unfollow", cellType: .imageAndLabel()),
+            Option(imageName: "about_this_account", text: "About this account", cellType: .imageAndLabel()),
+            Option(imageName: "report_user", text: "Report", cellType: .imageAndLabel(isRed: true))
         ]
         
         reportOptions = [
