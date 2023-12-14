@@ -172,6 +172,11 @@
 		7991E5612ADF671F00C8F348 /* OnboardingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991E5602ADF671F00C8F348 /* OnboardingDetail.swift */; };
 		7996F07C2B192DE8004111F1 /* BlogPostCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7996F07A2B192DE8004111F1 /* BlogPostCellTableViewCell.swift */; };
 		7996F07D2B192DE8004111F1 /* BlogPostCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7996F07B2B192DE8004111F1 /* BlogPostCellTableViewCell.xib */; };
+		799A53C12B2A6667007884EE /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53C02B2A6667007884EE /* ConfirmationView.swift */; };
+		799A53C42B2A6687007884EE /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53C32B2A6687007884EE /* ConfirmationViewController.swift */; };
+		799A53C62B2A6692007884EE /* ConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53C52B2A6692007884EE /* ConfirmationViewModel.swift */; };
+		799A53C82B2A6E8A007884EE /* ConfirmationViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53C72B2A6E8A007884EE /* ConfirmationViewConfiguration.swift */; };
+		799A53CA2B2A6F9E007884EE /* ConfirmationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53C92B2A6F9E007884EE /* ConfirmationConfig.swift */; };
 		799E07362AE50EC500D853B5 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E07352AE50EC500D853B5 /* UIButton.swift */; };
 		799E07382AE533C100D853B5 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E07372AE533C100D853B5 /* PaddedTextField.swift */; };
 		799E07462AE556B200D853B5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E07452AE556B200D853B5 /* SignUpViewController.swift */; };
@@ -446,6 +451,11 @@
 		7991E5602ADF671F00C8F348 /* OnboardingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDetail.swift; sourceTree = "<group>"; };
 		7996F07A2B192DE8004111F1 /* BlogPostCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostCellTableViewCell.swift; sourceTree = "<group>"; };
 		7996F07B2B192DE8004111F1 /* BlogPostCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlogPostCellTableViewCell.xib; sourceTree = "<group>"; };
+		799A53C02B2A6667007884EE /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
+		799A53C32B2A6687007884EE /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		799A53C52B2A6692007884EE /* ConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewModel.swift; sourceTree = "<group>"; };
+		799A53C72B2A6E8A007884EE /* ConfirmationViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewConfiguration.swift; sourceTree = "<group>"; };
+		799A53C92B2A6F9E007884EE /* ConfirmationConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationConfig.swift; sourceTree = "<group>"; };
 		799E07352AE50EC500D853B5 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		799E07372AE533C100D853B5 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
 		799E07452AE556B200D853B5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -748,6 +758,7 @@
 		18209EAB2A714C8B0024F47B /* Sheets */ = {
 			isa = PBXGroup;
 			children = (
+				799A53C22B2A666D007884EE /* Confirmation */,
 				796B24422B27B0A1007F69B1 /* Options */,
 				7991A0A02AFED7B500C4990B /* Post Type */,
 				798423092AEE7D2000441707 /* BottomUps */,
@@ -1294,6 +1305,18 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		799A53C22B2A666D007884EE /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				799A53C02B2A6667007884EE /* ConfirmationView.swift */,
+				799A53C32B2A6687007884EE /* ConfirmationViewController.swift */,
+				799A53C52B2A6692007884EE /* ConfirmationViewModel.swift */,
+				799A53C72B2A6E8A007884EE /* ConfirmationViewConfiguration.swift */,
+				799A53C92B2A6F9E007884EE /* ConfirmationConfig.swift */,
+			);
+			path = Confirmation;
+			sourceTree = "<group>";
+		};
 		799E073B2AE5531400D853B5 /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
@@ -1726,6 +1749,7 @@
 				7991E5572ADF3D8300C8F348 /* OnboardingViewController.swift in Sources */,
 				79037C7F2B00ED24009F2A4A /* ConfirmMediaCapturedViewController.swift in Sources */,
 				798905312B086B9300B5A7EC /* SearchedPeopleViewModel.swift in Sources */,
+				799A53C12B2A6667007884EE /* ConfirmationView.swift in Sources */,
 				79C04BBF2AFAEF4600C7FF2C /* PostDetailViewController.swift in Sources */,
 				79243FBF2B0391BF00C4AFA5 /* ReviewBriefViewController.swift in Sources */,
 				790B4F5E2AF24EB100C429CD /* ExploreViewController.swift in Sources */,
@@ -1785,6 +1809,7 @@
 				18209EDE2A7260320024F47B /* UICollectionView.swift in Sources */,
 				7991A0992AFE7BA000C4990B /* ImagesView.swift in Sources */,
 				18209ED42A725C770024F47B /* UIFont.swift in Sources */,
+				799A53C62B2A6692007884EE /* ConfirmationViewModel.swift in Sources */,
 				79243FB52B03388F00C4AFA5 /* ConfirmMediaDelegate.swift in Sources */,
 				798905352B086BFB00B5A7EC /* SearchedPeopleCell.swift in Sources */,
 				18209EA42A714A250024F47B /* ViewController.swift in Sources */,
@@ -1848,10 +1873,12 @@
 				79D018E52AEA73E10066AAF6 /* Number.swift in Sources */,
 				790557992B1563EE0063EE98 /* EditProfileViewModel.swift in Sources */,
 				796B245A2B27DA72007F69B1 /* RoundedButton.swift in Sources */,
+				799A53C42B2A6687007884EE /* ConfirmationViewController.swift in Sources */,
 				79A525B62AF988FB00DBC4A0 /* TrendingPostImageCollectionViewCell.swift in Sources */,
 				79C04BBD2AFAEF2400C7FF2C /* PostDetailView.swift in Sources */,
 				790B4F512AF24AF200C429CD /* MainTabBar.swift in Sources */,
 				7905579D2B156D6F0063EE98 /* ThemeManager.swift in Sources */,
+				799A53C82B2A6E8A007884EE /* ConfirmationViewConfiguration.swift in Sources */,
 				79E406FD2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift in Sources */,
 				79BA2A292AE1E9DC0019E880 /* WelcomeViewController.swift in Sources */,
 				79A525AC2AF97E7900DBC4A0 /* TrendingPostsViewController.swift in Sources */,
@@ -1863,6 +1890,7 @@
 				7989051E2B080F9A00B5A7EC /* SearchViewController.swift in Sources */,
 				79BA2A2F2AE1F6E10019E880 /* UserDefaultsManager.swift in Sources */,
 				79E406F62AEBC7A1001B6AC0 /* APIService.swift in Sources */,
+				799A53CA2B2A6F9E007884EE /* ConfirmationConfig.swift in Sources */,
 				795D65972AEAA4AC007AF064 /* AlertViewModel.swift in Sources */,
 				18209EBC2A7249140024F47B /* Strings.swift in Sources */,
 				18209ED82A725FD90024F47B /* UITableViewCell.swift in Sources */,

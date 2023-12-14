@@ -139,7 +139,21 @@ extension TrendingPostsViewController: UICollectionViewDelegateFlowLayout {
 
 extension TrendingPostsViewController: OptionDelegate {
     func didSelectOption(at index: Int) {
+        
         var options = OptionsRepository.shared.postOptions
+        
+        if options[index].text.lowercased() == "unfollow" {
+            let userID = ""
+            let name = "Name"
+            viewModel
+                .router
+                .showSheet(
+                    .confirmation(
+                        config: .unfollowOrBlock(userID: userID, userName: name)
+                    ),
+                    animated: true
+                )
+        }
         
         if options[index].text.lowercased() == "report" {
             options = OptionsRepository.shared.reportOptions

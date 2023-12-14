@@ -2,15 +2,17 @@ import UIKit
 
 enum Sheet {
 
-    case confirmation
+    case confirmation(config: ConfirmationConfig)
     case bottomUp(_ options: [String], selectedOptionIndex: Int, delegate: BottomUpOptionsDelegate)
     case postType
     case threeDotOption(options: [Option], delegate: OptionDelegate)
 
     func controller() -> UIViewController {
         switch self {
-            case .confirmation:
-                return UIViewController()
+            case .confirmation(let config):
+                let viewModel = ConfirmationViewModel(config: config)
+                let controller = ConfirmationViewController.instantiate(from: .PopUp, viewModel: viewModel)
+                return controller
             case .bottomUp(let options, let selectedOptionIndex, let delegate):
                 let viewModel = BottomUpOptionsSheetViewModel(optionsList: options, selectedOptionIndex: selectedOptionIndex)
                 let controller = BottomUpOptionsSheetViewController.instantiate(from: .PopUp, viewModel: viewModel)
