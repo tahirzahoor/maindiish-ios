@@ -703,12 +703,47 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0n-AK-GoG">
+                                <rect key="frame" x="60" y="353.66666666666669" width="273" height="145"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password_changed_confirmation" translatesAutoresizingMaskIntoConstraints="NO" id="rla-ca-NLu">
+                                        <rect key="frame" x="115.66666666666666" y="20" width="42" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="42" id="U0a-9S-PUG"/>
+                                            <constraint firstAttribute="height" constant="42" id="Wza-lV-y0L"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOm-HZ-x2C">
+                                        <rect key="frame" x="35" y="82" width="203" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" name="upload_button_text"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="options_sheet_bg"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uOm-HZ-x2C" secondAttribute="trailing" constant="35" id="3Bo-2H-bTt"/>
+                                    <constraint firstItem="rla-ca-NLu" firstAttribute="top" secondItem="w0n-AK-GoG" secondAttribute="top" constant="20" id="67i-sj-KLC"/>
+                                    <constraint firstAttribute="height" constant="145" id="LAY-mV-Sds"/>
+                                    <constraint firstItem="uOm-HZ-x2C" firstAttribute="top" secondItem="rla-ca-NLu" secondAttribute="bottom" constant="20" id="eou-h4-Dsi"/>
+                                    <constraint firstItem="uOm-HZ-x2C" firstAttribute="leading" secondItem="w0n-AK-GoG" secondAttribute="leading" constant="35" id="l6F-1Y-rUE"/>
+                                    <constraint firstItem="rla-ca-NLu" firstAttribute="centerX" secondItem="w0n-AK-GoG" secondAttribute="centerX" id="ymM-Vh-Eap"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o08-LZ-H7h"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="df2-kg-heN" secondAttribute="bottom" id="CSm-1V-xNd"/>
+                            <constraint firstItem="o08-LZ-H7h" firstAttribute="trailing" secondItem="w0n-AK-GoG" secondAttribute="trailing" constant="60" id="Ft2-Qz-eML"/>
                             <constraint firstItem="o08-LZ-H7h" firstAttribute="trailing" secondItem="df2-kg-heN" secondAttribute="trailing" id="Luk-oJ-y9y"/>
+                            <constraint firstItem="w0n-AK-GoG" firstAttribute="leading" secondItem="o08-LZ-H7h" secondAttribute="leading" constant="60" id="Y39-zY-Fd4"/>
+                            <constraint firstItem="w0n-AK-GoG" firstAttribute="centerY" secondItem="OTL-Xh-a96" secondAttribute="centerY" id="a6k-Df-aQc"/>
                             <constraint firstItem="o08-LZ-H7h" firstAttribute="trailing" secondItem="UYs-AN-AJw" secondAttribute="trailing" constant="25" id="dla-Qq-DYT"/>
                             <constraint firstItem="UYs-AN-AJw" firstAttribute="leading" secondItem="o08-LZ-H7h" secondAttribute="leading" constant="25" id="rqU-ey-MOy"/>
                             <constraint firstItem="UYs-AN-AJw" firstAttribute="centerY" secondItem="OTL-Xh-a96" secondAttribute="centerY" id="vO1-QT-hnz"/>
@@ -717,6 +752,9 @@
                         </constraints>
                         <connections>
                             <outlet property="backgroundView" destination="df2-kg-heN" id="rf6-Na-nJb"/>
+                            <outlet property="blockSuccessLabell" destination="uOm-HZ-x2C" id="pDG-Ys-LYk"/>
+                            <outlet property="blockSuccessView" destination="w0n-AK-GoG" id="s3p-iz-dhp"/>
+                            <outlet property="buttonsView" destination="UYs-AN-AJw" id="cOi-6A-jbI"/>
                             <outlet property="firstButton" destination="4MW-bT-0hd" id="J55-ej-GA2"/>
                             <outlet property="secondButton" destination="eUV-8K-JmJ" id="Px6-12-3Bj"/>
                             <outlet property="titleLabel" destination="CqO-pO-KVn" id="NrH-VU-1Gk"/>
@@ -728,7 +766,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRs-oA-Zfj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6059" y="-27"/>
+            <point key="canvasLocation" x="6058.7786259541981" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <designables>
@@ -749,6 +787,7 @@
         <image name="flash_off" width="48" height="48"/>
         <image name="image_thumbnail" width="48" height="48"/>
         <image name="media_unthemed" width="24.333333969116211" height="24"/>
+        <image name="password_changed_confirmation" width="100.33333587646484" height="95.333335876464844"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="default_bg">
             <color red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
