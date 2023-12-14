@@ -16,6 +16,7 @@ class ChatView: UIView {
     @IBOutlet weak var sendButton: UIButton!
     @IBOutlet weak var messageOuterView: UIView!
     @IBOutlet weak var messageInputField: UITextField!
+    @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Lifecycle Methods
     
