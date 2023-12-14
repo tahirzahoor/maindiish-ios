@@ -23,13 +23,13 @@ class UserRepository {
     // MARK: - Private Methods
     
     private init() { 
-        users = loadData()
+        users = loadUsers()
         
         let randomNum = Int.random(in: 0..<100)
         randomUsers = Array(users[0..<randomNum])
     }
     
-    private func loadData() -> [User] {
+    private func loadUsers() -> [User] {
         Array(1...100000).map { User(name: names[$0 % names.count], followersCount: Int.random(in: 0...10000)) }
     }
     

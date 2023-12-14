@@ -57,7 +57,7 @@ class ExploreViewController: ViewController<ExploreViewModel> {
     
     @IBAction
     func commentsButtonTapped(_ sender: UIButton) {
-        
+        viewModel.router.showSheet(.comments, animated: true)
     }
     
     @IBAction
