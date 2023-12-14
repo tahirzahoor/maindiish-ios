@@ -69,6 +69,19 @@ class ExploreViewController: ViewController<ExploreViewModel> {
     func profileButtonTapped(_ sender: UIButton) {
         viewModel.router.append(.profile(id: ""), animated: true)
     }
+    
+    // MARK: - Private Methods
+    
+    @objc
+    private func likesButtonLongTapped(_ sender: UILongPressGestureRecognizer) {
+        switch sender.state {
+            case .began:
+                let users = UserRepository.shared.randomUsers
+                viewModel.router.append(.likes(users), animated: true)
+            default:
+                break
+        }
+    }
 }
 
 // MARK: - UITableViewDelegate Methods
@@ -103,6 +116,7 @@ extension ExploreViewController: UITableViewDataSource {
         let data = viewModel.data[indexPath.row]
         
         cell.configure(with: data)
+        cell.addGesture(target: self, action: #selector(likesButtonLongTapped))
         
         return cell
     }

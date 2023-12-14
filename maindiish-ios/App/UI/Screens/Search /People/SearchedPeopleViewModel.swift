@@ -11,7 +11,8 @@ class SearchedPeopleViewModel: ViewModel {
     
     // MARK: - Private Properties
     
-    private var usersList: [User] { UserRepository.shared.users }
+    private var usersList: [User] { UserRepository.shared.users
+    }
     
     // MARK: - Public Properties
     

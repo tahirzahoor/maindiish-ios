@@ -15,6 +15,7 @@ class UserTableViewCell: UITableViewCell {
     @IBOutlet weak var profilePictureImageView: UIImageView!
     @IBOutlet weak var profileTitleLabel: UILabel!
     @IBOutlet weak var numberOfFollowersLabel: UILabel!
+    @IBOutlet weak var followButton: UIButton!
     
     // MARK: - Lifecycle Methods
     
@@ -29,6 +30,7 @@ class UserTableViewCell: UITableViewCell {
     private func setFonts() {
         profileTitleLabel.font = Fonts.robotoMedium.font(15)
         numberOfFollowersLabel.font = Fonts.poppinsLight.font(10)
+        followButton.titleLabel?.font = Fonts.robotoRegular.font(12)
     }
     
     // MARK: - Public Methods

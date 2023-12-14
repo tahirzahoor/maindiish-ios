@@ -34,6 +34,7 @@ enum Route {
     case textBased(_ type: HTMLFile)
     case inbox
     case chat(_ user: User)
+    case likes(_ likedBy: [User])
     
     func controller() -> UIViewController {
         switch self {
@@ -179,6 +180,12 @@ enum Route {
             case .chat(let user):
             let viewModel = ChatViewModel(user: user)
                 let controller = ChatViewController.instantiate(from: .TabControllers, viewModel: viewModel)
+                
+                return controller
+            
+            case .likes(let users):
+                let viewModel = LikesViewModel(likedBy: users)
+                let controller = LikesViewController.instantiate(from: .PopUp, viewModel: viewModel)
                 
                 return controller
             

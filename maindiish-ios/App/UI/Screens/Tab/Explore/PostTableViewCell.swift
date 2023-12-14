@@ -17,6 +17,10 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var numberOfViewsButton: UIButton!
     @IBOutlet weak var numberOfSharesButton: UIButton!
     
+    // MARK: - Private Properties
+    
+    private var longPressLikesGesture: UILongPressGestureRecognizer?
+    
     // MARK: - Lifecycle Methods
     
     override func awakeFromNib() {
@@ -77,6 +81,17 @@ class PostTableViewCell: UITableViewCell {
         }
         
         imagesView.fixInView(mediaView)
+    }
+    
+    func addGesture(target: Any?, action: Selector) {
+        if let longTapGesture = longPressLikesGesture {
+            removeGestureRecognizer(longTapGesture)
+        }
+        
+        longPressLikesGesture = UILongPressGestureRecognizer(target: target, action: action)
+        longPressLikesGesture?.minimumPressDuration = 1
+        
+        numberOfHeartsButton.addGestureRecognizer(longPressLikesGesture!)
     }
     
 }

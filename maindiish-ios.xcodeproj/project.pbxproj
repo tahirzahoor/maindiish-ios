@@ -177,6 +177,9 @@
 		799A53C62B2A6692007884EE /* ConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53C52B2A6692007884EE /* ConfirmationViewModel.swift */; };
 		799A53C82B2A6E8A007884EE /* ConfirmationViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53C72B2A6E8A007884EE /* ConfirmationViewConfiguration.swift */; };
 		799A53CA2B2A6F9E007884EE /* ConfirmationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53C92B2A6F9E007884EE /* ConfirmationConfig.swift */; };
+		799A53CD2B2A8B85007884EE /* LikesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53CC2B2A8B85007884EE /* LikesView.swift */; };
+		799A53CF2B2A8B92007884EE /* LikesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53CE2B2A8B92007884EE /* LikesViewModel.swift */; };
+		799A53D12B2A8BA5007884EE /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53D02B2A8BA5007884EE /* LikesViewController.swift */; };
 		799E07362AE50EC500D853B5 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E07352AE50EC500D853B5 /* UIButton.swift */; };
 		799E07382AE533C100D853B5 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E07372AE533C100D853B5 /* PaddedTextField.swift */; };
 		799E07462AE556B200D853B5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E07452AE556B200D853B5 /* SignUpViewController.swift */; };
@@ -456,6 +459,9 @@
 		799A53C52B2A6692007884EE /* ConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewModel.swift; sourceTree = "<group>"; };
 		799A53C72B2A6E8A007884EE /* ConfirmationViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewConfiguration.swift; sourceTree = "<group>"; };
 		799A53C92B2A6F9E007884EE /* ConfirmationConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationConfig.swift; sourceTree = "<group>"; };
+		799A53CC2B2A8B85007884EE /* LikesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesView.swift; sourceTree = "<group>"; };
+		799A53CE2B2A8B92007884EE /* LikesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewModel.swift; sourceTree = "<group>"; };
+		799A53D02B2A8BA5007884EE /* LikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
 		799E07352AE50EC500D853B5 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		799E07372AE533C100D853B5 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
 		799E07452AE556B200D853B5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -735,6 +741,7 @@
 		18209EAA2A714C840024F47B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				799A53CB2B2A8B76007884EE /* Likes */,
 				79515DA52B1E963300CD64DD /* Chat */,
 				79AC2EDD2B1D24DA00DAAD8D /* Text */,
 				791E7CED2B1B21960052E4D0 /* Blocked Accounts */,
@@ -1317,6 +1324,16 @@
 			path = Confirmation;
 			sourceTree = "<group>";
 		};
+		799A53CB2B2A8B76007884EE /* Likes */ = {
+			isa = PBXGroup;
+			children = (
+				799A53CC2B2A8B85007884EE /* LikesView.swift */,
+				799A53CE2B2A8B92007884EE /* LikesViewModel.swift */,
+				799A53D02B2A8BA5007884EE /* LikesViewController.swift */,
+			);
+			path = Likes;
+			sourceTree = "<group>";
+		};
 		799E073B2AE5531400D853B5 /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
@@ -1681,6 +1698,7 @@
 				79A5259F2AF84F6100DBC4A0 /* TwoImagesView.swift in Sources */,
 				18209EE42A7260D30024F47B /* XibView.swift in Sources */,
 				7984231D2AEEA09D00441707 /* TypeCodeView.swift in Sources */,
+				799A53CF2B2A8B92007884EE /* LikesViewModel.swift in Sources */,
 				7984230D2AEE7D5500441707 /* BottomUpOptionsSheetView.swift in Sources */,
 				79A5259D2AF84F5500DBC4A0 /* SingleImageView.swift in Sources */,
 				7991E54E2ADF341900C8F348 /* SplashView.swift in Sources */,
@@ -1774,6 +1792,7 @@
 				790557972B1563E20063EE98 /* EditProfileView.swift in Sources */,
 				79515DAB2B1E967800CD64DD /* ChatViewController.swift in Sources */,
 				79A525A32AF84F7300DBC4A0 /* FourOrMoreImagesView.swift in Sources */,
+				799A53D12B2A8BA5007884EE /* LikesViewController.swift in Sources */,
 				796B24512B27BC80007F69B1 /* SingleLabelOptionTableViewCell.swift in Sources */,
 				799E07362AE50EC500D853B5 /* UIButton.swift in Sources */,
 				79A525AE2AF97E9D00DBC4A0 /* TrendingPostsViewModel.swift in Sources */,
@@ -1896,6 +1915,7 @@
 				18209ED82A725FD90024F47B /* UITableViewCell.swift in Sources */,
 				798905442B08F76300B5A7EC /* BriefCollectionViewCell.swift in Sources */,
 				791E7CFA2B1B5F310052E4D0 /* BriefsViewModel.swift in Sources */,
+				799A53CD2B2A8B85007884EE /* LikesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
