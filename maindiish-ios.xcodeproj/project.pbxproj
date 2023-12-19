@@ -186,7 +186,11 @@
 		799A53DA2B2AB48B007884EE /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53D92B2AB48B007884EE /* Comment.swift */; };
 		799A53DC2B2AB60C007884EE /* CommentsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53DB2B2AB60C007884EE /* CommentsRepository.swift */; };
 		799A53DE2B2AB871007884EE /* CommentTablewViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53DD2B2AB871007884EE /* CommentTablewViewCellTableViewCell.swift */; };
-		799A53E12B2AC9D6007884EE /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53E02B2AC9D6007884EE /* ChatTableViewCell.swift */; };
+		799A53E32B30EB4F007884EE /* ReceivedMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53E22B30EB4F007884EE /* ReceivedMessageTableViewCell.swift */; };
+		799A53E52B30EB63007884EE /* SendMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53E42B30EB63007884EE /* SendMessageTableViewCell.swift */; };
+		799A53E72B30F0F8007884EE /* ChatCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53E62B30F0F8007884EE /* ChatCellType.swift */; };
+		799A53E92B30F130007884EE /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53E82B30F130007884EE /* MessageType.swift */; };
+		799A53EB2B30F18F007884EE /* ChatCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799A53EA2B30F18F007884EE /* ChatCellData.swift */; };
 		799E07362AE50EC500D853B5 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E07352AE50EC500D853B5 /* UIButton.swift */; };
 		799E07382AE533C100D853B5 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E07372AE533C100D853B5 /* PaddedTextField.swift */; };
 		799E07462AE556B200D853B5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E07452AE556B200D853B5 /* SignUpViewController.swift */; };
@@ -475,7 +479,11 @@
 		799A53D92B2AB48B007884EE /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		799A53DB2B2AB60C007884EE /* CommentsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsRepository.swift; sourceTree = "<group>"; };
 		799A53DD2B2AB871007884EE /* CommentTablewViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTablewViewCellTableViewCell.swift; sourceTree = "<group>"; };
-		799A53E02B2AC9D6007884EE /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		799A53E22B30EB4F007884EE /* ReceivedMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedMessageTableViewCell.swift; sourceTree = "<group>"; };
+		799A53E42B30EB63007884EE /* SendMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageTableViewCell.swift; sourceTree = "<group>"; };
+		799A53E62B30F0F8007884EE /* ChatCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellType.swift; sourceTree = "<group>"; };
+		799A53E82B30F130007884EE /* MessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageType.swift; sourceTree = "<group>"; };
+		799A53EA2B30F18F007884EE /* ChatCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellData.swift; sourceTree = "<group>"; };
 		799E07352AE50EC500D853B5 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		799E07372AE533C100D853B5 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
 		799E07452AE556B200D853B5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -1131,6 +1139,9 @@
 				79515DA62B1E964800CD64DD /* ChatView.swift */,
 				79515DA82B1E966C00CD64DD /* ChatViewModel.swift */,
 				79515DAA2B1E967800CD64DD /* ChatViewController.swift */,
+				799A53E62B30F0F8007884EE /* ChatCellType.swift */,
+				799A53E82B30F130007884EE /* MessageType.swift */,
+				799A53EA2B30F18F007884EE /* ChatCellData.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -1366,7 +1377,8 @@
 		799A53DF2B2AC9BC007884EE /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				799A53E02B2AC9D6007884EE /* ChatTableViewCell.swift */,
+				799A53E22B30EB4F007884EE /* ReceivedMessageTableViewCell.swift */,
+				799A53E42B30EB63007884EE /* SendMessageTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1723,7 +1735,6 @@
 				7989052A2B083EBB00B5A7EC /* SearchFilter.swift in Sources */,
 				790B4F5A2AF24E9300C429CD /* ExploreView.swift in Sources */,
 				7984230F2AEE7D6B00441707 /* BottomUpOptionsSheetViewModel.swift in Sources */,
-				799A53E12B2AC9D6007884EE /* ChatTableViewCell.swift in Sources */,
 				791E7CEB2B1B1F950052E4D0 /* UserTableViewCell.swift in Sources */,
 				798055F22AE6F9D700717FB4 /* BorderedView.swift in Sources */,
 				18209EDC2A7260210024F47B /* UICollectionViewCell.swift in Sources */,
@@ -1742,11 +1753,13 @@
 				79A5259D2AF84F5500DBC4A0 /* SingleImageView.swift in Sources */,
 				7991E54E2ADF341900C8F348 /* SplashView.swift in Sources */,
 				79A2E3052AFDFCC00039633D /* CreateBlogTextViewTag.swift in Sources */,
+				799A53EB2B30F18F007884EE /* ChatCellData.swift in Sources */,
 				79F392A12B03BA2D0092A028 /* ProgressLoaderManager.swift in Sources */,
 				79E406F82AEBCB57001B6AC0 /* Repository.swift in Sources */,
 				799A53DC2B2AB60C007884EE /* CommentsRepository.swift in Sources */,
 				791E7CF32B1B21D40052E4D0 /* BlockedAccountsViewController.swift in Sources */,
 				79A2E2FD2AFDE94F0039633D /* CreateBlogView.swift in Sources */,
+				799A53E92B30F130007884EE /* MessageType.swift in Sources */,
 				79037C742B004216009F2A4A /* VideoCaptureViewModel.swift in Sources */,
 				18209EC32A724D5D0024F47B /* Route.swift in Sources */,
 				799A53DA2B2AB48B007884EE /* Comment.swift in Sources */,
@@ -1763,6 +1776,7 @@
 				79B5CC632AE24874005E19AD /* LoginViewModel.swift in Sources */,
 				7924C73B2B16B0AF00FE3C37 /* ChangePasswordField.swift in Sources */,
 				798423252AEEB5ED00441707 /* Utils.swift in Sources */,
+				799A53E32B30EB4F007884EE /* ReceivedMessageTableViewCell.swift in Sources */,
 				79A525832AF8328600DBC4A0 /* PostTableViewCell.swift in Sources */,
 				798905422B08F6A600B5A7EC /* BriefCollectionViewLayout.swift in Sources */,
 				7940FAFF2AEB581900108E9A /* SignUpRepository.swift in Sources */,
@@ -1879,6 +1893,7 @@
 				79A2E30E2AFE414E0039633D /* ReviewPostViewController.swift in Sources */,
 				790557942B15367E0063EE98 /* SettingsRows.swift in Sources */,
 				799A53D82B2AB2A7007884EE /* CommentsViewController.swift in Sources */,
+				799A53E52B30EB63007884EE /* SendMessageTableViewCell.swift in Sources */,
 				79AC2ED42B1BE29900DAAD8D /* VideoRepository.swift in Sources */,
 				798905252B0835AF00B5A7EC /* SearchedBlogsViewController.swift in Sources */,
 				79BA2A1E2AE1C2D80019E880 /* UIColor.swift in Sources */,
@@ -1908,6 +1923,7 @@
 				7989052F2B086B6A00B5A7EC /* SearchedPeopleView.swift in Sources */,
 				799E07482AE556D100D853B5 /* SignUpViewModel.swift in Sources */,
 				796B24582B27D0DB007F69B1 /* OptionsRepository.swift in Sources */,
+				799A53E72B30F0F8007884EE /* ChatCellType.swift in Sources */,
 				79A1C8BA2B0ACD8F0048CA8B /* Tab.swift in Sources */,
 				796B244E2B27BB0C007F69B1 /* OptionCellType.swift in Sources */,
 				79C4F36D2B03166300A0D232 /* CreateBriefViewController.swift in Sources */,

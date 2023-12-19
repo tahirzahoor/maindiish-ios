@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 struct GlobalStrings {
     
@@ -56,6 +57,10 @@ struct GlobalStrings {
         case profileName
         case email
         case bio
+    }
+    
+    struct ImageData {
+        static let dummyDP = UIImage(named: "dummy_dp")?.jpegData(compressionQuality: 0.8) ?? Data()
     }
     
 }

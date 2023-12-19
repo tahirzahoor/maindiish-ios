@@ -46,24 +46,31 @@ class ChatViewController: ViewController<ChatViewModel> {
 
 extension ChatViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let image = UIImage(named: "dum")
-        
-        return image?.size.height ?? 1000
+        UITableView.automaticDimension
     }
 }
 
 extension ChatViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        viewModel.cellData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: ChatTableViewCell = tableView.dequeueCell(for: indexPath)
         
-        let image = UIImage(named: "dum")
-        cell.senderProfileImageView.image = image
+        let data = viewModel.cellData[indexPath.row]
         
-        return cell
+        switch data.cellType {
+            case .send:
+                let cell: SendMessageTableViewCell = tableView.dequeueCell(for: indexPath)
+                cell.configure(with: data)
+                return cell
+            
+            case .received(let imageData):
+                let cell: ReceivedMessageTableViewCell = tableView.dequeueCell(for: indexPath)
+                cell.configure(with: data)
+                return cell
+        }
+        
     }
 }
 

@@ -13,9 +13,7 @@ class PostRepository {
     
     var postData: [PostData] = []
     
-    // MARK: - Private Properties
-    
-    private var dummyImageData = UIImage(named: "dummy_post_image")?.jpegData(compressionQuality: 0.8) ?? Data()
+    var dummyImageData = UIImage(named: "dummy_post_image")?.jpegData(compressionQuality: 0.8) ?? Data()
     
     // MARK: - Public Methods
     
