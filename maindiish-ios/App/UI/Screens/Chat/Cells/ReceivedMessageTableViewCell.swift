@@ -25,14 +25,16 @@ class ReceivedMessageTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         setFonts()
+        singleMessageView.translatesAutoresizingMaskIntoConstraints = false
+        singleMessageLabel.translatesAutoresizingMaskIntoConstraints = false
     }
     
     // MARK: - Private Methods
     
     private func setFonts() {
         singleMessageLabel.font = Fonts.interRegular.font(14)
-        linkMessageTitleLabel.font = Fonts.interRegular.font(14)
-        linkMessageSubtitleLabel.font = Fonts.robotoRegular.font(12.5)
+//        linkMessageTitleLabel.font = Fonts.interRegular.font(14)
+//        linkMessageSubtitleLabel.font = Fonts.robotoRegular.font(12.5)
     }
     
     // MARK: - Private Methods
@@ -41,14 +43,15 @@ class ReceivedMessageTableViewCell: UITableViewCell {
         switch data.messageType {
             case .text(let text):
                 singleMessageLabel.text = text
-                linkMessageView.isHidden = true
+                //linkMessageView.isHidden = true
                 singleMessageView.isHidden = false
             case .link(let imageData, let titleText, let subtitleText):
-                linkMessagePreviewImageView.image = UIImage(data: imageData)
-                linkMessageTitleLabel.text = titleText
-                linkMessageSubtitleLabel.text = subtitleText
-                linkMessageView.isHidden = false
-                singleMessageView.isHidden = true
+                break
+//                linkMessagePreviewImageView.image = UIImage(data: imageData)
+//                linkMessageTitleLabel.text = titleText
+//                linkMessageSubtitleLabel.text = subtitleText
+//                linkMessageView.isHidden = false
+//                singleMessageView.isHidden = true
         }
         
     }

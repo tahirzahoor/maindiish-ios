@@ -25,15 +25,15 @@ class SendMessageTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         setFonts()
-        linkPreviewImageView.layer.masksToBounds = true
+//        linkPreviewImageView.layer.masksToBounds = true
     }
     
     // MARK: - Private Methods
     
     private func setFonts() {
         singleMessageLabel.font = Fonts.interRegular.font(14)
-        linkTitleLabel.font = Fonts.interRegular.font(14)
-        linkSubtitleLabel.font = Fonts.robotoRegular.font(12.5)
+//        linkTitleLabel.font = Fonts.interRegular.font(14)
+//        linkSubtitleLabel.font = Fonts.robotoRegular.font(12.5)
     }
     
     // MARK: - Private Methods
@@ -42,14 +42,15 @@ class SendMessageTableViewCell: UITableViewCell {
         switch data.messageType {
             case .text(let text):
                 singleMessageLabel.text = text
-                linkMessageView.isHidden = true
+                //linkMessageView.isHidden = true
                 singleMessageView.isHidden = false
             case .link(let imageData, let titleText, let subtitleText):
-                linkPreviewImageView.image = UIImage(data: imageData)
-                linkTitleLabel.text = titleText
-                linkSubtitleLabel.text = subtitleText
-                linkMessageView.isHidden = false
-                singleMessageView.isHidden = true
+                break
+//                linkPreviewImageView.image = UIImage(data: imageData)
+//                linkTitleLabel.text = titleText
+//                linkSubtitleLabel.text = subtitleText
+//                linkMessageView.isHidden = false
+//                singleMessageView.isHidden = true
         }
         
     }

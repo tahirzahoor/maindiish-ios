@@ -70,7 +70,7 @@ extension ChatViewController: UITableViewDataSource {
                 cell.configure(with: data)
                 return cell
         }
-        
+    
     }
 }
 
