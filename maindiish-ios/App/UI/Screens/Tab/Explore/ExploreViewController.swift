@@ -104,6 +104,10 @@ extension ExploreViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.selectionStyle = .none
+        
+        if let cell = cell as? PostTableViewCell, viewModel.isForProfile {
+            cell.setForProfile()
+        }
     }
 
 }

@@ -94,4 +94,13 @@ class PostTableViewCell: UITableViewCell {
         numberOfHeartsButton.addGestureRecognizer(longPressLikesGesture!)
     }
     
+    func setForProfile() {
+        blueCircleImageView.isHidden = true
+        displayPictureImageView.isHidden = true
+        followButton.isHidden = true
+        moreOptionsButton.isHidden = true
+        
+        profileNameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
+    }
+    
 }
