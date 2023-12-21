@@ -10,6 +10,7 @@ import Foundation
 enum MessageType: Equatable {
     case text(_ text: String)
     case link(_ previewImageData: Data, _ titleText: String, subtitleText: String)
+    case image(_ imageData: Data)
     
     var id: String {
         switch self {
@@ -17,6 +18,8 @@ enum MessageType: Equatable {
                 return "text"
             case .link:
                 return "link"
+            case .image:
+                return "image"
         }
     }
     

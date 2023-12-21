@@ -9,5 +9,9 @@ import Foundation
 
 enum ChatCellType {
     case send
-    case received(_ senderProfileImageData: Data)
+    case received
+    case sendImage
+    case receiveImage
+    case sendLink
+    case receiveLink
 }

@@ -295,6 +295,12 @@
 		79F3929F2B03B9570092A028 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 79F3929E2B03B9570092A028 /* MBProgressHUD */; };
 		79F392A12B03BA2D0092A028 /* ProgressLoaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F392A02B03BA2C0092A028 /* ProgressLoaderManager.swift */; };
 		79FE03C72B1FB7F8001E91AB /* VideoPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FE03C62B1FB7F8001E91AB /* VideoPlayerManager.swift */; };
+		79FF5DF32B327B4D00DB8132 /* ReceivedImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5DF22B327B4D00DB8132 /* ReceivedImageTableViewCell.swift */; };
+		79FF5DF52B327DC900DB8132 /* SendImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5DF42B327DC900DB8132 /* SendImageTableViewCell.swift */; };
+		79FF5DF72B32840E00DB8132 /* ReceiveLinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5DF62B32840E00DB8132 /* ReceiveLinkTableViewCell.swift */; };
+		79FF5DF92B32842600DB8132 /* SendLinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5DF82B32842600DB8132 /* SendLinkTableViewCell.swift */; };
+		79FF5DFB2B346E1700DB8132 /* MessagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5DFA2B346E1600DB8132 /* MessagesRepository.swift */; };
+		79FF5DFD2B34968500DB8132 /* MessageSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5DFC2B34968500DB8132 /* MessageSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -583,6 +589,12 @@
 		79E407002AEBEC2E001B6AC0 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		79F392A02B03BA2C0092A028 /* ProgressLoaderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoaderManager.swift; sourceTree = "<group>"; };
 		79FE03C62B1FB7F8001E91AB /* VideoPlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerManager.swift; sourceTree = "<group>"; };
+		79FF5DF22B327B4D00DB8132 /* ReceivedImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedImageTableViewCell.swift; sourceTree = "<group>"; };
+		79FF5DF42B327DC900DB8132 /* SendImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendImageTableViewCell.swift; sourceTree = "<group>"; };
+		79FF5DF62B32840E00DB8132 /* ReceiveLinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveLinkTableViewCell.swift; sourceTree = "<group>"; };
+		79FF5DF82B32842600DB8132 /* SendLinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendLinkTableViewCell.swift; sourceTree = "<group>"; };
+		79FF5DFA2B346E1600DB8132 /* MessagesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesRepository.swift; sourceTree = "<group>"; };
+		79FF5DFC2B34968500DB8132 /* MessageSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSection.swift; sourceTree = "<group>"; };
 		F9163216BAADB9C2D0979574 /* Pods-maindiish-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maindiish-ios.release.xcconfig"; path = "Target Support Files/Pods-maindiish-ios/Pods-maindiish-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -809,6 +821,7 @@
 				79515DA32B1E8CF700CD64DD /* ChatListRepository.swift */,
 				796B24572B27D0DB007F69B1 /* OptionsRepository.swift */,
 				799A53DB2B2AB60C007884EE /* CommentsRepository.swift */,
+				79FF5DFA2B346E1600DB8132 /* MessagesRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -1142,6 +1155,7 @@
 				799A53E62B30F0F8007884EE /* ChatCellType.swift */,
 				799A53E82B30F130007884EE /* MessageType.swift */,
 				799A53EA2B30F18F007884EE /* ChatCellData.swift */,
+				79FF5DFC2B34968500DB8132 /* MessageSection.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -1379,6 +1393,10 @@
 			children = (
 				799A53E22B30EB4F007884EE /* ReceivedMessageTableViewCell.swift */,
 				799A53E42B30EB63007884EE /* SendMessageTableViewCell.swift */,
+				79FF5DF22B327B4D00DB8132 /* ReceivedImageTableViewCell.swift */,
+				79FF5DF42B327DC900DB8132 /* SendImageTableViewCell.swift */,
+				79FF5DF62B32840E00DB8132 /* ReceiveLinkTableViewCell.swift */,
+				79FF5DF82B32842600DB8132 /* SendLinkTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1750,6 +1768,7 @@
 				7984231D2AEEA09D00441707 /* TypeCodeView.swift in Sources */,
 				799A53CF2B2A8B92007884EE /* LikesViewModel.swift in Sources */,
 				7984230D2AEE7D5500441707 /* BottomUpOptionsSheetView.swift in Sources */,
+				79FF5DF72B32840E00DB8132 /* ReceiveLinkTableViewCell.swift in Sources */,
 				79A5259D2AF84F5500DBC4A0 /* SingleImageView.swift in Sources */,
 				7991E54E2ADF341900C8F348 /* SplashView.swift in Sources */,
 				79A2E3052AFDFCC00039633D /* CreateBlogTextViewTag.swift in Sources */,
@@ -1811,11 +1830,13 @@
 				79A525AA2AF96EA300DBC4A0 /* TrendingPostTableViewCell.swift in Sources */,
 				798905332B086BAA00B5A7EC /* SearchedPeopleViewController.swift in Sources */,
 				7901B4ED2AE4434200D24064 /* NibWrapperView.swift in Sources */,
+				79FF5DF32B327B4D00DB8132 /* ReceivedImageTableViewCell.swift in Sources */,
 				79A2E3102AFE47840039633D /* ReviewPostImageCollectionViewCell.swift in Sources */,
 				791E7CEF2B1B21B30052E4D0 /* BlockedAccountsView.swift in Sources */,
 				79A525A12AF84F6A00DBC4A0 /* ThreeImagesView.swift in Sources */,
 				798905392B08E4B000B5A7EC /* UserRepository.swift in Sources */,
 				795D65992AEAA560007AF064 /* OkAlertView.swift in Sources */,
+				79FF5DF52B327DC900DB8132 /* SendImageTableViewCell.swift in Sources */,
 				79A1C8B62B0ABA590048CA8B /* ProfileViewController.swift in Sources */,
 				79A2E30C2AFE413C0039633D /* ReviewPostViewModel.swift in Sources */,
 				18209EDA2A725FEB0024F47B /* UITableView.swift in Sources */,
@@ -1832,6 +1853,7 @@
 				18209E7F2A7146690024F47B /* AppDelegate.swift in Sources */,
 				7991E5552ADF3BF500C8F348 /* SplashViewModel.swift in Sources */,
 				791E7D012B1B60370052E4D0 /* BriefsTableViewCell.swift in Sources */,
+				79FF5DF92B32842600DB8132 /* SendLinkTableViewCell.swift in Sources */,
 				79037C832B012E07009F2A4A /* CircularProgressView.swift in Sources */,
 				791E7CE72B1A6B960052E4D0 /* CellButton.swift in Sources */,
 				79C04BB32AFACBAF00C7FF2C /* MainTabsView.swift in Sources */,
@@ -1934,6 +1956,7 @@
 				18209E812A7146690024F47B /* SceneDelegate.swift in Sources */,
 				18209ED62A725CD40024F47B /* Config.swift in Sources */,
 				799E07382AE533C100D853B5 /* PaddedTextField.swift in Sources */,
+				79FF5DFB2B346E1700DB8132 /* MessagesRepository.swift in Sources */,
 				79515D9B2B1E7EBB00CD64DD /* ChatListingViewModel.swift in Sources */,
 				799E07502AE58A3400D853B5 /* CreateUserNameView.swift in Sources */,
 				798905232B08358C00B5A7EC /* SearchedBlogsViewModel.swift in Sources */,
@@ -1974,6 +1997,7 @@
 				18209EBC2A7249140024F47B /* Strings.swift in Sources */,
 				18209ED82A725FD90024F47B /* UITableViewCell.swift in Sources */,
 				798905442B08F76300B5A7EC /* BriefCollectionViewCell.swift in Sources */,
+				79FF5DFD2B34968500DB8132 /* MessageSection.swift in Sources */,
 				791E7CFA2B1B5F310052E4D0 /* BriefsViewModel.swift in Sources */,
 				799A53CD2B2A8B85007884EE /* LikesView.swift in Sources */,
 			);
@@ -2061,7 +2085,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2117,7 +2141,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -2147,7 +2171,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2184,7 +2208,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

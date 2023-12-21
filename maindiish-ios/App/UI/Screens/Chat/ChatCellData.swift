@@ -12,6 +12,9 @@ struct ChatCellData {
     // MARK: - Public Properties
     
     var cellType: ChatCellType
-    var messageType: MessageType
+    var senderProfileImageData = Data()
+    var imageData = Data()
+    var title = ""
+    var subtitle = ""
     
 }
