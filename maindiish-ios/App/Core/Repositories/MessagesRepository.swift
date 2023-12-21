@@ -41,6 +41,7 @@ class MessagesRepository {
                 ChatCellData(cellType: .received, senderProfileImageData: senderProfileImageData, title: "Message from receiver ".times(11)),
                 ChatCellData(cellType: .send, title: "Message from sender ".times(4)),
                 ChatCellData(cellType: .sendLink, title: "New Link", subtitle: "New Link Description"),
+                ChatCellData(cellType: .sendImage, imageData: dummyImageData),
                 ChatCellData(cellType: .receiveLink, senderProfileImageData: senderProfileImageData, imageData: dummyImageData, title: "New Link", subtitle: "New Link Description")
             ]
             

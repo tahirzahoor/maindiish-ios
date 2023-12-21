@@ -25,6 +25,7 @@ class ChatView: UIView {
         
         setViewsBorder()
         setFont()
+        tableView.sectionHeaderTopPadding = 0
     }
     
     // MARK: - Private Methods
