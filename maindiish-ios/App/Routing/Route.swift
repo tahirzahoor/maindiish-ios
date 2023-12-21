@@ -35,6 +35,7 @@ enum Route {
     case inbox
     case chat(_ user: User)
     case likes(_ likedBy: [User])
+    case notifications
     
     func controller() -> UIViewController {
         switch self {
@@ -186,6 +187,12 @@ enum Route {
             case .likes(let users):
                 let viewModel = LikesViewModel(likedBy: users)
                 let controller = LikesViewController.instantiate(from: .PopUp, viewModel: viewModel)
+                
+                return controller
+            
+            case .notifications:
+                let viewModel = NotificationViewModel()
+                let controller = NotificationViewController.instantiate(from: .TabControllers, viewModel: viewModel)
                 
                 return controller
             

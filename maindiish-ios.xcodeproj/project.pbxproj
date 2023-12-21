@@ -301,6 +301,12 @@
 		79FF5DF92B32842600DB8132 /* SendLinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5DF82B32842600DB8132 /* SendLinkTableViewCell.swift */; };
 		79FF5DFB2B346E1700DB8132 /* MessagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5DFA2B346E1600DB8132 /* MessagesRepository.swift */; };
 		79FF5DFD2B34968500DB8132 /* MessageSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5DFC2B34968500DB8132 /* MessageSection.swift */; };
+		79FF5E002B34BE0300DB8132 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5DFF2B34BE0300DB8132 /* NotificationsView.swift */; };
+		79FF5E022B34BE1100DB8132 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5E012B34BE1100DB8132 /* NotificationViewModel.swift */; };
+		79FF5E042B34BE2800DB8132 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5E032B34BE2800DB8132 /* NotificationViewController.swift */; };
+		79FF5E092B34CB7B00DB8132 /* FollowableUserNotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5E082B34CB7B00DB8132 /* FollowableUserNotificationTableViewCell.swift */; };
+		79FF5E0B2B34CBC400DB8132 /* TextNotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5E0A2B34CBC400DB8132 /* TextNotificationTableViewCell.swift */; };
+		79FF5E0D2B34CE1800DB8132 /* NotificationCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5E0C2B34CE1800DB8132 /* NotificationCellData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -595,6 +601,12 @@
 		79FF5DF82B32842600DB8132 /* SendLinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendLinkTableViewCell.swift; sourceTree = "<group>"; };
 		79FF5DFA2B346E1600DB8132 /* MessagesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesRepository.swift; sourceTree = "<group>"; };
 		79FF5DFC2B34968500DB8132 /* MessageSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSection.swift; sourceTree = "<group>"; };
+		79FF5DFF2B34BE0300DB8132 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		79FF5E012B34BE1100DB8132 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		79FF5E032B34BE2800DB8132 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		79FF5E082B34CB7B00DB8132 /* FollowableUserNotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowableUserNotificationTableViewCell.swift; sourceTree = "<group>"; };
+		79FF5E0A2B34CBC400DB8132 /* TextNotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNotificationTableViewCell.swift; sourceTree = "<group>"; };
+		79FF5E0C2B34CE1800DB8132 /* NotificationCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCellData.swift; sourceTree = "<group>"; };
 		F9163216BAADB9C2D0979574 /* Pods-maindiish-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maindiish-ios.release.xcconfig"; path = "Target Support Files/Pods-maindiish-ios/Pods-maindiish-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -775,6 +787,7 @@
 		18209EAA2A714C840024F47B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				79FF5DFE2B34BDE600DB8132 /* Notifications */,
 				799A53D22B2AB282007884EE /* Comments */,
 				799A53CB2B2A8B76007884EE /* Likes */,
 				79515DA52B1E963300CD64DD /* Chat */,
@@ -1578,6 +1591,27 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		79FF5DFE2B34BDE600DB8132 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				79FF5E052B34CB0A00DB8132 /* Cells */,
+				79FF5DFF2B34BE0300DB8132 /* NotificationsView.swift */,
+				79FF5E012B34BE1100DB8132 /* NotificationViewModel.swift */,
+				79FF5E032B34BE2800DB8132 /* NotificationViewController.swift */,
+				79FF5E0C2B34CE1800DB8132 /* NotificationCellData.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		79FF5E052B34CB0A00DB8132 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				79FF5E082B34CB7B00DB8132 /* FollowableUserNotificationTableViewCell.swift */,
+				79FF5E0A2B34CBC400DB8132 /* TextNotificationTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		8FF76D5F98340F8167B92FB5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1772,6 +1806,7 @@
 				79A5259D2AF84F5500DBC4A0 /* SingleImageView.swift in Sources */,
 				7991E54E2ADF341900C8F348 /* SplashView.swift in Sources */,
 				79A2E3052AFDFCC00039633D /* CreateBlogTextViewTag.swift in Sources */,
+				79FF5E092B34CB7B00DB8132 /* FollowableUserNotificationTableViewCell.swift in Sources */,
 				799A53EB2B30F18F007884EE /* ChatCellData.swift in Sources */,
 				79F392A12B03BA2D0092A028 /* ProgressLoaderManager.swift in Sources */,
 				79E406F82AEBCB57001B6AC0 /* Repository.swift in Sources */,
@@ -1828,6 +1863,7 @@
 				791E7CDB2B1956750052E4D0 /* SavedItemsSection.swift in Sources */,
 				79A525B42AF9835B00DBC4A0 /* TrendingPostRepository.swift in Sources */,
 				79A525AA2AF96EA300DBC4A0 /* TrendingPostTableViewCell.swift in Sources */,
+				79FF5E042B34BE2800DB8132 /* NotificationViewController.swift in Sources */,
 				798905332B086BAA00B5A7EC /* SearchedPeopleViewController.swift in Sources */,
 				7901B4ED2AE4434200D24064 /* NibWrapperView.swift in Sources */,
 				79FF5DF32B327B4D00DB8132 /* ReceivedImageTableViewCell.swift in Sources */,
@@ -1858,6 +1894,7 @@
 				791E7CE72B1A6B960052E4D0 /* CellButton.swift in Sources */,
 				79C04BB32AFACBAF00C7FF2C /* MainTabsView.swift in Sources */,
 				798905402B08F5DA00B5A7EC /* BriefCollectionViewController.swift in Sources */,
+				79FF5E0D2B34CE1800DB8132 /* NotificationCellData.swift in Sources */,
 				7991E5532ADF391E00C8F348 /* UIStoryboard.swift in Sources */,
 				795D65952AEAA462007AF064 /* OkAlertViewController.swift in Sources */,
 				7940FB012AEB586D00108E9A /* CountryPhoneCode.swift in Sources */,
@@ -1876,6 +1913,7 @@
 				79A525AE2AF97E9D00DBC4A0 /* TrendingPostsViewModel.swift in Sources */,
 				796B244A2B27B143007F69B1 /* OptionDelegate.swift in Sources */,
 				7989053E2B08F5CC00B5A7EC /* BriefCollectionViewModel.swift in Sources */,
+				79FF5E0B2B34CBC400DB8132 /* TextNotificationTableViewCell.swift in Sources */,
 				7989051C2B080F7E00B5A7EC /* SearchViewModel.swift in Sources */,
 				798423112AEE7FB600441707 /* BottomUpOptionsDelegate.swift in Sources */,
 				18209EBB2A7249140024F47B /* Assets.swift in Sources */,
@@ -1981,6 +2019,7 @@
 				790B4F512AF24AF200C429CD /* MainTabBar.swift in Sources */,
 				7905579D2B156D6F0063EE98 /* ThemeManager.swift in Sources */,
 				799A53C82B2A6E8A007884EE /* ConfirmationViewConfiguration.swift in Sources */,
+				79FF5E022B34BE1100DB8132 /* NotificationViewModel.swift in Sources */,
 				79E406FD2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift in Sources */,
 				79BA2A292AE1E9DC0019E880 /* WelcomeViewController.swift in Sources */,
 				79A525AC2AF97E7900DBC4A0 /* TrendingPostsViewController.swift in Sources */,
@@ -1993,6 +2032,7 @@
 				79BA2A2F2AE1F6E10019E880 /* UserDefaultsManager.swift in Sources */,
 				79E406F62AEBC7A1001B6AC0 /* APIService.swift in Sources */,
 				799A53CA2B2A6F9E007884EE /* ConfirmationConfig.swift in Sources */,
+				79FF5E002B34BE0300DB8132 /* NotificationsView.swift in Sources */,
 				795D65972AEAA4AC007AF064 /* AlertViewModel.swift in Sources */,
 				18209EBC2A7249140024F47B /* Strings.swift in Sources */,
 				18209ED82A725FD90024F47B /* UITableViewCell.swift in Sources */,
