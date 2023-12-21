@@ -11,7 +11,9 @@ struct NotificationCellData {
     
     // MARK: - Public Properties
     
+    var cellType = NotificationCellType.actioned
     var userProfileImageData = Data()
     var actionedByUserProfileImageData = Data()
-    var notificationText = ""
+    var actionedOnImageData = Data()
+    var notificationText = NSMutableAttributedString(string: "")
 }

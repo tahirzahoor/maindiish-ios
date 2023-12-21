@@ -33,8 +33,9 @@ class FollowableUserNotificationTableViewCell: UITableViewCell {
     
     // MARK: - Public Methods
     
-    func configure(with: NotificationCellData) {
-        
+    func configure(with data: NotificationCellData) {
+        userProfilePictureImageView.image = UIImage(data: data.userProfileImageData)
+        notificationTextLabel.attributedText = data.notificationText
     }
     
 }

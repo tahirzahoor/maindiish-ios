@@ -9,12 +9,23 @@ import UIKit
 
 class NotificationsView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    // MARK: - Outlets
+    
+    @IBOutlet weak var screenTitleLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    
+    // MARK: - Lifecycle Methods
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setFonts()
+        tableView.separatorStyle = .none
     }
-    */
+    
+    // MARK: - Private Methods
+    
+    private func setFonts() {
+        screenTitleLabel.font = Fonts.robotoRegular.font(15)
+    }
 
 }

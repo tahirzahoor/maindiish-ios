@@ -9,4 +9,7 @@ import Foundation
 
 class NotificationViewModel: ViewModel {
     
+    // MARK: - Public Properties
+    
+    var sections = NotificationRepository.shared.sections
 }

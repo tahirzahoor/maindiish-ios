@@ -56,6 +56,11 @@ class ExploreViewController: ViewController<ExploreViewModel> {
     }
     
     @IBAction
+    func notificationsButtonTapped(_ sender: UIButton) {
+        viewModel.router.append(.notifications, animated: true)
+    }
+    
+    @IBAction
     func commentsButtonTapped(_ sender: UIButton) {
         viewModel.router.showSheet(.comments, animated: true)
     }

@@ -307,6 +307,9 @@
 		79FF5E092B34CB7B00DB8132 /* FollowableUserNotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5E082B34CB7B00DB8132 /* FollowableUserNotificationTableViewCell.swift */; };
 		79FF5E0B2B34CBC400DB8132 /* TextNotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5E0A2B34CBC400DB8132 /* TextNotificationTableViewCell.swift */; };
 		79FF5E0D2B34CE1800DB8132 /* NotificationCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5E0C2B34CE1800DB8132 /* NotificationCellData.swift */; };
+		79FF5E0F2B34D56C00DB8132 /* NotificationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5E0E2B34D56C00DB8132 /* NotificationRepository.swift */; };
+		79FF5E112B34D5FD00DB8132 /* NotificationSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5E102B34D5FD00DB8132 /* NotificationSection.swift */; };
+		79FF5E132B34DB3800DB8132 /* NotificationCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF5E122B34DB3700DB8132 /* NotificationCellType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -607,6 +610,9 @@
 		79FF5E082B34CB7B00DB8132 /* FollowableUserNotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowableUserNotificationTableViewCell.swift; sourceTree = "<group>"; };
 		79FF5E0A2B34CBC400DB8132 /* TextNotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNotificationTableViewCell.swift; sourceTree = "<group>"; };
 		79FF5E0C2B34CE1800DB8132 /* NotificationCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCellData.swift; sourceTree = "<group>"; };
+		79FF5E0E2B34D56C00DB8132 /* NotificationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRepository.swift; sourceTree = "<group>"; };
+		79FF5E102B34D5FD00DB8132 /* NotificationSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSection.swift; sourceTree = "<group>"; };
+		79FF5E122B34DB3700DB8132 /* NotificationCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCellType.swift; sourceTree = "<group>"; };
 		F9163216BAADB9C2D0979574 /* Pods-maindiish-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maindiish-ios.release.xcconfig"; path = "Target Support Files/Pods-maindiish-ios/Pods-maindiish-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -835,6 +841,7 @@
 				796B24572B27D0DB007F69B1 /* OptionsRepository.swift */,
 				799A53DB2B2AB60C007884EE /* CommentsRepository.swift */,
 				79FF5DFA2B346E1600DB8132 /* MessagesRepository.swift */,
+				79FF5E0E2B34D56C00DB8132 /* NotificationRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -1599,6 +1606,8 @@
 				79FF5E012B34BE1100DB8132 /* NotificationViewModel.swift */,
 				79FF5E032B34BE2800DB8132 /* NotificationViewController.swift */,
 				79FF5E0C2B34CE1800DB8132 /* NotificationCellData.swift */,
+				79FF5E102B34D5FD00DB8132 /* NotificationSection.swift */,
+				79FF5E122B34DB3700DB8132 /* NotificationCellType.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -1917,6 +1926,7 @@
 				7989051C2B080F7E00B5A7EC /* SearchViewModel.swift in Sources */,
 				798423112AEE7FB600441707 /* BottomUpOptionsDelegate.swift in Sources */,
 				18209EBB2A7249140024F47B /* Assets.swift in Sources */,
+				79FF5E0F2B34D56C00DB8132 /* NotificationRepository.swift in Sources */,
 				79243FBB2B03919D00C4AFA5 /* ReviewBriefView.swift in Sources */,
 				7991E5612ADF671F00C8F348 /* OnboardingDetail.swift in Sources */,
 				799A53D62B2AB29B007884EE /* CommentsViewModel.swift in Sources */,
@@ -1965,6 +1975,7 @@
 				79515DA72B1E964800CD64DD /* ChatView.swift in Sources */,
 				7924C7422B16CC4600FE3C37 /* SavedItemsViewController.swift in Sources */,
 				79BF3C652ADF7AFB009CE04B /* OnboardingRepository.swift in Sources */,
+				79FF5E112B34D5FD00DB8132 /* NotificationSection.swift in Sources */,
 				7924C7372B16A69700FE3C37 /* ChangePasswordViewModel.swift in Sources */,
 				79C04BC12AFAEF6200C7FF2C /* PostDetailViewModel.swift in Sources */,
 				79CCE1C62AE829DB00ADB8E9 /* UINavigationController.swift in Sources */,
@@ -2022,6 +2033,7 @@
 				79FF5E022B34BE1100DB8132 /* NotificationViewModel.swift in Sources */,
 				79E406FD2AEBE7CE001B6AC0 /* CountryPhoneCodeList.swift in Sources */,
 				79BA2A292AE1E9DC0019E880 /* WelcomeViewController.swift in Sources */,
+				79FF5E132B34DB3800DB8132 /* NotificationCellType.swift in Sources */,
 				79A525AC2AF97E7900DBC4A0 /* TrendingPostsViewController.swift in Sources */,
 				18209EA82A714AB30024F47B /* UIViewController.swift in Sources */,
 				79A525B02AF97EEC00DBC4A0 /* TrendingPostsView.swift in Sources */,
