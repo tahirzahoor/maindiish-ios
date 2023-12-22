@@ -1945,7 +1945,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXe-cV-l9G">
                                                     <rect key="frame" x="17" y="8" width="359" height="164"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_dp" translatesAutoresizingMaskIntoConstraints="NO" id="PeL-ZH-Oya">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_dp" translatesAutoresizingMaskIntoConstraints="NO" id="PeL-ZH-Oya">
                                                             <rect key="frame" x="0.0" y="119" width="45" height="45"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
@@ -2075,7 +2075,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9B-Sk-7BU">
                                                     <rect key="frame" x="17" y="8" width="359" height="164"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_dp" translatesAutoresizingMaskIntoConstraints="NO" id="JB2-45-6bN">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_dp" translatesAutoresizingMaskIntoConstraints="NO" id="JB2-45-6bN">
                                                             <rect key="frame" x="0.0" y="119" width="45" height="45"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
@@ -2174,7 +2174,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsV-zb-efc">
                                                     <rect key="frame" x="17" y="8" width="359" height="204"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_dp" translatesAutoresizingMaskIntoConstraints="NO" id="KEM-lq-SgA">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_dp" translatesAutoresizingMaskIntoConstraints="NO" id="KEM-lq-SgA">
                                                             <rect key="frame" x="0.0" y="159" width="45" height="45"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
@@ -2231,11 +2231,11 @@
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="urw-Ys-xxT" firstAttribute="leading" secondItem="KEM-lq-SgA" secondAttribute="trailing" constant="8" id="5tv-b1-fcr"/>
+                                                        <constraint firstItem="urw-Ys-xxT" firstAttribute="bottom" secondItem="KEM-lq-SgA" secondAttribute="bottom" id="Buy-G0-gmj"/>
                                                         <constraint firstItem="KEM-lq-SgA" firstAttribute="leading" secondItem="DsV-zb-efc" secondAttribute="leading" id="Jfe-J9-4lB"/>
                                                         <constraint firstItem="urw-Ys-xxT" firstAttribute="top" secondItem="DsV-zb-efc" secondAttribute="top" id="Tne-Va-Vo6"/>
                                                         <constraint firstAttribute="trailing" secondItem="urw-Ys-xxT" secondAttribute="trailing" constant="12" id="XB8-GS-hXJ"/>
                                                         <constraint firstAttribute="bottom" secondItem="KEM-lq-SgA" secondAttribute="bottom" id="awk-gF-VyG"/>
-                                                        <constraint firstAttribute="bottom" secondItem="urw-Ys-xxT" secondAttribute="bottom" id="ifY-ex-dvH"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>

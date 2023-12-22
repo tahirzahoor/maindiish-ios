@@ -42,7 +42,8 @@ class MessagesRepository {
                 ChatCellData(cellType: .send, title: "Message from sender ".times(4)),
                 ChatCellData(cellType: .sendLink, title: "New Link", subtitle: "New Link Description"),
                 ChatCellData(cellType: .sendImage, imageData: dummyImageData),
-                ChatCellData(cellType: .receiveLink, senderProfileImageData: senderProfileImageData, imageData: dummyImageData, title: "New Link", subtitle: "New Link Description")
+                ChatCellData(cellType: .receiveLink, senderProfileImageData: senderProfileImageData, imageData: dummyImageData, title: "New Link", subtitle: "New Link Description"),
+                ChatCellData(cellType: .receiveImage, senderProfileImageData: senderProfileImageData, imageData: dummyImageData)
             ]
             
             let messageSection = MessageSection(timeString: timeString, cells: data)
