@@ -28,6 +28,7 @@ class ProfileView: UIView {
     @IBOutlet weak var followAndMessageButtonsView: UIView!
     @IBOutlet weak var settingsButton: UIButton!
     @IBOutlet weak var buttonsViewHeightLayoutConstraint: NSLayoutConstraint!
+    @IBOutlet weak var buttonsViewBottomSpacingLayoutConstraint: NSLayoutConstraint!
     
     // MARK: - Lifecycle Methods
     

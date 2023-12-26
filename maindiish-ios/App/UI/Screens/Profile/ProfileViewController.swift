@@ -84,8 +84,8 @@ class ProfileViewController: ViewController<ProfileViewModel> {
     private func setInitialView() {
         profileView.settingsButton.isHidden = !viewModel.id.isEmpty
         
-        let heightConstant = viewModel.id.isEmpty ? 0 : profileView.buttonsViewHeightLayoutConstraint.constant
-        profileView.buttonsViewHeightLayoutConstraint.constant = heightConstant
+        profileView.buttonsViewHeightLayoutConstraint.constant = viewModel.id.isEmpty ? 0 : 46
+        profileView.buttonsViewBottomSpacingLayoutConstraint.constant = viewModel.id.isEmpty ? 0 : 20
         
         profileView.followAndMessageButtonsView.isHidden = viewModel.id.isEmpty
     }

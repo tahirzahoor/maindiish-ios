@@ -31,7 +31,7 @@ class SearchedBlogsTableViewCell: UITableViewCell {
     
     private func setFonts() {
         titleLabel.font = Fonts.robotoMedium.font(15)
-        descriptionLabel.font = Fonts.interMedium.font(18)
+        descriptionLabel.font = Fonts.interMedium.font(10)
         
         authorTitleLabel.font = Fonts.interMedium.font(10)
         
