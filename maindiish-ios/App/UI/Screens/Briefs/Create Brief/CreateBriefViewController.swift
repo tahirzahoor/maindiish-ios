@@ -102,9 +102,10 @@ class CreateBriefViewController: ViewController<CreateBriefViewModel> {
         
         videoPlayer = AVPlayerViewController()
         videoPlayer?.player = player
-        videoPlayer?.showsPlaybackControls = false
         
-        videoPlayer?.view.fixInView(createBriefView.innerMediaView)
+        addChild(videoPlayer!)
+        videoPlayer!.view.fixInView(createBriefView.innerMediaView)
+        videoPlayer!.didMove(toParent: self)
         
         player.play()
     }
