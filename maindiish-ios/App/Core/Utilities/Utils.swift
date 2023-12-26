@@ -32,6 +32,14 @@ class Utils {
     
     }
     
+    static func capitalizeFirstLetter(_ sentence: String) -> String {
+        guard let firstCharacter = sentence.first else {
+            return sentence
+        }
+
+        return String(firstCharacter).uppercased() + sentence.dropFirst()
+    }
+    
     static func fetchThumbnail(
         from videoURL: URL,
         completion: @escaping (UIImage?) -> Void

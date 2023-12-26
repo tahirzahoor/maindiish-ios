@@ -132,8 +132,9 @@ extension CreateBriefViewController: UITextViewDelegate {
                     return false
                 }
                 
-                viewModel.briefData.description = updatedText
-                textView.text = updatedText
+                let formattedDescription = Utils.capitalizeFirstLetter(updatedText)
+                viewModel.briefData.description = formattedDescription
+                textView.text = formattedDescription
                 
             case CreateBriefTextViewTag.tags.rawValue:
                 if (text == "#" && textView.text.last != " ")

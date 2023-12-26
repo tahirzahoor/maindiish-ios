@@ -78,8 +78,8 @@
             filePath = "maindiish-ios/App/Core/Utilities/Utils.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "contentsOfFile(_:type:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -223,6 +223,21 @@
                   startingLineNumber = "80"
                   endingLineNumber = "80"
                   offsetFromSymbolStart = "2340">
+               </Location>
+               <Location
+                  uuid = "B333D913-E26B-4BB2-959F-4D1083A48B5A - df4e758f628dbbfa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "maindiish_ios.BriefPostTableViewCell.setData(maindiish_ios.BriefData) -&gt; ()"
+                  moduleName = "maindiish-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/faizan_tanveer/Desktop/My%20Projects/maindiish-ios/maindiish-ios/App/UI/Components/Cells/Brief/BriefPostTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "2092">
                </Location>
             </Locations>
          </BreakpointContent>

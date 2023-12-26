@@ -102,8 +102,9 @@ extension CreateBlogViewController: UITextViewDelegate {
                 }
                 
                 createBlogView.wordCountLabel.text = "\(updatedText.count)/2000"
-                viewModel.postData.description = updatedText
-                textView.text = updatedText
+                let formattedDescription = Utils.capitalizeFirstLetter(updatedText)
+                viewModel.postData.description = formattedDescription
+                textView.text = formattedDescription
                 
             case CreateBlogTextViewTag.tags.rawValue:
                 if (text == "#" && textView.text.last != " ")

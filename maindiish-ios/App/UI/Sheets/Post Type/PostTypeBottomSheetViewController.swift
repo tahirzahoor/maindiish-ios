@@ -30,7 +30,7 @@ class PostTypeBottomSheetViewController: ViewController<PostTypeBottomSheetViewM
         guard let presenter = viewModel.router.topMostController() as? ConfirmMediaDelegate else { return }
         dismiss(animated: false) {
             var configuration = MediaCaptureConfiguration()
-            configuration.mediaType = .any
+            configuration.mediaType = .video()
             configuration.libraryMediaSelectionLimit = 1
             self.viewModel.router.append(.captureVideo(configuration, confirmationDelegate: presenter), animated: false)
         }
