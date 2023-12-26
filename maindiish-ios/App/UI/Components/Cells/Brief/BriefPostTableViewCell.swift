@@ -75,7 +75,7 @@ class BriefPostTableViewCell: UITableViewCell {
         }
        
         titleLabel.text = data.title
-        postedByUserLabel.text = data.user.name
+        postedByUserLabel.text = "by " + data.user.name
         
         numberOfHeartsButton.setTitle("\(data.formattedHeartsCount)", for: .normal)
         numberOfViewsButton.setTitle("\(data.formattedViewsCount)", for: .normal)

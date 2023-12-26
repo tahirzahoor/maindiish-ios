@@ -10,7 +10,7 @@ import Foundation
 struct User: Identifiable {
     
     var id = UUID()
-    var name = ""
+    var name = "User"
     var followersCount = 0
     
 }

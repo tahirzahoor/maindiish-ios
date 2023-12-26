@@ -32,22 +32,22 @@ class UserDefaultsManager {
     }
     
     @Storage(
-        wrappedValue: Data(),
+        wrappedValue: AppConstants.defaultImageData,
         GlobalStrings.UserDefaultKey.profileImageData.rawValue
     ) var profileImageData: Data
     
     @Storage(
-        wrappedValue: "",
+        wrappedValue: "Logged In User",
         GlobalStrings.UserDefaultKey.profileName.rawValue
     ) var name: String
     
     @Storage(
-        wrappedValue: "",
+        wrappedValue: "loggedinuser@example.com",
         GlobalStrings.UserDefaultKey.email.rawValue
     ) var email: String
     
     @Storage(
-        wrappedValue: "",
+        wrappedValue: "bio",
         GlobalStrings.UserDefaultKey.bio.rawValue
     ) var bio: String
     

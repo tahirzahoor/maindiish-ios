@@ -19,16 +19,17 @@ class Utils {
         
         switch number {
             case 0..<1_000:
-                return "\(number)"
+                return "\(numberFormatter.string(from: NSNumber(value: Int(number))) ?? "")"
             case 1_000..<1_000_000:
-                return "\(numberFormatter.string(from: NSNumber(value: number / 1_000)) ?? "")K"
+                return "\(numberFormatter.string(from: NSNumber(value: Int(number / 1_000))) ?? "")K"
             case 1_000_000..<1_000_000_000:
-                return "\(numberFormatter.string(from: NSNumber(value: number / 1_000_000)) ?? "")M"
+                return "\(numberFormatter.string(from: NSNumber(value: Int(number / 1_000_000))) ?? "")M"
             case 1_000_000_000..<1_000_000_000_000:
-                return "\(numberFormatter.string(from: NSNumber(value: number / 1_000_000_000)) ?? "")B"
+                return "\(numberFormatter.string(from: NSNumber(value: Int(number / 1_000_000_000))) ?? "")B"
             default:
-                return "\(numberFormatter.string(from: NSNumber(value: number / 1_000_000_000_000)) ?? "")T"
+                return "\(numberFormatter.string(from: NSNumber(value: Int(number / 1_000_000_000_000))) ?? "")T"
         }
+    
     }
     
     static func fetchThumbnail(

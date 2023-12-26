@@ -20,6 +20,7 @@ class SavedItemsViewController: ViewController<SavedItemsViewModel> {
         super.viewDidLoad()
         
         registerTableViewCells()
+        savedItemsView.tableView.showsVerticalScrollIndicator = false
     }
     
     override func viewWillAppear(_ animated: Bool) {

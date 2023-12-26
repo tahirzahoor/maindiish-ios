@@ -14,7 +14,7 @@ struct BriefData: Identifiable {
     var id = UUID()
     var user = User()
     var mediaType: MediaCaptureConfiguration.MediaType?
-    var title = "Briefs Title".times(3)
+    var title = "Briefs Title"
     var description = "Brief Description"
     var tags = ""
     var videoURL: URL? = VideoRepository.shared.videoURLs.randomElement()

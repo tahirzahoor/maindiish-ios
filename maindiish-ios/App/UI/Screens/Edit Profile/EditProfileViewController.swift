@@ -25,7 +25,11 @@ class EditProfileViewController: ViewController<EditProfileViewModel> {
     @IBAction
     func nameTextFieldEditingDidChange(_ sender: UITextField) {
         
-        guard var text = sender.text else { return }
+        guard var text = sender.text else {
+            viewModel.name = ""
+            sender.text = ""
+            return
+        }
         
         text = text.replacingOccurrences(
             of: " +",
@@ -38,7 +42,7 @@ class EditProfileViewController: ViewController<EditProfileViewModel> {
         
         sender.text = name
         
-        UserDefaultsManager.shared.name = name
+        viewModel.name = name
     }
     
     @IBAction
@@ -48,18 +52,19 @@ class EditProfileViewController: ViewController<EditProfileViewModel> {
         configuration.libraryMediaSelectionLimit = 1
         configuration.mediaType = .images()
         
-        viewModel.router.append(
-            .captureVideo(
-                configuration,
-                confirmationDelegate: self
-            ),
-            animated: true
-        )
+        let mediaPicker = Route.captureVideo(configuration, confirmationDelegate: self)
+        
+        viewModel.router.append(mediaPicker, animated: false)
+    }
+    
+    @IBAction
+    func saveButtonTapped(_ sender: UIButton) {
+        viewModel.goBack(afterSaving: true)
     }
     
     @IBAction
     func backButtonTapped(_ sender: UIButton) {
-        viewModel.router.pop(animated: true)
+        viewModel.goBack()
     }
 }
 
@@ -85,7 +90,9 @@ extension EditProfileViewController: ConfirmMediaDelegate {
 extension EditProfileViewController: UITextViewDelegate {
     
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        UserDefaultsManager.shared.bio = textView.text + text
+       
+        viewModel.bio = textView.text + text
+        
         return true
     }
     
