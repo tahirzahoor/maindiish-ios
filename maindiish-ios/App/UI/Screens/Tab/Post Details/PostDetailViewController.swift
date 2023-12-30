@@ -14,11 +14,28 @@ class PostDetailViewController: ViewController<PostDetailViewModel> {
         postDetailView.postOwnerNameLabel.text = viewModel.data.owner + "'s post"
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        addGestures()
+    }
+    
     // MARK: - Action Methods
     
     @IBAction
     func backButtonTapped(_ sender: UIButton) {
         viewModel.router.pop(animated: true)
+    }
+    
+    // MARK: - Private Methods
+    
+    private func addGestures() {
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(commentViewTapped))
+        postDetailView.textFieldOuterView.addGestureRecognizer(gesture)
+    }
+    
+    @objc
+    private func commentViewTapped() {
+        viewModel.router.showSheet(.comments, animated: true)
     }
     
 }
@@ -56,3 +73,4 @@ extension PostDetailViewController: UITableViewDataSource {
     }
     
 }
+

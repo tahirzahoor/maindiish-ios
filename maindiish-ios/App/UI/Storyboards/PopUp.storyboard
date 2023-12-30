@@ -891,15 +891,15 @@
                                         <rect key="frame" x="20" y="92" width="353" height="286.66666666666669"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentTablewViewCellTableViewCell" rowHeight="96" id="u0X-a0-uHJ" customClass="CommentTablewViewCellTableViewCell" customModule="maindiish_ios" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="50" width="353" height="96"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentTablewViewCellTableViewCell" rowHeight="102" id="u0X-a0-uHJ" customClass="CommentTablewViewCellTableViewCell" customModule="maindiish_ios" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="50" width="353" height="102"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u0X-a0-uHJ" id="nEa-AS-qN1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="96"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="102"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1Q-lO-5oc">
-                                                            <rect key="frame" x="0.0" y="0.0" width="353" height="70"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="353" height="76"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="alitahir464" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X55-FM-Qeg">
                                                                     <rect key="frame" x="45" y="2" width="57" height="13"/>
@@ -916,44 +916,19 @@
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla ac a eu cras. Et augue amet id" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T39-gQ-5xW">
-                                                                    <rect key="frame" x="45" y="21" width="260" height="29"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T39-gQ-5xW">
+                                                                    <rect key="frame" x="45" y="21" width="260" height="55"/>
+                                                                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla ac a eu cras. Et augue amet id Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla ac a eu cras. Et augue amet id</string>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmV-tc-iab" customClass="CellButton" customModule="maindiish_ios" customModuleProvider="target">
-                                                                    <rect key="frame" x="323" y="0.0" width="30" height="23"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="23" id="42H-jP-BaH"/>
-                                                                        <constraint firstAttribute="width" constant="30" id="qsl-0k-pZX"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="8"/>
-                                                                    <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="-40"/>
-                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                    <state key="normal" title="90 likes" image="briefs_heart"/>
-                                                                </button>
-                                                                <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dX3-mD-92Q">
-                                                                    <rect key="frame" x="45" y="60" width="30" height="10"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="10" id="ArA-Jq-bJd"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="8"/>
-                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                    <state key="normal" title="Reply">
-                                                                        <color key="titleColor" systemColor="labelColor"/>
-                                                                    </state>
-                                                                </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstItem="dX3-mD-92Q" firstAttribute="leading" secondItem="T39-gQ-5xW" secondAttribute="leading" id="0er-RZ-Uc2"/>
                                                                 <constraint firstItem="T39-gQ-5xW" firstAttribute="leading" secondItem="X55-FM-Qeg" secondAttribute="leading" id="3d7-lU-myM"/>
-                                                                <constraint firstAttribute="bottom" secondItem="dX3-mD-92Q" secondAttribute="bottom" id="EfG-wr-Aiq"/>
-                                                                <constraint firstAttribute="trailing" secondItem="ZmV-tc-iab" secondAttribute="trailing" id="Mo8-ba-6VX"/>
-                                                                <constraint firstItem="dX3-mD-92Q" firstAttribute="top" secondItem="T39-gQ-5xW" secondAttribute="bottom" constant="10" id="ODT-Wi-yY5"/>
-                                                                <constraint firstItem="ZmV-tc-iab" firstAttribute="top" secondItem="U1Q-lO-5oc" secondAttribute="top" id="eG6-Gc-OqC"/>
-                                                                <constraint firstItem="ZmV-tc-iab" firstAttribute="leading" secondItem="T39-gQ-5xW" secondAttribute="trailing" constant="18" id="h1h-WT-Yd0"/>
+                                                                <constraint firstAttribute="trailing" secondItem="T39-gQ-5xW" secondAttribute="trailing" constant="48" id="89D-wf-LgP"/>
+                                                                <constraint firstAttribute="bottom" secondItem="T39-gQ-5xW" secondAttribute="bottom" id="glK-dN-nWR"/>
                                                                 <constraint firstItem="Ihc-WI-OA9" firstAttribute="bottom" secondItem="X55-FM-Qeg" secondAttribute="bottom" id="itq-xE-RAc"/>
                                                                 <constraint firstItem="T39-gQ-5xW" firstAttribute="top" secondItem="X55-FM-Qeg" secondAttribute="bottom" constant="6" id="qR8-Ws-IxT"/>
                                                                 <constraint firstItem="Ihc-WI-OA9" firstAttribute="leading" secondItem="X55-FM-Qeg" secondAttribute="trailing" constant="10" id="tvb-jx-EEn"/>
@@ -987,13 +962,11 @@
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
-                                                    <outlet property="commentLikeButton" destination="ZmV-tc-iab" id="Ncy-QJ-1av"/>
                                                     <outlet property="commentTimeElapsedLabel" destination="Ihc-WI-OA9" id="gcM-0h-YJc"/>
                                                     <outlet property="descriptionLabel" destination="T39-gQ-5xW" id="ae7-76-OaQ"/>
                                                     <outlet property="highlightedImageView" destination="mSB-I7-ahE" id="fuj-KZ-Pud"/>
                                                     <outlet property="nameLabel" destination="X55-FM-Qeg" id="LA4-6n-hC2"/>
                                                     <outlet property="profileImageView" destination="1xo-m6-0v1" id="5e2-m8-Mvf"/>
-                                                    <outlet property="replyButton" destination="dX3-mD-92Q" id="Ltv-Hu-2yJ"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -1120,20 +1093,16 @@
             <size key="intrinsicContentSize" width="30" height="30"/>
         </designable>
         <designable name="M05-T5-mQa">
-            <size key="intrinsicContentSize" width="67" height="24"/>
-        </designable>
-        <designable name="ZmV-tc-iab">
-            <size key="intrinsicContentSize" width="55" height="24"/>
+            <size key="intrinsicContentSize" width="70" height="24"/>
         </designable>
         <designable name="sI5-QP-qFu">
-            <size key="intrinsicContentSize" width="77.333333333333329" height="24"/>
+            <size key="intrinsicContentSize" width="80.333333333333329" height="24"/>
         </designable>
     </designables>
     <resources>
         <image name="Search" width="24" height="24"/>
         <image name="back_button_icon" width="24" height="24"/>
         <image name="blog" width="24" height="24"/>
-        <image name="briefs_heart" width="24" height="24"/>
         <image name="camera_flip" width="48" height="48"/>
         <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="dummy_dp" width="36" height="36"/>
@@ -1166,9 +1135,6 @@
         <namedColor name="upload_button_text">
             <color red="0.016000000759959221" green="0.016000000759959221" blue="0.024000000208616257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
