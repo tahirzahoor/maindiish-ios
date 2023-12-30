@@ -1,29 +1,36 @@
-//
-//  VideoPlayerManager.swift
-//  BaseCode
-//
-//  Created by  on 17/01/2023.
-//  Copyright © 2023 Brainx Technologies. All rights reserved.
-//
-
 import AVFoundation
-import Foundation
 
 class VideoPlayerManager {
-
-    // MARK: - Instance Properties
     
-    private var playerLayer: AVPlayerLayer?
-    private var player: AVPlayer?
+    // MARK: - Shared Instance
     
-    // MARK: - Static Properties
-
     static let shared = VideoPlayerManager()
 
-    // MARK: - Init Methods
+    // MARK: - Private Properties
+    
+    private var currentPlayer: AVPlayer?
 
+    // MARK: - Initializers
+    
     private init() {}
 
     // MARK: - Public Methods
+    
+    func playVideo(url: URL, inLayer layer: CALayer) {
+        stopPlayback()
 
+        currentPlayer = AVPlayer(url: url)
+        let playerLayer = AVPlayerLayer(player: currentPlayer)
+        playerLayer.videoGravity = .resizeAspect
+        playerLayer.frame = layer.bounds
+        layer.addSublayer(playerLayer)
+
+        currentPlayer?.play()
+    }
+
+    func stopPlayback() {
+        currentPlayer?.pause()
+        currentPlayer?.replaceCurrentItem(with: nil)
+        currentPlayer = nil
+    }
 }

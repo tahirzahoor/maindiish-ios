@@ -3696,9 +3696,14 @@ Italian foods</string>
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlw-8I-zg6">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VOz-st-Ydc">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="x3v-iI-bfC" id="RyT-lF-FRA"/>
                                     <outlet property="delegate" destination="x3v-iI-bfC" id="i3y-N7-7KI"/>
@@ -3765,14 +3770,19 @@ Italian foods</string>
                         <constraints>
                             <constraint firstItem="SzN-iq-ccj" firstAttribute="trailing" secondItem="HL5-Mi-Bwp" secondAttribute="trailing" constant="12" id="7nC-XQ-2aM"/>
                             <constraint firstItem="VOz-st-Ydc" firstAttribute="leading" secondItem="SzN-iq-ccj" secondAttribute="leading" id="KGI-R3-gol"/>
+                            <constraint firstAttribute="bottom" secondItem="hlw-8I-zg6" secondAttribute="bottom" id="OUg-r4-r0v"/>
                             <constraint firstItem="SzN-iq-ccj" firstAttribute="top" secondItem="HL5-Mi-Bwp" secondAttribute="top" id="OyL-tx-dpR"/>
                             <constraint firstAttribute="bottom" secondItem="VOz-st-Ydc" secondAttribute="bottom" id="QZB-cf-rzo"/>
                             <constraint firstItem="HL5-Mi-Bwp" firstAttribute="leading" secondItem="SzN-iq-ccj" secondAttribute="leading" constant="12" id="Rsj-ZR-Bei"/>
+                            <constraint firstItem="hlw-8I-zg6" firstAttribute="leading" secondItem="2ut-Fd-oD6" secondAttribute="leading" id="aka-an-DAg"/>
+                            <constraint firstItem="hlw-8I-zg6" firstAttribute="top" secondItem="2ut-Fd-oD6" secondAttribute="top" id="eap-Jm-cba"/>
+                            <constraint firstAttribute="trailing" secondItem="hlw-8I-zg6" secondAttribute="trailing" id="iiI-r3-vZm"/>
                             <constraint firstItem="VOz-st-Ydc" firstAttribute="top" secondItem="2ut-Fd-oD6" secondAttribute="top" id="kaR-UH-aik"/>
                             <constraint firstItem="SzN-iq-ccj" firstAttribute="trailing" secondItem="VOz-st-Ydc" secondAttribute="trailing" id="xxQ-SW-QZZ"/>
                         </constraints>
                         <connections>
                             <outlet property="tableView" destination="VOz-st-Ydc" id="B2l-4i-HXF"/>
+                            <outlet property="videoPlayerView" destination="hlw-8I-zg6" id="slk-UU-Frj"/>
                         </connections>
                     </view>
                     <connections>

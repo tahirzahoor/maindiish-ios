@@ -20,11 +20,14 @@ class BriefsViewController: ViewController<BriefsViewModel> {
         super.viewDidLoad()
         
         registerTableViewCells()
+        if let firstBriefData = viewModel.briefs.first, let url = firstBriefData.videoURL {
+            VideoPlayerManager.shared.playVideo(url: url, inLayer: briefsView.videoPlayerView.layer)
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-//        VideoPlayerManager.shared.stopVideo()
+        VideoPlayerManager.shared.stopPlayback()
     }
     
     // MARK: - Action Methods
@@ -72,8 +75,9 @@ extension BriefsViewController: UITableViewDelegate {
         let url = viewModel.briefs[indexPath.row].videoURL
         let cell: BriefsTableViewCell = briefsView.tableView.dequeueCell(for: indexPath)
         
-//        cell.stopVideo()
-//        cell.playVideo(url: url)
+        if let url = url {
+            VideoPlayerManager.shared.playVideo(url: url, inLayer: briefsView.videoPlayerView.layer)
+        }
     }
     
 }

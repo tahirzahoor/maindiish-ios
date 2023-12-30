@@ -12,5 +12,5 @@ class BriefsView: UIView {
     // MARK: - Outlets
     
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var videoPlayerView: UIView!
 }
