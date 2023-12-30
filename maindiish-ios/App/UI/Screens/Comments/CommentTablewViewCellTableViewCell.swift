@@ -35,9 +35,6 @@ class CommentTablewViewCellTableViewCell: UITableViewCell {
         
         let font = Fonts.interMedium.font(8)
         commentTimeElapsedLabel.font = font
-        replyButton.titleLabel?.font = font
-        commentLikeButton.titleLabel?.font = font
-        
     }
     
     // MARK: - Public Methods
@@ -46,7 +43,6 @@ class CommentTablewViewCellTableViewCell: UITableViewCell {
         nameLabel.text = "Ali Tahir"
         descriptionLabel.text = data.description
         commentTimeElapsedLabel.text = data.commentTimeElapsed
-        commentLikeButton.setTitle("\(data.numberOfLikes)", for: .normal)
     }
     
 }
